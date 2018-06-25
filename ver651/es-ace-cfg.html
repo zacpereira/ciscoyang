@@ -1,0 +1,250 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-es-ace-cfg API | API Reference</title>
+    <link rel="stylesheet" href="/assets/stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="/assets/stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <h5>Schema Definitions</h5>
+          <a href="#definition-ES-ACL-CONFIG-ACE"> ES-ACL-CONFIG-ACE </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-es-ace-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-es-ace-cfg@2018-02-26.yang">Cisco-IOS-XR-es-ace-cfg@2018-02-26.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf</code></pre>
+                  <!-- </div> -->
+                  <h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <h1>Schema Definitions</h1>
+          <div id="definition-ES-ACL-CONFIG-ACE" class="definition panel" data-traverse-target="definition-ES-ACL-CONFIG-ACE">
+            <h2 class="panel-title">
+              <a name="/definitions/ES-ACL-CONFIG-ACE"></a>ES-ACL-CONFIG-ACE:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>ES ACE entry.</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="capture" class="has-description">
+                      <span class="json-property-name">capture:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Enable capture if set to TRUE.</p>
+                    </dd>
+                    <dt data-property-name="cos" class="has-description">
+                      <span class="json-property-name">cos:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Class of Service value. Any value not in the permissible range will be rejected.</p>
+                    </dd>
+                    <dt data-property-name="inner-cos" class="has-description">
+                      <span class="json-property-name">inner-cos:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Class of Service of Inner Header. Any value not in the permissible range will be rejected.</p>
+                    </dd>
+                    <dt data-property-name="source-network" class="has-description">
+                      <span class="json-property-name">source-network:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Source network settings.</p>
+                    </dd>
+                    <dt data-property-name="grant" class="has-description">
+                      <span class="json-property-name">grant:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">deny</span>,
+                        <span class="json-property-enum-item">permit</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Forwarding action for the packet. This is required for any non-remark ACE. Leave unspecified otherwise.</p>
+                    </dd>
+                    <dt data-property-name="ether-type-number" class="has-description">
+                      <span class="json-property-name">ether-type-number:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Ethernet type Number in Hex. Any value not in the permissible range will be rejected.</p>
+                    </dd>
+                    <dt data-property-name="inner-vlan2" class="has-description">
+                      <span class="json-property-name">inner-vlan2:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>This represents the QinQ vlan identifier. It is used in the upper bound (in range). Any value not in the permissible range will be rejected.</p>
+                    </dd>
+                    <dt data-property-name="remark" class="has-description">
+                      <span class="json-property-name">remark:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Description for the access-list-entry/rule.</p>
+                    </dd>
+                    <dt data-property-name="dei" class="has-description">
+                      <span class="json-property-name">dei:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Discard Eligibility Indication bit. User can specify 1 to indicate the bit is set. Leave unspecified otherwise.</p>
+                    </dd>
+                    <dt data-property-name="inner-dei" class="has-description">
+                      <span class="json-property-name">inner-dei:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Discard Eligibility Indication for Inner Header. User can specify 1 to indicate the bit is set. Leave unspecified otherwise.</p>
+                    </dd>
+                    <dt data-property-name="log-option" class="has-description">
+                      <span class="json-property-name">log-option:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Log the packet on this access-list-entry/rule. User can specify 1 to enable logging the match, leave unspecified otherwise.</p>
+                    </dd>
+                    <dt data-property-name="destination-network" class="has-description">
+                      <span class="json-property-name">destination-network:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Destination network settings.</p>
+                    </dd>
+                    <dt data-property-name="sequence-str" class="has-description">
+                      <span class="json-property-name">sequence-str:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Sequence String for the ace.</p>
+                    </dd>
+                    <dt data-property-name="vlan1" class="has-description">
+                      <span class="json-property-name">vlan1:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>This 12-bit VLAN-ID in the VLAN Tag header uniquely identifies the VLAN. It can be used for the lower bound (in range) or single value. Any value not in the permissible range will be rejected.</p>
+                    </dd>
+                    <dt data-property-name="vlan2" class="has-description">
+                      <span class="json-property-name">vlan2:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>This 12 bit VLAN-ID in the VLAN Tag header uniquely identifies the VLAN. It is used in the upper bound (in range). Any value not in the permissible range will be rejected.</p>
+                    </dd>
+                    <dt data-property-name="inner-vlan1" class="has-description">
+                      <span class="json-property-name">inner-vlan1:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>This represents the QinQ vlan identifier. It can be used for the lower bound (in range) or single value. Any value not in the permissible range will be rejected.</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;capture&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-attr">&quot;cos&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;inner-cos&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;source-network&quot;</span>: {
+    <span class="hljs-attr">&quot;source-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
+  <span class="hljs-attr">&quot;grant&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;ether-type-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;inner-vlan2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;remark&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;dei&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;inner-dei&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;log-option&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;destination-network&quot;</span>: {
+    <span class="hljs-attr">&quot;destination-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;destination-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
+  <span class="hljs-attr">&quot;sequence-str&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vlan1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vlan2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;inner-vlan1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
