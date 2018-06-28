@@ -1,0 +1,2069 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-wd-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path--config-watchdog-">Cisco-IOS-XR-wd-oper:watchdog/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog--get"> WATCHDOG - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-watchdog-nodes-">Cisco-IOS-XR-wd-oper:watchdog/nodes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog-nodes--get"> NODES - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-watchdog-nodes-node--node-name--">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog-nodes-node--node-name---get"> NODE - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-watchdog-nodes-node--node-name--threshold-memory-">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/threshold-memory/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog-nodes-node--node-name--threshold-memory--get"> THRESHOLD-MEMORY - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-watchdog-nodes-node--node-name--threshold-memory-default-">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/threshold-memory/default/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog-nodes-node--node-name--threshold-memory-default--get"> DEFAULT - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-watchdog-nodes-node--node-name--threshold-memory-default-configured-memory-">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/threshold-memory/default/configured-memory/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog-nodes-node--node-name--threshold-memory-default-configured-memory--get"> CONFIGURED-MEMORY - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-watchdog-nodes-node--node-name--threshold-memory-default-memory-">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/threshold-memory/default/memory/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog-nodes-node--node-name--threshold-memory-default-memory--get"> MEMORY - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-watchdog-nodes-node--node-name--threshold-memory-configured-">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/threshold-memory/configured/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog-nodes-node--node-name--threshold-memory-configured--get"> CONFIGURED - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-watchdog-nodes-node--node-name--memory-state-">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/memory-state/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog-nodes-node--node-name--memory-state--get"> MEMORY-STATE - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-watchdog-nodes-node--node-name--overload-state-">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/overload-state/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog-nodes-node--node-name--overload-state--get"> OVERLOAD-STATE - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-watchdog-nodes-node--node-name--overload-state-current-throttle-">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/overload-state/current-throttle/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog-nodes-node--node-name--overload-state-current-throttle--get"> CURRENT-THROTTLE - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-watchdog-nodes-node--node-name--overload-state-last-throttle-">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/overload-state/last-throttle/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-watchdog-nodes-node--node-name--overload-state-last-throttle--get"> LAST-THROTTLE - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <h5>Schema Definitions</h5>
+          <a href="#definition-CONF-MEM-THRESHOLD"> CONF-MEM-THRESHOLD </a>
+          <a href="#definition-OVERLOAD-CONTROL"> OVERLOAD-CONTROL </a>
+          <a href="#definition-CUR-THR-INFO"> CUR-THR-INFO </a>
+          <a href="#definition-MEMORY-DETAILS"> MEMORY-DETAILS </a>
+          <a href="#definition-MEMORY-THRESHOLD"> MEMORY-THRESHOLD </a>
+          <a href="#definition-LAST-THR-INFO"> LAST-THR-INFO </a>
+          <a href="#definition-watchdog_schema"> watchdog_schema </a>
+          <a href="#definition-nodes_schema"> nodes_schema </a>
+          <a href="#definition-node_schema"> node_schema </a>
+          <a href="#definition-threshold-memory_schema"> threshold-memory_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-wd-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-wd-oper@2015-11-09.yang">Cisco-IOS-XR-wd-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{node-name}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path--config-watchdog-"></span>
+          <div id="operation--config-watchdog--get" class="operation panel" data-traverse-target="operation--config-watchdog--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">WATCHDOG - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: watchdog</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/watchdog_schema">watchdog_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;nodes&quot;</span>: {
+    <span class="hljs-attr">&quot;node&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;memory-state&quot;</span>: {
+          <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        },
+        <span class="hljs-attr">&quot;threshold-memory&quot;</span>: {
+          <span class="hljs-attr">&quot;default&quot;</span>: {
+            <span class="hljs-attr">&quot;configured-memory&quot;</span>: {
+              <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            },
+            <span class="hljs-attr">&quot;memory&quot;</span>: {
+              <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            }
+          },
+          <span class="hljs-attr">&quot;configured&quot;</span>: {
+            <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        },
+        <span class="hljs-attr">&quot;overload-state&quot;</span>: {
+          <span class="hljs-attr">&quot;last-throttle&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;stop-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            }
+          ],
+          <span class="hljs-attr">&quot;configured-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;overload-control-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;current-throttle&quot;</span>: {
+            <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          },
+          <span class="hljs-attr">&quot;default-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        },
+        <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-watchdog-nodes-"></span>
+          <div id="operation--config-watchdog-nodes--get" class="operation panel" data-traverse-target="operation--config-watchdog-nodes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/nodes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nodes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/nodes_schema">nodes_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;node&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;memory-state&quot;</span>: {
+        <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      },
+      <span class="hljs-attr">&quot;threshold-memory&quot;</span>: {
+        <span class="hljs-attr">&quot;default&quot;</span>: {
+          <span class="hljs-attr">&quot;configured-memory&quot;</span>: {
+            <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          },
+          <span class="hljs-attr">&quot;memory&quot;</span>: {
+            <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        },
+        <span class="hljs-attr">&quot;configured&quot;</span>: {
+          <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        }
+      },
+      <span class="hljs-attr">&quot;overload-state&quot;</span>: {
+        <span class="hljs-attr">&quot;last-throttle&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;stop-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ],
+        <span class="hljs-attr">&quot;configured-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;overload-control-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;current-throttle&quot;</span>: {
+          <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        },
+        <span class="hljs-attr">&quot;default-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      },
+      <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-watchdog-nodes-node--node-name--"></span>
+          <div id="operation--config-watchdog-nodes-node--node-name---get" class="operation panel" data-traverse-target="operation--config-watchdog-nodes-node--node-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: node</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/node_schema">node_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;memory-state&quot;</span>: {
+    <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <span class="hljs-attr">&quot;threshold-memory&quot;</span>: {
+    <span class="hljs-attr">&quot;default&quot;</span>: {
+      <span class="hljs-attr">&quot;configured-memory&quot;</span>: {
+        <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      },
+      <span class="hljs-attr">&quot;memory&quot;</span>: {
+        <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    },
+    <span class="hljs-attr">&quot;configured&quot;</span>: {
+      <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  },
+  <span class="hljs-attr">&quot;overload-state&quot;</span>: {
+    <span class="hljs-attr">&quot;last-throttle&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;stop-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    ],
+    <span class="hljs-attr">&quot;configured-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;overload-control-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;current-throttle&quot;</span>: {
+      <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    },
+    <span class="hljs-attr">&quot;default-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-watchdog-nodes-node--node-name--threshold-memory-"></span>
+          <div id="operation--config-watchdog-nodes-node--node-name--threshold-memory--get" class="operation panel" data-traverse-target="operation--config-watchdog-nodes-node--node-name--threshold-memory--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">THRESHOLD-MEMORY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/threshold-memory/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: threshold-memory</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/threshold-memory_schema">threshold-memory_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;default&quot;</span>: {
+    <span class="hljs-attr">&quot;configured-memory&quot;</span>: {
+      <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    },
+    <span class="hljs-attr">&quot;memory&quot;</span>: {
+      <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  },
+  <span class="hljs-attr">&quot;configured&quot;</span>: {
+    <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-watchdog-nodes-node--node-name--threshold-memory-default-"></span>
+          <div id="operation--config-watchdog-nodes-node--node-name--threshold-memory-default--get" class="operation panel" data-traverse-target="operation--config-watchdog-nodes-node--node-name--threshold-memory-default--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">DEFAULT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/threshold-memory/default/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: default</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/MEMORY-THRESHOLD">MEMORY-THRESHOLD</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;configured-memory&quot;</span>: {
+    <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <span class="hljs-attr">&quot;memory&quot;</span>: {
+    <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-watchdog-nodes-node--node-name--threshold-memory-default-configured-memory-"></span>
+          <div id="operation--config-watchdog-nodes-node--node-name--threshold-memory-default-configured-memory--get" class="operation panel" data-traverse-target="operation--config-watchdog-nodes-node--node-name--threshold-memory-default-configured-memory--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CONFIGURED-MEMORY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/threshold-memory/default/configured-memory/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: configured-memory</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CONF-MEM-THRESHOLD">CONF-MEM-THRESHOLD</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-watchdog-nodes-node--node-name--threshold-memory-default-memory-"></span>
+          <div id="operation--config-watchdog-nodes-node--node-name--threshold-memory-default-memory--get" class="operation panel" data-traverse-target="operation--config-watchdog-nodes-node--node-name--threshold-memory-default-memory--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MEMORY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/threshold-memory/default/memory/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: memory</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/MEMORY-DETAILS">MEMORY-DETAILS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-watchdog-nodes-node--node-name--threshold-memory-configured-"></span>
+          <div id="operation--config-watchdog-nodes-node--node-name--threshold-memory-configured--get" class="operation panel" data-traverse-target="operation--config-watchdog-nodes-node--node-name--threshold-memory-configured--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CONFIGURED - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/threshold-memory/configured/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: configured</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CONF-MEM-THRESHOLD">CONF-MEM-THRESHOLD</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-watchdog-nodes-node--node-name--memory-state-"></span>
+          <div id="operation--config-watchdog-nodes-node--node-name--memory-state--get" class="operation panel" data-traverse-target="operation--config-watchdog-nodes-node--node-name--memory-state--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MEMORY-STATE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/memory-state/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: memory-state</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/MEMORY-DETAILS">MEMORY-DETAILS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-watchdog-nodes-node--node-name--overload-state-"></span>
+          <div id="operation--config-watchdog-nodes-node--node-name--overload-state--get" class="operation panel" data-traverse-target="operation--config-watchdog-nodes-node--node-name--overload-state--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">OVERLOAD-STATE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/overload-state/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: overload-state</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/OVERLOAD-CONTROL">OVERLOAD-CONTROL</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;last-throttle&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;stop-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;configured-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;overload-control-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;current-throttle&quot;</span>: {
+    <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <span class="hljs-attr">&quot;default-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-watchdog-nodes-node--node-name--overload-state-current-throttle-"></span>
+          <div id="operation--config-watchdog-nodes-node--node-name--overload-state-current-throttle--get" class="operation panel" data-traverse-target="operation--config-watchdog-nodes-node--node-name--overload-state-current-throttle--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CURRENT-THROTTLE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/overload-state/current-throttle/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: current-throttle</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CUR-THR-INFO">CUR-THR-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-watchdog-nodes-node--node-name--overload-state-last-throttle-"></span>
+          <div id="operation--config-watchdog-nodes-node--node-name--overload-state-last-throttle--get" class="operation panel" data-traverse-target="operation--config-watchdog-nodes-node--node-name--overload-state-last-throttle--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LAST-THROTTLE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-wd-oper:watchdog/nodes/node/{node-name}/overload-state/last-throttle/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: last-throttle</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/LAST-THR-INFO">LAST-THR-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;stop-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-CONF-MEM-THRESHOLD" class="definition panel" data-traverse-target="definition-CONF-MEM-THRESHOLD">
+            <h2 class="panel-title">
+              <a name="/definitions/CONF-MEM-THRESHOLD"></a>CONF-MEM-THRESHOLD:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Configured memory threshold</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="severe" class="has-description">
+                      <span class="json-property-name">severe:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Severe memory threshold in bytes</p>
+                    </dd>
+                    <dt data-property-name="critical" class="has-description">
+                      <span class="json-property-name">critical:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Critical memory in bytes</p>
+                    </dd>
+                    <dt data-property-name="minor" class="has-description">
+                      <span class="json-property-name">minor:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Minor memory threshold in bytes</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-OVERLOAD-CONTROL" class="definition panel" data-traverse-target="definition-OVERLOAD-CONTROL">
+            <h2 class="panel-title">
+              <a name="/definitions/OVERLOAD-CONTROL"></a>OVERLOAD-CONTROL:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Overload control state information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="last-throttle" class="has-description">
+                      <span class="json-property-name">last-throttle:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/LAST-THR-INFO">LAST-THR-INFO</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Last throttle information</p>
+                    </dd>
+                    <dt data-property-name="configured-wdsysmon-throttle" class="has-description">
+                      <span class="json-property-name">configured-wdsysmon-throttle:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Configured resmon throttle</p>
+                    </dd>
+                    <dt data-property-name="overload-control-notification" class="has-description">
+                      <span class="json-property-name">overload-control-notification:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">disabled</span>,
+                        <span class="json-property-enum-item">enabled</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>State of overload control notification</p>
+                    </dd>
+                    <dt data-property-name="current-throttle" class="has-description">
+                      <span class="json-property-name">current-throttle:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CUR-THR-INFO">CUR-THR-INFO</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Current throttle information</p>
+                    </dd>
+                    <dt data-property-name="default-wdsysmon-throttle" class="has-description">
+                      <span class="json-property-name">default-wdsysmon-throttle:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Default resmon throttle</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;last-throttle&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;stop-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;configured-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;overload-control-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;current-throttle&quot;</span>: {
+    <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <span class="hljs-attr">&quot;default-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-CUR-THR-INFO" class="definition panel" data-traverse-target="definition-CUR-THR-INFO">
+            <h2 class="panel-title">
+              <a name="/definitions/CUR-THR-INFO"></a>CUR-THR-INFO:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Current throttle details</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="start-time" class="has-description">
+                      <span class="json-property-name">start-time:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Current throttle start time in format :day-of-week month date-of-month HH:MM:SS year eg: Thu Feb 1 18:32:14 2011</p>
+                    </dd>
+                    <dt data-property-name="throttle-duration" class="has-description">
+                      <span class="json-property-name">throttle-duration:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Current throttle duration in seconds</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-MEMORY-DETAILS" class="definition panel" data-traverse-target="definition-MEMORY-DETAILS">
+            <h2 class="panel-title">
+              <a name="/definitions/MEMORY-DETAILS"></a>MEMORY-DETAILS:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Memory information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="memory-state" class="has-description">
+                      <span class="json-property-name">memory-state:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">unknown</span>,
+                        <span class="json-property-enum-item">normal</span>,
+                        <span class="json-property-enum-item">minor</span>,
+                        <span class="json-property-enum-item">severe</span>,
+                        <span class="json-property-enum-item">critical</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>State of memory</p>
+                    </dd>
+                    <dt data-property-name="free-memory" class="has-description">
+                      <span class="json-property-name">free-memory:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Free memory in bytes</p>
+                    </dd>
+                    <dt data-property-name="physical-memory" class="has-description">
+                      <span class="json-property-name">physical-memory:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Physical memory in bytes</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-MEMORY-THRESHOLD" class="definition panel" data-traverse-target="definition-MEMORY-THRESHOLD">
+            <h2 class="panel-title">
+              <a name="/definitions/MEMORY-THRESHOLD"></a>MEMORY-THRESHOLD:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Memory threshold</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="configured-memory" class="has-description">
+                      <span class="json-property-name">configured-memory:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CONF-MEM-THRESHOLD">CONF-MEM-THRESHOLD</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Configured memory</p>
+                    </dd>
+                    <dt data-property-name="memory" class="has-description">
+                      <span class="json-property-name">memory:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/MEMORY-DETAILS">MEMORY-DETAILS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Memory Information</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;configured-memory&quot;</span>: {
+    <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <span class="hljs-attr">&quot;memory&quot;</span>: {
+    <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-LAST-THR-INFO" class="definition panel" data-traverse-target="definition-LAST-THR-INFO">
+            <h2 class="panel-title">
+              <a name="/definitions/LAST-THR-INFO"></a>LAST-THR-INFO:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Last throttle details</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="start-time" class="has-description">
+                      <span class="json-property-name">start-time:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Last throttle start time in format :day-of-week month date-of-month HH:MM:SS year eg: Thu Feb 1 18:32:14 2011</p>
+                    </dd>
+                    <dt data-property-name="stop-time" class="has-description">
+                      <span class="json-property-name">stop-time:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Last throttle stop time in format :day-of-week month date-of-month HH:MM:SS year eg: Thu Feb 1 18:32:14 2011</p>
+                    </dd>
+                    <dt data-property-name="throttle-duration" class="has-description">
+                      <span class="json-property-name">throttle-duration:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Last throttle duration in seconds</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;stop-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-watchdog_schema" class="definition panel" data-traverse-target="definition-watchdog_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/watchdog_schema"></a>watchdog_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Watchdog information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="nodes" class="has-description">
+                      <span class="json-property-name">nodes:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>List of nodes</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;nodes&quot;</span>: {
+    <span class="hljs-attr">&quot;node&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;memory-state&quot;</span>: {
+          <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        },
+        <span class="hljs-attr">&quot;threshold-memory&quot;</span>: {
+          <span class="hljs-attr">&quot;default&quot;</span>: {
+            <span class="hljs-attr">&quot;configured-memory&quot;</span>: {
+              <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            },
+            <span class="hljs-attr">&quot;memory&quot;</span>: {
+              <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            }
+          },
+          <span class="hljs-attr">&quot;configured&quot;</span>: {
+            <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        },
+        <span class="hljs-attr">&quot;overload-state&quot;</span>: {
+          <span class="hljs-attr">&quot;last-throttle&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;stop-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            }
+          ],
+          <span class="hljs-attr">&quot;configured-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;overload-control-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;current-throttle&quot;</span>: {
+            <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          },
+          <span class="hljs-attr">&quot;default-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        },
+        <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-nodes_schema" class="definition panel" data-traverse-target="definition-nodes_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/nodes_schema"></a>nodes_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>List of nodes</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="node" class="has-description">
+                      <span class="json-property-name">node:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Node ID</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;node&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;memory-state&quot;</span>: {
+        <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      },
+      <span class="hljs-attr">&quot;threshold-memory&quot;</span>: {
+        <span class="hljs-attr">&quot;default&quot;</span>: {
+          <span class="hljs-attr">&quot;configured-memory&quot;</span>: {
+            <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          },
+          <span class="hljs-attr">&quot;memory&quot;</span>: {
+            <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        },
+        <span class="hljs-attr">&quot;configured&quot;</span>: {
+          <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        }
+      },
+      <span class="hljs-attr">&quot;overload-state&quot;</span>: {
+        <span class="hljs-attr">&quot;last-throttle&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;stop-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ],
+        <span class="hljs-attr">&quot;configured-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;overload-control-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;current-throttle&quot;</span>: {
+          <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        },
+        <span class="hljs-attr">&quot;default-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      },
+      <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-node_schema" class="definition panel" data-traverse-target="definition-node_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/node_schema"></a>node_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="memory-state" class="has-description">
+                      <span class="json-property-name">memory-state:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/MEMORY-DETAILS">MEMORY-DETAILS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Memory state</p>
+                    </dd>
+                    <dt data-property-name="threshold-memory" class="has-description">
+                      <span class="json-property-name">threshold-memory:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Threshold memory</p>
+                    </dd>
+                    <dt data-property-name="overload-state" class="has-description">
+                      <span class="json-property-name">overload-state:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/OVERLOAD-CONTROL">OVERLOAD-CONTROL</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Display overload control state</p>
+                    </dd>
+                    <dt data-property-name="node-name" class="has-description">
+                      <span class="json-property-name">node-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Node name</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;memory-state&quot;</span>: {
+    <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <span class="hljs-attr">&quot;threshold-memory&quot;</span>: {
+    <span class="hljs-attr">&quot;default&quot;</span>: {
+      <span class="hljs-attr">&quot;configured-memory&quot;</span>: {
+        <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      },
+      <span class="hljs-attr">&quot;memory&quot;</span>: {
+        <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    },
+    <span class="hljs-attr">&quot;configured&quot;</span>: {
+      <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  },
+  <span class="hljs-attr">&quot;overload-state&quot;</span>: {
+    <span class="hljs-attr">&quot;last-throttle&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;stop-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    ],
+    <span class="hljs-attr">&quot;configured-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;overload-control-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;current-throttle&quot;</span>: {
+      <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;throttle-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    },
+    <span class="hljs-attr">&quot;default-wdsysmon-throttle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-threshold-memory_schema" class="definition panel" data-traverse-target="definition-threshold-memory_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/threshold-memory_schema"></a>threshold-memory_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Threshold memory</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="default" class="has-description">
+                      <span class="json-property-name">default:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/MEMORY-THRESHOLD">MEMORY-THRESHOLD</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>System default memory</p>
+                    </dd>
+                    <dt data-property-name="configured" class="has-description">
+                      <span class="json-property-name">configured:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CONF-MEM-THRESHOLD">CONF-MEM-THRESHOLD</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Memory configured by user</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;default&quot;</span>: {
+    <span class="hljs-attr">&quot;configured-memory&quot;</span>: {
+      <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    },
+    <span class="hljs-attr">&quot;memory&quot;</span>: {
+      <span class="hljs-attr">&quot;memory-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;free-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;physical-memory&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  },
+  <span class="hljs-attr">&quot;configured&quot;</span>: {
+    <span class="hljs-attr">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

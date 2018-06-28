@@ -1,0 +1,1565 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-lpts-ifib-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path--config-lpts-ifib-">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-lpts-ifib--get"> LPTS-IFIB - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-lpts-ifib-nodes-">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/nodes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-lpts-ifib-nodes--get"> NODES - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-lpts-ifib-nodes-node--node-name--">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/nodes/node/{node-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-lpts-ifib-nodes-node--node-name---get"> NODE - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-lpts-ifib-nodes-node--node-name--slice-ids-">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/nodes/node/{node-name}/slice-ids/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-lpts-ifib-nodes-node--node-name--slice-ids--get"> SLICE-IDS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-lpts-ifib-nodes-node--node-name--slice-ids-slice-id--slice-name--">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/nodes/node/{node-name}/slice-ids/slice-id/{slice-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-lpts-ifib-nodes-node--node-name--slice-ids-slice-id--slice-name---get"> SLICE-ID - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-lpts-ifib-nodes-node--node-name--slice-ids-slice-id--slice-name--entry--entry--">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/nodes/node/{node-name}/slice-ids/slice-id/{slice-name}/entry/{entry}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-lpts-ifib-nodes-node--node-name--slice-ids-slice-id--slice-name--entry--entry---get"> ENTRY - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <h5>Schema Definitions</h5>
+          <a href="#definition-FM-IFIB-ENTRY"> FM-IFIB-ENTRY </a>
+          <a href="#definition-lpts-ifib_schema"> lpts-ifib_schema </a>
+          <a href="#definition-nodes_schema"> nodes_schema </a>
+          <a href="#definition-node_schema"> node_schema </a>
+          <a href="#definition-slice-ids_schema"> slice-ids_schema </a>
+          <a href="#definition-slice-id_schema"> slice-id_schema </a>
+          <a href="#definition-entry_schema"> entry_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-lpts-ifib-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-lpts-ifib-oper@2017-09-07.yang">Cisco-IOS-XR-lpts-ifib-oper@2017-09-07.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{node-name}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path--config-lpts-ifib-"></span>
+          <div id="operation--config-lpts-ifib--get" class="operation panel" data-traverse-target="operation--config-lpts-ifib--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LPTS-IFIB - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: lpts-ifib</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/lpts-ifib_schema">lpts-ifib_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;nodes&quot;</span>: {
+    <span class="hljs-attr">&quot;node&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;slice-ids&quot;</span>: {
+          <span class="hljs-attr">&quot;slice-id&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;slice-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;entry&quot;</span>: [
+                {
+                  <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-lpts-ifib-nodes-"></span>
+          <div id="operation--config-lpts-ifib-nodes--get" class="operation panel" data-traverse-target="operation--config-lpts-ifib-nodes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/nodes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nodes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/nodes_schema">nodes_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;node&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;slice-ids&quot;</span>: {
+        <span class="hljs-attr">&quot;slice-id&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;slice-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;entry&quot;</span>: [
+              {
+                <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-lpts-ifib-nodes-node--node-name--"></span>
+          <div id="operation--config-lpts-ifib-nodes-node--node-name---get" class="operation panel" data-traverse-target="operation--config-lpts-ifib-nodes-node--node-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/nodes/node/{node-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: node</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/node_schema">node_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;slice-ids&quot;</span>: {
+    <span class="hljs-attr">&quot;slice-id&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;slice-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;entry&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ]
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-lpts-ifib-nodes-node--node-name--slice-ids-"></span>
+          <div id="operation--config-lpts-ifib-nodes-node--node-name--slice-ids--get" class="operation panel" data-traverse-target="operation--config-lpts-ifib-nodes-node--node-name--slice-ids--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SLICE-IDS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/nodes/node/{node-name}/slice-ids/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: slice-ids</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/slice-ids_schema">slice-ids_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;slice-id&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;slice-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;entry&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-lpts-ifib-nodes-node--node-name--slice-ids-slice-id--slice-name--"></span>
+          <div id="operation--config-lpts-ifib-nodes-node--node-name--slice-ids-slice-id--slice-name---get" class="operation panel" data-traverse-target="operation--config-lpts-ifib-nodes-node--node-name--slice-ids-slice-id--slice-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SLICE-ID - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/nodes/node/{node-name}/slice-ids/slice-id/{slice-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: slice-id</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">slice-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of slice-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/slice-id_schema">slice-id_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;slice-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;entry&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-lpts-ifib-nodes-node--node-name--slice-ids-slice-id--slice-name--entry--entry--"></span>
+          <div id="operation--config-lpts-ifib-nodes-node--node-name--slice-ids-slice-id--slice-name--entry--entry---get" class="operation panel" data-traverse-target="operation--config-lpts-ifib-nodes-node--node-name--slice-ids-slice-id--slice-name--entry--entry---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ENTRY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-ifib-oper:lpts-ifib/nodes/node/{node-name}/slice-ids/slice-id/{slice-name}/entry/{entry}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: entry</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">slice-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of slice-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">entry</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of entry</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/entry_schema">entry_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-FM-IFIB-ENTRY" class="definition panel" data-traverse-target="definition-FM-IFIB-ENTRY">
+            <h2 class="panel-title">
+              <a name="/definitions/FM-IFIB-ENTRY"></a>FM-IFIB-ENTRY:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>LPTS IFIB Slice Entry Information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="deliver-list-short" class="has-description">
+                      <span class="json-property-name">deliver-list-short:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Deliver List Short Format</p>
+                    </dd>
+                    <dt data-property-name="destination-value" class="has-description">
+                      <span class="json-property-name">destination-value:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Destination Port/ICMP Type/IGMP Type</p>
+                    </dd>
+                    <dt data-property-name="vid" class="has-description">
+                      <span class="json-property-name">vid:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF ID</p>
+                    </dd>
+                    <dt data-property-name="l4protocol" class="has-description">
+                      <span class="json-property-name">l4protocol:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Layer 4 Protocol</p>
+                    </dd>
+                    <dt data-property-name="is-fgid" class="has-description">
+                      <span class="json-property-name">is-fgid:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is FGID or not</p>
+                    </dd>
+                    <dt data-property-name="sl-ifibq-delay" class="has-description">
+                      <span class="json-property-name">sl-ifibq-delay:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>sl_ifibq delay</p>
+                    </dd>
+                    <dt data-property-name="destination-addr" class="has-description">
+                      <span class="json-property-name">destination-addr:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Destination IP Address</p>
+                    </dd>
+                    <dt data-property-name="source-addr" class="has-description">
+                      <span class="json-property-name">source-addr:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Source IP Address</p>
+                    </dd>
+                    <dt data-property-name="intf-name" class="has-description">
+                      <span class="json-property-name">intf-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Interface Name</p>
+                    </dd>
+                    <dt data-property-name="vrf-name" class="has-description">
+                      <span class="json-property-name">vrf-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF Name</p>
+                    </dd>
+                    <dt data-property-name="pending-ifibq-delay" class="has-description">
+                      <span class="json-property-name">pending-ifibq-delay:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>pending ifib queue delay</p>
+                    </dd>
+                    <dt data-property-name="local-flag" class="has-description">
+                      <span class="json-property-name">local-flag:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Local Flag</p>
+                    </dd>
+                    <dt data-property-name="intf-handle" class="has-description">
+                      <span class="json-property-name">intf-handle:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Interface Handle</p>
+                    </dd>
+                    <dt data-property-name="flow-type" class="has-description">
+                      <span class="json-property-name">flow-type:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Flow type</p>
+                    </dd>
+                    <dt data-property-name="ifib-program-time" class="has-description">
+                      <span class="json-property-name">ifib-program-time:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>ifib program time in netio</p>
+                    </dd>
+                    <dt data-property-name="min-ttl" class="has-description">
+                      <span class="json-property-name">min-ttl:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Minimum TTL</p>
+                    </dd>
+                    <dt data-property-name="source-port" class="has-description">
+                      <span class="json-property-name">source-port:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Source port</p>
+                    </dd>
+                    <dt data-property-name="deliver-list-long" class="has-description">
+                      <span class="json-property-name">deliver-list-long:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Deliver List Long Format</p>
+                    </dd>
+                    <dt data-property-name="is-syn" class="has-description">
+                      <span class="json-property-name">is-syn:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is SYN</p>
+                    </dd>
+                    <dt data-property-name="listener-tag" class="has-description">
+                      <span class="json-property-name">listener-tag:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Listener Tag</p>
+                    </dd>
+                    <dt data-property-name="destination-type" class="has-description">
+                      <span class="json-property-name">destination-type:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Destination Key Type</p>
+                    </dd>
+                    <dt data-property-name="accepts" class="has-description">
+                      <span class="json-property-name">accepts:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Packets matched to accept</p>
+                    </dd>
+                    <dt data-property-name="opcode" class="has-description">
+                      <span class="json-property-name">opcode:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Opcode</p>
+                    </dd>
+                    <dt data-property-name="drops" class="has-description">
+                      <span class="json-property-name">drops:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Packets matched to drop</p>
+                    </dd>
+                    <dt data-property-name="l3protocol" class="has-description">
+                      <span class="json-property-name">l3protocol:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Layer 3 Protocol</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-lpts-ifib_schema" class="definition panel" data-traverse-target="definition-lpts-ifib_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/lpts-ifib_schema"></a>lpts-ifib_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>lpts ifib database</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="nodes" class="has-description">
+                      <span class="json-property-name">nodes:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Node ifib database</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;nodes&quot;</span>: {
+    <span class="hljs-attr">&quot;node&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;slice-ids&quot;</span>: {
+          <span class="hljs-attr">&quot;slice-id&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;slice-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;entry&quot;</span>: [
+                {
+                  <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-nodes_schema" class="definition panel" data-traverse-target="definition-nodes_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/nodes_schema"></a>nodes_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Node ifib database</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="node" class="has-description">
+                      <span class="json-property-name">node:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Per node slice </p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;node&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;slice-ids&quot;</span>: {
+        <span class="hljs-attr">&quot;slice-id&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;slice-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;entry&quot;</span>: [
+              {
+                <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-node_schema" class="definition panel" data-traverse-target="definition-node_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/node_schema"></a>node_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="node-name" class="has-description">
+                      <span class="json-property-name">node-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The node name</p>
+                    </dd>
+                    <dt data-property-name="slice-ids" class="has-description">
+                      <span class="json-property-name">slice-ids:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Slice specific</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;slice-ids&quot;</span>: {
+    <span class="hljs-attr">&quot;slice-id&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;slice-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;entry&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ]
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-slice-ids_schema" class="definition panel" data-traverse-target="definition-slice-ids_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/slice-ids_schema"></a>slice-ids_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Slice specific</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="slice-id" class="has-description">
+                      <span class="json-property-name">slice-id:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>slice types</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;slice-id&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;slice-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;entry&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-slice-id_schema" class="definition panel" data-traverse-target="definition-slice-id_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/slice-id_schema"></a>slice-id_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="slice-name" class="has-description">
+                      <span class="json-property-name">slice-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Type value</p>
+                    </dd>
+                    <dt data-property-name="entry" class="has-description">
+                      <span class="json-property-name">entry:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Data for single pre-ifib entry</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;slice-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;entry&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-entry_schema" class="definition panel" data-traverse-target="definition-entry_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/entry_schema"></a>entry_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type"></span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-allOf">
+                  <section class="json-schema-allOf-inherited">
+                    <ul>
+                      <span class="">
+                        <a class="json-schema-ref" href="#/definitions/FM-IFIB-ENTRY">FM-IFIB-ENTRY</a>
+                      </span>
+                    </ul>
+                  </section>
+                  <section class="json-schema-allOf-additional">
+                    <section class="json-schema-properties">
+                      <dl>
+                        <dt data-property-name="entry" class="has-description">
+                          <span class="json-property-name">entry:</span>
+                          <span class="json-property-type">integer</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Single Pre-ifib entry</p>
+                        </dd>
+                      </dl>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;entry&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;sl-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;pending-ifibq-delay&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;ifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
