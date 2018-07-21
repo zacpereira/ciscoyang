@@ -1,0 +1,3174 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-ip-iarm-v4-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path--config-ipv4arm-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm--get"> IPV4ARM - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-addresses-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-addresses--get"> ADDRESSES - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-addresses-vrfs-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-addresses-vrfs--get"> VRFS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name---get"> VRF - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/networks/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks--get"> NETWORKS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/networks/network/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network--get"> NETWORK - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-address-xr-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/networks/network/address-xr/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-address-xr--get"> ADDRESS-XR - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-address-xr-address-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/networks/network/address-xr/address/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-address-xr-address--get"> ADDRESS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/interfaces/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces--get"> INTERFACES - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/interfaces/interface/{interface}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface---get"> INTERFACE - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--address-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/interfaces/interface/{interface}/address/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--address--get"> ADDRESS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--address-address-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/interfaces/interface/{interface}/address/address/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--address-address--get"> ADDRESS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-summary-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/summary/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-summary--get"> SUMMARY - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-vrf-summaries-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/vrf-summaries/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-vrf-summaries--get"> VRF-SUMMARIES - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-vrf-summaries-vrf-summary--vrf-name--">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/vrf-summaries/vrf-summary/{vrf-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-vrf-summaries-vrf-summary--vrf-name---get"> VRF-SUMMARY - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-ipv4arm-router-id-">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/router-id/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-ipv4arm-router-id--get"> ROUTER-ID - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <h5>Schema Definitions</h5>
+          <a href="#definition-IP-ARM-EDM-DB-IF-BAG-TYPE"> IP-ARM-EDM-DB-IF-BAG-TYPE </a>
+          <a href="#definition-IP-ARM-EDM-SUMMARY-BAG-TYPE"> IP-ARM-EDM-SUMMARY-BAG-TYPE </a>
+          <a href="#definition-IP-ARM-EDM-DB-VRF-BAG-TYPE"> IP-ARM-EDM-DB-VRF-BAG-TYPE </a>
+          <a href="#definition-IP-ARM-EDM-DB-NET-BAG-TYPE"> IP-ARM-EDM-DB-NET-BAG-TYPE </a>
+          <a href="#definition-IP-ARM-EDM-ADDR-TYPE"> IP-ARM-EDM-ADDR-TYPE </a>
+          <a href="#definition-ARM-ADDRTYPE"> ARM-ADDRTYPE </a>
+          <a href="#definition-IP-ARM-EDM-DB-RTRID-BAG-TYPE"> IP-ARM-EDM-DB-RTRID-BAG-TYPE </a>
+          <a href="#definition-ipv4arm_schema"> ipv4arm_schema </a>
+          <a href="#definition-addresses_schema"> addresses_schema </a>
+          <a href="#definition-vrfs_schema"> vrfs_schema </a>
+          <a href="#definition-vrf_schema"> vrf_schema </a>
+          <a href="#definition-networks_schema"> networks_schema </a>
+          <a href="#definition-network_schema"> network_schema </a>
+          <a href="#definition-interfaces_schema"> interfaces_schema </a>
+          <a href="#definition-interface_schema"> interface_schema </a>
+          <a href="#definition-vrf-summaries_schema"> vrf-summaries_schema </a>
+          <a href="#definition-vrf-summary_schema"> vrf-summary_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-ip-iarm-v4-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-ip-iarm-v4-oper@2017-05-01.yang">Cisco-IOS-XR-ip-iarm-v4-oper@2017-05-01.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{node-name}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path--config-ipv4arm-"></span>
+          <div id="operation--config-ipv4arm--get" class="operation panel" data-traverse-target="operation--config-ipv4arm--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV4ARM - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ipv4arm</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ipv4arm_schema">ipv4arm_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;multicast-host-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-summaries&quot;</span>: {
+    <span class="hljs-attr">&quot;vrf-summary&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;addresses&quot;</span>: {
+    <span class="hljs-attr">&quot;vrfs&quot;</span>: {
+      <span class="hljs-attr">&quot;vrf&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;interfaces&quot;</span>: {
+            <span class="hljs-attr">&quot;interface&quot;</span>: [
+              {
+                <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;address&quot;</span>: [
+                  {
+                    <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                    <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                    <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                    <span class="hljs-attr">&quot;address&quot;</span>: {
+                      <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                      <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                      <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+                    },
+                    <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                    <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                    <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+                  }
+                ],
+                <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+              }
+            ]
+          },
+          <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;networks&quot;</span>: {
+            <span class="hljs-attr">&quot;network&quot;</span>: [
+              {
+                <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+                  <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                  <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;address&quot;</span>: {
+                    <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                    <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                    <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+                  },
+                  <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                  <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+                },
+                <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  <span class="hljs-attr">&quot;router-id&quot;</span>: {
+    <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;router-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
+  <span class="hljs-attr">&quot;summary&quot;</span>: {
+    <span class="hljs-attr">&quot;producer-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;address-conflict-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;unnumbered-conflict-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;vrf-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;db-master-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-addresses-"></span>
+          <div id="operation--config-ipv4arm-addresses--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-addresses--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ADDRESSES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: addresses</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/addresses_schema">addresses_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrfs&quot;</span>: {
+    <span class="hljs-attr">&quot;vrf&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;interfaces&quot;</span>: {
+          <span class="hljs-attr">&quot;interface&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;address&quot;</span>: [
+                {
+                  <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                  <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;address&quot;</span>: {
+                    <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                    <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                    <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+                  },
+                  <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                  <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+                }
+              ],
+              <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        },
+        <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;networks&quot;</span>: {
+          <span class="hljs-attr">&quot;network&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+                <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;address&quot;</span>: {
+                  <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+                },
+                <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+              },
+              <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-addresses-vrfs-"></span>
+          <div id="operation--config-ipv4arm-addresses-vrfs--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-addresses-vrfs--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">VRFS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: vrfs</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/vrfs_schema">vrfs_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrf&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;interfaces&quot;</span>: {
+        <span class="hljs-attr">&quot;interface&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;address&quot;</span>: [
+              {
+                <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;address&quot;</span>: {
+                  <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+                },
+                <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+              }
+            ],
+            <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      },
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;networks&quot;</span>: {
+        <span class="hljs-attr">&quot;network&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+              <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;address&quot;</span>: {
+                <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+              },
+              <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+            },
+            <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--"></span>
+          <div id="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name---get" class="operation panel" data-traverse-target="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">VRF - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: vrf</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/vrf_schema">vrf_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;interfaces&quot;</span>: {
+    <span class="hljs-attr">&quot;interface&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;address&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;address&quot;</span>: {
+              <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            },
+            <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+          }
+        ],
+        <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;networks&quot;</span>: {
+    <span class="hljs-attr">&quot;network&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+          <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+          <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;address&quot;</span>: {
+            <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
+          <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+          <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+        },
+        <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-"></span>
+          <div id="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NETWORKS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/networks/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: networks</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/networks_schema">networks_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;network&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+        <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;address&quot;</span>: {
+          <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
+        <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+      },
+      <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-"></span>
+          <div id="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NETWORK - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/networks/network/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: network</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/network_schema">network_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+    <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+    <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;address&quot;</span>: {
+      <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
+    <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+    <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-address-xr-"></span>
+          <div id="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-address-xr--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-address-xr--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ADDRESS-XR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/networks/network/address-xr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: address-xr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/IP-ARM-EDM-ADDR-TYPE">IP-ARM-EDM-ADDR-TYPE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address&quot;</span>: {
+    <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
+  <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-address-xr-address-"></span>
+          <div id="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-address-xr-address--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--networks-network-address-xr-address--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ADDRESS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/networks/network/address-xr/address/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: address</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ARM-ADDRTYPE">ARM-ADDRTYPE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-"></span>
+          <div id="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/interfaces/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interfaces</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interfaces_schema">interfaces_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;interface&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;address&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+          <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;address&quot;</span>: {
+            <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
+          <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+          <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+        }
+      ],
+      <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--"></span>
+          <div id="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface---get" class="operation panel" data-traverse-target="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/interfaces/interface/{interface}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interface_schema">interface_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;address&quot;</span>: {
+        <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
+      <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--address-"></span>
+          <div id="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--address--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--address--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ADDRESS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/interfaces/interface/{interface}/address/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: address</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/IP-ARM-EDM-ADDR-TYPE">IP-ARM-EDM-ADDR-TYPE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address&quot;</span>: {
+    <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
+  <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--address-address-"></span>
+          <div id="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--address-address--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-addresses-vrfs-vrf--vrf-name--interfaces-interface--interface--address-address--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ADDRESS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/addresses/vrfs/vrf/{vrf-name}/interfaces/interface/{interface}/address/address/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: address</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ARM-ADDRTYPE">ARM-ADDRTYPE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-summary-"></span>
+          <div id="operation--config-ipv4arm-summary--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-summary--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/summary/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/IP-ARM-EDM-SUMMARY-BAG-TYPE">IP-ARM-EDM-SUMMARY-BAG-TYPE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;producer-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address-conflict-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;unnumbered-conflict-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;db-master-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-vrf-summaries-"></span>
+          <div id="operation--config-ipv4arm-vrf-summaries--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-vrf-summaries--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">VRF-SUMMARIES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/vrf-summaries/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: vrf-summaries</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/vrf-summaries_schema">vrf-summaries_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrf-summary&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-vrf-summaries-vrf-summary--vrf-name--"></span>
+          <div id="operation--config-ipv4arm-vrf-summaries-vrf-summary--vrf-name---get" class="operation panel" data-traverse-target="operation--config-ipv4arm-vrf-summaries-vrf-summary--vrf-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">VRF-SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/vrf-summaries/vrf-summary/{vrf-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: vrf-summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/vrf-summary_schema">vrf-summary_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-ipv4arm-router-id-"></span>
+          <div id="operation--config-ipv4arm-router-id--get" class="operation panel" data-traverse-target="operation--config-ipv4arm-router-id--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ROUTER-ID - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-iarm-v4-oper:ipv4arm/router-id/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: router-id</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/IP-ARM-EDM-DB-RTRID-BAG-TYPE">IP-ARM-EDM-DB-RTRID-BAG-TYPE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;router-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-IP-ARM-EDM-DB-IF-BAG-TYPE" class="definition panel" data-traverse-target="definition-IP-ARM-EDM-DB-IF-BAG-TYPE">
+            <h2 class="panel-title">
+              <a name="/definitions/IP-ARM-EDM-DB-IF-BAG-TYPE"></a>IP-ARM-EDM-DB-IF-BAG-TYPE:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Database information by interface</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="vrf-name" class="has-description">
+                      <span class="json-property-name">vrf-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF Name</p>
+                    </dd>
+                    <dt data-property-name="address" class="has-description">
+                      <span class="json-property-name">address:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/IP-ARM-EDM-ADDR-TYPE">IP-ARM-EDM-ADDR-TYPE</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Address info</p>
+                    </dd>
+                    <dt data-property-name="referenced-interface" class="has-description">
+                      <span class="json-property-name">referenced-interface:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Referenced Interface - only valid for an unnumbered interface</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;address&quot;</span>: {
+        <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
+      <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-IP-ARM-EDM-SUMMARY-BAG-TYPE" class="definition panel" data-traverse-target="definition-IP-ARM-EDM-SUMMARY-BAG-TYPE">
+            <h2 class="panel-title">
+              <a name="/definitions/IP-ARM-EDM-SUMMARY-BAG-TYPE"></a>IP-ARM-EDM-SUMMARY-BAG-TYPE:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>IP-ARM summary information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="producer-count" class="has-description">
+                      <span class="json-property-name">producer-count:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Number of producers</p>
+                    </dd>
+                    <dt data-property-name="address-conflict-count" class="has-description">
+                      <span class="json-property-name">address-conflict-count:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Number of address conflicts</p>
+                    </dd>
+                    <dt data-property-name="unnumbered-conflict-count" class="has-description">
+                      <span class="json-property-name">unnumbered-conflict-count:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Number of unnumbered interface conflicts</p>
+                    </dd>
+                    <dt data-property-name="vrf-count" class="has-description">
+                      <span class="json-property-name">vrf-count:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Number of known VRFs</p>
+                    </dd>
+                    <dt data-property-name="db-master-version" class="has-description">
+                      <span class="json-property-name">db-master-version:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IP-ARM DB master version</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;producer-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address-conflict-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;unnumbered-conflict-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;db-master-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-IP-ARM-EDM-DB-VRF-BAG-TYPE" class="definition panel" data-traverse-target="definition-IP-ARM-EDM-DB-VRF-BAG-TYPE">
+            <h2 class="panel-title">
+              <a name="/definitions/IP-ARM-EDM-DB-VRF-BAG-TYPE"></a>IP-ARM-EDM-DB-VRF-BAG-TYPE:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>VRF summary information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="vrf-name-xr" class="has-description">
+                      <span class="json-property-name">vrf-name-xr:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF Name</p>
+                    </dd>
+                    <dt data-property-name="vrf-id" class="has-description">
+                      <span class="json-property-name">vrf-id:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF ID</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-IP-ARM-EDM-DB-NET-BAG-TYPE" class="definition panel" data-traverse-target="definition-IP-ARM-EDM-DB-NET-BAG-TYPE">
+            <h2 class="panel-title">
+              <a name="/definitions/IP-ARM-EDM-DB-NET-BAG-TYPE"></a>IP-ARM-EDM-DB-NET-BAG-TYPE:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Database information by network</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="vrf-name" class="has-description">
+                      <span class="json-property-name">vrf-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF Name</p>
+                    </dd>
+                    <dt data-property-name="referenced-interface" class="has-description">
+                      <span class="json-property-name">referenced-interface:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Referenced Interface - only valid for an unnumbered interface</p>
+                    </dd>
+                    <dt data-property-name="address-xr" class="has-description">
+                      <span class="json-property-name">address-xr:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/IP-ARM-EDM-ADDR-TYPE">IP-ARM-EDM-ADDR-TYPE</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Address info</p>
+                    </dd>
+                    <dt data-property-name="interface-name" class="has-description">
+                      <span class="json-property-name">interface-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Interface name</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+    <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+    <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;address&quot;</span>: {
+      <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
+    <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+    <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-IP-ARM-EDM-ADDR-TYPE" class="definition panel" data-traverse-target="definition-IP-ARM-EDM-ADDR-TYPE">
+            <h2 class="panel-title">
+              <a name="/definitions/IP-ARM-EDM-ADDR-TYPE"></a>IP-ARM-EDM-ADDR-TYPE:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>IP ARM EDM ADDR TYPE</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="is-tentative" class="has-description">
+                      <span class="json-property-name">is-tentative:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is address valid/tentative - valid only for IPV6 addresses</p>
+                    </dd>
+                    <dt data-property-name="prefix-length" class="has-description">
+                      <span class="json-property-name">prefix-length:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Prefix length</p>
+                    </dd>
+                    <dt data-property-name="producer" class="has-description">
+                      <span class="json-property-name">producer:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Producer Name</p>
+                    </dd>
+                    <dt data-property-name="address" class="has-description">
+                      <span class="json-property-name">address:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ARM-ADDRTYPE">ARM-ADDRTYPE</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Address</p>
+                    </dd>
+                    <dt data-property-name="route-tag" class="has-description">
+                      <span class="json-property-name">route-tag:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Route Tag of the address</p>
+                    </dd>
+                    <dt data-property-name="is-primary" class="has-description">
+                      <span class="json-property-name">is-primary:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is address primary - valid only for IPv4 addresses</p>
+                    </dd>
+                    <dt data-property-name="is-prefix-sid" class="has-description">
+                      <span class="json-property-name">is-prefix-sid:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is prefix_sid valid - valid only for IPV6 addresses</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address&quot;</span>: {
+    <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
+  <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-ARM-ADDRTYPE" class="definition panel" data-traverse-target="definition-ARM-ADDRTYPE">
+            <h2 class="panel-title">
+              <a name="/definitions/ARM-ADDRTYPE"></a>ARM-ADDRTYPE:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>ARM ADDRTYPE</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="ipv6-address" class="has-description">
+                      <span class="json-property-name">ipv6-address:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPV6 Address</p>
+                    </dd>
+                    <dt data-property-name="ipv4-address" class="has-description">
+                      <span class="json-property-name">ipv4-address:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPV4 Address</p>
+                    </dd>
+                    <dt data-property-name="afi" class="has-description">
+                      <span class="json-property-name">afi:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>AFI</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-IP-ARM-EDM-DB-RTRID-BAG-TYPE" class="definition panel" data-traverse-target="definition-IP-ARM-EDM-DB-RTRID-BAG-TYPE">
+            <h2 class="panel-title">
+              <a name="/definitions/IP-ARM-EDM-DB-RTRID-BAG-TYPE"></a>IP-ARM-EDM-DB-RTRID-BAG-TYPE:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Router-id information by VRF</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="vrf-name" class="has-description">
+                      <span class="json-property-name">vrf-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF Name</p>
+                    </dd>
+                    <dt data-property-name="interface-name" class="has-description">
+                      <span class="json-property-name">interface-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Interface name</p>
+                    </dd>
+                    <dt data-property-name="vrf-id" class="has-description">
+                      <span class="json-property-name">vrf-id:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF ID</p>
+                    </dd>
+                    <dt data-property-name="router-id" class="has-description">
+                      <span class="json-property-name">router-id:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Router ID</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;router-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-ipv4arm_schema" class="definition panel" data-traverse-target="definition-ipv4arm_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/ipv4arm_schema"></a>ipv4arm_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>IPv4 Address Repository Manager (IPv4 ARM) operational data</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="multicast-host-interface" class="has-description">
+                      <span class="json-property-name">multicast-host-interface:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Default multicast host interface</p>
+                    </dd>
+                    <dt data-property-name="vrf-summaries" class="has-description">
+                      <span class="json-property-name">vrf-summaries:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPv4 ARM VRFs summary information</p>
+                    </dd>
+                    <dt data-property-name="addresses" class="has-description">
+                      <span class="json-property-name">addresses:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPv4 ARM address database information</p>
+                    </dd>
+                    <dt data-property-name="router-id" class="has-description">
+                      <span class="json-property-name">router-id:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/IP-ARM-EDM-DB-RTRID-BAG-TYPE">IP-ARM-EDM-DB-RTRID-BAG-TYPE</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPv4 ARM Router ID information</p>
+                    </dd>
+                    <dt data-property-name="summary" class="has-description">
+                      <span class="json-property-name">summary:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/IP-ARM-EDM-SUMMARY-BAG-TYPE">IP-ARM-EDM-SUMMARY-BAG-TYPE</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPv4 ARM summary information</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;multicast-host-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-summaries&quot;</span>: {
+    <span class="hljs-attr">&quot;vrf-summary&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;addresses&quot;</span>: {
+    <span class="hljs-attr">&quot;vrfs&quot;</span>: {
+      <span class="hljs-attr">&quot;vrf&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;interfaces&quot;</span>: {
+            <span class="hljs-attr">&quot;interface&quot;</span>: [
+              {
+                <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;address&quot;</span>: [
+                  {
+                    <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                    <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                    <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                    <span class="hljs-attr">&quot;address&quot;</span>: {
+                      <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                      <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                      <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+                    },
+                    <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                    <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                    <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+                  }
+                ],
+                <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+              }
+            ]
+          },
+          <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;networks&quot;</span>: {
+            <span class="hljs-attr">&quot;network&quot;</span>: [
+              {
+                <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+                  <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                  <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;address&quot;</span>: {
+                    <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                    <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                    <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+                  },
+                  <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                  <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+                },
+                <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  <span class="hljs-attr">&quot;router-id&quot;</span>: {
+    <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;router-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
+  <span class="hljs-attr">&quot;summary&quot;</span>: {
+    <span class="hljs-attr">&quot;producer-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;address-conflict-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;unnumbered-conflict-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;vrf-count&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;db-master-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-addresses_schema" class="definition panel" data-traverse-target="definition-addresses_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/addresses_schema"></a>addresses_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>IPv4 ARM address database information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="vrfs" class="has-description">
+                      <span class="json-property-name">vrfs:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPv4 ARM address database information per VRF</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrfs&quot;</span>: {
+    <span class="hljs-attr">&quot;vrf&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;interfaces&quot;</span>: {
+          <span class="hljs-attr">&quot;interface&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;address&quot;</span>: [
+                {
+                  <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                  <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;address&quot;</span>: {
+                    <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                    <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                    <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+                  },
+                  <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                  <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+                }
+              ],
+              <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        },
+        <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;networks&quot;</span>: {
+          <span class="hljs-attr">&quot;network&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+                <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;address&quot;</span>: {
+                  <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+                },
+                <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+              },
+              <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-vrfs_schema" class="definition panel" data-traverse-target="definition-vrfs_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/vrfs_schema"></a>vrfs_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>IPv4 ARM address database information per VRF</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="vrf" class="has-description">
+                      <span class="json-property-name">vrf:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPv4 ARM address database information in a VRF</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrf&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;interfaces&quot;</span>: {
+        <span class="hljs-attr">&quot;interface&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;address&quot;</span>: [
+              {
+                <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;address&quot;</span>: {
+                  <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+                },
+                <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+                <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+              }
+            ],
+            <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      },
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;networks&quot;</span>: {
+        <span class="hljs-attr">&quot;network&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+              <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;address&quot;</span>: {
+                <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+              },
+              <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+            },
+            <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-vrf_schema" class="definition panel" data-traverse-target="definition-vrf_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/vrf_schema"></a>vrf_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="interfaces" class="has-description">
+                      <span class="json-property-name">interfaces:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPv4 ARM address database information by interface</p>
+                    </dd>
+                    <dt data-property-name="vrf-name" class="has-description">
+                      <span class="json-property-name">vrf-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF name</p>
+                    </dd>
+                    <dt data-property-name="networks" class="has-description">
+                      <span class="json-property-name">networks:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPv4 ARM address database information by network</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;interfaces&quot;</span>: {
+    <span class="hljs-attr">&quot;interface&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;address&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;address&quot;</span>: {
+              <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            },
+            <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+          }
+        ],
+        <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;networks&quot;</span>: {
+    <span class="hljs-attr">&quot;network&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+          <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+          <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;address&quot;</span>: {
+            <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
+          <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+          <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+        },
+        <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-networks_schema" class="definition panel" data-traverse-target="definition-networks_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/networks_schema"></a>networks_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>IPv4 ARM address database information by network</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="network" class="has-description">
+                      <span class="json-property-name">network:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>An IPv4 Address in IPv4 ARM</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;network&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+        <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;address&quot;</span>: {
+          <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
+        <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+      },
+      <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-network_schema" class="definition panel" data-traverse-target="definition-network_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/network_schema"></a>network_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type"></span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-allOf">
+                  <section class="json-schema-allOf-inherited">
+                    <ul>
+                      <span class="">
+                        <a class="json-schema-ref" href="#/definitions/IP-ARM-EDM-DB-NET-BAG-TYPE">IP-ARM-EDM-DB-NET-BAG-TYPE</a>
+                      </span>
+                    </ul>
+                  </section>
+                  <section class="json-schema-allOf-additional">
+                    <section class="json-schema-properties">
+                      <dl>
+                        <dt data-property-name="handle" class="has-description">
+                          <span class="json-property-name">handle:</span>
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Interface</p>
+                        </dd>
+                        <dt data-property-name="prefix-length" class="has-description">
+                          <span class="json-property-name">prefix-length:</span>
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Prefix Length</p>
+                        </dd>
+                        <dt data-property-name="address" class="has-description">
+                          <span class="json-property-name">address:</span>
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Address</p>
+                        </dd>
+                      </dl>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address-xr&quot;</span>: {
+    <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+    <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;address&quot;</span>: {
+      <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
+    <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+    <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-interfaces_schema" class="definition panel" data-traverse-target="definition-interfaces_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/interfaces_schema"></a>interfaces_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>IPv4 ARM address database information by interface</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="interface" class="has-description">
+                      <span class="json-property-name">interface:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>An IPv4 address in IPv4 ARM</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;interface&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;address&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+          <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;address&quot;</span>: {
+            <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
+          <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+          <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+        }
+      ],
+      <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-interface_schema" class="definition panel" data-traverse-target="definition-interface_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/interface_schema"></a>interface_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type"></span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-allOf">
+                  <section class="json-schema-allOf-inherited">
+                    <ul>
+                      <span class="">
+                        <a class="json-schema-ref" href="#/definitions/IP-ARM-EDM-DB-IF-BAG-TYPE">IP-ARM-EDM-DB-IF-BAG-TYPE</a>
+                      </span>
+                    </ul>
+                  </section>
+                  <section class="json-schema-allOf-additional">
+                    <section class="json-schema-properties">
+                      <dl>
+                        <dt data-property-name="interface" class="has-description">
+                          <span class="json-property-name">interface:</span>
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Interface</p>
+                        </dd>
+                      </dl>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;address&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;is-tentative&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-attr">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;producer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;address&quot;</span>: {
+        <span class="hljs-attr">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;afi&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
+      <span class="hljs-attr">&quot;route-tag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;is-primary&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-attr">&quot;is-prefix-sid&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;referenced-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-vrf-summaries_schema" class="definition panel" data-traverse-target="definition-vrf-summaries_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/vrf-summaries_schema"></a>vrf-summaries_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>IPv4 ARM VRFs summary information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="vrf-summary" class="has-description">
+                      <span class="json-property-name">vrf-summary:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPv4 ARM VRF summary information</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrf-summary&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-vrf-summary_schema" class="definition panel" data-traverse-target="definition-vrf-summary_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/vrf-summary_schema"></a>vrf-summary_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type"></span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-allOf">
+                  <section class="json-schema-allOf-inherited">
+                    <ul>
+                      <span class="">
+                        <a class="json-schema-ref" href="#/definitions/IP-ARM-EDM-DB-VRF-BAG-TYPE">IP-ARM-EDM-DB-VRF-BAG-TYPE</a>
+                      </span>
+                    </ul>
+                  </section>
+                  <section class="json-schema-allOf-additional">
+                    <section class="json-schema-properties">
+                      <dl>
+                        <dt data-property-name="vrf-name" class="has-description">
+                          <span class="json-property-name">vrf-name:</span>
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>VRF name</p>
+                        </dd>
+                      </dl>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

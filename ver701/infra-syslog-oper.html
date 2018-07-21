@@ -1,0 +1,3064 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-infra-syslog-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path--config-logging-">Cisco-IOS-XR-infra-syslog-oper:logging/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-logging--get"> LOGGING - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-logging-history-">Cisco-IOS-XR-infra-syslog-oper:logging/history/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-logging-history--get"> HISTORY - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-">Cisco-IOS-XR-infra-syslog-oper:syslog/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog--get"> SYSLOG - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-logging-files-">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-files/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-logging-files--get"> LOGGING-FILES - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-logging-files-file-log-detail-">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-files/file-log-detail/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-logging-files-file-log-detail--get"> FILE-LOG-DETAIL - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-an-remote-servers-">Cisco-IOS-XR-infra-syslog-oper:syslog/an-remote-servers/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-an-remote-servers--get"> AN-REMOTE-SERVERS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-an-remote-servers-an-remote-log-server-">Cisco-IOS-XR-infra-syslog-oper:syslog/an-remote-servers/an-remote-log-server/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-an-remote-servers-an-remote-log-server--get"> AN-REMOTE-LOG-SERVER - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-messages-">Cisco-IOS-XR-infra-syslog-oper:syslog/messages/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-messages--get"> MESSAGES - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-messages-message--message-id--">Cisco-IOS-XR-infra-syslog-oper:syslog/messages/message/{message-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-messages-message--message-id---get"> MESSAGE - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-logging-statistics-">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-logging-statistics--get"> LOGGING-STATISTICS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-logging-statistics-logging-stats-">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/logging-stats/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-logging-statistics-logging-stats--get"> LOGGING-STATS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-logging-statistics-console-logging-stats-">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/console-logging-stats/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-logging-statistics-console-logging-stats--get"> CONSOLE-LOGGING-STATS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-logging-statistics-monitor-logging-stats-">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/monitor-logging-stats/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-logging-statistics-monitor-logging-stats--get"> MONITOR-LOGGING-STATS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-logging-statistics-trap-logging-stats-">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/trap-logging-stats/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-logging-statistics-trap-logging-stats--get"> TRAP-LOGGING-STATS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-logging-statistics-buffer-logging-stats-">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/buffer-logging-stats/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-logging-statistics-buffer-logging-stats--get"> BUFFER-LOGGING-STATS - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-logging-statistics-remote-logging-stat-">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/remote-logging-stat/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-logging-statistics-remote-logging-stat--get"> REMOTE-LOGGING-STAT - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-logging-statistics-tls-remote-logging-stat-">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/tls-remote-logging-stat/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-logging-statistics-tls-remote-logging-stat--get"> TLS-REMOTE-LOGGING-STAT - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--config-syslog-logging-statistics-file-logging-stat-">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/file-logging-stat/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--config-syslog-logging-statistics-file-logging-stat--get"> FILE-LOGGING-STAT - Retrieve </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--operations-get-syslog-">/operations/get-syslog/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--operations-get-syslog--post"> GET-SYSLOG - Create </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <h5>Schema Definitions</h5>
+          <a href="#definition-REMOTE-LOG-STATS"> REMOTE-LOG-STATS </a>
+          <a href="#definition-FILE-LOG-DETAILS"> FILE-LOG-DETAILS </a>
+          <a href="#definition-SYSTEM-MESSAGE-STATISTICS"> SYSTEM-MESSAGE-STATISTICS </a>
+          <a href="#definition-SYSTEM-MESSAGE"> SYSTEM-MESSAGE </a>
+          <a href="#definition-FILE-LOG-LIST-PATH"> FILE-LOG-LIST-PATH </a>
+          <a href="#definition-AN-REMOTE-LOG-SERVER"> AN-REMOTE-LOG-SERVER </a>
+          <a href="#definition-FILE-LOG-STATS"> FILE-LOG-STATS </a>
+          <a href="#definition-LOG-ENABLE-STATS"> LOG-ENABLE-STATS </a>
+          <a href="#definition-TLS-REMOTE-LOG-STATS"> TLS-REMOTE-LOG-STATS </a>
+          <a href="#definition-AN-REMOTE-LOG-SERVERS"> AN-REMOTE-LOG-SERVERS </a>
+          <a href="#definition-LOG-DEST-STATS"> LOG-DEST-STATS </a>
+          <a href="#definition-logging_schema"> logging_schema </a>
+          <a href="#definition-history_schema"> history_schema </a>
+          <a href="#definition-syslog_schema"> syslog_schema </a>
+          <a href="#definition-messages_schema"> messages_schema </a>
+          <a href="#definition-message_schema"> message_schema </a>
+          <a href="#definition-get-syslogRPC_input_schema"> get-syslogRPC_input_schema </a>
+          <a href="#definition-get-syslogRPC_output_schema"> get-syslogRPC_output_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-infra-syslog-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-infra-syslog-oper@2018-02-23.yang">Cisco-IOS-XR-infra-syslog-oper@2018-02-23.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{node-name}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path--config-logging-"></span>
+          <div id="operation--config-logging--get" class="operation panel" data-traverse-target="operation--config-logging--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOGGING - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:logging/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: logging</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/logging_schema">logging_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;history&quot;</span>: {
+    <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;properties&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-logging-history-"></span>
+          <div id="operation--config-logging-history--get" class="operation panel" data-traverse-target="operation--config-logging-history--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HISTORY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:logging/history/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: history</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/history_schema">history_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;properties&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-"></span>
+          <div id="operation--config-syslog--get" class="operation panel" data-traverse-target="operation--config-syslog--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SYSLOG - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: syslog</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/syslog_schema">syslog_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;messages&quot;</span>: {
+    <span class="hljs-attr">&quot;message&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;message-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;time-stamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;time-of-day&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;time-zone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;message-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;an-remote-servers&quot;</span>: {
+    <span class="hljs-attr">&quot;an-remote-log-server&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;rh-discriminator&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;logging-files&quot;</span>: {
+    <span class="hljs-attr">&quot;file-log-detail&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;file-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;logging-statistics&quot;</span>: {
+    <span class="hljs-attr">&quot;console-logging-stats&quot;</span>: {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    },
+    <span class="hljs-attr">&quot;remote-logging-stat&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ],
+    <span class="hljs-attr">&quot;buffer-logging-stats&quot;</span>: {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    },
+    <span class="hljs-attr">&quot;logging-stats&quot;</span>: {
+      <span class="hljs-attr">&quot;flush-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;drop-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;overrun-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    },
+    <span class="hljs-attr">&quot;file-logging-stat&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ],
+    <span class="hljs-attr">&quot;trap-logging-stats&quot;</span>: {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    },
+    <span class="hljs-attr">&quot;monitor-logging-stats&quot;</span>: {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    },
+    <span class="hljs-attr">&quot;tls-remote-logging-stat&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-logging-files-"></span>
+          <div id="operation--config-syslog-logging-files--get" class="operation panel" data-traverse-target="operation--config-syslog-logging-files--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOGGING-FILES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-files/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: logging-files</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FILE-LOG-LIST-PATH">FILE-LOG-LIST-PATH</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;file-log-detail&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;file-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-logging-files-file-log-detail-"></span>
+          <div id="operation--config-syslog-logging-files-file-log-detail--get" class="operation panel" data-traverse-target="operation--config-syslog-logging-files-file-log-detail--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FILE-LOG-DETAIL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-files/file-log-detail/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: file-log-detail</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FILE-LOG-DETAILS">FILE-LOG-DETAILS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;file-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-an-remote-servers-"></span>
+          <div id="operation--config-syslog-an-remote-servers--get" class="operation panel" data-traverse-target="operation--config-syslog-an-remote-servers--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">AN-REMOTE-SERVERS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/an-remote-servers/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: an-remote-servers</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/AN-REMOTE-LOG-SERVERS">AN-REMOTE-LOG-SERVERS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;an-remote-log-server&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;rh-discriminator&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-an-remote-servers-an-remote-log-server-"></span>
+          <div id="operation--config-syslog-an-remote-servers-an-remote-log-server--get" class="operation panel" data-traverse-target="operation--config-syslog-an-remote-servers-an-remote-log-server--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">AN-REMOTE-LOG-SERVER - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/an-remote-servers/an-remote-log-server/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: an-remote-log-server</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/AN-REMOTE-LOG-SERVER">AN-REMOTE-LOG-SERVER</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;rh-discriminator&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-messages-"></span>
+          <div id="operation--config-syslog-messages--get" class="operation panel" data-traverse-target="operation--config-syslog-messages--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MESSAGES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/messages/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: messages</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/messages_schema">messages_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;message-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;time-stamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;time-of-day&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;time-zone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;message-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-messages-message--message-id--"></span>
+          <div id="operation--config-syslog-messages-message--message-id---get" class="operation panel" data-traverse-target="operation--config-syslog-messages-message--message-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MESSAGE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/messages/message/{message-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: message</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">message-id</div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                      <div class="prop-subtitle">
+                        <span class="json-property-type">string</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                      </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of message-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/message_schema">message_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;time-stamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;time-of-day&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;time-zone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;message-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-logging-statistics-"></span>
+          <div id="operation--config-syslog-logging-statistics--get" class="operation panel" data-traverse-target="operation--config-syslog-logging-statistics--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOGGING-STATISTICS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: logging-statistics</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/SYSTEM-MESSAGE-STATISTICS">SYSTEM-MESSAGE-STATISTICS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;console-logging-stats&quot;</span>: {
+    <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;remote-logging-stat&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;buffer-logging-stats&quot;</span>: {
+    <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;logging-stats&quot;</span>: {
+    <span class="hljs-attr">&quot;flush-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;drop-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;overrun-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;file-logging-stat&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;trap-logging-stats&quot;</span>: {
+    <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;monitor-logging-stats&quot;</span>: {
+    <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;tls-remote-logging-stat&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-logging-statistics-logging-stats-"></span>
+          <div id="operation--config-syslog-logging-statistics-logging-stats--get" class="operation panel" data-traverse-target="operation--config-syslog-logging-statistics-logging-stats--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOGGING-STATS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/logging-stats/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: logging-stats</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/LOG-ENABLE-STATS">LOG-ENABLE-STATS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;flush-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;drop-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;overrun-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-logging-statistics-console-logging-stats-"></span>
+          <div id="operation--config-syslog-logging-statistics-console-logging-stats--get" class="operation panel" data-traverse-target="operation--config-syslog-logging-statistics-console-logging-stats--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CONSOLE-LOGGING-STATS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/console-logging-stats/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: console-logging-stats</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/LOG-DEST-STATS">LOG-DEST-STATS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-logging-statistics-monitor-logging-stats-"></span>
+          <div id="operation--config-syslog-logging-statistics-monitor-logging-stats--get" class="operation panel" data-traverse-target="operation--config-syslog-logging-statistics-monitor-logging-stats--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MONITOR-LOGGING-STATS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/monitor-logging-stats/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: monitor-logging-stats</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/LOG-DEST-STATS">LOG-DEST-STATS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-logging-statistics-trap-logging-stats-"></span>
+          <div id="operation--config-syslog-logging-statistics-trap-logging-stats--get" class="operation panel" data-traverse-target="operation--config-syslog-logging-statistics-trap-logging-stats--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRAP-LOGGING-STATS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/trap-logging-stats/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: trap-logging-stats</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/LOG-DEST-STATS">LOG-DEST-STATS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-logging-statistics-buffer-logging-stats-"></span>
+          <div id="operation--config-syslog-logging-statistics-buffer-logging-stats--get" class="operation panel" data-traverse-target="operation--config-syslog-logging-statistics-buffer-logging-stats--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">BUFFER-LOGGING-STATS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/buffer-logging-stats/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: buffer-logging-stats</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/LOG-DEST-STATS">LOG-DEST-STATS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-logging-statistics-remote-logging-stat-"></span>
+          <div id="operation--config-syslog-logging-statistics-remote-logging-stat--get" class="operation panel" data-traverse-target="operation--config-syslog-logging-statistics-remote-logging-stat--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">REMOTE-LOGGING-STAT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/remote-logging-stat/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: remote-logging-stat</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/REMOTE-LOG-STATS">REMOTE-LOG-STATS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-logging-statistics-tls-remote-logging-stat-"></span>
+          <div id="operation--config-syslog-logging-statistics-tls-remote-logging-stat--get" class="operation panel" data-traverse-target="operation--config-syslog-logging-statistics-tls-remote-logging-stat--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TLS-REMOTE-LOGGING-STAT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/tls-remote-logging-stat/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: tls-remote-logging-stat</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/TLS-REMOTE-LOG-STATS">TLS-REMOTE-LOG-STATS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--config-syslog-logging-statistics-file-logging-stat-"></span>
+          <div id="operation--config-syslog-logging-statistics-file-logging-stat--get" class="operation panel" data-traverse-target="operation--config-syslog-logging-statistics-file-logging-stat--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FILE-LOGGING-STAT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics/file-logging-stat/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: file-logging-stat</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FILE-LOG-STATS">FILE-LOG-STATS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--operations-get-syslog-"></span>
+          <div id="operation--operations-get-syslog--post" class="operation panel" data-traverse-target="operation--operations-get-syslog--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">GET-SYSLOG - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">/operations/get-syslog/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: get-syslog</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/get-syslogRPC_input_schema">get-syslogRPC_input_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>get-syslogbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;filters&quot;</span>: {
+    <span class="hljs-attr">&quot;end-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/get-syslogRPC_output_schema">get-syslogRPC_output_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;data&quot;</span>: {
+    <span class="hljs-attr">&quot;syslog&quot;</span>: {
+      <span class="hljs-attr">&quot;messages&quot;</span>: {
+        <span class="hljs-attr">&quot;message&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;message-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;time-stamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;time-of-day&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;time-zone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;message-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      }
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-REMOTE-LOG-STATS" class="definition panel" data-traverse-target="definition-REMOTE-LOG-STATS">
+            <h2 class="panel-title">
+              <a name="/definitions/REMOTE-LOG-STATS"></a>REMOTE-LOG-STATS:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>System log remote statistics</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="message-count" class="has-description">
+                      <span class="json-property-name">message-count:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Message count</p>
+                    </dd>
+                    <dt data-property-name="remote-host-name" class="has-description">
+                      <span class="json-property-name">remote-host-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Remote hostname</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-FILE-LOG-DETAILS" class="definition panel" data-traverse-target="definition-FILE-LOG-DETAILS">
+            <h2 class="panel-title">
+              <a name="/definitions/FILE-LOG-DETAILS"></a>FILE-LOG-DETAILS:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>System log file details</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="file-name" class="has-description">
+                      <span class="json-property-name">file-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>File name for logging messages</p>
+                    </dd>
+                    <dt data-property-name="file-path" class="has-description">
+                      <span class="json-property-name">file-path:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>File path for logging messages</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;file-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-SYSTEM-MESSAGE-STATISTICS" class="definition panel" data-traverse-target="definition-SYSTEM-MESSAGE-STATISTICS">
+            <h2 class="panel-title">
+              <a name="/definitions/SYSTEM-MESSAGE-STATISTICS"></a>SYSTEM-MESSAGE-STATISTICS:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>System message statistics</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="console-logging-stats" class="has-description">
+                      <span class="json-property-name">console-logging-stats:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/LOG-DEST-STATS">LOG-DEST-STATS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Console logging statistics</p>
+                    </dd>
+                    <dt data-property-name="remote-logging-stat" class="has-description">
+                      <span class="json-property-name">remote-logging-stat:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/REMOTE-LOG-STATS">REMOTE-LOG-STATS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Remote logging statistics</p>
+                    </dd>
+                    <dt data-property-name="buffer-logging-stats" class="has-description">
+                      <span class="json-property-name">buffer-logging-stats:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/LOG-DEST-STATS">LOG-DEST-STATS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Buffer logging statistics</p>
+                    </dd>
+                    <dt data-property-name="logging-stats" class="has-description">
+                      <span class="json-property-name">logging-stats:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/LOG-ENABLE-STATS">LOG-ENABLE-STATS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Logging statistics</p>
+                    </dd>
+                    <dt data-property-name="file-logging-stat" class="has-description">
+                      <span class="json-property-name">file-logging-stat:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/FILE-LOG-STATS">FILE-LOG-STATS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>File logging statistics</p>
+                    </dd>
+                    <dt data-property-name="trap-logging-stats" class="has-description">
+                      <span class="json-property-name">trap-logging-stats:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/LOG-DEST-STATS">LOG-DEST-STATS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Trap logging statistics</p>
+                    </dd>
+                    <dt data-property-name="monitor-logging-stats" class="has-description">
+                      <span class="json-property-name">monitor-logging-stats:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/LOG-DEST-STATS">LOG-DEST-STATS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Monitor loggingstatistics</p>
+                    </dd>
+                    <dt data-property-name="tls-remote-logging-stat" class="has-description">
+                      <span class="json-property-name">tls-remote-logging-stat:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/TLS-REMOTE-LOG-STATS">TLS-REMOTE-LOG-STATS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>TLS Remote logging statistics</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;console-logging-stats&quot;</span>: {
+    <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;remote-logging-stat&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;buffer-logging-stats&quot;</span>: {
+    <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;logging-stats&quot;</span>: {
+    <span class="hljs-attr">&quot;flush-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;drop-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;overrun-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;file-logging-stat&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;trap-logging-stats&quot;</span>: {
+    <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;monitor-logging-stats&quot;</span>: {
+    <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+  },
+  <span class="hljs-attr">&quot;tls-remote-logging-stat&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-SYSTEM-MESSAGE" class="definition panel" data-traverse-target="definition-SYSTEM-MESSAGE">
+            <h2 class="panel-title">
+              <a name="/definitions/SYSTEM-MESSAGE"></a>SYSTEM-MESSAGE:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>System message</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="category" class="has-description">
+                      <span class="json-property-name">category:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Message category</p>
+                    </dd>
+                    <dt data-property-name="card-type" class="has-description">
+                      <span class="json-property-name">card-type:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Message card location: &#39;RP&#39;, &#39;DRP&#39;, &#39;LC&#39;, &#39;SC&#39;, &#39;SP&#39; or &#39;UNK&#39; </p>
+                    </dd>
+                    <dt data-property-name="time-stamp" class="has-description">
+                      <span class="json-property-name">time-stamp:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Time in milliseconds since 00:00:00 UTC, January 11970 of when message was generated</p>
+                    </dd>
+                    <dt data-property-name="group" class="has-description">
+                      <span class="json-property-name">group:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Message group</p>
+                    </dd>
+                    <dt data-property-name="time-of-day" class="has-description">
+                      <span class="json-property-name">time-of-day:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Time of day of event in DDD MMM DD YYYY HH:MM :SS format, e.g Wed Apr 01 2009 15:50:26</p>
+                    </dd>
+                    <dt data-property-name="time-zone" class="has-description">
+                      <span class="json-property-name">time-zone:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Time Zone in UTC+/-HH:MM format, e.g UTC+5:30, UTC-6</p>
+                    </dd>
+                    <dt data-property-name="text" class="has-description">
+                      <span class="json-property-name">text:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Additional message text</p>
+                    </dd>
+                    <dt data-property-name="process-name" class="has-description">
+                      <span class="json-property-name">process-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Process name</p>
+                    </dd>
+                    <dt data-property-name="node-name" class="has-description">
+                      <span class="json-property-name">node-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Message source location</p>
+                    </dd>
+                    <dt data-property-name="message-name" class="has-description">
+                      <span class="json-property-name">message-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Message name</p>
+                    </dd>
+                    <dt data-property-name="severity" class="has-description">
+                      <span class="json-property-name">severity:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">message-severity-unknown</span>,
+                        <span class="json-property-enum-item">message-severity-emergency</span>,
+                        <span class="json-property-enum-item">message-severity-alert</span>,
+                        <span class="json-property-enum-item">message-severity-critical</span>,
+                        <span class="json-property-enum-item">message-severity-error</span>,
+                        <span class="json-property-enum-item">message-severity-warning</span>,
+                        <span class="json-property-enum-item">message-severity-notice</span>,
+                        <span class="json-property-enum-item">message-severity-informational</span>,
+                        <span class="json-property-enum-item">message-severity-debug</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Message severity</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;time-stamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;time-of-day&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;time-zone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;message-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-FILE-LOG-LIST-PATH" class="definition panel" data-traverse-target="definition-FILE-LOG-LIST-PATH">
+            <h2 class="panel-title">
+              <a name="/definitions/FILE-LOG-LIST-PATH"></a>FILE-LOG-LIST-PATH:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>System log files list and path</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="file-log-detail" class="has-description">
+                      <span class="json-property-name">file-log-detail:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/FILE-LOG-DETAILS">FILE-LOG-DETAILS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Logging Files</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;file-log-detail&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;file-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-AN-REMOTE-LOG-SERVER" class="definition panel" data-traverse-target="definition-AN-REMOTE-LOG-SERVER">
+            <h2 class="panel-title">
+              <a name="/definitions/AN-REMOTE-LOG-SERVER"></a>AN-REMOTE-LOG-SERVER:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>A System log AN remote log server structure</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="rh-discriminator" class="has-description">
+                      <span class="json-property-name">rh-discriminator:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Remote-Host Discriminator</p>
+                    </dd>
+                    <dt data-property-name="vrf-name" class="has-description">
+                      <span class="json-property-name">vrf-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF Name</p>
+                    </dd>
+                    <dt data-property-name="vrf-severity" class="has-description">
+                      <span class="json-property-name">vrf-severity:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF Severity</p>
+                    </dd>
+                    <dt data-property-name="ip-address" class="has-description">
+                      <span class="json-property-name">ip-address:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IP Address</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;rh-discriminator&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;vrf-severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-FILE-LOG-STATS" class="definition panel" data-traverse-target="definition-FILE-LOG-STATS">
+            <h2 class="panel-title">
+              <a name="/definitions/FILE-LOG-STATS"></a>FILE-LOG-STATS:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>System log file destination statistics</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="message-count" class="has-description">
+                      <span class="json-property-name">message-count:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Message count</p>
+                    </dd>
+                    <dt data-property-name="file-name" class="has-description">
+                      <span class="json-property-name">file-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>File name for logging messages</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-LOG-ENABLE-STATS" class="definition panel" data-traverse-target="definition-LOG-ENABLE-STATS">
+            <h2 class="panel-title">
+              <a name="/definitions/LOG-ENABLE-STATS"></a>LOG-ENABLE-STATS:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>System log discard statistics</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="flush-count" class="has-description">
+                      <span class="json-property-name">flush-count:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Number of messages flushed</p>
+                    </dd>
+                    <dt data-property-name="drop-count" class="has-description">
+                      <span class="json-property-name">drop-count:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Number of messages dropped</p>
+                    </dd>
+                    <dt data-property-name="overrun-count" class="has-description">
+                      <span class="json-property-name">overrun-count:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Number of messages overrun</p>
+                    </dd>
+                    <dt data-property-name="is-log-enabled" class="has-description">
+                      <span class="json-property-name">is-log-enabled:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is log enabled</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;flush-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;drop-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;overrun-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-TLS-REMOTE-LOG-STATS" class="definition panel" data-traverse-target="definition-TLS-REMOTE-LOG-STATS">
+            <h2 class="panel-title">
+              <a name="/definitions/TLS-REMOTE-LOG-STATS"></a>TLS-REMOTE-LOG-STATS:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>System log tls remote statistics</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="message-count" class="has-description">
+                      <span class="json-property-name">message-count:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Message count</p>
+                    </dd>
+                    <dt data-property-name="remote-host-name" class="has-description">
+                      <span class="json-property-name">remote-host-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>TLS Remote hostname</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-AN-REMOTE-LOG-SERVERS" class="definition panel" data-traverse-target="definition-AN-REMOTE-LOG-SERVERS">
+            <h2 class="panel-title">
+              <a name="/definitions/AN-REMOTE-LOG-SERVERS"></a>AN-REMOTE-LOG-SERVERS:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>System log All AN remote servers</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="an-remote-log-server" class="has-description">
+                      <span class="json-property-name">an-remote-log-server:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/AN-REMOTE-LOG-SERVER">AN-REMOTE-LOG-SERVER</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>AN Remote Log Servers</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;an-remote-log-server&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;rh-discriminator&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;vrf-severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-LOG-DEST-STATS" class="definition panel" data-traverse-target="definition-LOG-DEST-STATS">
+            <h2 class="panel-title">
+              <a name="/definitions/LOG-DEST-STATS"></a>LOG-DEST-STATS:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>System log statistics</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="message-count" class="has-description">
+                      <span class="json-property-name">message-count:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Message count</p>
+                    </dd>
+                    <dt data-property-name="buffer-size" class="has-description">
+                      <span class="json-property-name">buffer-size:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Buffer size in bytes if logging buffer isenabled</p>
+                    </dd>
+                    <dt data-property-name="severity" class="has-description">
+                      <span class="json-property-name">severity:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">message-severity-unknown</span>,
+                        <span class="json-property-enum-item">message-severity-emergency</span>,
+                        <span class="json-property-enum-item">message-severity-alert</span>,
+                        <span class="json-property-enum-item">message-severity-critical</span>,
+                        <span class="json-property-enum-item">message-severity-error</span>,
+                        <span class="json-property-enum-item">message-severity-warning</span>,
+                        <span class="json-property-enum-item">message-severity-notice</span>,
+                        <span class="json-property-enum-item">message-severity-informational</span>,
+                        <span class="json-property-enum-item">message-severity-debug</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Configured severity</p>
+                    </dd>
+                    <dt data-property-name="is-log-enabled" class="has-description">
+                      <span class="json-property-name">is-log-enabled:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is log enabled</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-logging_schema" class="definition panel" data-traverse-target="definition-logging_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/logging_schema"></a>logging_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Logging History data</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="history" class="has-description">
+                      <span class="json-property-name">history:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Syslog Info </p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;history&quot;</span>: {
+    <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;properties&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-history_schema" class="definition panel" data-traverse-target="definition-history_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/history_schema"></a>history_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Syslog Info </p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="message" class="has-description">
+                      <span class="json-property-name">message:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Syslog Message</p>
+                    </dd>
+                    <dt data-property-name="properties" class="has-description">
+                      <span class="json-property-name">properties:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Syslog Properties</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;properties&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-syslog_schema" class="definition panel" data-traverse-target="definition-syslog_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/syslog_schema"></a>syslog_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>syslog</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="messages" class="has-description">
+                      <span class="json-property-name">messages:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Message table information</p>
+                    </dd>
+                    <dt data-property-name="an-remote-servers" class="has-description">
+                      <span class="json-property-name">an-remote-servers:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/AN-REMOTE-LOG-SERVERS">AN-REMOTE-LOG-SERVERS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Logging AN remote servers information</p>
+                    </dd>
+                    <dt data-property-name="logging-files" class="has-description">
+                      <span class="json-property-name">logging-files:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FILE-LOG-LIST-PATH">FILE-LOG-LIST-PATH</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Logging Files information</p>
+                    </dd>
+                    <dt data-property-name="logging-statistics" class="has-description">
+                      <span class="json-property-name">logging-statistics:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/SYSTEM-MESSAGE-STATISTICS">SYSTEM-MESSAGE-STATISTICS</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Logging statistics information</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;messages&quot;</span>: {
+    <span class="hljs-attr">&quot;message&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;message-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;time-stamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;time-of-day&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;time-zone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;message-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;an-remote-servers&quot;</span>: {
+    <span class="hljs-attr">&quot;an-remote-log-server&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;rh-discriminator&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;vrf-severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;logging-files&quot;</span>: {
+    <span class="hljs-attr">&quot;file-log-detail&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;file-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;logging-statistics&quot;</span>: {
+    <span class="hljs-attr">&quot;console-logging-stats&quot;</span>: {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    },
+    <span class="hljs-attr">&quot;remote-logging-stat&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ],
+    <span class="hljs-attr">&quot;buffer-logging-stats&quot;</span>: {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    },
+    <span class="hljs-attr">&quot;logging-stats&quot;</span>: {
+      <span class="hljs-attr">&quot;flush-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;drop-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;overrun-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    },
+    <span class="hljs-attr">&quot;file-logging-stat&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;file-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ],
+    <span class="hljs-attr">&quot;trap-logging-stats&quot;</span>: {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    },
+    <span class="hljs-attr">&quot;monitor-logging-stats&quot;</span>: {
+      <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;buffer-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;is-log-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>
+    },
+    <span class="hljs-attr">&quot;tls-remote-logging-stat&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;message-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;remote-host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-messages_schema" class="definition panel" data-traverse-target="definition-messages_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/messages_schema"></a>messages_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Message table information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="message" class="has-description">
+                      <span class="json-property-name">message:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>A system message</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;message-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;time-stamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;time-of-day&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;time-zone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;message-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-message_schema" class="definition panel" data-traverse-target="definition-message_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/message_schema"></a>message_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type"></span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-allOf">
+                  <section class="json-schema-allOf-inherited">
+                    <ul>
+                      <span class="">
+                        <a class="json-schema-ref" href="#/definitions/SYSTEM-MESSAGE">SYSTEM-MESSAGE</a>
+                      </span>
+                    </ul>
+                  </section>
+                  <section class="json-schema-allOf-additional">
+                    <section class="json-schema-properties">
+                      <dl>
+                        <dt data-property-name="message-id" class="has-description">
+                          <span class="json-property-name">message-id:</span>
+                          <span class="json-property-type">integer</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Message ID of the system message</p>
+                        </dd>
+                      </dl>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;message-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;time-stamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;time-of-day&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;time-zone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;message-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-get-syslogRPC_input_schema" class="definition panel" data-traverse-target="definition-get-syslogRPC_input_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/get-syslogRPC_input_schema"></a>get-syslogRPC_input_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="filters" class="has-description">
+                      <span class="json-property-name">filters:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>A set of filters of syslog messages to be returned</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;filters&quot;</span>: {
+    <span class="hljs-attr">&quot;end-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-get-syslogRPC_output_schema" class="definition panel" data-traverse-target="definition-get-syslogRPC_output_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/get-syslogRPC_output_schema"></a>get-syslogRPC_output_schema:
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="data" class="has-description">
+                      <span class="json-property-name">data:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Output for RPC operation</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;data&quot;</span>: {
+    <span class="hljs-attr">&quot;syslog&quot;</span>: {
+      <span class="hljs-attr">&quot;messages&quot;</span>: {
+        <span class="hljs-attr">&quot;message&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;message-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;time-stamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;time-of-day&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;time-zone&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;message-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      }
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
