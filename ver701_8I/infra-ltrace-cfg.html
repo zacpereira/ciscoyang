@@ -1,0 +1,159 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-infra-ltrace-cfg API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <h5>Schema Definitions</h5>
+           <a href="#definition-NODE-CFG"> NODE-CFG </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-infra-ltrace-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-infra-ltrace-cfg@2015-11-09.yang">Cisco-IOS-XR-infra-ltrace-cfg@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                  <h5>Leaf Color Code:</h5>                    <span class="hljs-key">&emsp;&emsp;&emsp;Key&nbsp</span>                    <span class="hljs-mand">Mandatory&nbsp</span>                    <span class="hljs-leaf">Optional</span>                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <h1>Schema Definitions</h1>
+          <div id="definition-NODE-CFG" class="definition panel" data-traverse-target="definition-NODE-CFG">
+            <h2 class="panel-title">
+              <a name="/definitions/NODE-CFG"></a>NODE-CFG:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>active/preconfigured nodes configuration</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="ltrace" class="has-description">
+                      <span class="json-property-name">ltrace:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Ltrace Memory configuration</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="allocation-params" class="has-description">
+                            <span class="json-property-name">allocation-params:</span>
+                            <span class="json-property-type">object</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Select Ltrace mode and scale-factor</p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-properties">
+                              <dl>
+                                <dt data-property-name="mode" class="has-description">
+                                  <span class="json-property-name">mode:</span>
+                                  <span class="json-property-type">string</span>
+                                  <span class="json-property-enum" title="Possible values">
+                                    <span class="json-property-enum-item">static</span>,
+                                    <span class="json-property-enum-item">dynamic</span>
+                                  </span>
+                                  <span class="json-property-range" title="Value limits"></span>
+                                </dt>
+                                <dd>
+                                  <p>Select an allocation mode (static:1, dynamic :2)</p>
+                                </dd>
+                                <dt data-property-name="scale-factor" class="has-description">
+                                  <span class="json-property-name">scale-factor:</span>
+                                  <span class="json-property-type">string</span>
+                                  <span class="json-property-enum" title="Possible values">
+                                    <span class="json-property-enum-item">0</span>,
+                                    <span class="json-property-enum-item">1</span>,
+                                    <span class="json-property-enum-item">2</span>,
+                                    <span class="json-property-enum-item">4</span>,
+                                    <span class="json-property-enum-item">8</span>,
+                                    <span class="json-property-enum-item">16</span>
+                                  </span>
+                                  <span class="json-property-range" title="Value limits"></span>
+                                </dt>
+                                <dd>
+                                  <p>Select a scaling down factor</p>
+                                </dd>
+                              </dl>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;ltrace&quot;</span>: {
+    <span class="hljs-attr">&quot;allocation-params&quot;</span>: {
+      <span class="hljs-attr">&quot;mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;scale-factor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

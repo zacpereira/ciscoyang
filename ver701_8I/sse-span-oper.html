@@ -1,0 +1,2930 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-sse-span-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-sse-span-oper:ssespan-">Cisco-IOS-XR-sse-span-oper:ssespan/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ssespan--get">SSESPAN</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ssespan-nodes--get">NODES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ssespan-nodes-node--node---get">NODE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--span-mirr-infos-">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/span-mirr-infos/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos--get">SPAN-MIRR-INFOS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name--">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/span-mirr-infos/span-mirr-info/{intf-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get">SPAN-MIRR-INFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--spanudf-">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/spanudf/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ssespan-nodes-node--node--spanudf--get">SPANUDF</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--span-sess-infos-">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/span-sess-infos/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos--get">SPAN-SESS-INFOS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class--">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/span-sess-infos/span-sess-info/{session-id session-class}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get">SPAN-SESS-INFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <h5>Schema Definitions</h5>
+          <a href="#definition-SSE-SPAN-EA-SDT-BAG"> SSE-SPAN-EA-SDT-BAG </a>
+          <a href="#definition-SSE-SPAN-EA-SFT-BAG"> SSE-SPAN-EA-SFT-BAG </a>
+          <a href="#definition-SSE-SPAN-EA-UDF-BAG"> SSE-SPAN-EA-UDF-BAG </a>
+          <a href="#definition-ssespan_schema"> ssespan_schema </a>
+          <a href="#definition-nodes_schema"> nodes_schema </a>
+          <a href="#definition-node_schema"> node_schema </a>
+          <a href="#definition-span-mirr-infos_schema"> span-mirr-infos_schema </a>
+          <a href="#definition-span-mirr-info_schema"> span-mirr-info_schema </a>
+          <a href="#definition-span-sess-infos_schema"> span-sess-infos_schema </a>
+          <a href="#definition-span-sess-info_schema"> span-sess-info_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-sse-span-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-sse-span-oper@2017-09-07.yang">Cisco-IOS-XR-sse-span-oper@2017-09-07.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-sse-span-oper:ssespan-"></span>
+          <div id="operation-config-ssespan--get" class="operation panel" data-traverse-target="operation-config-ssespan--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SSESPAN - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sse-span-oper:ssespan/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ssespan</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ssespan_schema">ssespan_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-ssespan-nodes--get"<span class="hljs-attr">&quot;nodes&quot;</span>:</a> {
+    <a href="#operation-config-ssespan-nodes-node--node---get"<span class="hljs-attr">&quot;node&quot;</span>:</a> [
+      {
+        <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos--get"<span class="hljs-attr">&quot;span-mirr-infos&quot;</span>:</a> {
+          <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;span-mirr-info&quot;</span>:</a> [
+            {
+              <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;intf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;np-umask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;mplsv4stats&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;sft-hw-data&quot;</span>:</a> [
+                <span class="hljs-string">&quot;integer&quot;</span>
+              ],
+              <span class="hljs-leaf">&quot;v6sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;src-ifh&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v4sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;mplsv6pkts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;gre-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;gredst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v4-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;gre-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v6-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v4dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v6state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;gre-sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;grev4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;grev6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v4state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;uidb&quot;</span>:</a> [
+                <span class="hljs-string">&quot;integer&quot;</span>
+              ],
+              <span class="hljs-leaf">&quot;v6dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            }
+          ]
+        },
+        <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;spanudf&quot;</span>:</a> {
+          <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-type&quot;</span>:</a> [
+            <span class="hljs-string">&quot;integer&quot;</span>
+          ],
+          <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-hdr&quot;</span>:</a> [
+            <span class="hljs-string">&quot;integer&quot;</span>
+          ],
+          <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-len&quot;</span>:</a> [
+            <span class="hljs-string">&quot;integer&quot;</span>
+          ],
+          <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-hw-data&quot;</span>:</a> [
+            <span class="hljs-string">&quot;integer&quot;</span>
+          ],
+          <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-value&quot;</span>:</a> [
+            <span class="hljs-string">&quot;integer&quot;</span>
+          ]
+        },
+        <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;span-sess-infos&quot;</span>:</a> {
+          <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;span-sess-info&quot;</span>:</a> [
+            {
+              <span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;session-class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;ip-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;dfbit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;sdt-hw-data&quot;</span>:</a> [
+                <span class="hljs-string">&quot;integer&quot;</span>
+              ],
+              <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;dst-ip&quot;</span>:</a> [
+                <span class="hljs-string">&quot;integer&quot;</span>
+              ],
+              <span class="hljs-leaf">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;src-ip&quot;</span>:</a> [
+                <span class="hljs-string">&quot;integer&quot;</span>
+              ],
+              <span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;valid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;mode&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;tos-bit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;ifhandle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;tos-bit-copied&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            }
+          ]
+        },
+        <span class="hljs-leaf">&quot;node&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-"></span>
+          <div id="operation-config-ssespan-nodes--get" class="operation panel" data-traverse-target="operation-config-ssespan-nodes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nodes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/nodes_schema">nodes_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-ssespan-nodes-node--node---get"<span class="hljs-attr">&quot;node&quot;</span>:</a> [
+    {
+      <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos--get"<span class="hljs-attr">&quot;span-mirr-infos&quot;</span>:</a> {
+        <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;span-mirr-info&quot;</span>:</a> [
+          {
+            <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;intf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;np-umask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;mplsv4stats&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;sft-hw-data&quot;</span>:</a> [
+              <span class="hljs-string">&quot;integer&quot;</span>
+            ],
+            <span class="hljs-leaf">&quot;v6sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;src-ifh&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v4sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;mplsv6pkts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;gre-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;gredst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v4-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;gre-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v6-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v4dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v6state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;gre-sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;grev4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;grev6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v4state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;uidb&quot;</span>:</a> [
+              <span class="hljs-string">&quot;integer&quot;</span>
+            ],
+            <span class="hljs-leaf">&quot;v6dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ]
+      },
+      <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;spanudf&quot;</span>:</a> {
+        <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-type&quot;</span>:</a> [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-hdr&quot;</span>:</a> [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-len&quot;</span>:</a> [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-hw-data&quot;</span>:</a> [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-value&quot;</span>:</a> [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ]
+      },
+      <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;span-sess-infos&quot;</span>:</a> {
+        <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;span-sess-info&quot;</span>:</a> [
+          {
+            <span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;session-class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;ip-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;dfbit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;sdt-hw-data&quot;</span>:</a> [
+              <span class="hljs-string">&quot;integer&quot;</span>
+            ],
+            <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;dst-ip&quot;</span>:</a> [
+              <span class="hljs-string">&quot;integer&quot;</span>
+            ],
+            <span class="hljs-leaf">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;src-ip&quot;</span>:</a> [
+              <span class="hljs-string">&quot;integer&quot;</span>
+            ],
+            <span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;valid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;mode&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;tos-bit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;ifhandle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;tos-bit-copied&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ]
+      },
+      <span class="hljs-leaf">&quot;node&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--"></span>
+          <div id="operation-config-ssespan-nodes-node--node---get" class="operation panel" data-traverse-target="operation-config-ssespan-nodes-node--node---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: node</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/node_schema">node_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos--get"<span class="hljs-attr">&quot;span-mirr-infos&quot;</span>:</a> {
+    <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;span-mirr-info&quot;</span>:</a> [
+      {
+        <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;intf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;np-umask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;mplsv4stats&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;sft-hw-data&quot;</span>:</a> [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-leaf">&quot;v6sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;src-ifh&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v4sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;mplsv6pkts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;gre-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;gredst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v4-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;gre-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v6-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v4dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v6state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;gre-sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;grev4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;grev6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v4state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;uidb&quot;</span>:</a> [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-leaf">&quot;v6dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    ]
+  },
+  <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;spanudf&quot;</span>:</a> {
+    <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-type&quot;</span>:</a> [
+      <span class="hljs-string">&quot;integer&quot;</span>
+    ],
+    <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-hdr&quot;</span>:</a> [
+      <span class="hljs-string">&quot;integer&quot;</span>
+    ],
+    <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-len&quot;</span>:</a> [
+      <span class="hljs-string">&quot;integer&quot;</span>
+    ],
+    <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-hw-data&quot;</span>:</a> [
+      <span class="hljs-string">&quot;integer&quot;</span>
+    ],
+    <a href="#operation-config-ssespan-nodes-node--node--spanudf--get"<span class="hljs-attr">&quot;udf-value&quot;</span>:</a> [
+      <span class="hljs-string">&quot;integer&quot;</span>
+    ]
+  },
+  <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;span-sess-infos&quot;</span>:</a> {
+    <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;span-sess-info&quot;</span>:</a> [
+      {
+        <span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;session-class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;ip-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;dfbit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;sdt-hw-data&quot;</span>:</a> [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;dst-ip&quot;</span>:</a> [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-leaf">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <a href="#operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get"<span class="hljs-attr">&quot;src-ip&quot;</span>:</a> [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;valid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;mode&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;tos-bit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;ifhandle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;tos-bit-copied&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-leaf">&quot;node&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--span-mirr-infos-"></span>
+          <div id="operation-config-ssespan-nodes-node--node--span-mirr-infos--get" class="operation panel" data-traverse-target="operation-config-ssespan-nodes-node--node--span-mirr-infos--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SPAN-MIRR-INFOS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/span-mirr-infos/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: span-mirr-infos</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/span-mirr-infos_schema">span-mirr-infos_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;span-mirr-info&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;intf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;np-umask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;mplsv4stats&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;sft-hw-data&quot;</span>:</a> [
+        <span class="hljs-string">&quot;integer&quot;</span>
+      ],
+      <span class="hljs-leaf">&quot;v6sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;src-ifh&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v4sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;mplsv6pkts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;gre-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;gredst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v4-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;gre-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v6-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v4dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v6state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;gre-sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;grev4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;grev6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v4state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;uidb&quot;</span>:</a> [
+        <span class="hljs-string">&quot;integer&quot;</span>
+      ],
+      <span class="hljs-leaf">&quot;v6dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name--"></span>
+          <div id="operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get" class="operation panel" data-traverse-target="operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SPAN-MIRR-INFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/span-mirr-infos/span-mirr-info/{intf-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: span-mirr-info</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">intf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of intf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/span-mirr-info_schema">span-mirr-info_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;intf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;np-umask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;mplsv4stats&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;sft-hw-data&quot;</span>:</a> [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;v6sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;src-ifh&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;mplsv6pkts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gre-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gredst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gre-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v6-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v6state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gre-sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;grev4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;grev6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;uidb&quot;</span>:</a> [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;v6dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--spanudf-"></span>
+          <div id="operation-config-ssespan-nodes-node--node--spanudf--get" class="operation panel" data-traverse-target="operation-config-ssespan-nodes-node--node--spanudf--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SPANUDF - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/spanudf/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: spanudf</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-UDF-BAG">SSE-SPAN-EA-UDF-BAG</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;udf-type&quot;</span>:</a> [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;udf-hdr&quot;</span>:</a> [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;udf-len&quot;</span>:</a> [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;udf-hw-data&quot;</span>:</a> [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;udf-value&quot;</span>:</a> [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--span-sess-infos-"></span>
+          <div id="operation-config-ssespan-nodes-node--node--span-sess-infos--get" class="operation panel" data-traverse-target="operation-config-ssespan-nodes-node--node--span-sess-infos--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SPAN-SESS-INFOS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/span-sess-infos/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: span-sess-infos</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/span-sess-infos_schema">span-sess-infos_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;span-sess-info&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;session-class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;ip-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;dfbit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;sdt-hw-data&quot;</span>:</a> [
+        <span class="hljs-string">&quot;integer&quot;</span>
+      ],
+      <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;dst-ip&quot;</span>:</a> [
+        <span class="hljs-string">&quot;integer&quot;</span>
+      ],
+      <span class="hljs-leaf">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;src-ip&quot;</span>:</a> [
+        <span class="hljs-string">&quot;integer&quot;</span>
+      ],
+      <span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;valid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;mode&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;tos-bit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;ifhandle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;tos-bit-copied&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sse-span-oper:ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class--"></span>
+          <div id="operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get" class="operation panel" data-traverse-target="operation-config-ssespan-nodes-node--node--span-sess-infos-span-sess-info--session-id-session-class---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SPAN-SESS-INFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sse-span-oper:ssespan/nodes/node/{node}/span-sess-infos/span-sess-info/{session-id session-class}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: span-sess-info</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">session-id session-class:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of session-id session-class</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/span-sess-info_schema">span-sess-info_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;session-class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ip-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;dfbit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;sdt-hw-data&quot;</span>:</a> [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;dst-ip&quot;</span>:</a> [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <a href="#operation-config-ssespan-nodes-node--node--span-mirr-infos-span-mirr-info--intf-name---get"<span class="hljs-attr">&quot;src-ip&quot;</span>:</a> [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;valid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;mode&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;tos-bit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ifhandle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;tos-bit-copied&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-SSE-SPAN-EA-SDT-BAG" class="definition panel" data-traverse-target="definition-SSE-SPAN-EA-SDT-BAG">
+            <h2 class="panel-title">
+              <a name="/definitions/SSE-SPAN-EA-SDT-BAG"></a>SSE-SPAN-EA-SDT-BAG:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>SPAN Session Information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="ip-type" class="has-description">
+                      <span class="json-property-name">ip-type:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IP type v4 or v6 </p>
+                    </dd>
+                    <dt data-property-name="dfbit" class="has-description">
+                      <span class="json-property-name">dfbit:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>DF bit</p>
+                    </dd>
+                    <dt data-property-name="sdt-hw-data">
+                      <span class="json-property-name">sdt-hw-data:</span>
+                      <span class="json-property-type">integer[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">integer</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-description">
+                            <p>16x5npu=80 bytes of hw sdt entry</p>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="dst-ip">
+                      <span class="json-property-name">dst-ip:</span>
+                      <span class="json-property-type">integer[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">integer</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-description">
+                            <p>dst ip v4 or v6</p>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="vrf-id" class="has-description">
+                      <span class="json-property-name">vrf-id:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Vrf Id</p>
+                    </dd>
+                    <dt data-property-name="class" class="has-description">
+                      <span class="json-property-name">class:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>session Class gre,ipv4,ipv6</p>
+                    </dd>
+                    <dt data-property-name="src-ip">
+                      <span class="json-property-name">src-ip:</span>
+                      <span class="json-property-type">integer[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">integer</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-description">
+                            <p>src ip v4 or v6</p>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="state" class="has-description">
+                      <span class="json-property-name">state:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>session state</p>
+                    </dd>
+                    <dt data-property-name="valid" class="has-description">
+                      <span class="json-property-name">valid:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>marks validity of entry</p>
+                    </dd>
+                    <dt data-property-name="mode" class="has-description">
+                      <span class="json-property-name">mode:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Tunnel mode</p>
+                    </dd>
+                    <dt data-property-name="ttl" class="has-description">
+                      <span class="json-property-name">ttl:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>TTL</p>
+                    </dd>
+                    <dt data-property-name="tos-bit" class="has-description">
+                      <span class="json-property-name">tos-bit:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>type of service</p>
+                    </dd>
+                    <dt data-property-name="ifhandle" class="has-description">
+                      <span class="json-property-name">ifhandle:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>ifhandle of interface</p>
+                    </dd>
+                    <dt data-property-name="id" class="has-description">
+                      <span class="json-property-name">id:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Numerical ID assigned to session</p>
+                    </dd>
+                    <dt data-property-name="tos-bit-copied" class="has-description">
+                      <span class="json-property-name">tos-bit-copied:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>type of service copied</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;ip-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;dfbit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;sdt-hw-data&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-attr">&quot;dst-ip&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;src-ip&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;valid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;mode&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;tos-bit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ifhandle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;tos-bit-copied&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-SSE-SPAN-EA-SFT-BAG" class="definition panel" data-traverse-target="definition-SSE-SPAN-EA-SFT-BAG">
+            <h2 class="panel-title">
+              <a name="/definitions/SSE-SPAN-EA-SFT-BAG"></a>SSE-SPAN-EA-SFT-BAG:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>SPAN Session SFT Information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="intf-name-xr" class="has-description">
+                      <span class="json-property-name">intf-name-xr:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>interface name</p>
+                    </dd>
+                    <dt data-property-name="np-umask" class="has-description">
+                      <span class="json-property-name">np-umask:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>npu mask</p>
+                    </dd>
+                    <dt data-property-name="mplsv4stats" class="has-description">
+                      <span class="json-property-name">mplsv4stats:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>mpls ipv4 pkts</p>
+                    </dd>
+                    <dt data-property-name="v6statsptr" class="has-description">
+                      <span class="json-property-name">v6statsptr:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>v6 stats ptr</p>
+                    </dd>
+                    <dt data-property-name="sft-hw-data">
+                      <span class="json-property-name">sft-hw-data:</span>
+                      <span class="json-property-type">integer[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">integer</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-description">
+                            <p>16x5npu=80 bytes of hw sft entry</p>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="v6sessid" class="has-description">
+                      <span class="json-property-name">v6sessid:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>ipv6 session Id</p>
+                    </dd>
+                    <dt data-property-name="src-ifh" class="has-description">
+                      <span class="json-property-name">src-ifh:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>source IFH</p>
+                    </dd>
+                    <dt data-property-name="v4sessid" class="has-description">
+                      <span class="json-property-name">v4sessid:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>ipv4 session Id</p>
+                    </dd>
+                    <dt data-property-name="mplsv6pkts" class="has-description">
+                      <span class="json-property-name">mplsv6pkts:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>mpls ipv6 pkts</p>
+                    </dd>
+                    <dt data-property-name="gre-acl-flag" class="has-description">
+                      <span class="json-property-name">gre-acl-flag:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>gre acl flag</p>
+                    </dd>
+                    <dt data-property-name="gredst-type" class="has-description">
+                      <span class="json-property-name">gredst-type:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>gre dst type</p>
+                    </dd>
+                    <dt data-property-name="v4-acl-flag" class="has-description">
+                      <span class="json-property-name">v4-acl-flag:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>ipv4 acl flag</p>
+                    </dd>
+                    <dt data-property-name="gre-state" class="has-description">
+                      <span class="json-property-name">gre-state:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>gre state</p>
+                    </dd>
+                    <dt data-property-name="v6-acl-flag" class="has-description">
+                      <span class="json-property-name">v6-acl-flag:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>ipv6 acl flag</p>
+                    </dd>
+                    <dt data-property-name="v4dst-type" class="has-description">
+                      <span class="json-property-name">v4dst-type:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>ipv4 dst type</p>
+                    </dd>
+                    <dt data-property-name="v6state" class="has-description">
+                      <span class="json-property-name">v6state:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>ipv6 state</p>
+                    </dd>
+                    <dt data-property-name="v4statsptr" class="has-description">
+                      <span class="json-property-name">v4statsptr:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>v4 stats ptr</p>
+                    </dd>
+                    <dt data-property-name="gre-sessid" class="has-description">
+                      <span class="json-property-name">gre-sessid:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>gre session Id</p>
+                    </dd>
+                    <dt data-property-name="grev4statsptr" class="has-description">
+                      <span class="json-property-name">grev4statsptr:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>mpls ipv4 stats ptr</p>
+                    </dd>
+                    <dt data-property-name="grev6statsptr" class="has-description">
+                      <span class="json-property-name">grev6statsptr:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>mpls ipv6 stats ptr</p>
+                    </dd>
+                    <dt data-property-name="v4state" class="has-description">
+                      <span class="json-property-name">v4state:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>ipv4 state</p>
+                    </dd>
+                    <dt data-property-name="uidb">
+                      <span class="json-property-name">uidb:</span>
+                      <span class="json-property-type">integer[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">integer</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-description">
+                            <p>uidb array </p>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="v6dst-type" class="has-description">
+                      <span class="json-property-name">v6dst-type:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>ipv6 dst type</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;intf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;np-umask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;mplsv4stats&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;sft-hw-data&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;v6sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;src-ifh&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;mplsv6pkts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gre-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gredst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gre-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v6-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v6state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gre-sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;grev4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;grev6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;uidb&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;v6dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-SSE-SPAN-EA-UDF-BAG" class="definition panel" data-traverse-target="definition-SSE-SPAN-EA-UDF-BAG">
+            <h2 class="panel-title">
+              <a name="/definitions/SSE-SPAN-EA-UDF-BAG"></a>SSE-SPAN-EA-UDF-BAG:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>UDF Information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="udf-type">
+                      <span class="json-property-name">udf-type:</span>
+                      <span class="json-property-type">integer[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">integer</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-description">
+                            <p>udf type</p>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="udf-hdr">
+                      <span class="json-property-name">udf-hdr:</span>
+                      <span class="json-property-type">integer[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">integer</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-description">
+                            <p>udf header</p>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="udf-len">
+                      <span class="json-property-name">udf-len:</span>
+                      <span class="json-property-type">integer[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">integer</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-description">
+                            <p>udf len</p>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="udf-hw-data">
+                      <span class="json-property-name">udf-hw-data:</span>
+                      <span class="json-property-type">integer[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">integer</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-description">
+                            <p>16x5npu=80 bytes of hw udf entry</p>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="udf-value">
+                      <span class="json-property-name">udf-value:</span>
+                      <span class="json-property-type">integer[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">integer</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-description">
+                            <p>udf value</p>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;udf-type&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-attr">&quot;udf-hdr&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-attr">&quot;udf-len&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-attr">&quot;udf-hw-data&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-attr">&quot;udf-value&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-ssespan_schema" class="definition panel" data-traverse-target="definition-ssespan_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/ssespan_schema"></a>ssespan_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>SSE SPAN operational data</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="nodes" class="has-description">
+                      <span class="json-property-name">nodes:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Node table for node-specific operational data</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="node" class="has-description">
+                            <span class="json-property-name">node:</span>
+                            <span class="json-property-type">object[]</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Node-specific data for a particular node</p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-array-items">
+                              <span class="json-property-type">object</span>
+                              <span class="json-property-range" title="Value limits"></span>
+                              <div class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="span-mirr-infos" class="has-description">
+                                      <span class="json-property-name">span-mirr-infos:</span>
+                                      <span class="json-property-type">object</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>SPAN SFT entry</p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-properties">
+                                        <dl>
+                                          <dt data-property-name="span-mirr-info" class="has-description">
+                                            <span class="json-property-name">span-mirr-info:</span>
+                                            <span class="json-property-type">object[]</span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                          </dt>
+                                          <dd>
+                                            <p>Mirror info </p>
+                                          </dd>
+                                          <dt class="json-inner-schema">
+                                            <section class="json-schema-array-items">
+                                              <span class="json-property-type"></span>
+                                              <span class="json-property-range" title="Value limits"></span>
+                                              <div class="json-inner-schema">
+                                                <section class="json-schema-allOf">
+                                                  <section class="json-schema-allOf-inherited">
+                                                    <ul>
+                                                      <span class="">
+                                                        <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-SFT-BAG">SSE-SPAN-EA-SFT-BAG</a>
+                                                      </span>
+                                                    </ul>
+                                                  </section>
+                                                  <section class="json-schema-allOf-additional">
+                                                    <section class="json-schema-properties">
+                                                      <dl>
+                                                        <dt data-property-name="intf-name" class="has-description">
+                                                          <span class="json-property-name">intf-name:</span>
+                                                          <span class="json-property-type">string</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>interface name</p>
+                                                        </dd>
+                                                      </dl>
+                                                    </section>
+                                                  </section>
+                                                </section>
+                                              </div>
+                                            </section>
+                                          </dt>
+                                        </dl>
+                                      </section>
+                                    </dt>
+                                    <dt data-property-name="spanudf" class="has-description">
+                                      <span class="json-property-name">spanudf:</span>
+                                      <span class="json-property-type">
+                                        <span class="">
+                                          <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-UDF-BAG">SSE-SPAN-EA-UDF-BAG</a>
+                                        </span>
+                                      </span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>udf info</p>
+                                    </dd>
+                                    <dt data-property-name="span-sess-infos" class="has-description">
+                                      <span class="json-property-name">span-sess-infos:</span>
+                                      <span class="json-property-type">object</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>SPAN SDT entry</p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-properties">
+                                        <dl>
+                                          <dt data-property-name="span-sess-info" class="has-description">
+                                            <span class="json-property-name">span-sess-info:</span>
+                                            <span class="json-property-type">object[]</span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                          </dt>
+                                          <dd>
+                                            <p>Session info </p>
+                                          </dd>
+                                          <dt class="json-inner-schema">
+                                            <section class="json-schema-array-items">
+                                              <span class="json-property-type"></span>
+                                              <span class="json-property-range" title="Value limits"></span>
+                                              <div class="json-inner-schema">
+                                                <section class="json-schema-allOf">
+                                                  <section class="json-schema-allOf-inherited">
+                                                    <ul>
+                                                      <span class="">
+                                                        <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-SDT-BAG">SSE-SPAN-EA-SDT-BAG</a>
+                                                      </span>
+                                                    </ul>
+                                                  </section>
+                                                  <section class="json-schema-allOf-additional">
+                                                    <section class="json-schema-properties">
+                                                      <dl>
+                                                        <dt data-property-name="session-id" class="has-description">
+                                                          <span class="json-property-name">session-id:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Session Id</p>
+                                                        </dd>
+                                                        <dt data-property-name="session-class" class="has-description">
+                                                          <span class="json-property-name">session-class:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Session class</p>
+                                                        </dd>
+                                                      </dl>
+                                                    </section>
+                                                  </section>
+                                                </section>
+                                              </div>
+                                            </section>
+                                          </dt>
+                                        </dl>
+                                      </section>
+                                    </dt>
+                                    <dt data-property-name="node" class="has-description">
+                                      <span class="json-property-name">node:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Node</p>
+                                    </dd>
+                                  </dl>
+                                </section>
+                              </div>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;nodes&quot;</span>: {
+    <span class="hljs-attr">&quot;node&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;span-mirr-infos&quot;</span>: {
+          <span class="hljs-attr">&quot;span-mirr-info&quot;</span>: [
+            {
+              <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;intf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;np-umask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;mplsv4stats&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;sft-hw-data&quot;</span>: [
+                <span class="hljs-string">&quot;integer&quot;</span>
+              ],
+              <span class="hljs-leaf">&quot;v6sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;src-ifh&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v4sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;mplsv6pkts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;gre-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;gredst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v4-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;gre-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v6-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v4dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v6state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;gre-sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;grev4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;grev6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;v4state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;uidb&quot;</span>: [
+                <span class="hljs-string">&quot;integer&quot;</span>
+              ],
+              <span class="hljs-leaf">&quot;v6dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            }
+          ]
+        },
+        <span class="hljs-attr">&quot;spanudf&quot;</span>: {
+          <span class="hljs-attr">&quot;udf-type&quot;</span>: [
+            <span class="hljs-string">&quot;integer&quot;</span>
+          ],
+          <span class="hljs-attr">&quot;udf-hdr&quot;</span>: [
+            <span class="hljs-string">&quot;integer&quot;</span>
+          ],
+          <span class="hljs-attr">&quot;udf-len&quot;</span>: [
+            <span class="hljs-string">&quot;integer&quot;</span>
+          ],
+          <span class="hljs-attr">&quot;udf-hw-data&quot;</span>: [
+            <span class="hljs-string">&quot;integer&quot;</span>
+          ],
+          <span class="hljs-attr">&quot;udf-value&quot;</span>: [
+            <span class="hljs-string">&quot;integer&quot;</span>
+          ]
+        },
+        <span class="hljs-attr">&quot;span-sess-infos&quot;</span>: {
+          <span class="hljs-attr">&quot;span-sess-info&quot;</span>: [
+            {
+              <span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;session-class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;ip-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;dfbit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;sdt-hw-data&quot;</span>: [
+                <span class="hljs-string">&quot;integer&quot;</span>
+              ],
+              <span class="hljs-attr">&quot;dst-ip&quot;</span>: [
+                <span class="hljs-string">&quot;integer&quot;</span>
+              ],
+              <span class="hljs-leaf">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-attr">&quot;src-ip&quot;</span>: [
+                <span class="hljs-string">&quot;integer&quot;</span>
+              ],
+              <span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;valid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;mode&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;tos-bit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;ifhandle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;tos-bit-copied&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            }
+          ]
+        },
+        <span class="hljs-leaf">&quot;node&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-nodes_schema" class="definition panel" data-traverse-target="definition-nodes_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/nodes_schema"></a>nodes_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Node table for node-specific operational data</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="node" class="has-description">
+                      <span class="json-property-name">node:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Node-specific data for a particular node</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">object</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-properties">
+                            <dl>
+                              <dt data-property-name="span-mirr-infos" class="has-description">
+                                <span class="json-property-name">span-mirr-infos:</span>
+                                <span class="json-property-type">object</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>SPAN SFT entry</p>
+                              </dd>
+                              <dt class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="span-mirr-info" class="has-description">
+                                      <span class="json-property-name">span-mirr-info:</span>
+                                      <span class="json-property-type">object[]</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Mirror info </p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-array-items">
+                                        <span class="json-property-type"></span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        <div class="json-inner-schema">
+                                          <section class="json-schema-allOf">
+                                            <section class="json-schema-allOf-inherited">
+                                              <ul>
+                                                <span class="">
+                                                  <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-SFT-BAG">SSE-SPAN-EA-SFT-BAG</a>
+                                                </span>
+                                              </ul>
+                                            </section>
+                                            <section class="json-schema-allOf-additional">
+                                              <section class="json-schema-properties">
+                                                <dl>
+                                                  <dt data-property-name="intf-name" class="has-description">
+                                                    <span class="json-property-name">intf-name:</span>
+                                                    <span class="json-property-type">string</span>
+                                                    <span class="json-property-range" title="Value limits"></span>
+                                                  </dt>
+                                                  <dd>
+                                                    <p>interface name</p>
+                                                  </dd>
+                                                </dl>
+                                              </section>
+                                            </section>
+                                          </section>
+                                        </div>
+                                      </section>
+                                    </dt>
+                                  </dl>
+                                </section>
+                              </dt>
+                              <dt data-property-name="spanudf" class="has-description">
+                                <span class="json-property-name">spanudf:</span>
+                                <span class="json-property-type">
+                                  <span class="">
+                                    <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-UDF-BAG">SSE-SPAN-EA-UDF-BAG</a>
+                                  </span>
+                                </span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>udf info</p>
+                              </dd>
+                              <dt data-property-name="span-sess-infos" class="has-description">
+                                <span class="json-property-name">span-sess-infos:</span>
+                                <span class="json-property-type">object</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>SPAN SDT entry</p>
+                              </dd>
+                              <dt class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="span-sess-info" class="has-description">
+                                      <span class="json-property-name">span-sess-info:</span>
+                                      <span class="json-property-type">object[]</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Session info </p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-array-items">
+                                        <span class="json-property-type"></span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        <div class="json-inner-schema">
+                                          <section class="json-schema-allOf">
+                                            <section class="json-schema-allOf-inherited">
+                                              <ul>
+                                                <span class="">
+                                                  <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-SDT-BAG">SSE-SPAN-EA-SDT-BAG</a>
+                                                </span>
+                                              </ul>
+                                            </section>
+                                            <section class="json-schema-allOf-additional">
+                                              <section class="json-schema-properties">
+                                                <dl>
+                                                  <dt data-property-name="session-id" class="has-description">
+                                                    <span class="json-property-name">session-id:</span>
+                                                    <span class="json-property-type">integer</span>
+                                                    <span class="json-property-range" title="Value limits"></span>
+                                                  </dt>
+                                                  <dd>
+                                                    <p>Session Id</p>
+                                                  </dd>
+                                                  <dt data-property-name="session-class" class="has-description">
+                                                    <span class="json-property-name">session-class:</span>
+                                                    <span class="json-property-type">integer</span>
+                                                    <span class="json-property-range" title="Value limits"></span>
+                                                  </dt>
+                                                  <dd>
+                                                    <p>Session class</p>
+                                                  </dd>
+                                                </dl>
+                                              </section>
+                                            </section>
+                                          </section>
+                                        </div>
+                                      </section>
+                                    </dt>
+                                  </dl>
+                                </section>
+                              </dt>
+                              <dt data-property-name="node" class="has-description">
+                                <span class="json-property-name">node:</span>
+                                <span class="json-property-type">string</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Node</p>
+                              </dd>
+                            </dl>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;node&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;span-mirr-infos&quot;</span>: {
+        <span class="hljs-attr">&quot;span-mirr-info&quot;</span>: [
+          {
+            <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;intf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;np-umask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;mplsv4stats&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;sft-hw-data&quot;</span>: [
+              <span class="hljs-string">&quot;integer&quot;</span>
+            ],
+            <span class="hljs-leaf">&quot;v6sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;src-ifh&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v4sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;mplsv6pkts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;gre-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;gredst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v4-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;gre-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v6-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v4dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v6state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;gre-sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;grev4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;grev6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;v4state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;uidb&quot;</span>: [
+              <span class="hljs-string">&quot;integer&quot;</span>
+            ],
+            <span class="hljs-leaf">&quot;v6dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ]
+      },
+      <span class="hljs-attr">&quot;spanudf&quot;</span>: {
+        <span class="hljs-attr">&quot;udf-type&quot;</span>: [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;udf-hdr&quot;</span>: [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;udf-len&quot;</span>: [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;udf-hw-data&quot;</span>: [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;udf-value&quot;</span>: [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ]
+      },
+      <span class="hljs-attr">&quot;span-sess-infos&quot;</span>: {
+        <span class="hljs-attr">&quot;span-sess-info&quot;</span>: [
+          {
+            <span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;session-class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;ip-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;dfbit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;sdt-hw-data&quot;</span>: [
+              <span class="hljs-string">&quot;integer&quot;</span>
+            ],
+            <span class="hljs-attr">&quot;dst-ip&quot;</span>: [
+              <span class="hljs-string">&quot;integer&quot;</span>
+            ],
+            <span class="hljs-leaf">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-attr">&quot;src-ip&quot;</span>: [
+              <span class="hljs-string">&quot;integer&quot;</span>
+            ],
+            <span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;valid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;mode&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;tos-bit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;ifhandle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;tos-bit-copied&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ]
+      },
+      <span class="hljs-leaf">&quot;node&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-node_schema" class="definition panel" data-traverse-target="definition-node_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/node_schema"></a>node_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="span-mirr-infos" class="has-description">
+                      <span class="json-property-name">span-mirr-infos:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>SPAN SFT entry</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="span-mirr-info" class="has-description">
+                            <span class="json-property-name">span-mirr-info:</span>
+                            <span class="json-property-type">object[]</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Mirror info </p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-array-items">
+                              <span class="json-property-type"></span>
+                              <span class="json-property-range" title="Value limits"></span>
+                              <div class="json-inner-schema">
+                                <section class="json-schema-allOf">
+                                  <section class="json-schema-allOf-inherited">
+                                    <ul>
+                                      <span class="">
+                                        <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-SFT-BAG">SSE-SPAN-EA-SFT-BAG</a>
+                                      </span>
+                                    </ul>
+                                  </section>
+                                  <section class="json-schema-allOf-additional">
+                                    <section class="json-schema-properties">
+                                      <dl>
+                                        <dt data-property-name="intf-name" class="has-description">
+                                          <span class="json-property-name">intf-name:</span>
+                                          <span class="json-property-type">string</span>
+                                          <span class="json-property-range" title="Value limits"></span>
+                                        </dt>
+                                        <dd>
+                                          <p>interface name</p>
+                                        </dd>
+                                      </dl>
+                                    </section>
+                                  </section>
+                                </section>
+                              </div>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                    <dt data-property-name="spanudf" class="has-description">
+                      <span class="json-property-name">spanudf:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-UDF-BAG">SSE-SPAN-EA-UDF-BAG</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>udf info</p>
+                    </dd>
+                    <dt data-property-name="span-sess-infos" class="has-description">
+                      <span class="json-property-name">span-sess-infos:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>SPAN SDT entry</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="span-sess-info" class="has-description">
+                            <span class="json-property-name">span-sess-info:</span>
+                            <span class="json-property-type">object[]</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Session info </p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-array-items">
+                              <span class="json-property-type"></span>
+                              <span class="json-property-range" title="Value limits"></span>
+                              <div class="json-inner-schema">
+                                <section class="json-schema-allOf">
+                                  <section class="json-schema-allOf-inherited">
+                                    <ul>
+                                      <span class="">
+                                        <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-SDT-BAG">SSE-SPAN-EA-SDT-BAG</a>
+                                      </span>
+                                    </ul>
+                                  </section>
+                                  <section class="json-schema-allOf-additional">
+                                    <section class="json-schema-properties">
+                                      <dl>
+                                        <dt data-property-name="session-id" class="has-description">
+                                          <span class="json-property-name">session-id:</span>
+                                          <span class="json-property-type">integer</span>
+                                          <span class="json-property-range" title="Value limits"></span>
+                                        </dt>
+                                        <dd>
+                                          <p>Session Id</p>
+                                        </dd>
+                                        <dt data-property-name="session-class" class="has-description">
+                                          <span class="json-property-name">session-class:</span>
+                                          <span class="json-property-type">integer</span>
+                                          <span class="json-property-range" title="Value limits"></span>
+                                        </dt>
+                                        <dd>
+                                          <p>Session class</p>
+                                        </dd>
+                                      </dl>
+                                    </section>
+                                  </section>
+                                </section>
+                              </div>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                    <dt data-property-name="node" class="has-description">
+                      <span class="json-property-name">node:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Node</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;span-mirr-infos&quot;</span>: {
+    <span class="hljs-attr">&quot;span-mirr-info&quot;</span>: [
+      {
+        <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;intf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;np-umask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;mplsv4stats&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;sft-hw-data&quot;</span>: [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-leaf">&quot;v6sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;src-ifh&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v4sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;mplsv6pkts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;gre-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;gredst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v4-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;gre-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v6-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v4dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v6state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;gre-sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;grev4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;grev6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;v4state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;uidb&quot;</span>: [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-leaf">&quot;v6dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;spanudf&quot;</span>: {
+    <span class="hljs-attr">&quot;udf-type&quot;</span>: [
+      <span class="hljs-string">&quot;integer&quot;</span>
+    ],
+    <span class="hljs-attr">&quot;udf-hdr&quot;</span>: [
+      <span class="hljs-string">&quot;integer&quot;</span>
+    ],
+    <span class="hljs-attr">&quot;udf-len&quot;</span>: [
+      <span class="hljs-string">&quot;integer&quot;</span>
+    ],
+    <span class="hljs-attr">&quot;udf-hw-data&quot;</span>: [
+      <span class="hljs-string">&quot;integer&quot;</span>
+    ],
+    <span class="hljs-attr">&quot;udf-value&quot;</span>: [
+      <span class="hljs-string">&quot;integer&quot;</span>
+    ]
+  },
+  <span class="hljs-attr">&quot;span-sess-infos&quot;</span>: {
+    <span class="hljs-attr">&quot;span-sess-info&quot;</span>: [
+      {
+        <span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;session-class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;ip-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;dfbit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;sdt-hw-data&quot;</span>: [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;dst-ip&quot;</span>: [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-leaf">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;src-ip&quot;</span>: [
+          <span class="hljs-string">&quot;integer&quot;</span>
+        ],
+        <span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;valid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;mode&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;tos-bit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;ifhandle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;tos-bit-copied&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-leaf">&quot;node&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-span-mirr-infos_schema" class="definition panel" data-traverse-target="definition-span-mirr-infos_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/span-mirr-infos_schema"></a>span-mirr-infos_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>SPAN SFT entry</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="span-mirr-info" class="has-description">
+                      <span class="json-property-name">span-mirr-info:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Mirror info </p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type"></span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-allOf">
+                            <section class="json-schema-allOf-inherited">
+                              <ul>
+                                <span class="">
+                                  <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-SFT-BAG">SSE-SPAN-EA-SFT-BAG</a>
+                                </span>
+                              </ul>
+                            </section>
+                            <section class="json-schema-allOf-additional">
+                              <section class="json-schema-properties">
+                                <dl>
+                                  <dt data-property-name="intf-name" class="has-description">
+                                    <span class="json-property-name">intf-name:</span>
+                                    <span class="json-property-type">string</span>
+                                    <span class="json-property-range" title="Value limits"></span>
+                                  </dt>
+                                  <dd>
+                                    <p>interface name</p>
+                                  </dd>
+                                </dl>
+                              </section>
+                            </section>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;span-mirr-info&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;intf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;np-umask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;mplsv4stats&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;sft-hw-data&quot;</span>: [
+        <span class="hljs-string">&quot;integer&quot;</span>
+      ],
+      <span class="hljs-leaf">&quot;v6sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;src-ifh&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v4sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;mplsv6pkts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;gre-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;gredst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v4-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;gre-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v6-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v4dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v6state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;gre-sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;grev4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;grev6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;v4state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;uidb&quot;</span>: [
+        <span class="hljs-string">&quot;integer&quot;</span>
+      ],
+      <span class="hljs-leaf">&quot;v6dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-span-mirr-info_schema" class="definition panel" data-traverse-target="definition-span-mirr-info_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/span-mirr-info_schema"></a>span-mirr-info_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type"></span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-allOf">
+                  <section class="json-schema-allOf-inherited">
+                    <ul>
+                      <span class="">
+                        <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-SFT-BAG">SSE-SPAN-EA-SFT-BAG</a>
+                      </span>
+                    </ul>
+                  </section>
+                  <section class="json-schema-allOf-additional">
+                    <section class="json-schema-properties">
+                      <dl>
+                        <dt data-property-name="intf-name" class="has-description">
+                          <span class="json-property-name">intf-name:</span>
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>interface name</p>
+                        </dd>
+                      </dl>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;intf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;np-umask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;mplsv4stats&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;sft-hw-data&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;v6sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;src-ifh&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;mplsv6pkts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gre-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gredst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gre-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v6-acl-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v6state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;gre-sessid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;grev4statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;grev6statsptr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;v4state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;uidb&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;v6dst-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-span-sess-infos_schema" class="definition panel" data-traverse-target="definition-span-sess-infos_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/span-sess-infos_schema"></a>span-sess-infos_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>SPAN SDT entry</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="span-sess-info" class="has-description">
+                      <span class="json-property-name">span-sess-info:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Session info </p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type"></span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-allOf">
+                            <section class="json-schema-allOf-inherited">
+                              <ul>
+                                <span class="">
+                                  <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-SDT-BAG">SSE-SPAN-EA-SDT-BAG</a>
+                                </span>
+                              </ul>
+                            </section>
+                            <section class="json-schema-allOf-additional">
+                              <section class="json-schema-properties">
+                                <dl>
+                                  <dt data-property-name="session-id" class="has-description">
+                                    <span class="json-property-name">session-id:</span>
+                                    <span class="json-property-type">integer</span>
+                                    <span class="json-property-range" title="Value limits"></span>
+                                  </dt>
+                                  <dd>
+                                    <p>Session Id</p>
+                                  </dd>
+                                  <dt data-property-name="session-class" class="has-description">
+                                    <span class="json-property-name">session-class:</span>
+                                    <span class="json-property-type">integer</span>
+                                    <span class="json-property-range" title="Value limits"></span>
+                                  </dt>
+                                  <dd>
+                                    <p>Session class</p>
+                                  </dd>
+                                </dl>
+                              </section>
+                            </section>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;span-sess-info&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;session-class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;ip-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;dfbit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;sdt-hw-data&quot;</span>: [
+        <span class="hljs-string">&quot;integer&quot;</span>
+      ],
+      <span class="hljs-attr">&quot;dst-ip&quot;</span>: [
+        <span class="hljs-string">&quot;integer&quot;</span>
+      ],
+      <span class="hljs-leaf">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-attr">&quot;src-ip&quot;</span>: [
+        <span class="hljs-string">&quot;integer&quot;</span>
+      ],
+      <span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;valid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;mode&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;tos-bit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;ifhandle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;tos-bit-copied&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-span-sess-info_schema" class="definition panel" data-traverse-target="definition-span-sess-info_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/span-sess-info_schema"></a>span-sess-info_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type"></span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-allOf">
+                  <section class="json-schema-allOf-inherited">
+                    <ul>
+                      <span class="">
+                        <a class="json-schema-ref" href="#/definitions/SSE-SPAN-EA-SDT-BAG">SSE-SPAN-EA-SDT-BAG</a>
+                      </span>
+                    </ul>
+                  </section>
+                  <section class="json-schema-allOf-additional">
+                    <section class="json-schema-properties">
+                      <dl>
+                        <dt data-property-name="session-id" class="has-description">
+                          <span class="json-property-name">session-id:</span>
+                          <span class="json-property-type">integer</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Session Id</p>
+                        </dd>
+                        <dt data-property-name="session-class" class="has-description">
+                          <span class="json-property-name">session-class:</span>
+                          <span class="json-property-type">integer</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Session class</p>
+                        </dd>
+                      </dl>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;session-class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ip-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;dfbit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;sdt-hw-data&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-attr">&quot;dst-ip&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;vrf-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;class&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;src-ip&quot;</span>: [
+    <span class="hljs-string">&quot;integer&quot;</span>
+  ],
+  <span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;valid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;mode&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;tos-bit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ifhandle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;tos-bit-copied&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

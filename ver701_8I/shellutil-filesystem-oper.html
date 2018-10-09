@@ -1,0 +1,639 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-shellutil-filesystem-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-shellutil-filesystem-oper:file-system-">Cisco-IOS-XR-shellutil-filesystem-oper:file-system/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-file-system--get">FILE-SYSTEM</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-shellutil-filesystem-oper:file-system-node--node-name--">Cisco-IOS-XR-shellutil-filesystem-oper:file-system/node/{node-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-file-system-node--node-name---get">NODE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-shellutil-filesystem-oper:file-system-node--node-name--file-system-">Cisco-IOS-XR-shellutil-filesystem-oper:file-system/node/{node-name}/file-system/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-file-system-node--node-name--file-system--get">FILE-SYSTEM</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <h5>Schema Definitions</h5>
+          <a href="#definition-FILESYSTEM-UTIL"> FILESYSTEM-UTIL </a>
+          <a href="#definition-FILESYSTEM"> FILESYSTEM </a>
+          <a href="#definition-file-system_schema"> file-system_schema </a>
+          <a href="#definition-node_schema"> node_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-shellutil-filesystem-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-shellutil-filesystem-oper@2015-11-09.yang">Cisco-IOS-XR-shellutil-filesystem-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-shellutil-filesystem-oper:file-system-"></span>
+          <div id="operation-config-file-system--get" class="operation panel" data-traverse-target="operation-config-file-system--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FILE-SYSTEM - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-shellutil-filesystem-oper:file-system/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: file-system</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/file-system_schema">file-system_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-file-system-node--node-name---get"<span class="hljs-attr">&quot;node&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <a href="#operation-config-file-system-node--node-name--file-system--get"<span class="hljs-attr">&quot;file-system&quot;</span>:</a> [
+        {
+          <span class="hljs-leaf">&quot;prefixes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;flags&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;free&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;size&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-shellutil-filesystem-oper:file-system-node--node-name--"></span>
+          <div id="operation-config-file-system-node--node-name---get" class="operation panel" data-traverse-target="operation-config-file-system-node--node-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-shellutil-filesystem-oper:file-system/node/{node-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: node</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/node_schema">node_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <a href="#operation-config-file-system-node--node-name--file-system--get"<span class="hljs-attr">&quot;file-system&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;prefixes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;flags&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;free&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;size&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-shellutil-filesystem-oper:file-system-node--node-name--file-system-"></span>
+          <div id="operation-config-file-system-node--node-name--file-system--get" class="operation panel" data-traverse-target="operation-config-file-system-node--node-name--file-system--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FILE-SYSTEM - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-shellutil-filesystem-oper:file-system/node/{node-name}/file-system/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: file-system</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FILESYSTEM-UTIL">FILESYSTEM-UTIL</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;prefixes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;flags&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;free&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;size&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-FILESYSTEM-UTIL" class="definition panel" data-traverse-target="definition-FILESYSTEM-UTIL">
+            <h2 class="panel-title">
+              <a name="/definitions/FILESYSTEM-UTIL"></a>FILESYSTEM-UTIL:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>File System Description</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="prefixes" class="has-description">
+                      <span class="json-property-name">prefixes:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Prefixes of file system</p>
+                    </dd>
+                    <dt data-property-name="flags" class="has-description">
+                      <span class="json-property-name">flags:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Flags of file system</p>
+                    </dd>
+                    <dt data-property-name="type" class="has-description">
+                      <span class="json-property-name">type:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Type of file system</p>
+                    </dd>
+                    <dt data-property-name="free" class="has-description">
+                      <span class="json-property-name">free:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Free space in the file system in bytes</p>
+                    </dd>
+                    <dt data-property-name="size" class="has-description">
+                      <span class="json-property-name">size:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Size of the file system in bytes</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;prefixes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;flags&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;free&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;size&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-FILESYSTEM" class="definition panel" data-traverse-target="definition-FILESYSTEM">
+            <h2 class="panel-title">
+              <a name="/definitions/FILESYSTEM"></a>FILESYSTEM:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>File Systems</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="file-system" class="has-description">
+                      <span class="json-property-name">file-system:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/FILESYSTEM-UTIL">FILESYSTEM-UTIL</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Available file systems</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">
+                          <span class="">
+                            <a class="json-schema-ref" href="#/definitions/FILESYSTEM-UTIL">FILESYSTEM-UTIL</a>
+                          </span>
+                        </span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema"> </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;file-system&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;prefixes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;flags&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;free&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;size&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-file-system_schema" class="definition panel" data-traverse-target="definition-file-system_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/file-system_schema"></a>file-system_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>List of filesystems</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="node" class="has-description">
+                      <span class="json-property-name">node:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Node ID</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type"></span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-allOf">
+                            <section class="json-schema-allOf-inherited">
+                              <ul>
+                                <span class="">
+                                  <a class="json-schema-ref" href="#/definitions/FILESYSTEM">FILESYSTEM</a>
+                                </span>
+                              </ul>
+                            </section>
+                            <section class="json-schema-allOf-additional">
+                              <section class="json-schema-properties">
+                                <dl>
+                                  <dt data-property-name="node-name" class="has-description">
+                                    <span class="json-property-name">node-name:</span>
+                                    <span class="json-property-type">string</span>
+                                    <span class="json-property-range" title="Value limits"></span>
+                                  </dt>
+                                  <dd>
+                                    <p>Node name</p>
+                                  </dd>
+                                </dl>
+                              </section>
+                            </section>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;node&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;file-system&quot;</span>: [
+        {
+          <span class="hljs-leaf">&quot;prefixes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;flags&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;free&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;size&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-node_schema" class="definition panel" data-traverse-target="definition-node_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/node_schema"></a>node_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type"></span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-allOf">
+                  <section class="json-schema-allOf-inherited">
+                    <ul>
+                      <span class="">
+                        <a class="json-schema-ref" href="#/definitions/FILESYSTEM">FILESYSTEM</a>
+                      </span>
+                    </ul>
+                  </section>
+                  <section class="json-schema-allOf-additional">
+                    <section class="json-schema-properties">
+                      <dl>
+                        <dt data-property-name="node-name" class="has-description">
+                          <span class="json-property-name">node-name:</span>
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Node name</p>
+                        </dd>
+                      </dl>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;file-system&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;prefixes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;flags&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;free&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;size&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

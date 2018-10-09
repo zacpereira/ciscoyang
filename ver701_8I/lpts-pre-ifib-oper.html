@@ -1,0 +1,2650 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-lpts-pre-ifib-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-lpts-pifib--get">LPTS-PIFIB</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-lpts-pifib-nodes--get">NODES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-lpts-pifib-nodes-node--node-name---get">NODE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--type-values-">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/type-values/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values--get">TYPE-VALUES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/type-values/type-value/{pifib-type}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type---get">TYPE-VALUE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--entry--entry--">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/type-values/type-value/{pifib-type}/entry/{entry}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--entry--entry---get">ENTRY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--dynamic-flows-stats-">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/dynamic-flows-stats/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats--get">DYNAMIC-FLOWS-STATS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--dynamic-flows-stats-flow-">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/dynamic-flows-stats/flow/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats-flow--get">FLOW</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <h5>Schema Definitions</h5>
+          <a href="#definition-PIFIB-DYNFLOWS-DATA"> PIFIB-DYNFLOWS-DATA </a>
+          <a href="#definition-DYNFLOWS-FLOW-ENTRY"> DYNFLOWS-FLOW-ENTRY </a>
+          <a href="#definition-PIFIB-SHOW-ENTRY"> PIFIB-SHOW-ENTRY </a>
+          <a href="#definition-lpts-pifib_schema"> lpts-pifib_schema </a>
+          <a href="#definition-nodes_schema"> nodes_schema </a>
+          <a href="#definition-node_schema"> node_schema </a>
+          <a href="#definition-type-values_schema"> type-values_schema </a>
+          <a href="#definition-type-value_schema"> type-value_schema </a>
+          <a href="#definition-entry_schema"> entry_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-lpts-pre-ifib-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-lpts-pre-ifib-oper@2017-05-01.yang">Cisco-IOS-XR-lpts-pre-ifib-oper@2017-05-01.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-"></span>
+          <div id="operation-config-lpts-pifib--get" class="operation panel" data-traverse-target="operation-config-lpts-pifib--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LPTS-PIFIB - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: lpts-pifib</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/lpts-pifib_schema">lpts-pifib_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-lpts-pifib-nodes--get"<span class="hljs-attr">&quot;nodes&quot;</span>:</a> {
+    <a href="#operation-config-lpts-pifib-nodes-node--node-name---get"<span class="hljs-attr">&quot;node&quot;</span>:</a> [
+      {
+        <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <a href="#operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats--get"<span class="hljs-attr">&quot;dynamic-flows-stats&quot;</span>:</a> {
+          <span class="hljs-leaf">&quot;platform-total-configured&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;platform-configured-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <a href="#operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats-flow--get"<span class="hljs-attr">&quot;flow&quot;</span>:</a> [
+            {
+              <span class="hljs-leaf">&quot;default-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;pending-software-entries&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;configured&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;configured-max&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;hardware-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;configurable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;software-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;active-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;flow-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ],
+          <span class="hljs-leaf">&quot;dynamic-flows-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+          <span class="hljs-leaf">&quot;total-sw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;platform-supported-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;total-hw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        },
+        <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values--get"<span class="hljs-attr">&quot;type-values&quot;</span>:</a> {
+          <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type---get"<span class="hljs-attr">&quot;type-value&quot;</span>:</a> [
+            {
+              <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--entry--entry---get"<span class="hljs-attr">&quot;entry&quot;</span>:</a> [
+                {
+                  <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+                }
+              ],
+              <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-"></span>
+          <div id="operation-config-lpts-pifib-nodes--get" class="operation panel" data-traverse-target="operation-config-lpts-pifib-nodes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nodes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/nodes_schema">nodes_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-lpts-pifib-nodes-node--node-name---get"<span class="hljs-attr">&quot;node&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <a href="#operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats--get"<span class="hljs-attr">&quot;dynamic-flows-stats&quot;</span>:</a> {
+        <span class="hljs-leaf">&quot;platform-total-configured&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;platform-configured-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <a href="#operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats-flow--get"<span class="hljs-attr">&quot;flow&quot;</span>:</a> [
+          {
+            <span class="hljs-leaf">&quot;default-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;pending-software-entries&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;configured&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;configured-max&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;hardware-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;configurable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;software-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;active-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;flow-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ],
+        <span class="hljs-leaf">&quot;dynamic-flows-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;total-sw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;platform-supported-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;total-hw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      },
+      <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values--get"<span class="hljs-attr">&quot;type-values&quot;</span>:</a> {
+        <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type---get"<span class="hljs-attr">&quot;type-value&quot;</span>:</a> [
+          {
+            <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--entry--entry---get"<span class="hljs-attr">&quot;entry&quot;</span>:</a> [
+              {
+                <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+              }
+            ],
+            <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--"></span>
+          <div id="operation-config-lpts-pifib-nodes-node--node-name---get" class="operation panel" data-traverse-target="operation-config-lpts-pifib-nodes-node--node-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: node</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/node_schema">node_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <a href="#operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats--get"<span class="hljs-attr">&quot;dynamic-flows-stats&quot;</span>:</a> {
+    <span class="hljs-leaf">&quot;platform-total-configured&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;platform-configured-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <a href="#operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats-flow--get"<span class="hljs-attr">&quot;flow&quot;</span>:</a> [
+      {
+        <span class="hljs-leaf">&quot;default-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;pending-software-entries&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;configured&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;configured-max&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;hardware-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;configurable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;software-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;active-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;flow-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ],
+    <span class="hljs-leaf">&quot;dynamic-flows-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+    <span class="hljs-leaf">&quot;total-sw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;platform-supported-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;total-hw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values--get"<span class="hljs-attr">&quot;type-values&quot;</span>:</a> {
+    <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type---get"<span class="hljs-attr">&quot;type-value&quot;</span>:</a> [
+      {
+        <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--entry--entry---get"<span class="hljs-attr">&quot;entry&quot;</span>:</a> [
+          {
+            <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ],
+        <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--type-values-"></span>
+          <div id="operation-config-lpts-pifib-nodes-node--node-name--type-values--get" class="operation panel" data-traverse-target="operation-config-lpts-pifib-nodes-node--node-name--type-values--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TYPE-VALUES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/type-values/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: type-values</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/type-values_schema">type-values_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type---get"<span class="hljs-attr">&quot;type-value&quot;</span>:</a> [
+    {
+      <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--entry--entry---get"<span class="hljs-attr">&quot;entry&quot;</span>:</a> [
+        {
+          <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        }
+      ],
+      <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--"></span>
+          <div id="operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type---get" class="operation panel" data-traverse-target="operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TYPE-VALUE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/type-values/type-value/{pifib-type}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: type-value</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">pifib-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of pifib-type</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/type-value_schema">type-value_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--entry--entry---get"<span class="hljs-attr">&quot;entry&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ],
+  <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--entry--entry--"></span>
+          <div id="operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--entry--entry---get" class="operation panel" data-traverse-target="operation-config-lpts-pifib-nodes-node--node-name--type-values-type-value--pifib-type--entry--entry---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ENTRY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/type-values/type-value/{pifib-type}/entry/{entry}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: entry</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">pifib-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of pifib-type</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">entry:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of entry</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/entry_schema">entry_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--dynamic-flows-stats-"></span>
+          <div id="operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats--get" class="operation panel" data-traverse-target="operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">DYNAMIC-FLOWS-STATS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/dynamic-flows-stats/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: dynamic-flows-stats</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/PIFIB-DYNFLOWS-DATA">PIFIB-DYNFLOWS-DATA</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;platform-total-configured&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;platform-configured-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <a href="#operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats-flow--get"<span class="hljs-attr">&quot;flow&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;default-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;pending-software-entries&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;configured&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;configured-max&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;hardware-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;configurable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;software-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;active-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;flow-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ],
+  <span class="hljs-leaf">&quot;dynamic-flows-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;total-sw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;platform-supported-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;total-hw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib-nodes-node--node-name--dynamic-flows-stats-flow-"></span>
+          <div id="operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats-flow--get" class="operation panel" data-traverse-target="operation-config-lpts-pifib-nodes-node--node-name--dynamic-flows-stats-flow--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FLOW - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lpts-pre-ifib-oper:lpts-pifib/nodes/node/{node-name}/dynamic-flows-stats/flow/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: flow</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/DYNFLOWS-FLOW-ENTRY">DYNFLOWS-FLOW-ENTRY</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;default-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;pending-software-entries&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;configured&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;configured-max&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;hardware-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;configurable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;software-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;active-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;flow-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-PIFIB-DYNFLOWS-DATA" class="definition panel" data-traverse-target="definition-PIFIB-DYNFLOWS-DATA">
+            <h2 class="panel-title">
+              <a name="/definitions/PIFIB-DYNFLOWS-DATA"></a>PIFIB-DYNFLOWS-DATA:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>LPTS Pre-IFIB Dynamic Flows Data</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="platform-total-configured" class="has-description">
+                      <span class="json-property-name">platform-total-configured:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Platform Total Configured</p>
+                    </dd>
+                    <dt data-property-name="platform-configured-max" class="has-description">
+                      <span class="json-property-name">platform-configured-max:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Platform Config Limit</p>
+                    </dd>
+                    <dt data-property-name="flow" class="has-description">
+                      <span class="json-property-name">flow:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/DYNFLOWS-FLOW-ENTRY">DYNFLOWS-FLOW-ENTRY</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Flow Datalist</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">
+                          <span class="">
+                            <a class="json-schema-ref" href="#/definitions/DYNFLOWS-FLOW-ENTRY">DYNFLOWS-FLOW-ENTRY</a>
+                          </span>
+                        </span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema"> </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="dynamic-flows-enabled" class="has-description">
+                      <span class="json-property-name">dynamic-flows-enabled:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Dynamic Flows Enabled</p>
+                    </dd>
+                    <dt data-property-name="total-sw-entries" class="has-description">
+                      <span class="json-property-name">total-sw-entries:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Total SW Entries</p>
+                    </dd>
+                    <dt data-property-name="platform-supported-max" class="has-description">
+                      <span class="json-property-name">platform-supported-max:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Platform Max</p>
+                    </dd>
+                    <dt data-property-name="total-hw-entries" class="has-description">
+                      <span class="json-property-name">total-hw-entries:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Total HW Entries</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;platform-total-configured&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;platform-configured-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-attr">&quot;flow&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;default-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;pending-software-entries&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;configured&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;configured-max&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;hardware-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;configurable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;software-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;active-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;flow-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ],
+  <span class="hljs-leaf">&quot;dynamic-flows-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;total-sw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;platform-supported-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;total-hw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-DYNFLOWS-FLOW-ENTRY" class="definition panel" data-traverse-target="definition-DYNFLOWS-FLOW-ENTRY">
+            <h2 class="panel-title">
+              <a name="/definitions/DYNFLOWS-FLOW-ENTRY"></a>DYNFLOWS-FLOW-ENTRY:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>LPTS Pre-IFIB Dynamic Flows Entry Data</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="default-max" class="has-description">
+                      <span class="json-property-name">default-max:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Default Max</p>
+                    </dd>
+                    <dt data-property-name="pending-software-entries" class="has-description">
+                      <span class="json-property-name">pending-software-entries:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Pending Software Entries</p>
+                    </dd>
+                    <dt data-property-name="configured" class="has-description">
+                      <span class="json-property-name">configured:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is Configured</p>
+                    </dd>
+                    <dt data-property-name="configured-max" class="has-description">
+                      <span class="json-property-name">configured-max:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Configured Max</p>
+                    </dd>
+                    <dt data-property-name="hardware-count" class="has-description">
+                      <span class="json-property-name">hardware-count:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Hardware Count</p>
+                    </dd>
+                    <dt data-property-name="configurable" class="has-description">
+                      <span class="json-property-name">configurable:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is Configurable</p>
+                    </dd>
+                    <dt data-property-name="software-count" class="has-description">
+                      <span class="json-property-name">software-count:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Software Count</p>
+                    </dd>
+                    <dt data-property-name="active-max" class="has-description">
+                      <span class="json-property-name">active-max:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Active Max</p>
+                    </dd>
+                    <dt data-property-name="flow-name" class="has-description">
+                      <span class="json-property-name">flow-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Flow Name</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;default-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;pending-software-entries&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;configured&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;configured-max&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;hardware-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;configurable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;software-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;active-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;flow-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-PIFIB-SHOW-ENTRY" class="definition panel" data-traverse-target="definition-PIFIB-SHOW-ENTRY">
+            <h2 class="panel-title">
+              <a name="/definitions/PIFIB-SHOW-ENTRY"></a>PIFIB-SHOW-ENTRY:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>LPTS Pre-IFIB Entry Information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="deliver-list-short" class="has-description">
+                      <span class="json-property-name">deliver-list-short:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Deliver List Short Format</p>
+                    </dd>
+                    <dt data-property-name="destination-value" class="has-description">
+                      <span class="json-property-name">destination-value:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Destination Port/ICMP Type/IGMP Type</p>
+                    </dd>
+                    <dt data-property-name="vid" class="has-description">
+                      <span class="json-property-name">vid:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF ID</p>
+                    </dd>
+                    <dt data-property-name="l4protocol" class="has-description">
+                      <span class="json-property-name">l4protocol:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Layer 4 Protocol</p>
+                    </dd>
+                    <dt data-property-name="is-fgid" class="has-description">
+                      <span class="json-property-name">is-fgid:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is FGID or not</p>
+                    </dd>
+                    <dt data-property-name="pifib-program-time" class="has-description">
+                      <span class="json-property-name">pifib-program-time:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Creation or Update Time</p>
+                    </dd>
+                    <dt data-property-name="destination-addr" class="has-description">
+                      <span class="json-property-name">destination-addr:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Destination IP Address</p>
+                    </dd>
+                    <dt data-property-name="source-addr" class="has-description">
+                      <span class="json-property-name">source-addr:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Source IP Address</p>
+                    </dd>
+                    <dt data-property-name="pifib-type" class="has-description">
+                      <span class="json-property-name">pifib-type:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>sub Pre-IFIB type</p>
+                    </dd>
+                    <dt data-property-name="intf-name" class="has-description">
+                      <span class="json-property-name">intf-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Interface Name</p>
+                    </dd>
+                    <dt data-property-name="vrf-name" class="has-description">
+                      <span class="json-property-name">vrf-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VRF Name</p>
+                    </dd>
+                    <dt data-property-name="is-frag" class="has-description">
+                      <span class="json-property-name">is-frag:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is Fragment</p>
+                    </dd>
+                    <dt data-property-name="local-flag" class="has-description">
+                      <span class="json-property-name">local-flag:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Local Flag</p>
+                    </dd>
+                    <dt data-property-name="intf-handle" class="has-description">
+                      <span class="json-property-name">intf-handle:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Interface Handle</p>
+                    </dd>
+                    <dt data-property-name="flow-type" class="has-description">
+                      <span class="json-property-name">flow-type:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Flow type</p>
+                    </dd>
+                    <dt data-property-name="min-ttl" class="has-description">
+                      <span class="json-property-name">min-ttl:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Minimum TTL</p>
+                    </dd>
+                    <dt data-property-name="source-port" class="has-description">
+                      <span class="json-property-name">source-port:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Source port</p>
+                    </dd>
+                    <dt data-property-name="deliver-list-long" class="has-description">
+                      <span class="json-property-name">deliver-list-long:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Deliver List Long Format</p>
+                    </dd>
+                    <dt data-property-name="is-syn" class="has-description">
+                      <span class="json-property-name">is-syn:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is SYN</p>
+                    </dd>
+                    <dt data-property-name="drops" class="has-description">
+                      <span class="json-property-name">drops:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Packets matched for drop</p>
+                    </dd>
+                    <dt data-property-name="destination-type" class="has-description">
+                      <span class="json-property-name">destination-type:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Destination Key Type</p>
+                    </dd>
+                    <dt data-property-name="accepts" class="has-description">
+                      <span class="json-property-name">accepts:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Packets matched to accept</p>
+                    </dd>
+                    <dt data-property-name="opcode" class="has-description">
+                      <span class="json-property-name">opcode:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Opcode</p>
+                    </dd>
+                    <dt data-property-name="stale" class="has-description">
+                      <span class="json-property-name">stale:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is Stale</p>
+                    </dd>
+                    <dt data-property-name="listener-tag" class="has-description">
+                      <span class="json-property-name">listener-tag:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Listener Tag</p>
+                    </dd>
+                    <dt data-property-name="l3protocol" class="has-description">
+                      <span class="json-property-name">l3protocol:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Layer 3 Protocol</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-lpts-pifib_schema" class="definition panel" data-traverse-target="definition-lpts-pifib_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/lpts-pifib_schema"></a>lpts-pifib_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>lpts pre-ifib data</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="nodes" class="has-description">
+                      <span class="json-property-name">nodes:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>List of Pre-ifib Nodes</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="node" class="has-description">
+                            <span class="json-property-name">node:</span>
+                            <span class="json-property-type">object[]</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Pre-ifib data for particular node</p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-array-items">
+                              <span class="json-property-type">object</span>
+                              <span class="json-property-range" title="Value limits"></span>
+                              <div class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="node-name" class="has-description">
+                                      <span class="json-property-name">node-name:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>The node name</p>
+                                    </dd>
+                                    <dt data-property-name="dynamic-flows-stats" class="has-description">
+                                      <span class="json-property-name">dynamic-flows-stats:</span>
+                                      <span class="json-property-type">
+                                        <span class="">
+                                          <a class="json-schema-ref" href="#/definitions/PIFIB-DYNFLOWS-DATA">PIFIB-DYNFLOWS-DATA</a>
+                                        </span>
+                                      </span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Dynamic Flows Statistics</p>
+                                    </dd>
+                                    <dt data-property-name="type-values" class="has-description">
+                                      <span class="json-property-name">type-values:</span>
+                                      <span class="json-property-type">object</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Type specific</p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-properties">
+                                        <dl>
+                                          <dt data-property-name="type-value" class="has-description">
+                                            <span class="json-property-name">type-value:</span>
+                                            <span class="json-property-type">object[]</span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                          </dt>
+                                          <dd>
+                                            <p>pifib types</p>
+                                          </dd>
+                                          <dt class="json-inner-schema">
+                                            <section class="json-schema-array-items">
+                                              <span class="json-property-type">object</span>
+                                              <span class="json-property-range" title="Value limits"></span>
+                                              <div class="json-inner-schema">
+                                                <section class="json-schema-properties">
+                                                  <dl>
+                                                    <dt data-property-name="entry" class="has-description">
+                                                      <span class="json-property-name">entry:</span>
+                                                      <span class="json-property-type">object[]</span>
+                                                      <span class="json-property-range" title="Value limits"></span>
+                                                    </dt>
+                                                    <dd>
+                                                      <p>Data for single pre-ifib entry</p>
+                                                    </dd>
+                                                    <dt class="json-inner-schema">
+                                                      <section class="json-schema-array-items">
+                                                        <span class="json-property-type"></span>
+                                                        <span class="json-property-range" title="Value limits"></span>
+                                                        <div class="json-inner-schema">
+                                                          <section class="json-schema-allOf">
+                                                            <section class="json-schema-allOf-inherited">
+                                                              <ul>
+                                                                <span class="">
+                                                                  <a class="json-schema-ref" href="#/definitions/PIFIB-SHOW-ENTRY">PIFIB-SHOW-ENTRY</a>
+                                                                </span>
+                                                              </ul>
+                                                            </section>
+                                                            <section class="json-schema-allOf-additional">
+                                                              <section class="json-schema-properties">
+                                                                <dl>
+                                                                  <dt data-property-name="entry" class="has-description">
+                                                                    <span class="json-property-name">entry:</span>
+                                                                    <span class="json-property-type">string</span>
+                                                                    <span class="json-property-range" title="Value limits"></span>
+                                                                  </dt>
+                                                                  <dd>
+                                                                    <p>Single Pre-ifib entry</p>
+                                                                  </dd>
+                                                                </dl>
+                                                              </section>
+                                                            </section>
+                                                          </section>
+                                                        </div>
+                                                      </section>
+                                                    </dt>
+                                                    <dt data-property-name="pifib-type" class="has-description">
+                                                      <span class="json-property-name">pifib-type:</span>
+                                                      <span class="json-property-type">string</span>
+                                                      <span class="json-property-enum" title="Possible values">
+                                                        <span class="json-property-enum-item">isis</span>,
+                                                        <span class="json-property-enum-item">ipv4-frag</span>,
+                                                        <span class="json-property-enum-item">ipv4-echo</span>,
+                                                        <span class="json-property-enum-item">ipv4-any</span>,
+                                                        <span class="json-property-enum-item">ipv6-frag</span>,
+                                                        <span class="json-property-enum-item">ipv6-echo</span>,
+                                                        <span class="json-property-enum-item">ipv6-nd</span>,
+                                                        <span class="json-property-enum-item">ipv6-any</span>,
+                                                        <span class="json-property-enum-item">bfd-any</span>,
+                                                        <span class="json-property-enum-item">all</span>
+                                                      </span>
+                                                      <span class="json-property-range" title="Value limits"></span>
+                                                    </dt>
+                                                    <dd>
+                                                      <p>Type value</p>
+                                                    </dd>
+                                                  </dl>
+                                                </section>
+                                              </div>
+                                            </section>
+                                          </dt>
+                                        </dl>
+                                      </section>
+                                    </dt>
+                                  </dl>
+                                </section>
+                              </div>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;nodes&quot;</span>: {
+    <span class="hljs-attr">&quot;node&quot;</span>: [
+      {
+        <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;dynamic-flows-stats&quot;</span>: {
+          <span class="hljs-leaf">&quot;platform-total-configured&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;platform-configured-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-attr">&quot;flow&quot;</span>: [
+            {
+              <span class="hljs-leaf">&quot;default-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;pending-software-entries&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;configured&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;configured-max&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;hardware-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;configurable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;software-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;active-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;flow-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ],
+          <span class="hljs-leaf">&quot;dynamic-flows-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+          <span class="hljs-leaf">&quot;total-sw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;platform-supported-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;total-hw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        },
+        <span class="hljs-attr">&quot;type-values&quot;</span>: {
+          <span class="hljs-attr">&quot;type-value&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;entry&quot;</span>: [
+                {
+                  <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+                }
+              ],
+              <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-nodes_schema" class="definition panel" data-traverse-target="definition-nodes_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/nodes_schema"></a>nodes_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>List of Pre-ifib Nodes</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="node" class="has-description">
+                      <span class="json-property-name">node:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Pre-ifib data for particular node</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">object</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-properties">
+                            <dl>
+                              <dt data-property-name="node-name" class="has-description">
+                                <span class="json-property-name">node-name:</span>
+                                <span class="json-property-type">string</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>The node name</p>
+                              </dd>
+                              <dt data-property-name="dynamic-flows-stats" class="has-description">
+                                <span class="json-property-name">dynamic-flows-stats:</span>
+                                <span class="json-property-type">
+                                  <span class="">
+                                    <a class="json-schema-ref" href="#/definitions/PIFIB-DYNFLOWS-DATA">PIFIB-DYNFLOWS-DATA</a>
+                                  </span>
+                                </span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Dynamic Flows Statistics</p>
+                              </dd>
+                              <dt data-property-name="type-values" class="has-description">
+                                <span class="json-property-name">type-values:</span>
+                                <span class="json-property-type">object</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Type specific</p>
+                              </dd>
+                              <dt class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="type-value" class="has-description">
+                                      <span class="json-property-name">type-value:</span>
+                                      <span class="json-property-type">object[]</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>pifib types</p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-array-items">
+                                        <span class="json-property-type">object</span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        <div class="json-inner-schema">
+                                          <section class="json-schema-properties">
+                                            <dl>
+                                              <dt data-property-name="entry" class="has-description">
+                                                <span class="json-property-name">entry:</span>
+                                                <span class="json-property-type">object[]</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Data for single pre-ifib entry</p>
+                                              </dd>
+                                              <dt class="json-inner-schema">
+                                                <section class="json-schema-array-items">
+                                                  <span class="json-property-type"></span>
+                                                  <span class="json-property-range" title="Value limits"></span>
+                                                  <div class="json-inner-schema">
+                                                    <section class="json-schema-allOf">
+                                                      <section class="json-schema-allOf-inherited">
+                                                        <ul>
+                                                          <span class="">
+                                                            <a class="json-schema-ref" href="#/definitions/PIFIB-SHOW-ENTRY">PIFIB-SHOW-ENTRY</a>
+                                                          </span>
+                                                        </ul>
+                                                      </section>
+                                                      <section class="json-schema-allOf-additional">
+                                                        <section class="json-schema-properties">
+                                                          <dl>
+                                                            <dt data-property-name="entry" class="has-description">
+                                                              <span class="json-property-name">entry:</span>
+                                                              <span class="json-property-type">string</span>
+                                                              <span class="json-property-range" title="Value limits"></span>
+                                                            </dt>
+                                                            <dd>
+                                                              <p>Single Pre-ifib entry</p>
+                                                            </dd>
+                                                          </dl>
+                                                        </section>
+                                                      </section>
+                                                    </section>
+                                                  </div>
+                                                </section>
+                                              </dt>
+                                              <dt data-property-name="pifib-type" class="has-description">
+                                                <span class="json-property-name">pifib-type:</span>
+                                                <span class="json-property-type">string</span>
+                                                <span class="json-property-enum" title="Possible values">
+                                                  <span class="json-property-enum-item">isis</span>,
+                                                  <span class="json-property-enum-item">ipv4-frag</span>,
+                                                  <span class="json-property-enum-item">ipv4-echo</span>,
+                                                  <span class="json-property-enum-item">ipv4-any</span>,
+                                                  <span class="json-property-enum-item">ipv6-frag</span>,
+                                                  <span class="json-property-enum-item">ipv6-echo</span>,
+                                                  <span class="json-property-enum-item">ipv6-nd</span>,
+                                                  <span class="json-property-enum-item">ipv6-any</span>,
+                                                  <span class="json-property-enum-item">bfd-any</span>,
+                                                  <span class="json-property-enum-item">all</span>
+                                                </span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Type value</p>
+                                              </dd>
+                                            </dl>
+                                          </section>
+                                        </div>
+                                      </section>
+                                    </dt>
+                                  </dl>
+                                </section>
+                              </dt>
+                            </dl>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;node&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;dynamic-flows-stats&quot;</span>: {
+        <span class="hljs-leaf">&quot;platform-total-configured&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;platform-configured-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-attr">&quot;flow&quot;</span>: [
+          {
+            <span class="hljs-leaf">&quot;default-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;pending-software-entries&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;configured&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;configured-max&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;hardware-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;configurable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;software-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;active-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;flow-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ],
+        <span class="hljs-leaf">&quot;dynamic-flows-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;total-sw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;platform-supported-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;total-hw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      },
+      <span class="hljs-attr">&quot;type-values&quot;</span>: {
+        <span class="hljs-attr">&quot;type-value&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;entry&quot;</span>: [
+              {
+                <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+              }
+            ],
+            <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-node_schema" class="definition panel" data-traverse-target="definition-node_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/node_schema"></a>node_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="node-name" class="has-description">
+                      <span class="json-property-name">node-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The node name</p>
+                    </dd>
+                    <dt data-property-name="dynamic-flows-stats" class="has-description">
+                      <span class="json-property-name">dynamic-flows-stats:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/PIFIB-DYNFLOWS-DATA">PIFIB-DYNFLOWS-DATA</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Dynamic Flows Statistics</p>
+                    </dd>
+                    <dt data-property-name="type-values" class="has-description">
+                      <span class="json-property-name">type-values:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Type specific</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="type-value" class="has-description">
+                            <span class="json-property-name">type-value:</span>
+                            <span class="json-property-type">object[]</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>pifib types</p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-array-items">
+                              <span class="json-property-type">object</span>
+                              <span class="json-property-range" title="Value limits"></span>
+                              <div class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="entry" class="has-description">
+                                      <span class="json-property-name">entry:</span>
+                                      <span class="json-property-type">object[]</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Data for single pre-ifib entry</p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-array-items">
+                                        <span class="json-property-type"></span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        <div class="json-inner-schema">
+                                          <section class="json-schema-allOf">
+                                            <section class="json-schema-allOf-inherited">
+                                              <ul>
+                                                <span class="">
+                                                  <a class="json-schema-ref" href="#/definitions/PIFIB-SHOW-ENTRY">PIFIB-SHOW-ENTRY</a>
+                                                </span>
+                                              </ul>
+                                            </section>
+                                            <section class="json-schema-allOf-additional">
+                                              <section class="json-schema-properties">
+                                                <dl>
+                                                  <dt data-property-name="entry" class="has-description">
+                                                    <span class="json-property-name">entry:</span>
+                                                    <span class="json-property-type">string</span>
+                                                    <span class="json-property-range" title="Value limits"></span>
+                                                  </dt>
+                                                  <dd>
+                                                    <p>Single Pre-ifib entry</p>
+                                                  </dd>
+                                                </dl>
+                                              </section>
+                                            </section>
+                                          </section>
+                                        </div>
+                                      </section>
+                                    </dt>
+                                    <dt data-property-name="pifib-type" class="has-description">
+                                      <span class="json-property-name">pifib-type:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-enum" title="Possible values">
+                                        <span class="json-property-enum-item">isis</span>,
+                                        <span class="json-property-enum-item">ipv4-frag</span>,
+                                        <span class="json-property-enum-item">ipv4-echo</span>,
+                                        <span class="json-property-enum-item">ipv4-any</span>,
+                                        <span class="json-property-enum-item">ipv6-frag</span>,
+                                        <span class="json-property-enum-item">ipv6-echo</span>,
+                                        <span class="json-property-enum-item">ipv6-nd</span>,
+                                        <span class="json-property-enum-item">ipv6-any</span>,
+                                        <span class="json-property-enum-item">bfd-any</span>,
+                                        <span class="json-property-enum-item">all</span>
+                                      </span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Type value</p>
+                                    </dd>
+                                  </dl>
+                                </section>
+                              </div>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;dynamic-flows-stats&quot;</span>: {
+    <span class="hljs-leaf">&quot;platform-total-configured&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;platform-configured-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-attr">&quot;flow&quot;</span>: [
+      {
+        <span class="hljs-leaf">&quot;default-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;pending-software-entries&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;configured&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;configured-max&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;hardware-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;configurable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;software-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;active-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;flow-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ],
+    <span class="hljs-leaf">&quot;dynamic-flows-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+    <span class="hljs-leaf">&quot;total-sw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;platform-supported-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;total-hw-entries&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <span class="hljs-attr">&quot;type-values&quot;</span>: {
+    <span class="hljs-attr">&quot;type-value&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;entry&quot;</span>: [
+          {
+            <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ],
+        <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-type-values_schema" class="definition panel" data-traverse-target="definition-type-values_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/type-values_schema"></a>type-values_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Type specific</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="type-value" class="has-description">
+                      <span class="json-property-name">type-value:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>pifib types</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">object</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-properties">
+                            <dl>
+                              <dt data-property-name="entry" class="has-description">
+                                <span class="json-property-name">entry:</span>
+                                <span class="json-property-type">object[]</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Data for single pre-ifib entry</p>
+                              </dd>
+                              <dt class="json-inner-schema">
+                                <section class="json-schema-array-items">
+                                  <span class="json-property-type"></span>
+                                  <span class="json-property-range" title="Value limits"></span>
+                                  <div class="json-inner-schema">
+                                    <section class="json-schema-allOf">
+                                      <section class="json-schema-allOf-inherited">
+                                        <ul>
+                                          <span class="">
+                                            <a class="json-schema-ref" href="#/definitions/PIFIB-SHOW-ENTRY">PIFIB-SHOW-ENTRY</a>
+                                          </span>
+                                        </ul>
+                                      </section>
+                                      <section class="json-schema-allOf-additional">
+                                        <section class="json-schema-properties">
+                                          <dl>
+                                            <dt data-property-name="entry" class="has-description">
+                                              <span class="json-property-name">entry:</span>
+                                              <span class="json-property-type">string</span>
+                                              <span class="json-property-range" title="Value limits"></span>
+                                            </dt>
+                                            <dd>
+                                              <p>Single Pre-ifib entry</p>
+                                            </dd>
+                                          </dl>
+                                        </section>
+                                      </section>
+                                    </section>
+                                  </div>
+                                </section>
+                              </dt>
+                              <dt data-property-name="pifib-type" class="has-description">
+                                <span class="json-property-name">pifib-type:</span>
+                                <span class="json-property-type">string</span>
+                                <span class="json-property-enum" title="Possible values">
+                                  <span class="json-property-enum-item">isis</span>,
+                                  <span class="json-property-enum-item">ipv4-frag</span>,
+                                  <span class="json-property-enum-item">ipv4-echo</span>,
+                                  <span class="json-property-enum-item">ipv4-any</span>,
+                                  <span class="json-property-enum-item">ipv6-frag</span>,
+                                  <span class="json-property-enum-item">ipv6-echo</span>,
+                                  <span class="json-property-enum-item">ipv6-nd</span>,
+                                  <span class="json-property-enum-item">ipv6-any</span>,
+                                  <span class="json-property-enum-item">bfd-any</span>,
+                                  <span class="json-property-enum-item">all</span>
+                                </span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Type value</p>
+                              </dd>
+                            </dl>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;type-value&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;entry&quot;</span>: [
+        {
+          <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        }
+      ],
+      <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-type-value_schema" class="definition panel" data-traverse-target="definition-type-value_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/type-value_schema"></a>type-value_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="entry" class="has-description">
+                      <span class="json-property-name">entry:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Data for single pre-ifib entry</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type"></span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-allOf">
+                            <section class="json-schema-allOf-inherited">
+                              <ul>
+                                <span class="">
+                                  <a class="json-schema-ref" href="#/definitions/PIFIB-SHOW-ENTRY">PIFIB-SHOW-ENTRY</a>
+                                </span>
+                              </ul>
+                            </section>
+                            <section class="json-schema-allOf-additional">
+                              <section class="json-schema-properties">
+                                <dl>
+                                  <dt data-property-name="entry" class="has-description">
+                                    <span class="json-property-name">entry:</span>
+                                    <span class="json-property-type">string</span>
+                                    <span class="json-property-range" title="Value limits"></span>
+                                  </dt>
+                                  <dd>
+                                    <p>Single Pre-ifib entry</p>
+                                  </dd>
+                                </dl>
+                              </section>
+                            </section>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="pifib-type" class="has-description">
+                      <span class="json-property-name">pifib-type:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">isis</span>,
+                        <span class="json-property-enum-item">ipv4-frag</span>,
+                        <span class="json-property-enum-item">ipv4-echo</span>,
+                        <span class="json-property-enum-item">ipv4-any</span>,
+                        <span class="json-property-enum-item">ipv6-frag</span>,
+                        <span class="json-property-enum-item">ipv6-echo</span>,
+                        <span class="json-property-enum-item">ipv6-nd</span>,
+                        <span class="json-property-enum-item">ipv6-any</span>,
+                        <span class="json-property-enum-item">bfd-any</span>,
+                        <span class="json-property-enum-item">all</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Type value</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;entry&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ],
+  <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-entry_schema" class="definition panel" data-traverse-target="definition-entry_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/entry_schema"></a>entry_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type"></span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-allOf">
+                  <section class="json-schema-allOf-inherited">
+                    <ul>
+                      <span class="">
+                        <a class="json-schema-ref" href="#/definitions/PIFIB-SHOW-ENTRY">PIFIB-SHOW-ENTRY</a>
+                      </span>
+                    </ul>
+                  </section>
+                  <section class="json-schema-allOf-additional">
+                    <section class="json-schema-properties">
+                      <dl>
+                        <dt data-property-name="entry" class="has-description">
+                          <span class="json-property-name">entry:</span>
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Single Pre-ifib entry</p>
+                        </dd>
+                      </dl>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;entry&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;deliver-list-short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;destination-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;vid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;l4protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;is-fgid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;pifib-program-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;destination-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;source-addr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;pifib-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;intf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-frag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;local-flag&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;intf-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;flow-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;min-ttl&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;source-port&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;deliver-list-long&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-syn&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;destination-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;accepts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;opcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;stale&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;listener-tag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;l3protocol&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,624 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-linux-os-reboot-history-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history-">Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-reboot-history--get">REBOOT-HISTORY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history-node--node-name--">Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history/node/{node-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-reboot-history-node--node-name---get">NODE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history-node--node-name--reboot-history-">Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history/node/{node-name}/reboot-history/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-reboot-history-node--node-name--reboot-history--get">REBOOT-HISTORY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <h5>Schema Definitions</h5>
+          <a href="#definition-HISTORY-DETAIL"> HISTORY-DETAIL </a>
+          <a href="#definition-HISTORY"> HISTORY </a>
+          <a href="#definition-reboot-history_schema"> reboot-history_schema </a>
+          <a href="#definition-node_schema"> node_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-linux-os-reboot-history-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-linux-os-reboot-history-oper@2015-11-09.yang">Cisco-IOS-XR-linux-os-reboot-history-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history-"></span>
+          <div id="operation-config-reboot-history--get" class="operation panel" data-traverse-target="operation-config-reboot-history--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">REBOOT-HISTORY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: reboot-history</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/reboot-history_schema">reboot-history_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-reboot-history-node--node-name---get"<span class="hljs-attr">&quot;node&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <a href="#operation-config-reboot-history-node--node-name--reboot-history--get"<span class="hljs-attr">&quot;reboot-history&quot;</span>:</a> [
+        {
+          <span class="hljs-leaf">&quot;reason&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;cause-code&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;no&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history-node--node-name--"></span>
+          <div id="operation-config-reboot-history-node--node-name---get" class="operation panel" data-traverse-target="operation-config-reboot-history-node--node-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history/node/{node-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: node</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/node_schema">node_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <a href="#operation-config-reboot-history-node--node-name--reboot-history--get"<span class="hljs-attr">&quot;reboot-history&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;reason&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;cause-code&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;no&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history-node--node-name--reboot-history-"></span>
+          <div id="operation-config-reboot-history-node--node-name--reboot-history--get" class="operation panel" data-traverse-target="operation-config-reboot-history-node--node-name--reboot-history--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">REBOOT-HISTORY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-linux-os-reboot-history-oper:reboot-history/node/{node-name}/reboot-history/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: reboot-history</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/HISTORY-DETAIL">HISTORY-DETAIL</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;reason&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;cause-code&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;no&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-HISTORY-DETAIL" class="definition panel" data-traverse-target="definition-HISTORY-DETAIL">
+            <h2 class="panel-title">
+              <a name="/definitions/HISTORY-DETAIL"></a>HISTORY-DETAIL:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Reboot history details</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="reason" class="has-description">
+                      <span class="json-property-name">reason:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Reason for reboot</p>
+                    </dd>
+                    <dt data-property-name="time" class="has-description">
+                      <span class="json-property-name">time:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Time of reboot</p>
+                    </dd>
+                    <dt data-property-name="cause-code" class="has-description">
+                      <span class="json-property-name">cause-code:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Cause code for reboot</p>
+                    </dd>
+                    <dt data-property-name="no" class="has-description">
+                      <span class="json-property-name">no:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Number count</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;reason&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;cause-code&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;no&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-HISTORY" class="definition panel" data-traverse-target="definition-HISTORY">
+            <h2 class="panel-title">
+              <a name="/definitions/HISTORY"></a>HISTORY:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Reboot history information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="reboot-history" class="has-description">
+                      <span class="json-property-name">reboot-history:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/HISTORY-DETAIL">HISTORY-DETAIL</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Last Reboots</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">
+                          <span class="">
+                            <a class="json-schema-ref" href="#/definitions/HISTORY-DETAIL">HISTORY-DETAIL</a>
+                          </span>
+                        </span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema"> </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;reboot-history&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;reason&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;cause-code&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;no&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-reboot-history_schema" class="definition panel" data-traverse-target="definition-reboot-history_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/reboot-history_schema"></a>reboot-history_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Reboot History information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="node" class="has-description">
+                      <span class="json-property-name">node:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Node ID</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type"></span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-allOf">
+                            <section class="json-schema-allOf-inherited">
+                              <ul>
+                                <span class="">
+                                  <a class="json-schema-ref" href="#/definitions/HISTORY">HISTORY</a>
+                                </span>
+                              </ul>
+                            </section>
+                            <section class="json-schema-allOf-additional">
+                              <section class="json-schema-properties">
+                                <dl>
+                                  <dt data-property-name="node-name" class="has-description">
+                                    <span class="json-property-name">node-name:</span>
+                                    <span class="json-property-type">string</span>
+                                    <span class="json-property-range" title="Value limits"></span>
+                                  </dt>
+                                  <dd>
+                                    <p>Node name</p>
+                                  </dd>
+                                </dl>
+                              </section>
+                            </section>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;node&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;reboot-history&quot;</span>: [
+        {
+          <span class="hljs-leaf">&quot;reason&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;cause-code&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+          <span class="hljs-leaf">&quot;no&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-node_schema" class="definition panel" data-traverse-target="definition-node_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/node_schema"></a>node_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type"></span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-allOf">
+                  <section class="json-schema-allOf-inherited">
+                    <ul>
+                      <span class="">
+                        <a class="json-schema-ref" href="#/definitions/HISTORY">HISTORY</a>
+                      </span>
+                    </ul>
+                  </section>
+                  <section class="json-schema-allOf-additional">
+                    <section class="json-schema-properties">
+                      <dl>
+                        <dt data-property-name="node-name" class="has-description">
+                          <span class="json-property-name">node-name:</span>
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Node name</p>
+                        </dd>
+                      </dl>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;reboot-history&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;reason&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;cause-code&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;no&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1378 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-pbr-bng-cfg API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-bng-cfg:bng-pbr-">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">BNG-PBR</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-bng-pbr--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-bng-pbr--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-bng-pbr--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-bng-pbr--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+-->
+          <h5>Schema Definitions</h5>
+           <a href="#definition-bng-pbr_schema"> bng-pbr_schema </a>
+          <a href="#definition-http-enrichment_schema"> http-enrichment_schema </a>
+          <a href="#definition-parameters_schema"> parameters_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-pbr-bng-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-pbr-bng-cfg@2015-11-09.yang">Cisco-IOS-XR-pbr-bng-cfg@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                  <h5>Leaf Color Code:</h5>                    <span class="hljs-key">&emsp;&emsp;&emsp;Key&nbsp</span>                    <span class="hljs-mand">Mandatory&nbsp</span>                    <span class="hljs-leaf">Optional</span>                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-pbr-bng-cfg:bng-pbr-"></span>
+          <div id="operation-config-bng-pbr--put" class="operation panel" data-traverse-target="operation-config-bng-pbr--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">BNG-PBR - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: bng-pbr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/bng-pbr_schema">bng-pbr_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>bng-pbrbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;bng-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;http-enrichment&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-bng-pbr-http-enrichment--put">PUT  </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment--post">POST </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment--delete">DELETE</a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;parameters&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-bng-pbr-http-enrichment-parameters--put">PUT  </a><!--
+-->    <a href="#operation-config-bng-pbr-http-enrichment-parameters--post">POST </a><!--
+-->    <a href="#operation-config-bng-pbr-http-enrichment-parameters--delete">DELETE</a><!--
+-->    <a href="#operation-config-bng-pbr-http-enrichment-parameters--get">GET</a><!--
+-->    </div><!--
+-->    </div><!--
+-->      <span class="hljs-mand">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-bng-pbr--post" class="operation panel" data-traverse-target="operation-config-bng-pbr--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">BNG-PBR - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: bng-pbr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/bng-pbr_schema">bng-pbr_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>bng-pbrbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;bng-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;http-enrichment&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-bng-pbr-http-enrichment--put">PUT  </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment--post">POST </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment--delete">DELETE</a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;parameters&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-bng-pbr-http-enrichment-parameters--put">PUT  </a><!--
+-->    <a href="#operation-config-bng-pbr-http-enrichment-parameters--post">POST </a><!--
+-->    <a href="#operation-config-bng-pbr-http-enrichment-parameters--delete">DELETE</a><!--
+-->    <a href="#operation-config-bng-pbr-http-enrichment-parameters--get">GET</a><!--
+-->    </div><!--
+-->    </div><!--
+-->      <span class="hljs-mand">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-bng-pbr--delete" class="operation panel" data-traverse-target="operation-config-bng-pbr--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">BNG-PBR - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: bng-pbr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-bng-pbr--get" class="operation panel" data-traverse-target="operation-config-bng-pbr--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">BNG-PBR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: bng-pbr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/bng-pbr_schema">bng-pbr_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;bng-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;http-enrichment&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-bng-pbr-http-enrichment--put">PUT  </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment--post">POST </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment--delete">DELETE</a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;parameters&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-bng-pbr-http-enrichment-parameters--put">PUT  </a><!--
+-->    <a href="#operation-config-bng-pbr-http-enrichment-parameters--post">POST </a><!--
+-->    <a href="#operation-config-bng-pbr-http-enrichment-parameters--delete">DELETE</a><!--
+-->    <a href="#operation-config-bng-pbr-http-enrichment-parameters--get">GET</a><!--
+-->    </div><!--
+-->    </div><!--
+-->      <span class="hljs-mand">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-bng-cfg:bng-pbr-http-enrichment-"></span>
+          <div id="operation-config-bng-pbr-http-enrichment--put" class="operation panel" data-traverse-target="operation-config-bng-pbr-http-enrichment--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">HTTP-ENRICHMENT - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/http-enrichment/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: http-enrichment</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/http-enrichment_schema">http-enrichment_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>http-enrichmentbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;parameters&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-bng-pbr-http-enrichment-parameters--put">PUT  </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment-parameters--post">POST </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment-parameters--delete">DELETE</a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment-parameters--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    <span class="hljs-mand">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-bng-pbr-http-enrichment--post" class="operation panel" data-traverse-target="operation-config-bng-pbr-http-enrichment--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">HTTP-ENRICHMENT - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/http-enrichment/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: http-enrichment</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/http-enrichment_schema">http-enrichment_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>http-enrichmentbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;parameters&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-bng-pbr-http-enrichment-parameters--put">PUT  </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment-parameters--post">POST </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment-parameters--delete">DELETE</a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment-parameters--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    <span class="hljs-mand">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-bng-pbr-http-enrichment--delete" class="operation panel" data-traverse-target="operation-config-bng-pbr-http-enrichment--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">HTTP-ENRICHMENT - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/http-enrichment/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: http-enrichment</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-bng-pbr-http-enrichment--get" class="operation panel" data-traverse-target="operation-config-bng-pbr-http-enrichment--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HTTP-ENRICHMENT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/http-enrichment/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: http-enrichment</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/http-enrichment_schema">http-enrichment_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;parameters&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-bng-pbr-http-enrichment-parameters--put">PUT  </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment-parameters--post">POST </a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment-parameters--delete">DELETE</a><!--
+-->  <a href="#operation-config-bng-pbr-http-enrichment-parameters--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    <span class="hljs-mand">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-bng-cfg:bng-pbr-http-enrichment-parameters-"></span>
+          <div id="operation-config-bng-pbr-http-enrichment-parameters--put" class="operation panel" data-traverse-target="operation-config-bng-pbr-http-enrichment-parameters--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">PARAMETERS - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/http-enrichment/parameters/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: parameters</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/parameters_schema">parameters_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>parametersbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-mand">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-bng-pbr-http-enrichment-parameters--post" class="operation panel" data-traverse-target="operation-config-bng-pbr-http-enrichment-parameters--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">PARAMETERS - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/http-enrichment/parameters/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: parameters</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/parameters_schema">parameters_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>parametersbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-mand">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-bng-pbr-http-enrichment-parameters--delete" class="operation panel" data-traverse-target="operation-config-bng-pbr-http-enrichment-parameters--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">PARAMETERS - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/http-enrichment/parameters/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: parameters</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-bng-pbr-http-enrichment-parameters--get" class="operation panel" data-traverse-target="operation-config-bng-pbr-http-enrichment-parameters--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PARAMETERS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-bng-cfg:bng-pbr/http-enrichment/parameters/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: parameters</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/parameters_schema">parameters_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-mand">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-bng-pbr_schema" class="definition panel" data-traverse-target="definition-bng-pbr_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/bng-pbr_schema"></a>bng-pbr_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Subscriber PBR configuration</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="bng-interface" class="has-description">
+                      <span class="json-property-name">bng-interface:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Interface for source address</p>
+                    </dd>
+                    <dt data-property-name="http-enrichment" class="has-description">
+                      <span class="json-property-name">http-enrichment:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>HTTP Enrichment</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="parameters" class="has-description">
+                            <span class="json-property-name">parameters:</span>
+                            <span class="json-property-type">object</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>HTTP Enrichment parameters</p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-properties">
+                              <dl>
+                                <dt data-property-name="arg1" class="has-description">
+                                  <span class="json-property-name">arg1:</span>
+                                  <span class="json-property-type">string</span>
+                                  <span class="json-property-enum" title="Possible values">
+                                    <span class="json-property-enum-item">subscriber-mac</span>,
+                                    <span class="json-property-enum-item">subscriber-ip</span>,
+                                    <span class="json-property-enum-item">host-name</span>,
+                                    <span class="json-property-enum-item">bng-identifier-interface</span>
+                                  </span>
+                                  <span class="json-property-range" title="Value limits"></span>
+                                </dt>
+                                <dd>
+                                  <p>first argument </p>
+                                </dd>
+                                <dt data-property-name="arg2" class="has-description">
+                                  <span class="json-property-name">arg2:</span>
+                                  <span class="json-property-type">string</span>
+                                  <span class="json-property-enum" title="Possible values">
+                                    <span class="json-property-enum-item">subscriber-mac</span>,
+                                    <span class="json-property-enum-item">subscriber-ip</span>,
+                                    <span class="json-property-enum-item">host-name</span>,
+                                    <span class="json-property-enum-item">bng-identifier-interface</span>
+                                  </span>
+                                  <span class="json-property-range" title="Value limits"></span>
+                                </dt>
+                                <dd>
+                                  <p>second argument </p>
+                                </dd>
+                                <dt data-property-name="arg3" class="has-description">
+                                  <span class="json-property-name">arg3:</span>
+                                  <span class="json-property-type">string</span>
+                                  <span class="json-property-enum" title="Possible values">
+                                    <span class="json-property-enum-item">subscriber-mac</span>,
+                                    <span class="json-property-enum-item">subscriber-ip</span>,
+                                    <span class="json-property-enum-item">host-name</span>,
+                                    <span class="json-property-enum-item">bng-identifier-interface</span>
+                                  </span>
+                                  <span class="json-property-range" title="Value limits"></span>
+                                </dt>
+                                <dd>
+                                  <p>Third argument </p>
+                                </dd>
+                                <dt data-property-name="arg4" class="has-description">
+                                  <span class="json-property-name">arg4:</span>
+                                  <span class="json-property-type">string</span>
+                                  <span class="json-property-enum" title="Possible values">
+                                    <span class="json-property-enum-item">subscriber-mac</span>,
+                                    <span class="json-property-enum-item">subscriber-ip</span>,
+                                    <span class="json-property-enum-item">host-name</span>,
+                                    <span class="json-property-enum-item">bng-identifier-interface</span>
+                                  </span>
+                                  <span class="json-property-range" title="Value limits"></span>
+                                </dt>
+                                <dd>
+                                  <p>Fourth argument </p>
+                                </dd>
+                              </dl>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;bng-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;http-enrichment&quot;</span>: {
+    <span class="hljs-attr">&quot;parameters&quot;</span>: {
+      <span class="hljs-attr">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-http-enrichment_schema" class="definition panel" data-traverse-target="definition-http-enrichment_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/http-enrichment_schema"></a>http-enrichment_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>HTTP Enrichment</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="parameters" class="has-description">
+                      <span class="json-property-name">parameters:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>HTTP Enrichment parameters</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="arg1" class="has-description">
+                            <span class="json-property-name">arg1:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-enum" title="Possible values">
+                              <span class="json-property-enum-item">subscriber-mac</span>,
+                              <span class="json-property-enum-item">subscriber-ip</span>,
+                              <span class="json-property-enum-item">host-name</span>,
+                              <span class="json-property-enum-item">bng-identifier-interface</span>
+                            </span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>first argument </p>
+                          </dd>
+                          <dt data-property-name="arg2" class="has-description">
+                            <span class="json-property-name">arg2:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-enum" title="Possible values">
+                              <span class="json-property-enum-item">subscriber-mac</span>,
+                              <span class="json-property-enum-item">subscriber-ip</span>,
+                              <span class="json-property-enum-item">host-name</span>,
+                              <span class="json-property-enum-item">bng-identifier-interface</span>
+                            </span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>second argument </p>
+                          </dd>
+                          <dt data-property-name="arg3" class="has-description">
+                            <span class="json-property-name">arg3:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-enum" title="Possible values">
+                              <span class="json-property-enum-item">subscriber-mac</span>,
+                              <span class="json-property-enum-item">subscriber-ip</span>,
+                              <span class="json-property-enum-item">host-name</span>,
+                              <span class="json-property-enum-item">bng-identifier-interface</span>
+                            </span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Third argument </p>
+                          </dd>
+                          <dt data-property-name="arg4" class="has-description">
+                            <span class="json-property-name">arg4:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-enum" title="Possible values">
+                              <span class="json-property-enum-item">subscriber-mac</span>,
+                              <span class="json-property-enum-item">subscriber-ip</span>,
+                              <span class="json-property-enum-item">host-name</span>,
+                              <span class="json-property-enum-item">bng-identifier-interface</span>
+                            </span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Fourth argument </p>
+                          </dd>
+                        </dl>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;parameters&quot;</span>: {
+    <span class="hljs-attr">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-parameters_schema" class="definition panel" data-traverse-target="definition-parameters_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/parameters_schema"></a>parameters_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>HTTP Enrichment parameters</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="arg1" class="has-description">
+                      <span class="json-property-name">arg1:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">subscriber-mac</span>,
+                        <span class="json-property-enum-item">subscriber-ip</span>,
+                        <span class="json-property-enum-item">host-name</span>,
+                        <span class="json-property-enum-item">bng-identifier-interface</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>first argument </p>
+                    </dd>
+                    <dt data-property-name="arg2" class="has-description">
+                      <span class="json-property-name">arg2:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">subscriber-mac</span>,
+                        <span class="json-property-enum-item">subscriber-ip</span>,
+                        <span class="json-property-enum-item">host-name</span>,
+                        <span class="json-property-enum-item">bng-identifier-interface</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>second argument </p>
+                    </dd>
+                    <dt data-property-name="arg3" class="has-description">
+                      <span class="json-property-name">arg3:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">subscriber-mac</span>,
+                        <span class="json-property-enum-item">subscriber-ip</span>,
+                        <span class="json-property-enum-item">host-name</span>,
+                        <span class="json-property-enum-item">bng-identifier-interface</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Third argument </p>
+                    </dd>
+                    <dt data-property-name="arg4" class="has-description">
+                      <span class="json-property-name">arg4:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">subscriber-mac</span>,
+                        <span class="json-property-enum-item">subscriber-ip</span>,
+                        <span class="json-property-enum-item">host-name</span>,
+                        <span class="json-property-enum-item">bng-identifier-interface</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Fourth argument </p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;arg1&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;arg2&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;arg3&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;arg4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
