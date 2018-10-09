@@ -1,0 +1,1709 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-ppp-ea-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ppp-ea-oper:pppea-">Cisco-IOS-XR-ppp-ea-oper:pppea/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pppea--get">PPPEA</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ppp-ea-oper:pppea-nodes-node--node-name--ea-interface-names-">Cisco-IOS-XR-ppp-ea-oper:pppea/nodes/node/{node-name}/ea-interface-names/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names--get">EA-INTERFACE-NAMES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ppp-ea-oper:pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name--">Cisco-IOS-XR-ppp-ea-oper:pppea/nodes/node/{node-name}/ea-interface-names/ea-interface-name/{interface-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name---get">EA-INTERFACE-NAME</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <h5>Schema Definitions</h5>
+          <a href="#definition-PPP-EA-INTERFACE-INFO"> PPP-EA-INTERFACE-INFO </a>
+          <a href="#definition-pppea_schema"> pppea_schema </a>
+          <a href="#definition-nodes_schema"> nodes_schema </a>
+          <a href="#definition-node_schema"> node_schema </a>
+          <a href="#definition-ea-interface-names_schema"> ea-interface-names_schema </a>
+          <a href="#definition-ea-interface-name_schema"> ea-interface-name_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-ppp-ea-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-ppp-ea-oper@2015-11-09.yang">Cisco-IOS-XR-ppp-ea-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-ppp-ea-oper:pppea-"></span>
+          <div id="operation-config-pppea--get" class="operation panel" data-traverse-target="operation-config-pppea--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PPPEA - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ppp-ea-oper:pppea/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: pppea</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pppea_schema">pppea_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name---get"<span class="hljs-attr">&quot;nodes&quot;</span>:</a> {
+    <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name---get"<span class="hljs-attr">&quot;node&quot;</span>:</a> [
+      {
+        <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names--get"<span class="hljs-attr">&quot;ea-interface-names&quot;</span>:</a> {
+          <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name---get"<span class="hljs-attr">&quot;ea-interface-name&quot;</span>:</a> [
+            {
+              <span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;synchronized&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;is-ipv6cp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;peer-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;forwarding-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;peer-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;is-lcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;is-ipcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;parent-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;echo-request-interval&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;local-mtu&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;peer-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;local-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;ipv6vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;ipv4-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;l2-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;is-vpdn-tunneled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;mpls-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;echo-request-retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;l2-provisioned&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;ipv6-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;l2ip-interworking-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;interface-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;multilink-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;is-multilink-bundle&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;l2-tunnel-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;local-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;l2ip-interworking-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;lac-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;local-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;is-mplscp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;xconnect-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ppp-ea-oper:pppea-nodes-"></span>
+          <div id="operation-config-pppea-nodes--get" class="operation panel" data-traverse-target="operation-config-pppea-nodes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ppp-ea-oper:pppea/nodes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nodes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/nodes_schema">nodes_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name---get"<span class="hljs-attr">&quot;node&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names--get"<span class="hljs-attr">&quot;ea-interface-names&quot;</span>:</a> {
+        <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name---get"<span class="hljs-attr">&quot;ea-interface-name&quot;</span>:</a> [
+          {
+            <span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;synchronized&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;is-ipv6cp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;peer-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;forwarding-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;peer-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;is-lcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;is-ipcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;parent-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;echo-request-interval&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;local-mtu&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;peer-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;local-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;ipv6vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;ipv4-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;l2-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;is-vpdn-tunneled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;mpls-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;echo-request-retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;l2-provisioned&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;ipv6-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;l2ip-interworking-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;interface-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;multilink-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;is-multilink-bundle&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;l2-tunnel-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;local-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;l2ip-interworking-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;lac-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;local-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;is-mplscp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;xconnect-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ppp-ea-oper:pppea-nodes-node--node-name--"></span>
+          <div id="operation-config-pppea-nodes-node--node-name---get" class="operation panel" data-traverse-target="operation-config-pppea-nodes-node--node-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ppp-ea-oper:pppea/nodes/node/{node-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: node</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/node_schema">node_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names--get"<span class="hljs-attr">&quot;ea-interface-names&quot;</span>:</a> {
+    <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name---get"<span class="hljs-attr">&quot;ea-interface-name&quot;</span>:</a> [
+      {
+        <span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;synchronized&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;is-ipv6cp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;peer-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;forwarding-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;peer-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;is-lcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;is-ipcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;parent-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;echo-request-interval&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;local-mtu&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;peer-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;local-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;ipv6vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;ipv4-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;l2-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;is-vpdn-tunneled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;mpls-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;echo-request-retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;l2-provisioned&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;ipv6-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;l2ip-interworking-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;interface-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;multilink-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;is-multilink-bundle&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;l2-tunnel-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;local-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;l2ip-interworking-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;lac-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;local-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;is-mplscp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;xconnect-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ppp-ea-oper:pppea-nodes-node--node-name--ea-interface-names-"></span>
+          <div id="operation-config-pppea-nodes-node--node-name--ea-interface-names--get" class="operation panel" data-traverse-target="operation-config-pppea-nodes-node--node-name--ea-interface-names--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">EA-INTERFACE-NAMES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ppp-ea-oper:pppea/nodes/node/{node-name}/ea-interface-names/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ea-interface-names</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ea-interface-names_schema">ea-interface-names_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name---get"<span class="hljs-attr">&quot;ea-interface-name&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;synchronized&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;is-ipv6cp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;peer-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;forwarding-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;peer-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;is-lcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;is-ipcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;parent-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;echo-request-interval&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;local-mtu&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;peer-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;local-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;ipv6vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;ipv4-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;l2-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;is-vpdn-tunneled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;mpls-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;echo-request-retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;l2-provisioned&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;ipv6-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;l2ip-interworking-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;interface-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;multilink-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;is-multilink-bundle&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;l2-tunnel-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;local-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;l2ip-interworking-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;lac-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;local-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;is-mplscp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;xconnect-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ppp-ea-oper:pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name--"></span>
+          <div id="operation-config-pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name---get" class="operation panel" data-traverse-target="operation-config-pppea-nodes-node--node-name--ea-interface-names-ea-interface-name--interface-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">EA-INTERFACE-NAME - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ppp-ea-oper:pppea/nodes/node/{node-name}/ea-interface-names/ea-interface-name/{interface-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ea-interface-name</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ea-interface-name_schema">ea-interface-name_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;synchronized&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;is-ipv6cp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;peer-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;forwarding-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;peer-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;is-lcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;is-ipcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;parent-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;echo-request-interval&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;local-mtu&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;peer-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;local-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ipv6vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ipv4-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;l2-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-vpdn-tunneled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;mpls-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;echo-request-retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;l2-provisioned&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;ipv6-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;l2ip-interworking-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;interface-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;multilink-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-multilink-bundle&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;l2-tunnel-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;local-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;l2ip-interworking-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;lac-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;local-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;is-mplscp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;xconnect-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-PPP-EA-INTERFACE-INFO" class="definition panel" data-traverse-target="definition-PPP-EA-INTERFACE-INFO">
+            <h2 class="panel-title">
+              <a name="/definitions/PPP-EA-INTERFACE-INFO"></a>PPP-EA-INTERFACE-INFO:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>PPP EA interface information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="synchronized" class="has-description">
+                      <span class="json-property-name">synchronized:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>MA synchronization</p>
+                    </dd>
+                    <dt data-property-name="is-ipv6cp-running" class="has-description">
+                      <span class="json-property-name">is-ipv6cp-running:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>TRUE if IPV6CP is running in the dataplane for the interface</p>
+                    </dd>
+                    <dt data-property-name="peer-mrru" class="has-description">
+                      <span class="json-property-name">peer-mrru:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Peer MRRU</p>
+                    </dd>
+                    <dt data-property-name="forwarding-enabled" class="has-description">
+                      <span class="json-property-name">forwarding-enabled:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Forwarding State</p>
+                    </dd>
+                    <dt data-property-name="peer-magic" class="has-description">
+                      <span class="json-property-name">peer-magic:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Peer magic number</p>
+                    </dd>
+                    <dt data-property-name="is-lcp-running" class="has-description">
+                      <span class="json-property-name">is-lcp-running:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>TRUE if LCP is running in the dataplane for the interface</p>
+                    </dd>
+                    <dt data-property-name="is-ipcp-running" class="has-description">
+                      <span class="json-property-name">is-ipcp-running:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>TRUE if IPCP is running in the dataplane for the interface</p>
+                    </dd>
+                    <dt data-property-name="parent-interface-handle" class="has-description">
+                      <span class="json-property-name">parent-interface-handle:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Parent Interface Handle</p>
+                    </dd>
+                    <dt data-property-name="echo-request-interval" class="has-description">
+                      <span class="json-property-name">echo-request-interval:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Echo-Request interval</p>
+                    </dd>
+                    <dt data-property-name="local-mtu" class="has-description">
+                      <span class="json-property-name">local-mtu:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Local interface MTU</p>
+                    </dd>
+                    <dt data-property-name="vrf-table-id" class="has-description">
+                      <span class="json-property-name">vrf-table-id:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPCP VRF Table ID</p>
+                    </dd>
+                    <dt data-property-name="peer-mcmp-classes" class="has-description">
+                      <span class="json-property-name">peer-mcmp-classes:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Peer number of MCMP Suspension classes</p>
+                    </dd>
+                    <dt data-property-name="local-mcmp-classes" class="has-description">
+                      <span class="json-property-name">local-mcmp-classes:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Local number of MCMP Suspension classes</p>
+                    </dd>
+                    <dt data-property-name="ipv6vrf-table-id" class="has-description">
+                      <span class="json-property-name">ipv6vrf-table-id:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPv6CP VRF Table ID</p>
+                    </dd>
+                    <dt data-property-name="ipv4-adjacency-state" class="has-description">
+                      <span class="json-property-name">ipv4-adjacency-state:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">ppp-ea-adj-state-not-installed</span>,
+                        <span class="json-property-enum-item">ppp-ea-adj-state-installed</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Ipv4 adjacency state</p>
+                    </dd>
+                    <dt data-property-name="l2-adjacency-state" class="has-description">
+                      <span class="json-property-name">l2-adjacency-state:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">ppp-ea-adj-state-not-installed</span>,
+                        <span class="json-property-enum-item">ppp-ea-adj-state-installed</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>L2 adjacency state</p>
+                    </dd>
+                    <dt data-property-name="is-vpdn-tunneled" class="has-description">
+                      <span class="json-property-name">is-vpdn-tunneled:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Is VPDN tunneled</p>
+                    </dd>
+                    <dt data-property-name="mpls-adjacency-state" class="has-description">
+                      <span class="json-property-name">mpls-adjacency-state:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">ppp-ea-adj-state-not-installed</span>,
+                        <span class="json-property-enum-item">ppp-ea-adj-state-installed</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>MPLS adjacency state</p>
+                    </dd>
+                    <dt data-property-name="echo-request-retry-count" class="has-description">
+                      <span class="json-property-name">echo-request-retry-count:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Echo-Request retry count</p>
+                    </dd>
+                    <dt data-property-name="l2-provisioned" class="has-description">
+                      <span class="json-property-name">l2-provisioned:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>L2 Provisioned State</p>
+                    </dd>
+                    <dt data-property-name="ipv6-adjacency-state" class="has-description">
+                      <span class="json-property-name">ipv6-adjacency-state:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">ppp-ea-adj-state-not-installed</span>,
+                        <span class="json-property-enum-item">ppp-ea-adj-state-installed</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>IPv6 adjacency state</p>
+                    </dd>
+                    <dt data-property-name="l2ip-interworking-adjacency-state" class="has-description">
+                      <span class="json-property-name">l2ip-interworking-adjacency-state:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">ppp-ea-adj-state-not-installed</span>,
+                        <span class="json-property-enum-item">ppp-ea-adj-state-installed</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>L2 IP Interworking adjacency state</p>
+                    </dd>
+                    <dt data-property-name="interface-adjacency-state" class="has-description">
+                      <span class="json-property-name">interface-adjacency-state:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">ppp-ea-adj-state-not-installed</span>,
+                        <span class="json-property-enum-item">ppp-ea-adj-state-installed</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Interface adjacency state</p>
+                    </dd>
+                    <dt data-property-name="multilink-interface" class="has-description">
+                      <span class="json-property-name">multilink-interface:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Multilink interface that this interface is a member of, if any</p>
+                    </dd>
+                    <dt data-property-name="interface" class="has-description">
+                      <span class="json-property-name">interface:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Interface</p>
+                    </dd>
+                    <dt data-property-name="is-multilink-bundle" class="has-description">
+                      <span class="json-property-name">is-multilink-bundle:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>TRUE if this is a Multilink bundle interface</p>
+                    </dd>
+                    <dt data-property-name="l2-tunnel-enabled" class="has-description">
+                      <span class="json-property-name">l2-tunnel-enabled:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>L2 Tunnel State</p>
+                    </dd>
+                    <dt data-property-name="local-mrru" class="has-description">
+                      <span class="json-property-name">local-mrru:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Local MRRU</p>
+                    </dd>
+                    <dt data-property-name="l2ip-interworking-enabled" class="has-description">
+                      <span class="json-property-name">l2ip-interworking-enabled:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>L2 IP Interworking State</p>
+                    </dd>
+                    <dt data-property-name="lac-adjacency-state" class="has-description">
+                      <span class="json-property-name">lac-adjacency-state:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">ppp-ea-adj-state-not-installed</span>,
+                        <span class="json-property-enum-item">ppp-ea-adj-state-installed</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>LAC adjacency state</p>
+                    </dd>
+                    <dt data-property-name="local-magic" class="has-description">
+                      <span class="json-property-name">local-magic:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Local magic number</p>
+                    </dd>
+                    <dt data-property-name="is-mplscp-running" class="has-description">
+                      <span class="json-property-name">is-mplscp-running:</span>
+                      <span class="json-property-type">boolean</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>TRUE if MPLSCP is running in the dataplane for the interface</p>
+                    </dd>
+                    <dt data-property-name="xconnect-id" class="has-description">
+                      <span class="json-property-name">xconnect-id:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>XConnect ID</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;synchronized&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;is-ipv6cp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;peer-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;forwarding-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;peer-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;is-lcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;is-ipcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;parent-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;echo-request-interval&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;local-mtu&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;peer-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;local-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ipv6vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ipv4-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;l2-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-vpdn-tunneled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;mpls-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;echo-request-retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;l2-provisioned&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;ipv6-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;l2ip-interworking-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;interface-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;multilink-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-multilink-bundle&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;l2-tunnel-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;local-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;l2ip-interworking-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;lac-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;local-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;is-mplscp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;xconnect-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-pppea_schema" class="definition panel" data-traverse-target="definition-pppea_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/pppea_schema"></a>pppea_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>PPPEA operational data</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="nodes" class="has-description">
+                      <span class="json-property-name">nodes:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Per node PPPEA operational data</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="node" class="has-description">
+                            <span class="json-property-name">node:</span>
+                            <span class="json-property-type">object[]</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>The PPPEA operational data for a particular node</p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-array-items">
+                              <span class="json-property-type">object</span>
+                              <span class="json-property-range" title="Value limits"></span>
+                              <div class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="node-name" class="has-description">
+                                      <span class="json-property-name">node-name:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>The identifier for the node</p>
+                                    </dd>
+                                    <dt data-property-name="ea-interface-names" class="has-description">
+                                      <span class="json-property-name">ea-interface-names:</span>
+                                      <span class="json-property-type">object</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Show interface related information from the PPP EA</p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-properties">
+                                        <dl>
+                                          <dt data-property-name="ea-interface-name" class="has-description">
+                                            <span class="json-property-name">ea-interface-name:</span>
+                                            <span class="json-property-type">object[]</span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                          </dt>
+                                          <dd>
+                                            <p>Interface name</p>
+                                          </dd>
+                                          <dt class="json-inner-schema">
+                                            <section class="json-schema-array-items">
+                                              <span class="json-property-type"></span>
+                                              <span class="json-property-range" title="Value limits"></span>
+                                              <div class="json-inner-schema">
+                                                <section class="json-schema-allOf">
+                                                  <section class="json-schema-allOf-inherited">
+                                                    <ul>
+                                                      <span class="">
+                                                        <a class="json-schema-ref" href="#/definitions/PPP-EA-INTERFACE-INFO">PPP-EA-INTERFACE-INFO</a>
+                                                      </span>
+                                                    </ul>
+                                                  </section>
+                                                  <section class="json-schema-allOf-additional">
+                                                    <section class="json-schema-properties">
+                                                      <dl>
+                                                        <dt data-property-name="interface-name" class="has-description">
+                                                          <span class="json-property-name">interface-name:</span>
+                                                          <span class="json-property-type">string</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Interface running PPPEA</p>
+                                                        </dd>
+                                                      </dl>
+                                                    </section>
+                                                  </section>
+                                                </section>
+                                              </div>
+                                            </section>
+                                          </dt>
+                                        </dl>
+                                      </section>
+                                    </dt>
+                                  </dl>
+                                </section>
+                              </div>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;nodes&quot;</span>: {
+    <span class="hljs-attr">&quot;node&quot;</span>: [
+      {
+        <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;ea-interface-names&quot;</span>: {
+          <span class="hljs-attr">&quot;ea-interface-name&quot;</span>: [
+            {
+              <span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;synchronized&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;is-ipv6cp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;peer-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;forwarding-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;peer-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;is-lcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;is-ipcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;parent-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;echo-request-interval&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;local-mtu&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;peer-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;local-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;ipv6vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;ipv4-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;l2-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;is-vpdn-tunneled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;mpls-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;echo-request-retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;l2-provisioned&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;ipv6-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;l2ip-interworking-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;interface-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;multilink-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;is-multilink-bundle&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;l2-tunnel-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;local-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;l2ip-interworking-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;lac-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+              <span class="hljs-leaf">&quot;local-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+              <span class="hljs-leaf">&quot;is-mplscp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+              <span class="hljs-leaf">&quot;xconnect-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-nodes_schema" class="definition panel" data-traverse-target="definition-nodes_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/nodes_schema"></a>nodes_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Per node PPPEA operational data</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="node" class="has-description">
+                      <span class="json-property-name">node:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The PPPEA operational data for a particular node</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">object</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-properties">
+                            <dl>
+                              <dt data-property-name="node-name" class="has-description">
+                                <span class="json-property-name">node-name:</span>
+                                <span class="json-property-type">string</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>The identifier for the node</p>
+                              </dd>
+                              <dt data-property-name="ea-interface-names" class="has-description">
+                                <span class="json-property-name">ea-interface-names:</span>
+                                <span class="json-property-type">object</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Show interface related information from the PPP EA</p>
+                              </dd>
+                              <dt class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="ea-interface-name" class="has-description">
+                                      <span class="json-property-name">ea-interface-name:</span>
+                                      <span class="json-property-type">object[]</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Interface name</p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-array-items">
+                                        <span class="json-property-type"></span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        <div class="json-inner-schema">
+                                          <section class="json-schema-allOf">
+                                            <section class="json-schema-allOf-inherited">
+                                              <ul>
+                                                <span class="">
+                                                  <a class="json-schema-ref" href="#/definitions/PPP-EA-INTERFACE-INFO">PPP-EA-INTERFACE-INFO</a>
+                                                </span>
+                                              </ul>
+                                            </section>
+                                            <section class="json-schema-allOf-additional">
+                                              <section class="json-schema-properties">
+                                                <dl>
+                                                  <dt data-property-name="interface-name" class="has-description">
+                                                    <span class="json-property-name">interface-name:</span>
+                                                    <span class="json-property-type">string</span>
+                                                    <span class="json-property-range" title="Value limits"></span>
+                                                  </dt>
+                                                  <dd>
+                                                    <p>Interface running PPPEA</p>
+                                                  </dd>
+                                                </dl>
+                                              </section>
+                                            </section>
+                                          </section>
+                                        </div>
+                                      </section>
+                                    </dt>
+                                  </dl>
+                                </section>
+                              </dt>
+                            </dl>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;node&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;ea-interface-names&quot;</span>: {
+        <span class="hljs-attr">&quot;ea-interface-name&quot;</span>: [
+          {
+            <span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;synchronized&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;is-ipv6cp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;peer-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;forwarding-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;peer-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;is-lcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;is-ipcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;parent-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;echo-request-interval&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;local-mtu&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;peer-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;local-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;ipv6vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;ipv4-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;l2-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;is-vpdn-tunneled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;mpls-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;echo-request-retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;l2-provisioned&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;ipv6-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;l2ip-interworking-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;interface-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;multilink-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;is-multilink-bundle&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;l2-tunnel-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;local-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;l2ip-interworking-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;lac-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;local-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;is-mplscp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+            <span class="hljs-leaf">&quot;xconnect-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          }
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-node_schema" class="definition panel" data-traverse-target="definition-node_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/node_schema"></a>node_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="node-name" class="has-description">
+                      <span class="json-property-name">node-name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The identifier for the node</p>
+                    </dd>
+                    <dt data-property-name="ea-interface-names" class="has-description">
+                      <span class="json-property-name">ea-interface-names:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Show interface related information from the PPP EA</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="ea-interface-name" class="has-description">
+                            <span class="json-property-name">ea-interface-name:</span>
+                            <span class="json-property-type">object[]</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Interface name</p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-array-items">
+                              <span class="json-property-type"></span>
+                              <span class="json-property-range" title="Value limits"></span>
+                              <div class="json-inner-schema">
+                                <section class="json-schema-allOf">
+                                  <section class="json-schema-allOf-inherited">
+                                    <ul>
+                                      <span class="">
+                                        <a class="json-schema-ref" href="#/definitions/PPP-EA-INTERFACE-INFO">PPP-EA-INTERFACE-INFO</a>
+                                      </span>
+                                    </ul>
+                                  </section>
+                                  <section class="json-schema-allOf-additional">
+                                    <section class="json-schema-properties">
+                                      <dl>
+                                        <dt data-property-name="interface-name" class="has-description">
+                                          <span class="json-property-name">interface-name:</span>
+                                          <span class="json-property-type">string</span>
+                                          <span class="json-property-range" title="Value limits"></span>
+                                        </dt>
+                                        <dd>
+                                          <p>Interface running PPPEA</p>
+                                        </dd>
+                                      </dl>
+                                    </section>
+                                  </section>
+                                </section>
+                              </div>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;ea-interface-names&quot;</span>: {
+    <span class="hljs-attr">&quot;ea-interface-name&quot;</span>: [
+      {
+        <span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;synchronized&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;is-ipv6cp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;peer-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;forwarding-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;peer-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;is-lcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;is-ipcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;parent-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;echo-request-interval&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;local-mtu&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;peer-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;local-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;ipv6vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;ipv4-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;l2-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;is-vpdn-tunneled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;mpls-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;echo-request-retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;l2-provisioned&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;ipv6-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;l2ip-interworking-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;interface-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;multilink-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;is-multilink-bundle&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;l2-tunnel-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;local-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;l2ip-interworking-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;lac-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;local-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;is-mplscp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+        <span class="hljs-leaf">&quot;xconnect-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-ea-interface-names_schema" class="definition panel" data-traverse-target="definition-ea-interface-names_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/ea-interface-names_schema"></a>ea-interface-names_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Show interface related information from the PPP EA</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="ea-interface-name" class="has-description">
+                      <span class="json-property-name">ea-interface-name:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Interface name</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type"></span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-allOf">
+                            <section class="json-schema-allOf-inherited">
+                              <ul>
+                                <span class="">
+                                  <a class="json-schema-ref" href="#/definitions/PPP-EA-INTERFACE-INFO">PPP-EA-INTERFACE-INFO</a>
+                                </span>
+                              </ul>
+                            </section>
+                            <section class="json-schema-allOf-additional">
+                              <section class="json-schema-properties">
+                                <dl>
+                                  <dt data-property-name="interface-name" class="has-description">
+                                    <span class="json-property-name">interface-name:</span>
+                                    <span class="json-property-type">string</span>
+                                    <span class="json-property-range" title="Value limits"></span>
+                                  </dt>
+                                  <dd>
+                                    <p>Interface running PPPEA</p>
+                                  </dd>
+                                </dl>
+                              </section>
+                            </section>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;ea-interface-name&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;synchronized&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;is-ipv6cp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;peer-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;forwarding-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;peer-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;is-lcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;is-ipcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;parent-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;echo-request-interval&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;local-mtu&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;peer-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;local-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;ipv6vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;ipv4-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;l2-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;is-vpdn-tunneled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;mpls-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;echo-request-retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;l2-provisioned&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;ipv6-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;l2ip-interworking-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;interface-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;multilink-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;is-multilink-bundle&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;l2-tunnel-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;local-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;l2ip-interworking-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;lac-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-leaf">&quot;local-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+      <span class="hljs-leaf">&quot;is-mplscp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+      <span class="hljs-leaf">&quot;xconnect-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-ea-interface-name_schema" class="definition panel" data-traverse-target="definition-ea-interface-name_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/ea-interface-name_schema"></a>ea-interface-name_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type"></span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-allOf">
+                  <section class="json-schema-allOf-inherited">
+                    <ul>
+                      <span class="">
+                        <a class="json-schema-ref" href="#/definitions/PPP-EA-INTERFACE-INFO">PPP-EA-INTERFACE-INFO</a>
+                      </span>
+                    </ul>
+                  </section>
+                  <section class="json-schema-allOf-additional">
+                    <section class="json-schema-properties">
+                      <dl>
+                        <dt data-property-name="interface-name" class="has-description">
+                          <span class="json-property-name">interface-name:</span>
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </dt>
+                        <dd>
+                          <p>Interface running PPPEA</p>
+                        </dd>
+                      </dl>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;synchronized&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;is-ipv6cp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;peer-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;forwarding-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;peer-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;is-lcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;is-ipcp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;parent-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;echo-request-interval&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;local-mtu&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;peer-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;local-mcmp-classes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ipv6vrf-table-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;ipv4-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;l2-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-vpdn-tunneled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;mpls-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;echo-request-retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;l2-provisioned&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;ipv6-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;l2ip-interworking-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;interface-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;multilink-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;is-multilink-bundle&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;l2-tunnel-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;local-mrru&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;l2ip-interworking-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;lac-adjacency-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;local-magic&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;is-mplscp-running&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,
+  <span class="hljs-leaf">&quot;xconnect-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

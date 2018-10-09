@@ -1,0 +1,3260 @@
+      <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-aaa-locald-admin-cfg API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-admin-cfg:aaa-">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">AAA</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-aaa--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+-->
+          <h5>Schema Definitions</h5>
+           <a href="#definition-aaa_schema"> aaa_schema </a>
+          <a href="#definition-usernames_schema"> usernames_schema </a>
+          <a href="#definition-username_schema"> username_schema </a>
+          <a href="#definition-usergroup-under-usernames_schema"> usergroup-under-usernames_schema </a>
+          <a href="#definition-usergroup-under-username_schema"> usergroup-under-username_schema </a>
+          <a href="#definition-secret_schema"> secret_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-aaa-locald-admin-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-aaa-locald-admin-cfg@2015-11-09.yang">Cisco-IOS-XR-aaa-locald-admin-cfg@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                  <h5>Leaf Color Code:</h5>                    <span class="hljs-key">&emsp;&emsp;&emsp;Key&nbsp</span>                    <span class="hljs-mand">Mandatory&nbsp</span>                    <span class="hljs-leaf">Optional</span>                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-aaa-locald-admin-cfg:aaa-"></span>
+          <div id="operation-config-aaa--put" class="operation panel" data-traverse-target="operation-config-aaa--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">AAA - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: aaa</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/aaa_schema">aaa_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>aaabody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames--put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames--post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames--delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name---put">PUT  </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name---post">POST </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name---delete">DELETE</a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name---get">GET</a><!--
+-->    </div><!--
+-->    </div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--put">PUT  </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--post">POST </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--delete">DELETE</a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--get">GET</a><!--
+-->        </div><!--
+-->        </div><!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->          <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->          <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->          <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->          </div><!--
+-->          </div><!--
+-->            {
+              <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        },<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;secret&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--secret--put">PUT  </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--secret--post">POST </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--secret--delete">DELETE</a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--secret--get">GET</a><!--
+-->        </div><!--
+-->        </div><!--
+-->          <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
+        <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa--post" class="operation panel" data-traverse-target="operation-config-aaa--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">AAA - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: aaa</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/aaa_schema">aaa_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>aaabody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames--put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames--post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames--delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name---put">PUT  </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name---post">POST </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name---delete">DELETE</a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name---get">GET</a><!--
+-->    </div><!--
+-->    </div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--put">PUT  </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--post">POST </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--delete">DELETE</a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--get">GET</a><!--
+-->        </div><!--
+-->        </div><!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->          <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->          <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->          <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->          </div><!--
+-->          </div><!--
+-->            {
+              <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        },<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;secret&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--secret--put">PUT  </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--secret--post">POST </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--secret--delete">DELETE</a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--secret--get">GET</a><!--
+-->        </div><!--
+-->        </div><!--
+-->          <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
+        <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa--delete" class="operation panel" data-traverse-target="operation-config-aaa--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">AAA - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: aaa</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa--get" class="operation panel" data-traverse-target="operation-config-aaa--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">AAA - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: aaa</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/aaa_schema">aaa_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames--put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames--post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames--delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name---put">PUT  </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name---post">POST </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name---delete">DELETE</a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name---get">GET</a><!--
+-->    </div><!--
+-->    </div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--put">PUT  </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--post">POST </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--delete">DELETE</a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--get">GET</a><!--
+-->        </div><!--
+-->        </div><!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->          <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->          <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->          <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->          </div><!--
+-->          </div><!--
+-->            {
+              <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        },<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;secret&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--secret--put">PUT  </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--secret--post">POST </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--secret--delete">DELETE</a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--secret--get">GET</a><!--
+-->        </div><!--
+-->        </div><!--
+-->          <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
+        <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-admin-cfg:aaa-usernames-"></span>
+          <div id="operation-config-aaa-usernames--put" class="operation panel" data-traverse-target="operation-config-aaa-usernames--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERNAMES - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: usernames</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/usernames_schema">usernames_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>usernamesbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name---put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name---post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name---delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name---get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    {<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--put">PUT  </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--post">POST </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--delete">DELETE</a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--get">GET</a><!--
+-->      </div><!--
+-->      </div><!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->        </div><!--
+-->        </div><!--
+-->          {
+            <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;secret&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--secret--put">PUT  </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--secret--post">POST </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--secret--delete">DELETE</a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--secret--get">GET</a><!--
+-->      </div><!--
+-->      </div><!--
+-->        <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
+      <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames--post" class="operation panel" data-traverse-target="operation-config-aaa-usernames--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERNAMES - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: usernames</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/usernames_schema">usernames_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>usernamesbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name---put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name---post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name---delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name---get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    {<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--put">PUT  </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--post">POST </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--delete">DELETE</a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--get">GET</a><!--
+-->      </div><!--
+-->      </div><!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->        </div><!--
+-->        </div><!--
+-->          {
+            <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;secret&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--secret--put">PUT  </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--secret--post">POST </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--secret--delete">DELETE</a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--secret--get">GET</a><!--
+-->      </div><!--
+-->      </div><!--
+-->        <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
+      <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames--delete" class="operation panel" data-traverse-target="operation-config-aaa-usernames--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERNAMES - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: usernames</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames--get" class="operation panel" data-traverse-target="operation-config-aaa-usernames--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERNAMES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: usernames</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/usernames_schema">usernames_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name---put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name---post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name---delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name---get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    {<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--put">PUT  </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--post">POST </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--delete">DELETE</a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--get">GET</a><!--
+-->      </div><!--
+-->      </div><!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->        <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->        </div><!--
+-->        </div><!--
+-->          {
+            <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;secret&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--secret--put">PUT  </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--secret--post">POST </a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--secret--delete">DELETE</a><!--
+-->      <a href="#operation-config-aaa-usernames-username--name--secret--get">GET</a><!--
+-->      </div><!--
+-->      </div><!--
+-->        <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
+      <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-admin-cfg:aaa-usernames-username--name--"></span>
+          <div id="operation-config-aaa-usernames-username--name---put" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name---put">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERNAME - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: username</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/username_schema">username_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>usernamebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->    </div><!--
+-->    </div><!--
+-->      {
+        <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;secret&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--secret--put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--secret--post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--secret--delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--secret--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
+  <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name---post" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name---post">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERNAME - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: username</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/username_schema">username_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>usernamebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->    </div><!--
+-->    </div><!--
+-->      {
+        <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;secret&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--secret--put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--secret--post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--secret--delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--secret--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
+  <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name---delete" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name---delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERNAME - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: username</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name---get" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERNAME - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: username</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/username_schema">username_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->    <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->    </div><!--
+-->    </div><!--
+-->      {
+        <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;secret&quot;</span></button>: {<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--secret--put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--secret--post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--secret--delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--secret--get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
+  <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-admin-cfg:aaa-usernames-username--name--usergroup-under-usernames-"></span>
+          <div id="operation-config-aaa-usernames-username--name--usergroup-under-usernames--put" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--usergroup-under-usernames--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERGROUP-UNDER-USERNAMES - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/usergroup-under-usernames/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: usergroup-under-usernames</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/usergroup-under-usernames_schema">usergroup-under-usernames_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>usergroup-under-usernamesbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    {
+      <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name--usergroup-under-usernames--post" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--usergroup-under-usernames--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERGROUP-UNDER-USERNAMES - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/usergroup-under-usernames/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: usergroup-under-usernames</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/usergroup-under-usernames_schema">usergroup-under-usernames_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>usergroup-under-usernamesbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    {
+      <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name--usergroup-under-usernames--delete" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--usergroup-under-usernames--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERGROUP-UNDER-USERNAMES - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/usergroup-under-usernames/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: usergroup-under-usernames</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name--usergroup-under-usernames--get" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--usergroup-under-usernames--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERGROUP-UNDER-USERNAMES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/usergroup-under-usernames/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: usergroup-under-usernames</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/usergroup-under-usernames_schema">usergroup-under-usernames_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;usergroup-under-username&quot;</span></button>: [<!--
+--> <div class="dropdown-content"><!--
+--><a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">PUT  </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">POST </a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">DELETE</a><!--
+-->  <a href="#operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">GET</a><!--
+-->  </div><!--
+-->  </div><!--
+-->    {
+      <span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-admin-cfg:aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name--"></span>
+          <div id="operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---put">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERGROUP-UNDER-USERNAME - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/usergroup-under-usernames/usergroup-under-username/{sergroup-under-username_name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: usergroup-under-username</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/usergroup-under-username_schema">usergroup-under-username_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>usergroup-under-usernamebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">sergroup-under-username_name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of sergroup-under-username_name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;sergroup-under-username_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---post">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERGROUP-UNDER-USERNAME - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/usergroup-under-usernames/usergroup-under-username/{sergroup-under-username_name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: usergroup-under-username</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/usergroup-under-username_schema">usergroup-under-username_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>usergroup-under-usernamebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">sergroup-under-username_name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of sergroup-under-username_name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;sergroup-under-username_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERGROUP-UNDER-USERNAME - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/usergroup-under-usernames/usergroup-under-username/{sergroup-under-username_name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: usergroup-under-username</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">sergroup-under-username_name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of sergroup-under-username_name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--usergroup-under-usernames-usergroup-under-username--sergroup-under-username_name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">USERGROUP-UNDER-USERNAME - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/usergroup-under-usernames/usergroup-under-username/{sergroup-under-username_name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: usergroup-under-username</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">sergroup-under-username_name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of sergroup-under-username_name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/usergroup-under-username_schema">usergroup-under-username_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;sergroup-under-username_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-admin-cfg:aaa-usernames-username--name--secret-"></span>
+          <div id="operation-config-aaa-usernames-username--name--secret--put" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--secret--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">SECRET - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/secret/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: secret</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/secret_schema">secret_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>secretbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name--secret--post" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--secret--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">SECRET - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/secret/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: secret</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/secret_schema">secret_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>secretbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name--secret--delete" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--secret--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">SECRET - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/secret/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: secret</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-aaa-usernames-username--name--secret--get" class="operation panel" data-traverse-target="operation-config-aaa-usernames-username--name--secret--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SECRET - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-admin-cfg:aaa/usernames/username/{name}/secret/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: secret</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/secret_schema">secret_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-aaa_schema" class="definition panel" data-traverse-target="definition-aaa_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/aaa_schema"></a>aaa_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Admin plane AAA configuration</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="usernames" class="has-description">
+                      <span class="json-property-name">usernames:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Configure local username</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="username" class="has-description">
+                            <span class="json-property-name">username:</span>
+                            <span class="json-property-type">object[]</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Admin Username</p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-array-items">
+                              <span class="json-property-type">object</span>
+                              <span class="json-property-range" title="Value limits"></span>
+                              <div class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="usergroup-under-usernames" class="has-description">
+                                      <span class="json-property-name">usergroup-under-usernames:</span>
+                                      <span class="json-property-type">object</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Specify the usergroup to which this admin user belongs</p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-properties">
+                                        <dl>
+                                          <dt data-property-name="usergroup-under-username" class="has-description">
+                                            <span class="json-property-name">usergroup-under-username:</span>
+                                            <span class="json-property-type">object[]</span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                          </dt>
+                                          <dd>
+                                            <p>Name of the usergroup</p>
+                                          </dd>
+                                          <dt class="json-inner-schema">
+                                            <section class="json-schema-array-items">
+                                              <span class="json-property-type">object</span>
+                                              <span class="json-property-range" title="Value limits"></span>
+                                              <div class="json-inner-schema">
+                                                <section class="json-schema-properties">
+                                                  <dl>
+                                                    <dt data-property-name="name" class="has-description">
+                                                      <span class="json-property-name">name:</span>
+                                                      <span class="json-property-type">string</span>
+                                                      <span class="json-property-range" title="Value limits"></span>
+                                                    </dt>
+                                                    <dd>
+                                                      <p>Name of the usergroup</p>
+                                                    </dd>
+                                                  </dl>
+                                                </section>
+                                              </div>
+                                            </section>
+                                          </dt>
+                                        </dl>
+                                      </section>
+                                    </dt>
+                                    <dt data-property-name="secret" class="has-description">
+                                      <span class="json-property-name">secret:</span>
+                                      <span class="json-property-type">object</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Specify the secret for the admin user</p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-properties">
+                                        <dl>
+                                          <dt data-property-name="secret9" class="has-description">
+                                            <span class="json-property-name">secret9:</span>
+                                            <span class="json-property-type">string</span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                          </dt>
+                                          <dd>
+                                            <p>Type 9 password</p>
+                                          </dd>
+                                          <dt data-property-name="secret8" class="has-description">
+                                            <span class="json-property-name">secret8:</span>
+                                            <span class="json-property-type">string</span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                          </dt>
+                                          <dd>
+                                            <p>Type 8 password</p>
+                                          </dd>
+                                          <dt data-property-name="type" class="has-description">
+                                            <span class="json-property-name">type:</span>
+                                            <span class="json-property-type">string</span>
+                                            <span class="json-property-enum" title="Possible values">
+                                              <span class="json-property-enum-item">type5</span>,
+                                              <span class="json-property-enum-item">type8</span>,
+                                              <span class="json-property-enum-item">type9</span>
+                                            </span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                          </dt>
+                                          <dd>
+                                            <p>Password type</p>
+                                          </dd>
+                                          <dt data-property-name="secret5" class="has-description">
+                                            <span class="json-property-name">secret5:</span>
+                                            <span class="json-property-type">string</span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                          </dt>
+                                          <dd>
+                                            <p>The user&#39;s secret password</p>
+                                          </dd>
+                                        </dl>
+                                      </section>
+                                    </dt>
+                                    <dt data-property-name="name" class="has-description">
+                                      <span class="json-property-name">name:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Username</p>
+                                    </dd>
+                                  </dl>
+                                </section>
+                              </div>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;usernames&quot;</span>: {
+    <span class="hljs-attr">&quot;username&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span>: {
+          <span class="hljs-attr">&quot;usergroup-under-username&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        },
+        <span class="hljs-attr">&quot;secret&quot;</span>: {
+          <span class="hljs-attr">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-usernames_schema" class="definition panel" data-traverse-target="definition-usernames_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/usernames_schema"></a>usernames_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Configure local username</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="username" class="has-description">
+                      <span class="json-property-name">username:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Admin Username</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">object</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-properties">
+                            <dl>
+                              <dt data-property-name="usergroup-under-usernames" class="has-description">
+                                <span class="json-property-name">usergroup-under-usernames:</span>
+                                <span class="json-property-type">object</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Specify the usergroup to which this admin user belongs</p>
+                              </dd>
+                              <dt class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="usergroup-under-username" class="has-description">
+                                      <span class="json-property-name">usergroup-under-username:</span>
+                                      <span class="json-property-type">object[]</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Name of the usergroup</p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-array-items">
+                                        <span class="json-property-type">object</span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        <div class="json-inner-schema">
+                                          <section class="json-schema-properties">
+                                            <dl>
+                                              <dt data-property-name="name" class="has-description">
+                                                <span class="json-property-name">name:</span>
+                                                <span class="json-property-type">string</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Name of the usergroup</p>
+                                              </dd>
+                                            </dl>
+                                          </section>
+                                        </div>
+                                      </section>
+                                    </dt>
+                                  </dl>
+                                </section>
+                              </dt>
+                              <dt data-property-name="secret" class="has-description">
+                                <span class="json-property-name">secret:</span>
+                                <span class="json-property-type">object</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Specify the secret for the admin user</p>
+                              </dd>
+                              <dt class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="secret9" class="has-description">
+                                      <span class="json-property-name">secret9:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Type 9 password</p>
+                                    </dd>
+                                    <dt data-property-name="secret8" class="has-description">
+                                      <span class="json-property-name">secret8:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Type 8 password</p>
+                                    </dd>
+                                    <dt data-property-name="type" class="has-description">
+                                      <span class="json-property-name">type:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-enum" title="Possible values">
+                                        <span class="json-property-enum-item">type5</span>,
+                                        <span class="json-property-enum-item">type8</span>,
+                                        <span class="json-property-enum-item">type9</span>
+                                      </span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Password type</p>
+                                    </dd>
+                                    <dt data-property-name="secret5" class="has-description">
+                                      <span class="json-property-name">secret5:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>The user&#39;s secret password</p>
+                                    </dd>
+                                  </dl>
+                                </section>
+                              </dt>
+                              <dt data-property-name="name" class="has-description">
+                                <span class="json-property-name">name:</span>
+                                <span class="json-property-type">string</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Username</p>
+                              </dd>
+                            </dl>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;username&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span>: {
+        <span class="hljs-attr">&quot;usergroup-under-username&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          }
+        ]
+      },
+      <span class="hljs-attr">&quot;secret&quot;</span>: {
+        <span class="hljs-attr">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-username_schema" class="definition panel" data-traverse-target="definition-username_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/username_schema"></a>username_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="usergroup-under-usernames" class="has-description">
+                      <span class="json-property-name">usergroup-under-usernames:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Specify the usergroup to which this admin user belongs</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="usergroup-under-username" class="has-description">
+                            <span class="json-property-name">usergroup-under-username:</span>
+                            <span class="json-property-type">object[]</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Name of the usergroup</p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-array-items">
+                              <span class="json-property-type">object</span>
+                              <span class="json-property-range" title="Value limits"></span>
+                              <div class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="name" class="has-description">
+                                      <span class="json-property-name">name:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Name of the usergroup</p>
+                                    </dd>
+                                  </dl>
+                                </section>
+                              </div>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                    <dt data-property-name="secret" class="has-description">
+                      <span class="json-property-name">secret:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Specify the secret for the admin user</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="secret9" class="has-description">
+                            <span class="json-property-name">secret9:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Type 9 password</p>
+                          </dd>
+                          <dt data-property-name="secret8" class="has-description">
+                            <span class="json-property-name">secret8:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Type 8 password</p>
+                          </dd>
+                          <dt data-property-name="type" class="has-description">
+                            <span class="json-property-name">type:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-enum" title="Possible values">
+                              <span class="json-property-enum-item">type5</span>,
+                              <span class="json-property-enum-item">type8</span>,
+                              <span class="json-property-enum-item">type9</span>
+                            </span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Password type</p>
+                          </dd>
+                          <dt data-property-name="secret5" class="has-description">
+                            <span class="json-property-name">secret5:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>The user&#39;s secret password</p>
+                          </dd>
+                        </dl>
+                      </section>
+                    </dt>
+                    <dt data-property-name="name" class="has-description">
+                      <span class="json-property-name">name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Username</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;usergroup-under-usernames&quot;</span>: {
+    <span class="hljs-attr">&quot;usergroup-under-username&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">&quot;secret&quot;</span>: {
+    <span class="hljs-attr">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-usergroup-under-usernames_schema" class="definition panel" data-traverse-target="definition-usergroup-under-usernames_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/usergroup-under-usernames_schema"></a>usergroup-under-usernames_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Specify the usergroup to which this admin user belongs</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="usergroup-under-username" class="has-description">
+                      <span class="json-property-name">usergroup-under-username:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Name of the usergroup</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">object</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-properties">
+                            <dl>
+                              <dt data-property-name="name" class="has-description">
+                                <span class="json-property-name">name:</span>
+                                <span class="json-property-type">string</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Name of the usergroup</p>
+                              </dd>
+                            </dl>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;usergroup-under-username&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-usergroup-under-username_schema" class="definition panel" data-traverse-target="definition-usergroup-under-username_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/usergroup-under-username_schema"></a>usergroup-under-username_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="sergroup-under-username_name" class="has-description">
+                      <span class="json-property-name">sergroup-under-username_name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Name of the usergroup</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;sergroup-under-username_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-secret_schema" class="definition panel" data-traverse-target="definition-secret_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/secret_schema"></a>secret_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Specify the secret for the admin user</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="secret9" class="has-description">
+                      <span class="json-property-name">secret9:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Type 9 password</p>
+                    </dd>
+                    <dt data-property-name="secret8" class="has-description">
+                      <span class="json-property-name">secret8:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Type 8 password</p>
+                    </dd>
+                    <dt data-property-name="type" class="has-description">
+                      <span class="json-property-name">type:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">
+                        <span class="json-property-enum-item">type5</span>,
+                        <span class="json-property-enum-item">type8</span>,
+                        <span class="json-property-enum-item">type9</span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Password type</p>
+                    </dd>
+                    <dt data-property-name="secret5" class="has-description">
+                      <span class="json-property-name">secret5:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The user&#39;s secret password</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;secret9&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;secret8&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;secret5&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2126 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-sdr-invmgr-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory-">Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-sdr-inventory--get">SDR-INVENTORY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+          <h5>Schema Definitions</h5>
+          <a href="#definition-sdr-inventory_schema"> sdr-inventory_schema </a>
+          <a href="#definition-racks_schema"> racks_schema </a>
+          <a href="#definition-rack_schema"> rack_schema </a>
+          <a href="#definition-slot_schema"> slot_schema </a>
+          <a href="#definition-card_schema"> card_schema </a>
+          <a href="#definition-attributes_schema"> attributes_schema </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-sdr-invmgr-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-sdr-invmgr-oper@2015-11-09.yang">Cisco-IOS-XR-sdr-invmgr-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory-"></span>
+          <div id="operation-config-sdr-inventory--get" class="operation panel" data-traverse-target="operation-config-sdr-inventory--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SDR-INVENTORY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sdr-inventory</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/sdr-inventory_schema">sdr-inventory_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;racks&quot;</span>:</a> {
+    <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;rack&quot;</span>:</a> [
+      {
+        <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;slot&quot;</span>:</a> [
+          {
+            <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;card&quot;</span>:</a> [
+              {
+                <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;attributes&quot;</span>:</a> {
+                  <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+                },
+                <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+              }
+            ]
+          }
+        ],
+        <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory-racks-"></span>
+          <div id="operation-config-sdr-inventory-racks--get" class="operation panel" data-traverse-target="operation-config-sdr-inventory-racks--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RACKS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory/racks/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: racks</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/racks_schema">racks_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;rack&quot;</span>:</a> [
+    {
+      <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;slot&quot;</span>:</a> [
+        {
+          <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;card&quot;</span>:</a> [
+            {
+              <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;attributes&quot;</span>:</a> {
+                <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+              },
+              <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        }
+      ],
+      <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory-racks-rack--name--"></span>
+          <div id="operation-config-sdr-inventory-racks-rack--name---get" class="operation panel" data-traverse-target="operation-config-sdr-inventory-racks-rack--name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RACK - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory/racks/rack/{name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rack</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rack_schema">rack_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;slot&quot;</span>:</a> [
+    {
+      <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;card&quot;</span>:</a> [
+        {
+          <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;attributes&quot;</span>:</a> {
+            <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          },
+          <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        }
+      ]
+    }
+  ],
+  <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory-racks-rack--name--slot--lot_name--"></span>
+          <div id="operation-config-sdr-inventory-racks-rack--name--slot--lot_name---get" class="operation panel" data-traverse-target="operation-config-sdr-inventory-racks-rack--name--slot--lot_name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SLOT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory/racks/rack/{name}/slot/{lot_name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: slot</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">lot_name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of lot_name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/slot_schema">slot_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;lot_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;card&quot;</span>:</a> [
+    {
+      <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;attributes&quot;</span>:</a> {
+        <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      },
+      <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory-racks-rack--name--slot--lot_name--card--ard_name--"></span>
+          <div id="operation-config-sdr-inventory-racks-rack--name--slot--lot_name--card--ard_name---get" class="operation panel" data-traverse-target="operation-config-sdr-inventory-racks-rack--name--slot--lot_name--card--ard_name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CARD - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory/racks/rack/{name}/slot/{lot_name}/card/{ard_name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: card</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">lot_name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of lot_name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">ard_name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of ard_name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/card_schema">card_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <a href="#operation-config-sdr-inventory--get"<span class="hljs-attr">&quot;attributes&quot;</span>:</a> {
+    <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <span class="hljs-leaf">&quot;ard_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory-racks-rack--name--slot--lot_name--card--ard_name--attributes-"></span>
+          <div id="operation-config-sdr-inventory-racks-rack--name--slot--lot_name--card--ard_name--attributes--get" class="operation panel" data-traverse-target="operation-config-sdr-inventory-racks-rack--name--slot--lot_name--card--ard_name--attributes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ATTRIBUTES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-sdr-invmgr-oper:sdr-inventory/racks/rack/{name}/slot/{lot_name}/card/{ard_name}/attributes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: attributes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">lot_name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of lot_name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">ard_name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of ard_name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/attributes_schema">attributes_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-sdr-inventory_schema" class="definition panel" data-traverse-target="definition-sdr-inventory_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/sdr-inventory_schema"></a>sdr-inventory_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>SDR information</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="racks" class="has-description">
+                      <span class="json-property-name">racks:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>RackTable</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="rack" class="has-description">
+                            <span class="json-property-name">rack:</span>
+                            <span class="json-property-type">object[]</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Rack name</p>
+                          </dd>
+                          <dt class="json-inner-schema">
+                            <section class="json-schema-array-items">
+                              <span class="json-property-type">object</span>
+                              <span class="json-property-range" title="Value limits"></span>
+                              <div class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="slot" class="has-description">
+                                      <span class="json-property-name">slot:</span>
+                                      <span class="json-property-type">object[]</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Slot name</p>
+                                    </dd>
+                                    <dt class="json-inner-schema">
+                                      <section class="json-schema-array-items">
+                                        <span class="json-property-type">object</span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        <div class="json-inner-schema">
+                                          <section class="json-schema-properties">
+                                            <dl>
+                                              <dt data-property-name="name" class="has-description">
+                                                <span class="json-property-name">name:</span>
+                                                <span class="json-property-type">string</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Slot name</p>
+                                              </dd>
+                                              <dt data-property-name="card" class="has-description">
+                                                <span class="json-property-name">card:</span>
+                                                <span class="json-property-type">object[]</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Card</p>
+                                              </dd>
+                                              <dt class="json-inner-schema">
+                                                <section class="json-schema-array-items">
+                                                  <span class="json-property-type">object</span>
+                                                  <span class="json-property-range" title="Value limits"></span>
+                                                  <div class="json-inner-schema">
+                                                    <section class="json-schema-properties">
+                                                      <dl>
+                                                        <dt data-property-name="attributes" class="has-description">
+                                                          <span class="json-property-name">attributes:</span>
+                                                          <span class="json-property-type">object</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Attributes</p>
+                                                        </dd>
+                                                        <dt class="json-inner-schema">
+                                                          <section class="json-schema-properties">
+                                                            <dl>
+                                                              <dt data-property-name="card-admin-state" class="has-description">
+                                                                <span class="json-property-name">card-admin-state:</span>
+                                                                <span class="json-property-type">integer</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>Card Admin State</p>
+                                                              </dd>
+                                                              <dt data-property-name="config-state" class="has-description">
+                                                                <span class="json-property-name">config-state:</span>
+                                                                <span class="json-property-type">integer</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>ConfigState</p>
+                                                              </dd>
+                                                              <dt data-property-name="card-state" class="has-description">
+                                                                <span class="json-property-name">card-state:</span>
+                                                                <span class="json-property-type">integer</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>CardState</p>
+                                                              </dd>
+                                                              <dt data-property-name="monitor" class="has-description">
+                                                                <span class="json-property-name">monitor:</span>
+                                                                <span class="json-property-type">integer</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>Monitor</p>
+                                                              </dd>
+                                                              <dt data-property-name="power" class="has-description">
+                                                                <span class="json-property-name">power:</span>
+                                                                <span class="json-property-type">integer</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>Power</p>
+                                                              </dd>
+                                                              <dt data-property-name="card-type-string" class="has-description">
+                                                                <span class="json-property-name">card-type-string:</span>
+                                                                <span class="json-property-type">string</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>Card Type String</p>
+                                                              </dd>
+                                                              <dt data-property-name="card-state-string" class="has-description">
+                                                                <span class="json-property-name">card-state-string:</span>
+                                                                <span class="json-property-type">string</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>Card State String</p>
+                                                              </dd>
+                                                              <dt data-property-name="pi-slot-number" class="has-description">
+                                                                <span class="json-property-name">pi-slot-number:</span>
+                                                                <span class="json-property-type">integer</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>Pi Slot Number</p>
+                                                              </dd>
+                                                              <dt data-property-name="config-state-string" class="has-description">
+                                                                <span class="json-property-name">config-state-string:</span>
+                                                                <span class="json-property-type">string</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>Config State String</p>
+                                                              </dd>
+                                                              <dt data-property-name="card-type" class="has-description">
+                                                                <span class="json-property-name">card-type:</span>
+                                                                <span class="json-property-type">integer</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>CardType</p>
+                                                              </dd>
+                                                              <dt data-property-name="node-name-string" class="has-description">
+                                                                <span class="json-property-name">node-name-string:</span>
+                                                                <span class="json-property-type">string</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>Node Name String</p>
+                                                              </dd>
+                                                              <dt data-property-name="ctype" class="has-description">
+                                                                <span class="json-property-name">ctype:</span>
+                                                                <span class="json-property-type">integer</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>CType</p>
+                                                              </dd>
+                                                              <dt data-property-name="shutdown" class="has-description">
+                                                                <span class="json-property-name">shutdown:</span>
+                                                                <span class="json-property-type">integer</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>Shutdown</p>
+                                                              </dd>
+                                                              <dt data-property-name="vm-state" class="has-description">
+                                                                <span class="json-property-name">vm-state:</span>
+                                                                <span class="json-property-type">integer</span>
+                                                                <span class="json-property-range" title="Value limits"></span>
+                                                              </dt>
+                                                              <dd>
+                                                                <p>VM State information</p>
+                                                              </dd>
+                                                            </dl>
+                                                          </section>
+                                                        </dt>
+                                                        <dt data-property-name="name" class="has-description">
+                                                          <span class="json-property-name">name:</span>
+                                                          <span class="json-property-type">string</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Card</p>
+                                                        </dd>
+                                                      </dl>
+                                                    </section>
+                                                  </div>
+                                                </section>
+                                              </dt>
+                                            </dl>
+                                          </section>
+                                        </div>
+                                      </section>
+                                    </dt>
+                                    <dt data-property-name="name" class="has-description">
+                                      <span class="json-property-name">name:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Rack name</p>
+                                    </dd>
+                                  </dl>
+                                </section>
+                              </div>
+                            </section>
+                          </dt>
+                        </dl>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;racks&quot;</span>: {
+    <span class="hljs-attr">&quot;rack&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;slot&quot;</span>: [
+          {
+            <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;card&quot;</span>: [
+              {
+                <span class="hljs-attr">&quot;attributes&quot;</span>: {
+                  <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                  <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                  <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+                },
+                <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+              }
+            ]
+          }
+        ],
+        <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-racks_schema" class="definition panel" data-traverse-target="definition-racks_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/racks_schema"></a>racks_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>RackTable</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="rack" class="has-description">
+                      <span class="json-property-name">rack:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Rack name</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">object</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-properties">
+                            <dl>
+                              <dt data-property-name="slot" class="has-description">
+                                <span class="json-property-name">slot:</span>
+                                <span class="json-property-type">object[]</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Slot name</p>
+                              </dd>
+                              <dt class="json-inner-schema">
+                                <section class="json-schema-array-items">
+                                  <span class="json-property-type">object</span>
+                                  <span class="json-property-range" title="Value limits"></span>
+                                  <div class="json-inner-schema">
+                                    <section class="json-schema-properties">
+                                      <dl>
+                                        <dt data-property-name="name" class="has-description">
+                                          <span class="json-property-name">name:</span>
+                                          <span class="json-property-type">string</span>
+                                          <span class="json-property-range" title="Value limits"></span>
+                                        </dt>
+                                        <dd>
+                                          <p>Slot name</p>
+                                        </dd>
+                                        <dt data-property-name="card" class="has-description">
+                                          <span class="json-property-name">card:</span>
+                                          <span class="json-property-type">object[]</span>
+                                          <span class="json-property-range" title="Value limits"></span>
+                                        </dt>
+                                        <dd>
+                                          <p>Card</p>
+                                        </dd>
+                                        <dt class="json-inner-schema">
+                                          <section class="json-schema-array-items">
+                                            <span class="json-property-type">object</span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                            <div class="json-inner-schema">
+                                              <section class="json-schema-properties">
+                                                <dl>
+                                                  <dt data-property-name="attributes" class="has-description">
+                                                    <span class="json-property-name">attributes:</span>
+                                                    <span class="json-property-type">object</span>
+                                                    <span class="json-property-range" title="Value limits"></span>
+                                                  </dt>
+                                                  <dd>
+                                                    <p>Attributes</p>
+                                                  </dd>
+                                                  <dt class="json-inner-schema">
+                                                    <section class="json-schema-properties">
+                                                      <dl>
+                                                        <dt data-property-name="card-admin-state" class="has-description">
+                                                          <span class="json-property-name">card-admin-state:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Card Admin State</p>
+                                                        </dd>
+                                                        <dt data-property-name="config-state" class="has-description">
+                                                          <span class="json-property-name">config-state:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>ConfigState</p>
+                                                        </dd>
+                                                        <dt data-property-name="card-state" class="has-description">
+                                                          <span class="json-property-name">card-state:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>CardState</p>
+                                                        </dd>
+                                                        <dt data-property-name="monitor" class="has-description">
+                                                          <span class="json-property-name">monitor:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Monitor</p>
+                                                        </dd>
+                                                        <dt data-property-name="power" class="has-description">
+                                                          <span class="json-property-name">power:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Power</p>
+                                                        </dd>
+                                                        <dt data-property-name="card-type-string" class="has-description">
+                                                          <span class="json-property-name">card-type-string:</span>
+                                                          <span class="json-property-type">string</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Card Type String</p>
+                                                        </dd>
+                                                        <dt data-property-name="card-state-string" class="has-description">
+                                                          <span class="json-property-name">card-state-string:</span>
+                                                          <span class="json-property-type">string</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Card State String</p>
+                                                        </dd>
+                                                        <dt data-property-name="pi-slot-number" class="has-description">
+                                                          <span class="json-property-name">pi-slot-number:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Pi Slot Number</p>
+                                                        </dd>
+                                                        <dt data-property-name="config-state-string" class="has-description">
+                                                          <span class="json-property-name">config-state-string:</span>
+                                                          <span class="json-property-type">string</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Config State String</p>
+                                                        </dd>
+                                                        <dt data-property-name="card-type" class="has-description">
+                                                          <span class="json-property-name">card-type:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>CardType</p>
+                                                        </dd>
+                                                        <dt data-property-name="node-name-string" class="has-description">
+                                                          <span class="json-property-name">node-name-string:</span>
+                                                          <span class="json-property-type">string</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Node Name String</p>
+                                                        </dd>
+                                                        <dt data-property-name="ctype" class="has-description">
+                                                          <span class="json-property-name">ctype:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>CType</p>
+                                                        </dd>
+                                                        <dt data-property-name="shutdown" class="has-description">
+                                                          <span class="json-property-name">shutdown:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>Shutdown</p>
+                                                        </dd>
+                                                        <dt data-property-name="vm-state" class="has-description">
+                                                          <span class="json-property-name">vm-state:</span>
+                                                          <span class="json-property-type">integer</span>
+                                                          <span class="json-property-range" title="Value limits"></span>
+                                                        </dt>
+                                                        <dd>
+                                                          <p>VM State information</p>
+                                                        </dd>
+                                                      </dl>
+                                                    </section>
+                                                  </dt>
+                                                  <dt data-property-name="name" class="has-description">
+                                                    <span class="json-property-name">name:</span>
+                                                    <span class="json-property-type">string</span>
+                                                    <span class="json-property-range" title="Value limits"></span>
+                                                  </dt>
+                                                  <dd>
+                                                    <p>Card</p>
+                                                  </dd>
+                                                </dl>
+                                              </section>
+                                            </div>
+                                          </section>
+                                        </dt>
+                                      </dl>
+                                    </section>
+                                  </div>
+                                </section>
+                              </dt>
+                              <dt data-property-name="name" class="has-description">
+                                <span class="json-property-name">name:</span>
+                                <span class="json-property-type">string</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Rack name</p>
+                              </dd>
+                            </dl>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;rack&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;slot&quot;</span>: [
+        {
+          <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;card&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;attributes&quot;</span>: {
+                <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+                <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+                <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+              },
+              <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+            }
+          ]
+        }
+      ],
+      <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-rack_schema" class="definition panel" data-traverse-target="definition-rack_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/rack_schema"></a>rack_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="slot" class="has-description">
+                      <span class="json-property-name">slot:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Slot name</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">object</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-properties">
+                            <dl>
+                              <dt data-property-name="name" class="has-description">
+                                <span class="json-property-name">name:</span>
+                                <span class="json-property-type">string</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Slot name</p>
+                              </dd>
+                              <dt data-property-name="card" class="has-description">
+                                <span class="json-property-name">card:</span>
+                                <span class="json-property-type">object[]</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Card</p>
+                              </dd>
+                              <dt class="json-inner-schema">
+                                <section class="json-schema-array-items">
+                                  <span class="json-property-type">object</span>
+                                  <span class="json-property-range" title="Value limits"></span>
+                                  <div class="json-inner-schema">
+                                    <section class="json-schema-properties">
+                                      <dl>
+                                        <dt data-property-name="attributes" class="has-description">
+                                          <span class="json-property-name">attributes:</span>
+                                          <span class="json-property-type">object</span>
+                                          <span class="json-property-range" title="Value limits"></span>
+                                        </dt>
+                                        <dd>
+                                          <p>Attributes</p>
+                                        </dd>
+                                        <dt class="json-inner-schema">
+                                          <section class="json-schema-properties">
+                                            <dl>
+                                              <dt data-property-name="card-admin-state" class="has-description">
+                                                <span class="json-property-name">card-admin-state:</span>
+                                                <span class="json-property-type">integer</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Card Admin State</p>
+                                              </dd>
+                                              <dt data-property-name="config-state" class="has-description">
+                                                <span class="json-property-name">config-state:</span>
+                                                <span class="json-property-type">integer</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>ConfigState</p>
+                                              </dd>
+                                              <dt data-property-name="card-state" class="has-description">
+                                                <span class="json-property-name">card-state:</span>
+                                                <span class="json-property-type">integer</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>CardState</p>
+                                              </dd>
+                                              <dt data-property-name="monitor" class="has-description">
+                                                <span class="json-property-name">monitor:</span>
+                                                <span class="json-property-type">integer</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Monitor</p>
+                                              </dd>
+                                              <dt data-property-name="power" class="has-description">
+                                                <span class="json-property-name">power:</span>
+                                                <span class="json-property-type">integer</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Power</p>
+                                              </dd>
+                                              <dt data-property-name="card-type-string" class="has-description">
+                                                <span class="json-property-name">card-type-string:</span>
+                                                <span class="json-property-type">string</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Card Type String</p>
+                                              </dd>
+                                              <dt data-property-name="card-state-string" class="has-description">
+                                                <span class="json-property-name">card-state-string:</span>
+                                                <span class="json-property-type">string</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Card State String</p>
+                                              </dd>
+                                              <dt data-property-name="pi-slot-number" class="has-description">
+                                                <span class="json-property-name">pi-slot-number:</span>
+                                                <span class="json-property-type">integer</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Pi Slot Number</p>
+                                              </dd>
+                                              <dt data-property-name="config-state-string" class="has-description">
+                                                <span class="json-property-name">config-state-string:</span>
+                                                <span class="json-property-type">string</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Config State String</p>
+                                              </dd>
+                                              <dt data-property-name="card-type" class="has-description">
+                                                <span class="json-property-name">card-type:</span>
+                                                <span class="json-property-type">integer</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>CardType</p>
+                                              </dd>
+                                              <dt data-property-name="node-name-string" class="has-description">
+                                                <span class="json-property-name">node-name-string:</span>
+                                                <span class="json-property-type">string</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Node Name String</p>
+                                              </dd>
+                                              <dt data-property-name="ctype" class="has-description">
+                                                <span class="json-property-name">ctype:</span>
+                                                <span class="json-property-type">integer</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>CType</p>
+                                              </dd>
+                                              <dt data-property-name="shutdown" class="has-description">
+                                                <span class="json-property-name">shutdown:</span>
+                                                <span class="json-property-type">integer</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>Shutdown</p>
+                                              </dd>
+                                              <dt data-property-name="vm-state" class="has-description">
+                                                <span class="json-property-name">vm-state:</span>
+                                                <span class="json-property-type">integer</span>
+                                                <span class="json-property-range" title="Value limits"></span>
+                                              </dt>
+                                              <dd>
+                                                <p>VM State information</p>
+                                              </dd>
+                                            </dl>
+                                          </section>
+                                        </dt>
+                                        <dt data-property-name="name" class="has-description">
+                                          <span class="json-property-name">name:</span>
+                                          <span class="json-property-type">string</span>
+                                          <span class="json-property-range" title="Value limits"></span>
+                                        </dt>
+                                        <dd>
+                                          <p>Card</p>
+                                        </dd>
+                                      </dl>
+                                    </section>
+                                  </div>
+                                </section>
+                              </dt>
+                            </dl>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                    <dt data-property-name="name" class="has-description">
+                      <span class="json-property-name">name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Rack name</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;slot&quot;</span>: [
+    {
+      <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;card&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;attributes&quot;</span>: {
+            <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+            <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+          },
+          <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        }
+      ]
+    }
+  ],
+  <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-slot_schema" class="definition panel" data-traverse-target="definition-slot_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/slot_schema"></a>slot_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="lot_name" class="has-description">
+                      <span class="json-property-name">lot_name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Slot name</p>
+                    </dd>
+                    <dt data-property-name="card" class="has-description">
+                      <span class="json-property-name">card:</span>
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Card</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">object</span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema">
+                          <section class="json-schema-properties">
+                            <dl>
+                              <dt data-property-name="attributes" class="has-description">
+                                <span class="json-property-name">attributes:</span>
+                                <span class="json-property-type">object</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Attributes</p>
+                              </dd>
+                              <dt class="json-inner-schema">
+                                <section class="json-schema-properties">
+                                  <dl>
+                                    <dt data-property-name="card-admin-state" class="has-description">
+                                      <span class="json-property-name">card-admin-state:</span>
+                                      <span class="json-property-type">integer</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Card Admin State</p>
+                                    </dd>
+                                    <dt data-property-name="config-state" class="has-description">
+                                      <span class="json-property-name">config-state:</span>
+                                      <span class="json-property-type">integer</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>ConfigState</p>
+                                    </dd>
+                                    <dt data-property-name="card-state" class="has-description">
+                                      <span class="json-property-name">card-state:</span>
+                                      <span class="json-property-type">integer</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>CardState</p>
+                                    </dd>
+                                    <dt data-property-name="monitor" class="has-description">
+                                      <span class="json-property-name">monitor:</span>
+                                      <span class="json-property-type">integer</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Monitor</p>
+                                    </dd>
+                                    <dt data-property-name="power" class="has-description">
+                                      <span class="json-property-name">power:</span>
+                                      <span class="json-property-type">integer</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Power</p>
+                                    </dd>
+                                    <dt data-property-name="card-type-string" class="has-description">
+                                      <span class="json-property-name">card-type-string:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Card Type String</p>
+                                    </dd>
+                                    <dt data-property-name="card-state-string" class="has-description">
+                                      <span class="json-property-name">card-state-string:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Card State String</p>
+                                    </dd>
+                                    <dt data-property-name="pi-slot-number" class="has-description">
+                                      <span class="json-property-name">pi-slot-number:</span>
+                                      <span class="json-property-type">integer</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Pi Slot Number</p>
+                                    </dd>
+                                    <dt data-property-name="config-state-string" class="has-description">
+                                      <span class="json-property-name">config-state-string:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Config State String</p>
+                                    </dd>
+                                    <dt data-property-name="card-type" class="has-description">
+                                      <span class="json-property-name">card-type:</span>
+                                      <span class="json-property-type">integer</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>CardType</p>
+                                    </dd>
+                                    <dt data-property-name="node-name-string" class="has-description">
+                                      <span class="json-property-name">node-name-string:</span>
+                                      <span class="json-property-type">string</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Node Name String</p>
+                                    </dd>
+                                    <dt data-property-name="ctype" class="has-description">
+                                      <span class="json-property-name">ctype:</span>
+                                      <span class="json-property-type">integer</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>CType</p>
+                                    </dd>
+                                    <dt data-property-name="shutdown" class="has-description">
+                                      <span class="json-property-name">shutdown:</span>
+                                      <span class="json-property-type">integer</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>Shutdown</p>
+                                    </dd>
+                                    <dt data-property-name="vm-state" class="has-description">
+                                      <span class="json-property-name">vm-state:</span>
+                                      <span class="json-property-type">integer</span>
+                                      <span class="json-property-range" title="Value limits"></span>
+                                    </dt>
+                                    <dd>
+                                      <p>VM State information</p>
+                                    </dd>
+                                  </dl>
+                                </section>
+                              </dt>
+                              <dt data-property-name="name" class="has-description">
+                                <span class="json-property-name">name:</span>
+                                <span class="json-property-type">string</span>
+                                <span class="json-property-range" title="Value limits"></span>
+                              </dt>
+                              <dd>
+                                <p>Card</p>
+                              </dd>
+                            </dl>
+                          </section>
+                        </div>
+                      </section>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;lot_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;card&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;attributes&quot;</span>: {
+        <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+        <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+      },
+      <span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-card_schema" class="definition panel" data-traverse-target="definition-card_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/card_schema"></a>card_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="attributes" class="has-description">
+                      <span class="json-property-name">attributes:</span>
+                      <span class="json-property-type">object</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Attributes</p>
+                    </dd>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-properties">
+                        <dl>
+                          <dt data-property-name="card-admin-state" class="has-description">
+                            <span class="json-property-name">card-admin-state:</span>
+                            <span class="json-property-type">integer</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Card Admin State</p>
+                          </dd>
+                          <dt data-property-name="config-state" class="has-description">
+                            <span class="json-property-name">config-state:</span>
+                            <span class="json-property-type">integer</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>ConfigState</p>
+                          </dd>
+                          <dt data-property-name="card-state" class="has-description">
+                            <span class="json-property-name">card-state:</span>
+                            <span class="json-property-type">integer</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>CardState</p>
+                          </dd>
+                          <dt data-property-name="monitor" class="has-description">
+                            <span class="json-property-name">monitor:</span>
+                            <span class="json-property-type">integer</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Monitor</p>
+                          </dd>
+                          <dt data-property-name="power" class="has-description">
+                            <span class="json-property-name">power:</span>
+                            <span class="json-property-type">integer</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Power</p>
+                          </dd>
+                          <dt data-property-name="card-type-string" class="has-description">
+                            <span class="json-property-name">card-type-string:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Card Type String</p>
+                          </dd>
+                          <dt data-property-name="card-state-string" class="has-description">
+                            <span class="json-property-name">card-state-string:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Card State String</p>
+                          </dd>
+                          <dt data-property-name="pi-slot-number" class="has-description">
+                            <span class="json-property-name">pi-slot-number:</span>
+                            <span class="json-property-type">integer</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Pi Slot Number</p>
+                          </dd>
+                          <dt data-property-name="config-state-string" class="has-description">
+                            <span class="json-property-name">config-state-string:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Config State String</p>
+                          </dd>
+                          <dt data-property-name="card-type" class="has-description">
+                            <span class="json-property-name">card-type:</span>
+                            <span class="json-property-type">integer</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>CardType</p>
+                          </dd>
+                          <dt data-property-name="node-name-string" class="has-description">
+                            <span class="json-property-name">node-name-string:</span>
+                            <span class="json-property-type">string</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Node Name String</p>
+                          </dd>
+                          <dt data-property-name="ctype" class="has-description">
+                            <span class="json-property-name">ctype:</span>
+                            <span class="json-property-type">integer</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>CType</p>
+                          </dd>
+                          <dt data-property-name="shutdown" class="has-description">
+                            <span class="json-property-name">shutdown:</span>
+                            <span class="json-property-type">integer</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>Shutdown</p>
+                          </dd>
+                          <dt data-property-name="vm-state" class="has-description">
+                            <span class="json-property-name">vm-state:</span>
+                            <span class="json-property-type">integer</span>
+                            <span class="json-property-range" title="Value limits"></span>
+                          </dt>
+                          <dd>
+                            <p>VM State information</p>
+                          </dd>
+                        </dl>
+                      </section>
+                    </dt>
+                    <dt data-property-name="ard_name" class="has-description">
+                      <span class="json-property-name">ard_name:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Card</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-attr">&quot;attributes&quot;</span>: {
+    <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+    <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+  },
+  <span class="hljs-leaf">&quot;ard_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-attributes_schema" class="definition panel" data-traverse-target="definition-attributes_schema">
+            <h2 class="panel-title">
+              <a name="/definitions/attributes_schema"></a>attributes_schema:
+              <!-- <span class="json-property-type">
+              <span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Attributes</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="card-admin-state" class="has-description">
+                      <span class="json-property-name">card-admin-state:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Card Admin State</p>
+                    </dd>
+                    <dt data-property-name="config-state" class="has-description">
+                      <span class="json-property-name">config-state:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>ConfigState</p>
+                    </dd>
+                    <dt data-property-name="card-state" class="has-description">
+                      <span class="json-property-name">card-state:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>CardState</p>
+                    </dd>
+                    <dt data-property-name="monitor" class="has-description">
+                      <span class="json-property-name">monitor:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Monitor</p>
+                    </dd>
+                    <dt data-property-name="power" class="has-description">
+                      <span class="json-property-name">power:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Power</p>
+                    </dd>
+                    <dt data-property-name="card-type-string" class="has-description">
+                      <span class="json-property-name">card-type-string:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Card Type String</p>
+                    </dd>
+                    <dt data-property-name="card-state-string" class="has-description">
+                      <span class="json-property-name">card-state-string:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Card State String</p>
+                    </dd>
+                    <dt data-property-name="pi-slot-number" class="has-description">
+                      <span class="json-property-name">pi-slot-number:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Pi Slot Number</p>
+                    </dd>
+                    <dt data-property-name="config-state-string" class="has-description">
+                      <span class="json-property-name">config-state-string:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Config State String</p>
+                    </dd>
+                    <dt data-property-name="card-type" class="has-description">
+                      <span class="json-property-name">card-type:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>CardType</p>
+                    </dd>
+                    <dt data-property-name="node-name-string" class="has-description">
+                      <span class="json-property-name">node-name-string:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Node Name String</p>
+                    </dd>
+                    <dt data-property-name="ctype" class="has-description">
+                      <span class="json-property-name">ctype:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>CType</p>
+                    </dd>
+                    <dt data-property-name="shutdown" class="has-description">
+                      <span class="json-property-name">shutdown:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Shutdown</p>
+                    </dd>
+                    <dt data-property-name="vm-state" class="has-description">
+                      <span class="json-property-name">vm-state:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>VM State information</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <span class="hljs-leaf">&quot;card-admin-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;config-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;card-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;monitor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;power&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;card-type-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;card-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;pi-slot-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;config-state-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;node-name-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-leaf">&quot;ctype&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;shutdown&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,
+  <span class="hljs-leaf">&quot;vm-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
