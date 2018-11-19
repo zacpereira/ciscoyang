@@ -1,0 +1,1654 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-pbr-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-oper:pbr-">Cisco-IOS-XR-pbr-oper:pbr/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pbr--get">PBR</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-oper:pbr-nodes-">Cisco-IOS-XR-pbr-oper:pbr/nodes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pbr-nodes--get">NODES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pbr-nodes-node--node-name---get">NODE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pbr-nodes-node--node-name--policy-map--get">POLICY-MAP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces--get">INTERFACES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name---get">INTERFACE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/direction/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction--get">DIRECTION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/direction/input/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input--get">INPUT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/direction/input/class-stat/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat--get">CLASS-STAT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats-">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/direction/input/class-stat/general-stats/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats--get">GENERAL-STATS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats-">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/direction/input/class-stat/httpr-stats/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats--get">HTTPR-STATS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-pbr-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-pbr-oper@2015-11-09.yang">Cisco-IOS-XR-pbr-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-pbr-oper:pbr-"></span>
+          <div id="operation-config-pbr--get" class="operation panel" data-traverse-target="operation-config-pbr--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PBR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-oper:pbr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: pbr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbr_schema">pbr_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-pbr--get"><span class="hljs-attr">&quot;pbr&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR operational data</span></div>
+    <div class="tooltip"><a href="#operation-config-pbr-nodes--get"><span class="hljs-attr">&quot;nodes&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Node-specific PBR operational data</span></div>
+      <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name---get"><span class="hljs-attr">&quot;node&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map--get"><span class="hljs-attr">&quot;policy-map&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Operational data for policymaps</span></div>
+            <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces--get"><span class="hljs-attr">&quot;interfaces&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Operational data for all interfaces</span></div>
+              <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+                {
+                  <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction--get"><span class="hljs-attr">&quot;direction&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR direction</span></div>
+                    <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input--get"><span class="hljs-attr">&quot;input&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR policy statistics</span></div>
+                      <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">The node</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;state-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">StateDescription</span></div>
+                      <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat--get"><span class="hljs-attr">&quot;class-stat&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                        {
+                          <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats--get"><span class="hljs-attr">&quot;httpr-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">HTTPR stats</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTPR response sent</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of pkts HTTP request received</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped  packets</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTP request received</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">TotalNum of pkts HTTPR response sent</span></div>
+                          },
+                          <div class="tooltip"><span class="hljs-leaf">&quot;counter-validity-bitmask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Bitmask to indicate which counter or counters\nare undetermined. Counters will be marked\nundetermined when one or more classes share\nqueues with class-default because in such cases\nthe value of counters for each class is invalid.\nBased on the flag(s) set, the following counters\nwill be marked undetermined. For example, if\nvalue of this object returned is 0x00000101,\ncounters\nTransmitPackets/TransmitBytes/TotalTransmitRate\nand DropPackets/DropBytes are undetermined\n.0x00000001 - Transmit\n(TransmitPackets/TransmitBytes/TotalTransmitRate\n), 0x00000002 - Drop\n(TotalDropPackets/TotalDropBytes/TotalDropRate),\n0x00000004 - Httpr\n(HttprTransmitPackets/HttprTransmitBytes), </span></div>
+                          <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats--get"><span class="hljs-attr">&quot;general-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">general stats</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;transmit-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted packets (packets/bytes)</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes (packets/bytes)</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched bytes before applying policy</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;total-transmit-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total transmit rate in kbps</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total drop rate (packets/bytes)</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped packets (packets/bytes)</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched pkts before applying policy</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;transmit-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted bytes (packets/bytes)</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;match-data-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Incoming matched data rate in kbps</span></div>
+                          },
+                          <div class="tooltip"><span class="hljs-leaf">&quot;class-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ClassId</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;class-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Array of classes contained in policy</span></div>
+                        }
+                      ],
+                      <div class="tooltip"><span class="hljs-leaf">&quot;policy-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PolicyName</span></div>
+                    }
+                  },
+                  <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of the interface</span></div>
+                }
+              ]
+            }
+          },
+          <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The node</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-oper:pbr-nodes-"></span>
+          <div id="operation-config-pbr-nodes--get" class="operation panel" data-traverse-target="operation-config-pbr-nodes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-oper:pbr/nodes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nodes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/nodes_schema">nodes_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-pbr-nodes--get"><span class="hljs-attr">&quot;nodes&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Node-specific PBR operational data</span></div>
+    <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name---get"><span class="hljs-attr">&quot;node&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map--get"><span class="hljs-attr">&quot;policy-map&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Operational data for policymaps</span></div>
+          <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces--get"><span class="hljs-attr">&quot;interfaces&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Operational data for all interfaces</span></div>
+            <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+              {
+                <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction--get"><span class="hljs-attr">&quot;direction&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR direction</span></div>
+                  <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input--get"><span class="hljs-attr">&quot;input&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR policy statistics</span></div>
+                    <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">The node</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;state-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">StateDescription</span></div>
+                    <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat--get"><span class="hljs-attr">&quot;class-stat&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                      {
+                        <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats--get"><span class="hljs-attr">&quot;httpr-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">HTTPR stats</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTPR response sent</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of pkts HTTP request received</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped  packets</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTP request received</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">TotalNum of pkts HTTPR response sent</span></div>
+                        },
+                        <div class="tooltip"><span class="hljs-leaf">&quot;counter-validity-bitmask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Bitmask to indicate which counter or counters\nare undetermined. Counters will be marked\nundetermined when one or more classes share\nqueues with class-default because in such cases\nthe value of counters for each class is invalid.\nBased on the flag(s) set, the following counters\nwill be marked undetermined. For example, if\nvalue of this object returned is 0x00000101,\ncounters\nTransmitPackets/TransmitBytes/TotalTransmitRate\nand DropPackets/DropBytes are undetermined\n.0x00000001 - Transmit\n(TransmitPackets/TransmitBytes/TotalTransmitRate\n), 0x00000002 - Drop\n(TotalDropPackets/TotalDropBytes/TotalDropRate),\n0x00000004 - Httpr\n(HttprTransmitPackets/HttprTransmitBytes), </span></div>
+                        <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats--get"><span class="hljs-attr">&quot;general-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">general stats</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;transmit-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted packets (packets/bytes)</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes (packets/bytes)</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched bytes before applying policy</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;total-transmit-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total transmit rate in kbps</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total drop rate (packets/bytes)</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped packets (packets/bytes)</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched pkts before applying policy</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;transmit-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted bytes (packets/bytes)</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;match-data-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Incoming matched data rate in kbps</span></div>
+                        },
+                        <div class="tooltip"><span class="hljs-leaf">&quot;class-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ClassId</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;class-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Array of classes contained in policy</span></div>
+                      }
+                    ],
+                    <div class="tooltip"><span class="hljs-leaf">&quot;policy-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PolicyName</span></div>
+                  }
+                },
+                <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of the interface</span></div>
+              }
+            ]
+          }
+        },
+        <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The node</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--"></span>
+          <div id="operation-config-pbr-nodes-node--node-name---get" class="operation panel" data-traverse-target="operation-config-pbr-nodes-node--node-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: node</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/node_schema">node_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-"></span>
+          <div id="operation-config-pbr-nodes-node--node-name--policy-map--get" class="operation panel" data-traverse-target="operation-config-pbr-nodes-node--node-name--policy-map--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">POLICY-MAP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: policy-map</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/policy-map_schema">policy-map_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map--get"><span class="hljs-attr">&quot;policy-map&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Operational data for policymaps</span></div>
+    <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces--get"><span class="hljs-attr">&quot;interfaces&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Operational data for all interfaces</span></div>
+      <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction--get"><span class="hljs-attr">&quot;direction&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR direction</span></div>
+            <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input--get"><span class="hljs-attr">&quot;input&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR policy statistics</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">NodeName</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;state-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">StateDescription</span></div>
+              <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat--get"><span class="hljs-attr">&quot;class-stat&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                {
+                  <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats--get"><span class="hljs-attr">&quot;httpr-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">HTTPR stats</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTPR response sent</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of pkts HTTP request received</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped  packets</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTP request received</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">TotalNum of pkts HTTPR response sent</span></div>
+                  },
+                  <div class="tooltip"><span class="hljs-leaf">&quot;counter-validity-bitmask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Bitmask to indicate which counter or counters\nare undetermined. Counters will be marked\nundetermined when one or more classes share\nqueues with class-default because in such cases\nthe value of counters for each class is invalid.\nBased on the flag(s) set, the following counters\nwill be marked undetermined. For example, if\nvalue of this object returned is 0x00000101,\ncounters\nTransmitPackets/TransmitBytes/TotalTransmitRate\nand DropPackets/DropBytes are undetermined\n.0x00000001 - Transmit\n(TransmitPackets/TransmitBytes/TotalTransmitRate\n), 0x00000002 - Drop\n(TotalDropPackets/TotalDropBytes/TotalDropRate),\n0x00000004 - Httpr\n(HttprTransmitPackets/HttprTransmitBytes), </span></div>
+                  <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats--get"><span class="hljs-attr">&quot;general-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">general stats</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;transmit-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted packets (packets/bytes)</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes (packets/bytes)</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched bytes before applying policy</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;total-transmit-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total transmit rate in kbps</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total drop rate (packets/bytes)</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped packets (packets/bytes)</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched pkts before applying policy</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;transmit-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted bytes (packets/bytes)</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;match-data-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Incoming matched data rate in kbps</span></div>
+                  },
+                  <div class="tooltip"><span class="hljs-leaf">&quot;class-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ClassId</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;class-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Array of classes contained in policy</span></div>
+                }
+              ],
+              <div class="tooltip"><span class="hljs-leaf">&quot;policy-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PolicyName</span></div>
+            }
+          },
+          <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of the interface</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-"></span>
+          <div id="operation-config-pbr-nodes-node--node-name--policy-map-interfaces--get" class="operation panel" data-traverse-target="operation-config-pbr-nodes-node--node-name--policy-map-interfaces--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interfaces</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interfaces_schema">interfaces_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces--get"><span class="hljs-attr">&quot;interfaces&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Operational data for all interfaces</span></div>
+    <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction--get"><span class="hljs-attr">&quot;direction&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR direction</span></div>
+          <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input--get"><span class="hljs-attr">&quot;input&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR policy statistics</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">NodeName</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;state-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">StateDescription</span></div>
+            <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat--get"><span class="hljs-attr">&quot;class-stat&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+              {
+                <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats--get"><span class="hljs-attr">&quot;httpr-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">HTTPR stats</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTPR response sent</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of pkts HTTP request received</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped  packets</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTP request received</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">TotalNum of pkts HTTPR response sent</span></div>
+                },
+                <div class="tooltip"><span class="hljs-leaf">&quot;counter-validity-bitmask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Bitmask to indicate which counter or counters\nare undetermined. Counters will be marked\nundetermined when one or more classes share\nqueues with class-default because in such cases\nthe value of counters for each class is invalid.\nBased on the flag(s) set, the following counters\nwill be marked undetermined. For example, if\nvalue of this object returned is 0x00000101,\ncounters\nTransmitPackets/TransmitBytes/TotalTransmitRate\nand DropPackets/DropBytes are undetermined\n.0x00000001 - Transmit\n(TransmitPackets/TransmitBytes/TotalTransmitRate\n), 0x00000002 - Drop\n(TotalDropPackets/TotalDropBytes/TotalDropRate),\n0x00000004 - Httpr\n(HttprTransmitPackets/HttprTransmitBytes), </span></div>
+                <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats--get"><span class="hljs-attr">&quot;general-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">general stats</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;transmit-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted packets (packets/bytes)</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes (packets/bytes)</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched bytes before applying policy</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;total-transmit-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total transmit rate in kbps</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total drop rate (packets/bytes)</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped packets (packets/bytes)</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched pkts before applying policy</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;transmit-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted bytes (packets/bytes)</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;match-data-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Incoming matched data rate in kbps</span></div>
+                },
+                <div class="tooltip"><span class="hljs-leaf">&quot;class-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ClassId</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;class-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Array of classes contained in policy</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-leaf">&quot;policy-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PolicyName</span></div>
+          }
+        },
+        <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of the interface</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--"></span>
+          <div id="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name---get" class="operation panel" data-traverse-target="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interface_schema">interface_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-"></span>
+          <div id="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction--get" class="operation panel" data-traverse-target="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">DIRECTION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/direction/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: direction</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/direction_schema">direction_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction--get"><span class="hljs-attr">&quot;direction&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR direction</span></div>
+    <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input--get"><span class="hljs-attr">&quot;input&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR policy statistics</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">NodeName</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;state-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">StateDescription</span></div>
+      <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat--get"><span class="hljs-attr">&quot;class-stat&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+        {
+          <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats--get"><span class="hljs-attr">&quot;httpr-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">HTTPR stats</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTPR response sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of pkts HTTP request received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped  packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTP request received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">TotalNum of pkts HTTPR response sent</span></div>
+          },
+          <div class="tooltip"><span class="hljs-leaf">&quot;counter-validity-bitmask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Bitmask to indicate which counter or counters\nare undetermined. Counters will be marked\nundetermined when one or more classes share\nqueues with class-default because in such cases\nthe value of counters for each class is invalid.\nBased on the flag(s) set, the following counters\nwill be marked undetermined. For example, if\nvalue of this object returned is 0x00000101,\ncounters\nTransmitPackets/TransmitBytes/TotalTransmitRate\nand DropPackets/DropBytes are undetermined\n.0x00000001 - Transmit\n(TransmitPackets/TransmitBytes/TotalTransmitRate\n), 0x00000002 - Drop\n(TotalDropPackets/TotalDropBytes/TotalDropRate),\n0x00000004 - Httpr\n(HttprTransmitPackets/HttprTransmitBytes), </span></div>
+          <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats--get"><span class="hljs-attr">&quot;general-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">general stats</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;transmit-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted packets (packets/bytes)</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes (packets/bytes)</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched bytes before applying policy</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;total-transmit-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total transmit rate in kbps</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total drop rate (packets/bytes)</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped packets (packets/bytes)</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched pkts before applying policy</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;transmit-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted bytes (packets/bytes)</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;match-data-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Incoming matched data rate in kbps</span></div>
+          },
+          <div class="tooltip"><span class="hljs-leaf">&quot;class-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ClassId</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;class-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Array of classes contained in policy</span></div>
+        }
+      ],
+      <div class="tooltip"><span class="hljs-leaf">&quot;policy-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PolicyName</span></div>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-"></span>
+          <div id="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input--get" class="operation panel" data-traverse-target="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INPUT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/direction/input/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: input</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/PBR-STATS">PBR-STATS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input--get"><span class="hljs-attr">&quot;input&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">PBR policy statistics</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">NodeName</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;state-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">StateDescription</span></div>
+    <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat--get"><span class="hljs-attr">&quot;class-stat&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats--get"><span class="hljs-attr">&quot;httpr-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">HTTPR stats</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTPR response sent</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of pkts HTTP request received</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped  packets</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTP request received</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">TotalNum of pkts HTTPR response sent</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;counter-validity-bitmask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Bitmask to indicate which counter or counters\nare undetermined. Counters will be marked\nundetermined when one or more classes share\nqueues with class-default because in such cases\nthe value of counters for each class is invalid.\nBased on the flag(s) set, the following counters\nwill be marked undetermined. For example, if\nvalue of this object returned is 0x00000101,\ncounters\nTransmitPackets/TransmitBytes/TotalTransmitRate\nand DropPackets/DropBytes are undetermined\n.0x00000001 - Transmit\n(TransmitPackets/TransmitBytes/TotalTransmitRate\n), 0x00000002 - Drop\n(TotalDropPackets/TotalDropBytes/TotalDropRate),\n0x00000004 - Httpr\n(HttprTransmitPackets/HttprTransmitBytes), </span></div>
+        <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats--get"><span class="hljs-attr">&quot;general-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">general stats</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;transmit-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted packets (packets/bytes)</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes (packets/bytes)</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched bytes before applying policy</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;total-transmit-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total transmit rate in kbps</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total drop rate (packets/bytes)</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped packets (packets/bytes)</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched pkts before applying policy</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;transmit-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted bytes (packets/bytes)</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;match-data-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Incoming matched data rate in kbps</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;class-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ClassId</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;class-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Array of classes contained in policy</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;policy-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PolicyName</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-"></span>
+          <div id="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat--get" class="operation panel" data-traverse-target="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CLASS-STAT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/direction/input/class-stat/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: class-stat</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CLASS-STATS">CLASS-STATS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat--get"><span class="hljs-attr">&quot;class-stat&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats--get"><span class="hljs-attr">&quot;httpr-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">HTTPR stats</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTPR response sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of pkts HTTP request received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped  packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTP request received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">TotalNum of pkts HTTPR response sent</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;counter-validity-bitmask&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Bitmask to indicate which counter or counters\nare undetermined. Counters will be marked\nundetermined when one or more classes share\nqueues with class-default because in such cases\nthe value of counters for each class is invalid.\nBased on the flag(s) set, the following counters\nwill be marked undetermined. For example, if\nvalue of this object returned is 0x00000101,\ncounters\nTransmitPackets/TransmitBytes/TotalTransmitRate\nand DropPackets/DropBytes are undetermined\n.0x00000001 - Transmit\n(TransmitPackets/TransmitBytes/TotalTransmitRate\n), 0x00000002 - Drop\n(TotalDropPackets/TotalDropBytes/TotalDropRate),\n0x00000004 - Httpr\n(HttprTransmitPackets/HttprTransmitBytes), </span></div>
+    <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats--get"><span class="hljs-attr">&quot;general-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">general stats</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;transmit-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted packets (packets/bytes)</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes (packets/bytes)</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched bytes before applying policy</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;total-transmit-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total transmit rate in kbps</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total drop rate (packets/bytes)</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped packets (packets/bytes)</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched pkts before applying policy</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;transmit-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted bytes (packets/bytes)</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;match-data-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Incoming matched data rate in kbps</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;class-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ClassId</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;class-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">ClassName</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats-"></span>
+          <div id="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats--get" class="operation panel" data-traverse-target="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">GENERAL-STATS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/direction/input/class-stat/general-stats/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: general-stats</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/GEN-STATS-ST">GEN-STATS-ST</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-general-stats--get"><span class="hljs-attr">&quot;general-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">general stats</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;transmit-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted packets (packets/bytes)</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes (packets/bytes)</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched bytes before applying policy</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;total-transmit-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total transmit rate in kbps</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total drop rate (packets/bytes)</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;total-drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped packets (packets/bytes)</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;pre-policy-matched-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Matched pkts before applying policy</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;transmit-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transmitted bytes (packets/bytes)</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;match-data-rate&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Incoming matched data rate in kbps</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-pbr-oper:pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats-"></span>
+          <div id="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats--get" class="operation panel" data-traverse-target="operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HTTPR-STATS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-pbr-oper:pbr/nodes/node/{node-name}/policy-map/interfaces/interface/{interface-name}/direction/input/class-stat/httpr-stats/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: httpr-stats</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/HTTPR-STATS-ST">HTTPR-STATS-ST</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-pbr-nodes-node--node-name--policy-map-interfaces-interface--interface-name--direction-input-class-stat-httpr-stats--get"><span class="hljs-attr">&quot;httpr-stats&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">HTTPR stats</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTPR response sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of pkts HTTP request received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;drop-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped bytes</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;drop-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Dropped  packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rqst-rcvd-bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">TotalNum of Bytes HTTP request received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;resp-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">TotalNum of pkts HTTPR response sent</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

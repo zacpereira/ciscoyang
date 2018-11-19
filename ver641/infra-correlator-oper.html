@@ -1,0 +1,2828 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-infra-correlator-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:suppression-">Cisco-IOS-XR-infra-correlator-oper:suppression/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-suppression--get">SUPPRESSION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-summaries-">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-summaries/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-suppression-rule-summaries--get">RULE-SUMMARIES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-summaries-rule-summary--rule-name--">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-summaries/rule-summary/{rule-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-suppression-rule-summaries-rule-summary--rule-name---get">RULE-SUMMARY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-details-">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-details/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-suppression-rule-details--get">RULE-DETAILS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-details-rule-detail--rule-name--">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-details/rule-detail/{rule-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-suppression-rule-details-rule-detail--rule-name---get">RULE-DETAIL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-details-rule-detail--rule-name--rule-summary-">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-details/rule-detail/{rule-name}/rule-summary/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-suppression-rule-details-rule-detail--rule-name--rule-summary--get">RULE-SUMMARY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-details-rule-detail--rule-name--codes-">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-details/rule-detail/{rule-name}/codes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-suppression-rule-details-rule-detail--rule-name--codes--get">CODES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-">Cisco-IOS-XR-infra-correlator-oper:correlator/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator--get">CORRELATOR</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rules-">Cisco-IOS-XR-infra-correlator-oper:correlator/rules/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rules--get">RULES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rules-rule--rule-name--">Cisco-IOS-XR-infra-correlator-oper:correlator/rules/rule/{rule-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rules-rule--rule-name---get">RULE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rules-rule--rule-name--codes-">Cisco-IOS-XR-infra-correlator-oper:correlator/rules/rule/{rule-name}/codes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rules-rule--rule-name--codes--get">CODES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-buffer-status-">Cisco-IOS-XR-infra-correlator-oper:correlator/buffer-status/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-buffer-status--get">BUFFER-STATUS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-alarms-">Cisco-IOS-XR-infra-correlator-oper:correlator/alarms/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-alarms--get">ALARMS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-alarms-alarm--alarm-id--">Cisco-IOS-XR-infra-correlator-oper:correlator/alarms/alarm/{alarm-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-alarms-alarm--alarm-id---get">ALARM</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-alarms-alarm--alarm-id--alarm-info-">Cisco-IOS-XR-infra-correlator-oper:correlator/alarms/alarm/{alarm-id}/alarm-info/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-alarms-alarm--alarm-id--alarm-info--get">ALARM-INFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-set-summaries-">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-set-summaries/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rule-set-summaries--get">RULE-SET-SUMMARIES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-set-summaries-rule-set-summary--rule-set-name--">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-set-summaries/rule-set-summary/{rule-set-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rule-set-summaries-rule-set-summary--rule-set-name---get">RULE-SET-SUMMARY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-set-details-">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-set-details/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rule-set-details--get">RULE-SET-DETAILS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-set-details-rule-set-detail--rule-set-name--">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-set-details/rule-set-detail/{rule-set-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rule-set-details-rule-set-detail--rule-set-name---get">RULE-SET-DETAIL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-set-details-rule-set-detail--rule-set-name--rules-">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-set-details/rule-set-detail/{rule-set-name}/rules/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rule-set-details-rule-set-detail--rule-set-name--rules--get">RULES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-details-">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-details/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rule-details--get">RULE-DETAILS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-details-rule-detail--rule-name--">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-details/rule-detail/{rule-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rule-details-rule-detail--rule-name---get">RULE-DETAIL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-details-rule-detail--rule-name--rule-summary-">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-details/rule-detail/{rule-name}/rule-summary/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rule-details-rule-detail--rule-name--rule-summary--get">RULE-SUMMARY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-details-rule-detail--rule-name--codes-">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-details/rule-detail/{rule-name}/codes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rule-details-rule-detail--rule-name--codes--get">CODES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-summaries-">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-summaries/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rule-summaries--get">RULE-SUMMARIES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-summaries-rule-summary--rule-name--">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-summaries/rule-summary/{rule-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-correlator-rule-summaries-rule-summary--rule-name---get">RULE-SUMMARY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-infra-correlator-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-infra-correlator-oper@2017-09-07.yang">Cisco-IOS-XR-infra-correlator-oper@2017-09-07.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:suppression-"></span>
+          <div id="operation-config-suppression--get" class="operation panel" data-traverse-target="operation-config-suppression--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUPPRESSION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:suppression/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: suppression</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/suppression_schema">suppression_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-suppression--get"><span class="hljs-attr">&quot;suppression&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Suppression operational data</span></div>
+    <div class="tooltip"><a href="#operation-config-suppression-rule-summaries--get"><span class="hljs-attr">&quot;rule-summaries&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table that contains the database of suppression\nrule summary</span></div>
+      <div class="tooltip"><a href="#operation-config-suppression-rule-summaries-rule-summary--rule-name---get"><span class="hljs-attr">&quot;rule-summary&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Rule summary, name, etc</span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Suppress Rule Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Applied state of the rule It could be not\napplied, applied or applied to all</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;suppressed-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of suppressed alarms associated with this\nrule</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Suppression Rule Name</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-suppression-rule-details--get"><span class="hljs-attr">&quot;rule-details&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table that contains the database of suppression\nrule details</span></div>
+      <div class="tooltip"><a href="#operation-config-suppression-rule-details-rule-detail--rule-name---get"><span class="hljs-attr">&quot;rule-detail&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><a href="#operation-config-suppression-rule-details-rule-detail--rule-name--rule-summary--get"><span class="hljs-attr">&quot;rule-summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Rule summary, name, etc</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Suppress Rule Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Applied state of the rule It could be not\napplied, applied or applied to all</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;suppressed-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of suppressed alarms associated with this\nrule</span></div>
+          },
+          <div class="tooltip"><span class="hljs-leaf">&quot;alarm-severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Severity level to suppress</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;apply-source&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Sources (R/S/M) to which the rule is applied</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;all-alarms&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Match any alarm</span></div>
+          <div class="tooltip"><a href="#operation-config-suppression-rule-details-rule-detail--rule-name--codes--get"><span class="hljs-attr">&quot;codes&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of messages to which this alarm belongs</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Message codes defining the rule.</span></div>
+            }
+          ],
+          <div class="tooltip"><span class="hljs-key">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Suppression Rule Name</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-summaries-"></span>
+          <div id="operation-config-suppression-rule-summaries--get" class="operation panel" data-traverse-target="operation-config-suppression-rule-summaries--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-SUMMARIES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-summaries/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-summaries</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-summaries_schema">rule-summaries_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-suppression-rule-summaries--get"><span class="hljs-attr">&quot;rule-summaries&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table that contains the database of suppression\nrule summary</span></div>
+    <div class="tooltip"><a href="#operation-config-suppression-rule-summaries-rule-summary--rule-name---get"><span class="hljs-attr">&quot;rule-summary&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Suppress Rule Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Applied state of the rule It could be not\napplied, applied or applied to all</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;suppressed-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of suppressed alarms associated with this\nrule</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Suppression Rule Name</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-summaries-rule-summary--rule-name--"></span>
+          <div id="operation-config-suppression-rule-summaries-rule-summary--rule-name---get" class="operation panel" data-traverse-target="operation-config-suppression-rule-summaries-rule-summary--rule-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-summaries/rule-summary/{rule-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-summary_schema">rule-summary_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-details-"></span>
+          <div id="operation-config-suppression-rule-details--get" class="operation panel" data-traverse-target="operation-config-suppression-rule-details--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-DETAILS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-details/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-details</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-details_schema">rule-details_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-suppression-rule-details--get"><span class="hljs-attr">&quot;rule-details&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table that contains the database of suppression\nrule details</span></div>
+    <div class="tooltip"><a href="#operation-config-suppression-rule-details-rule-detail--rule-name---get"><span class="hljs-attr">&quot;rule-detail&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-suppression-rule-details-rule-detail--rule-name--rule-summary--get"><span class="hljs-attr">&quot;rule-summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Rule summary, name, etc</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Suppress Rule Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Applied state of the rule It could be not\napplied, applied or applied to all</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;suppressed-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of suppressed alarms associated with this\nrule</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;alarm-severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Severity level to suppress</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;apply-source&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Sources (R/S/M) to which the rule is applied</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;all-alarms&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Match any alarm</span></div>
+        <div class="tooltip"><a href="#operation-config-suppression-rule-details-rule-detail--rule-name--codes--get"><span class="hljs-attr">&quot;codes&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of messages to which this alarm belongs</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Message codes defining the rule.</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-key">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Suppression Rule Name</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-details-rule-detail--rule-name--"></span>
+          <div id="operation-config-suppression-rule-details-rule-detail--rule-name---get" class="operation panel" data-traverse-target="operation-config-suppression-rule-details-rule-detail--rule-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-DETAIL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-details/rule-detail/{rule-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-detail</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-detail_schema">rule-detail_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-details-rule-detail--rule-name--rule-summary-"></span>
+          <div id="operation-config-suppression-rule-details-rule-detail--rule-name--rule-summary--get" class="operation panel" data-traverse-target="operation-config-suppression-rule-details-rule-detail--rule-name--rule-summary--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-details/rule-detail/{rule-name}/rule-summary/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/AC-SUPPR-RULE-SUMMARY-BAG">AC-SUPPR-RULE-SUMMARY-BAG</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-suppression-rule-details-rule-detail--rule-name--rule-summary--get"><span class="hljs-attr">&quot;rule-summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Rule summary, name, etc</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Suppress Rule Name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Applied state of the rule It could be not\napplied, applied or applied to all</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;suppressed-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of suppressed alarms associated with this\nrule</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:suppression-rule-details-rule-detail--rule-name--codes-"></span>
+          <div id="operation-config-suppression-rule-details-rule-detail--rule-name--codes--get" class="operation panel" data-traverse-target="operation-config-suppression-rule-details-rule-detail--rule-name--codes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:suppression/rule-details/rule-detail/{rule-name}/codes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: codes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/AC-MSG-CODE">AC-MSG-CODE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-suppression-rule-details-rule-detail--rule-name--codes--get"><span class="hljs-attr">&quot;codes&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of messages to which this alarm belongs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Group of messages to which this alarm belongs</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-"></span>
+          <div id="operation-config-correlator--get" class="operation panel" data-traverse-target="operation-config-correlator--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CORRELATOR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: correlator</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/correlator_schema">correlator_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator--get"><span class="hljs-attr">&quot;correlator&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">correlator</span></div>
+    <div class="tooltip"><a href="#operation-config-correlator-rule-set-summaries--get"><span class="hljs-attr">&quot;rule-set-summaries&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table that contains the ruleset summary info</span></div>
+      <div class="tooltip"><a href="#operation-config-correlator-rule-set-summaries-rule-set-summary--rule-set-name---get"><span class="hljs-attr">&quot;rule-set-summary&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;rule-set-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Ruleset Name</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;rule-set-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Ruleset Name</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><span class="hljs-attr">&quot;rules&quot;</span>: {<!--
+--> <span class="tooltiptext">No description</span></div>
+        <div class="tooltip"><span class="hljs-attr">&quot;rule&quot;</span>: [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-attr">&quot;codes&quot;</span>: [<!--
+--> <span class="tooltiptext">No description</span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of the alarm</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Group of messages to which this alarm belongs to</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Rules contained in a ruleset</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time window (in ms) for which root/all messages\nare kept in correlater before sending them to\nthe logger</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;apply-location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Locations (R/S/M) to which the rule is applied</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;apply-context&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Contexts (Interfaces) to which the rule is\napplied</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Correlation rule name</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><span class="hljs-attr">&quot;rule-summaries&quot;</span>: {<!--
+--> <span class="tooltiptext">Table that contains the database of correlation\nrule summary</span></div>
+        <div class="tooltip"><span class="hljs-attr">&quot;rule-summary&quot;</span>: [<!--
+--> <span class="tooltiptext">Rule summary, name, etc</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;stateful&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether the rule is stateful</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;buffered-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of buffered alarms correlated to this\nrule</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Rules contained in a ruleset</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Correlation rule name</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><span class="hljs-attr">&quot;buffer-status&quot;</span>: {<!--
+--> <span class="tooltiptext">Describes buffer utilization and parameters\nconfigured</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;configured-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Configured buffer size</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;current-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Current buffer usage</span></div>
+      },
+      <div class="tooltip"><span class="hljs-attr">&quot;rule-details&quot;</span>: {<!--
+--> <span class="tooltiptext">Table that contains the database of correlation\nrule details</span></div>
+        <div class="tooltip"><span class="hljs-attr">&quot;rule-detail&quot;</span>: [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-attr">&quot;rule-summary&quot;</span>: {<!--
+--> <span class="tooltiptext">Rule summary, name, etc</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;stateful&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether the rule is stateful</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;buffered-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of buffered alarms correlated to this\nrule</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Rules contained in a ruleset</span></div>
+            },
+            <div class="tooltip"><span class="hljs-attr">&quot;codes&quot;</span>: [<!--
+--> <span class="tooltiptext">No description</span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of the alarm</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Group of messages to which this alarm belongs to</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-leaf">&quot;root-cause-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Timeout before root cause alarm</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;reissue-non-bistate&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether to reissue non-bistate alarms</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;reparent&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Reparent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;internal&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">True if the rule is internal</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time window (in ms) for which root/all messages\nare kept in correlater before sending them to\nthe logger</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;apply-location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Locations (R/S/M) to which the rule is applied</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;apply-context&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Contexts (Interfaces) to which the rule is\napplied</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;context-correlation&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether context correlation is enabled</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Correlation rule name</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><span class="hljs-attr">&quot;alarms&quot;</span>: {<!--
+--> <span class="tooltiptext">Correlated alarms Table</span></div>
+        <div class="tooltip"><span class="hljs-attr">&quot;alarm&quot;</span>: [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;context&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Context string  for the alarm</span></div>
+            <div class="tooltip"><span class="hljs-attr">&quot;alarm-info&quot;</span>: {<!--
+--> <span class="tooltiptext">Correlated alarm information</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of the alarm</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;is-admin&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Indicates the event id admin-level</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Group of messages to which this alarm belongs to</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Severity of the alarm</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time when the alarm was generated. It is\nexpressed in number of milliseconds since 00:00\n:00 UTC, January 1, 1970</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;correlation-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Identifier</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;additional-text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Full text of the Alarm</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State of the alarm (bistate alarms only)</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;source-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Source Identifier(Location).Indicates the node\nin which the alarm was generated</span></div>
+            },
+            <div class="tooltip"><span class="hljs-key">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation rule name</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;alarm-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Alarm ID</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><span class="hljs-attr">&quot;rule-set-details&quot;</span>: {<!--
+--> <span class="tooltiptext">Table that contains the ruleset detail info</span></div>
+        <div class="tooltip"><span class="hljs-attr">&quot;rule-set-detail&quot;</span>: [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-attr">&quot;rules&quot;</span>: [<!--
+--> <span class="tooltiptext">No description</span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;stateful&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether the rule is stateful</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;buffered-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of buffered alarms correlated to this\nrule</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Rules contained in a ruleset</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-leaf">&quot;rule-set-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Ruleset Name</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;rule-set-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Ruleset Name</span></div>
+          }
+        ]
+      }
+    }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rules-"></span>
+          <div id="operation-config-correlator-rules--get" class="operation panel" data-traverse-target="operation-config-correlator-rules--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rules/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rules</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rules_schema">rules_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-rules--get"><span class="hljs-attr">&quot;rules&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table that contains the database of correlation\nrules</span></div>
+    <div class="tooltip"><a href="#operation-config-correlator-rules-rule--rule-name---get"><span class="hljs-attr">&quot;rule&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-correlator-rules-rule--rule-name--codes--get"><span class="hljs-attr">&quot;codes&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of messages to which this alarm belongs</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Message codes defining the rule.</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Applied state of the rule It could be not\napplied, applied or applied to all</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time window (in ms) for which root/all messages\nare kept in correlater before sending them to\nthe logger</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;apply-location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Locations (R/S/M) to which the rule is  applied</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;apply-context&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Contexts (Interfaces) to which the rule is\napplied</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rules-rule--rule-name--"></span>
+          <div id="operation-config-correlator-rules-rule--rule-name---get" class="operation panel" data-traverse-target="operation-config-correlator-rules-rule--rule-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rules/rule/{rule-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule_schema">rule_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rules-rule--rule-name--codes-"></span>
+          <div id="operation-config-correlator-rules-rule--rule-name--codes--get" class="operation panel" data-traverse-target="operation-config-correlator-rules-rule--rule-name--codes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rules/rule/{rule-name}/codes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: codes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/AC-MSG-CODE">AC-MSG-CODE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-rules-rule--rule-name--codes--get"><span class="hljs-attr">&quot;codes&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of messages to which this alarm belongs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Group of messages to which this alarm belongs</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-buffer-status-"></span>
+          <div id="operation-config-correlator-buffer-status--get" class="operation panel" data-traverse-target="operation-config-correlator-buffer-status--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">BUFFER-STATUS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/buffer-status/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: buffer-status</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/AC-BUFFER-INFO-BAG">AC-BUFFER-INFO-BAG</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-buffer-status--get"><span class="hljs-attr">&quot;buffer-status&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Describes buffer utilization and parameters\nconfigured</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;configured-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Configured buffer size</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;current-size&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Current buffer usage</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-alarms-"></span>
+          <div id="operation-config-correlator-alarms--get" class="operation panel" data-traverse-target="operation-config-correlator-alarms--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ALARMS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/alarms/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: alarms</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/alarms_schema">alarms_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-alarms--get"><span class="hljs-attr">&quot;alarms&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Correlated alarms Table</span></div>
+    <div class="tooltip"><a href="#operation-config-correlator-alarms-alarm--alarm-id---get"><span class="hljs-attr">&quot;alarm&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;context&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Context string  for the alarm</span></div>
+        <div class="tooltip"><a href="#operation-config-correlator-alarms-alarm--alarm-id--alarm-info--get"><span class="hljs-attr">&quot;alarm-info&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Correlated alarm information</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of the alarm</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;is-admin&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Indicates the event id admin-level</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Group of messages to which this alarm belongs to</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Severity of the alarm</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time when the alarm was generated. It is\nexpressed in number of milliseconds since 00:00\n:00 UTC, January 1, 1970</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;correlation-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Identifier</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;additional-text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Full text of the Alarm</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State of the alarm (bistate alarms only)</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;source-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Source Identifier(Location).Indicates the node\nin which the alarm was generated</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation rule name</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;alarm-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Alarm ID</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-alarms-alarm--alarm-id--"></span>
+          <div id="operation-config-correlator-alarms-alarm--alarm-id---get" class="operation panel" data-traverse-target="operation-config-correlator-alarms-alarm--alarm-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ALARM - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/alarms/alarm/{alarm-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: alarm</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">alarm-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of alarm-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/alarm_schema">alarm_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-alarms-alarm--alarm-id--alarm-info-"></span>
+          <div id="operation-config-correlator-alarms-alarm--alarm-id--alarm-info--get" class="operation panel" data-traverse-target="operation-config-correlator-alarms-alarm--alarm-id--alarm-info--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ALARM-INFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/alarms/alarm/{alarm-id}/alarm-info/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: alarm-info</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">alarm-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of alarm-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/AL-ALDEMS-ALARM-BAG">AL-ALDEMS-ALARM-BAG</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-alarms-alarm--alarm-id--alarm-info--get"><span class="hljs-attr">&quot;alarm-info&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Correlated alarm information</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of the alarm</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;is-admin&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Indicates the event id admin-level</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Group of messages to which this alarm belongs to</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;severity&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Severity of the alarm</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time when the alarm was generated. It is\nexpressed in number of milliseconds since 00:00\n:00 UTC, January 1, 1970</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;correlation-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Identifier</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;additional-text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Full text of the Alarm</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State of the alarm (bistate alarms only)</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;source-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Source Identifier(Location).Indicates the node\nin which the alarm was generated</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-set-summaries-"></span>
+          <div id="operation-config-correlator-rule-set-summaries--get" class="operation panel" data-traverse-target="operation-config-correlator-rule-set-summaries--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-SET-SUMMARIES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-set-summaries/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-set-summaries</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-set-summaries_schema">rule-set-summaries_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-rule-set-summaries--get"><span class="hljs-attr">&quot;rule-set-summaries&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table that contains the ruleset summary info</span></div>
+    <div class="tooltip"><a href="#operation-config-correlator-rule-set-summaries-rule-set-summary--rule-set-name---get"><span class="hljs-attr">&quot;rule-set-summary&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;rule-set-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Ruleset Name</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;rule-set-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Ruleset Name</span></div>
+        }
+      ]
+    }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-set-summaries-rule-set-summary--rule-set-name--"></span>
+          <div id="operation-config-correlator-rule-set-summaries-rule-set-summary--rule-set-name---get" class="operation panel" data-traverse-target="operation-config-correlator-rule-set-summaries-rule-set-summary--rule-set-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-SET-SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-set-summaries/rule-set-summary/{rule-set-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-set-summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-set-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-set-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-set-summary_schema">rule-set-summary_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-set-details-"></span>
+          <div id="operation-config-correlator-rule-set-details--get" class="operation panel" data-traverse-target="operation-config-correlator-rule-set-details--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-SET-DETAILS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-set-details/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-set-details</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-set-details_schema">rule-set-details_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-rule-set-details--get"><span class="hljs-attr">&quot;rule-set-details&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table that contains the ruleset detail info</span></div>
+    <div class="tooltip"><a href="#operation-config-correlator-rule-set-details-rule-set-detail--rule-set-name---get"><span class="hljs-attr">&quot;rule-set-detail&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-correlator-rule-set-details-rule-set-detail--rule-set-name--rules--get"><span class="hljs-attr">&quot;rules&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;stateful&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether the rule is stateful</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;buffered-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of buffered alarms correlated to this\nrule</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Rules contained in a ruleset</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;rule-set-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Ruleset Name</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;rule-set-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Ruleset Name</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-set-details-rule-set-detail--rule-set-name--"></span>
+          <div id="operation-config-correlator-rule-set-details-rule-set-detail--rule-set-name---get" class="operation panel" data-traverse-target="operation-config-correlator-rule-set-details-rule-set-detail--rule-set-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-SET-DETAIL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-set-details/rule-set-detail/{rule-set-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-set-detail</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-set-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-set-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-set-detail_schema">rule-set-detail_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-set-details-rule-set-detail--rule-set-name--rules-"></span>
+          <div id="operation-config-correlator-rule-set-details-rule-set-detail--rule-set-name--rules--get" class="operation panel" data-traverse-target="operation-config-correlator-rule-set-details-rule-set-detail--rule-set-name--rules--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-set-details/rule-set-detail/{rule-set-name}/rules/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rules</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-set-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-set-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/AC-RULE-SUMMARY-BAG">AC-RULE-SUMMARY-BAG</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-rule-set-details-rule-set-detail--rule-set-name--rules--get"><span class="hljs-attr">&quot;rules&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;stateful&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether the rule is stateful</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;buffered-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of buffered alarms correlated to this\nrule</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Applied state of the rule It could be not\napplied, applied or applied to all</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-details-"></span>
+          <div id="operation-config-correlator-rule-details--get" class="operation panel" data-traverse-target="operation-config-correlator-rule-details--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-DETAILS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-details/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-details</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-details_schema">rule-details_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-rule-details--get"><span class="hljs-attr">&quot;rule-details&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table that contains the database of correlation\nrule details</span></div>
+    <div class="tooltip"><a href="#operation-config-correlator-rule-details-rule-detail--rule-name---get"><span class="hljs-attr">&quot;rule-detail&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-correlator-rule-details-rule-detail--rule-name--rule-summary--get"><span class="hljs-attr">&quot;rule-summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Rule summary, name, etc</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;stateful&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether the rule is stateful</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;buffered-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of buffered alarms correlated to this\nrule</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Applied state of the rule It could be not\napplied, applied or applied to all</span></div>
+        },
+        <div class="tooltip"><a href="#operation-config-correlator-rule-details-rule-detail--rule-name--codes--get"><span class="hljs-attr">&quot;codes&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of messages to which this alarm belongs</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Message codes defining the rule.</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;root-cause-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Timeout before root cause alarm</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;reissue-non-bistate&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether to reissue non-bistate alarms</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;reparent&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Reparent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;internal&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">True if the rule is internal</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time window (in ms) for which root/all messages\nare kept in correlater before sending them to\nthe logger</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;apply-location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Locations (R/S/M) to which the rule is applied</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;apply-context&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Contexts (Interfaces) to which the rule is\napplied</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;context-correlation&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether context correlation is enabled</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-details-rule-detail--rule-name--"></span>
+          <div id="operation-config-correlator-rule-details-rule-detail--rule-name---get" class="operation panel" data-traverse-target="operation-config-correlator-rule-details-rule-detail--rule-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-DETAIL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-details/rule-detail/{rule-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-detail</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-detail_schema">rule-detail_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-details-rule-detail--rule-name--rule-summary-"></span>
+          <div id="operation-config-correlator-rule-details-rule-detail--rule-name--rule-summary--get" class="operation panel" data-traverse-target="operation-config-correlator-rule-details-rule-detail--rule-name--rule-summary--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-details/rule-detail/{rule-name}/rule-summary/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/AC-RULE-SUMMARY-BAG">AC-RULE-SUMMARY-BAG</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-rule-details-rule-detail--rule-name--rule-summary--get"><span class="hljs-attr">&quot;rule-summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Rule summary, name, etc</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;stateful&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether the rule is stateful</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;buffered-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of buffered alarms correlated to this\nrule</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Applied state of the rule It could be not\napplied, applied or applied to all</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-details-rule-detail--rule-name--codes-"></span>
+          <div id="operation-config-correlator-rule-details-rule-detail--rule-name--codes--get" class="operation panel" data-traverse-target="operation-config-correlator-rule-details-rule-detail--rule-name--codes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-details/rule-detail/{rule-name}/codes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: codes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/AC-MSG-CODE">AC-MSG-CODE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-rule-details-rule-detail--rule-name--codes--get"><span class="hljs-attr">&quot;codes&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Category of messages to which this alarm belongs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;code&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Alarm code which further qualifies the alarm\nwithin a message group</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;group&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Group of messages to which this alarm belongs</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-summaries-"></span>
+          <div id="operation-config-correlator-rule-summaries--get" class="operation panel" data-traverse-target="operation-config-correlator-rule-summaries--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-SUMMARIES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-summaries/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-summaries</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-summaries_schema">rule-summaries_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-correlator-rule-summaries--get"><span class="hljs-attr">&quot;rule-summaries&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table that contains the database of correlation\nrule summary</span></div>
+    <div class="tooltip"><a href="#operation-config-correlator-rule-summaries-rule-summary--rule-name---get"><span class="hljs-attr">&quot;rule-summary&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;stateful&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Whether the rule is stateful</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;rule-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;buffered-alarms-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of buffered alarms correlated to this\nrule</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;rule-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Applied state of the rule It could be not\napplied, applied or applied to all</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;rule-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Correlation Rule Name</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-correlator-oper:correlator-rule-summaries-rule-summary--rule-name--"></span>
+          <div id="operation-config-correlator-rule-summaries-rule-summary--rule-name---get" class="operation panel" data-traverse-target="operation-config-correlator-rule-summaries-rule-summary--rule-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RULE-SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-correlator-oper:correlator/rule-summaries/rule-summary/{rule-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rule-summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rule-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rule-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rule-summary_schema">rule-summary_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

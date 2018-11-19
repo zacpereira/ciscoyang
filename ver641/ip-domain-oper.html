@@ -1,0 +1,1103 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-ip-domain-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ip-domain-oper:ip-domain-">Cisco-IOS-XR-ip-domain-oper:ip-domain/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ip-domain--get">IP-DOMAIN</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ip-domain-vrfs--get">VRFS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ip-domain-vrfs-vrf--vrf-name---get">VRF</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--server-">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/server/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--server--get">SERVER</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--server-server-address-">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/server/server-address/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--server-server-address--get">SERVER-ADDRESS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--hosts-">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/hosts/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts--get">HOSTS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/hosts/host/{host-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name---get">HOST</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-alias-list-">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/hosts/host/{host-name}/host-alias-list/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-alias-list--get">HOST-ALIAS-LIST</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-address-">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/hosts/host/{host-name}/host-address/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-address--get">HOST-ADDRESS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-ip-domain-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-ip-domain-oper@2017-05-01.yang">Cisco-IOS-XR-ip-domain-oper@2017-05-01.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-ip-domain-oper:ip-domain-"></span>
+          <div id="operation-config-ip-domain--get" class="operation panel" data-traverse-target="operation-config-ip-domain--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">IP-DOMAIN - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-domain-oper:ip-domain/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ip-domain</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ip-domain_schema">ip-domain_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-ip-domain--get"><span class="hljs-attr">&quot;ip-domain&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Domain server and host data</span></div>
+    <div class="tooltip"><a href="#operation-config-ip-domain-vrfs--get"><span class="hljs-attr">&quot;vrfs&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">List of VRFs</span></div>
+      <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name---get"><span class="hljs-attr">&quot;vrf&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><span class="hljs-key">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name</span></div>
+          <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts--get"><span class="hljs-attr">&quot;hosts&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">List of domain hosts</span></div>
+            <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name---get"><span class="hljs-attr">&quot;host&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+                <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-alias-list--get"><span class="hljs-attr">&quot;host-alias-list&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Host alias</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;host-alias&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Host alias list</span></div>
+                },
+                <div class="tooltip"><span class="hljs-leaf">&quot;age&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Age in hours</span></div>
+                <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-address--get"><span class="hljs-attr">&quot;host-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                  {
+                    <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Server address list</span></div>
+                  }
+                ],
+                <div class="tooltip"><span class="hljs-key">&quot;host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Hostname</span></div>
+              }
+            ]
+          },
+          <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--server--get"><span class="hljs-attr">&quot;server&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Domain server data</span></div>
+            <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--server-server-address--get"><span class="hljs-attr">&quot;server-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Server address list</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-leaf">&quot;domain-lookup&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Domain lookup</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;domain-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Domain name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;domain&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Domain list</span></div>
+          }
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-"></span>
+          <div id="operation-config-ip-domain-vrfs--get" class="operation panel" data-traverse-target="operation-config-ip-domain-vrfs--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">VRFS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: vrfs</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/vrfs_schema">vrfs_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-ip-domain-vrfs--get"><span class="hljs-attr">&quot;vrfs&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">List of VRFs</span></div>
+    <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name---get"><span class="hljs-attr">&quot;vrf&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name</span></div>
+        <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts--get"><span class="hljs-attr">&quot;hosts&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">List of domain hosts</span></div>
+          <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name---get"><span class="hljs-attr">&quot;host&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+              <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-alias-list--get"><span class="hljs-attr">&quot;host-alias-list&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Host alias</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;host-alias&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Host alias list</span></div>
+              },
+              <div class="tooltip"><span class="hljs-leaf">&quot;age&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Age in hours</span></div>
+              <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-address--get"><span class="hljs-attr">&quot;host-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Server address list</span></div>
+                }
+              ],
+              <div class="tooltip"><span class="hljs-key">&quot;host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Hostname</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--server--get"><span class="hljs-attr">&quot;server&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Domain server data</span></div>
+          <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--server-server-address--get"><span class="hljs-attr">&quot;server-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Server address list</span></div>
+            }
+          ],
+          <div class="tooltip"><span class="hljs-leaf">&quot;domain-lookup&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Domain lookup</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;domain-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Domain name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;domain&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Domain list</span></div>
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--"></span>
+          <div id="operation-config-ip-domain-vrfs-vrf--vrf-name---get" class="operation panel" data-traverse-target="operation-config-ip-domain-vrfs-vrf--vrf-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">VRF - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: vrf</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/vrf_schema">vrf_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--server-"></span>
+          <div id="operation-config-ip-domain-vrfs-vrf--vrf-name--server--get" class="operation panel" data-traverse-target="operation-config-ip-domain-vrfs-vrf--vrf-name--server--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SERVER - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/server/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: server</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/DOMAIN-SH-SERVER-BAG">DOMAIN-SH-SERVER-BAG</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--server--get"><span class="hljs-attr">&quot;server&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Domain server data</span></div>
+    <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--server-server-address--get"><span class="hljs-attr">&quot;server-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Server address list</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;domain-lookup&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Domain lookup</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;domain-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Domain name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;domain&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Domain list</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--server-server-address-"></span>
+          <div id="operation-config-ip-domain-vrfs-vrf--vrf-name--server-server-address--get" class="operation panel" data-traverse-target="operation-config-ip-domain-vrfs-vrf--vrf-name--server-server-address--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SERVER-ADDRESS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/server/server-address/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: server-address</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/DOMAIN-IPADDRESS">DOMAIN-IPADDRESS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--server-server-address--get"><span class="hljs-attr">&quot;server-address&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--hosts-"></span>
+          <div id="operation-config-ip-domain-vrfs-vrf--vrf-name--hosts--get" class="operation panel" data-traverse-target="operation-config-ip-domain-vrfs-vrf--vrf-name--hosts--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HOSTS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/hosts/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: hosts</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/hosts_schema">hosts_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts--get"><span class="hljs-attr">&quot;hosts&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">List of domain hosts</span></div>
+    <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name---get"><span class="hljs-attr">&quot;host&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+        <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-alias-list--get"><span class="hljs-attr">&quot;host-alias-list&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Host alias</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;host-alias&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Host alias list</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;age&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Age in hours</span></div>
+        <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-address--get"><span class="hljs-attr">&quot;host-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Host address list</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-key">&quot;host-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Hostname</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--"></span>
+          <div id="operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name---get" class="operation panel" data-traverse-target="operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HOST - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/hosts/host/{host-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: host</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">host-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of host-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/host_schema">host_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-alias-list-"></span>
+          <div id="operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-alias-list--get" class="operation panel" data-traverse-target="operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-alias-list--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HOST-ALIAS-LIST - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/hosts/host/{host-name}/host-alias-list/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: host-alias-list</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">host-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of host-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/DOMAIN-HOST-ALIAS-BAG">DOMAIN-HOST-ALIAS-BAG</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-alias-list--get"><span class="hljs-attr">&quot;host-alias-list&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Host alias</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-alias&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Host alias list</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ip-domain-oper:ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-address-"></span>
+          <div id="operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-address--get" class="operation panel" data-traverse-target="operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-address--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HOST-ADDRESS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ip-domain-oper:ip-domain/vrfs/vrf/{vrf-name}/hosts/host/{host-name}/host-address/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: host-address</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">host-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of host-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/DOMAIN-IPADDRESS">DOMAIN-IPADDRESS</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-ip-domain-vrfs-vrf--vrf-name--hosts-host--host-name--host-address--get"><span class="hljs-attr">&quot;host-address&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

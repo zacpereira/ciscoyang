@@ -1,0 +1,2581 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-ipv4-autorp-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp--get">AUTO-RP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-standby--get">STANDBY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-candidate-rp-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/candidate-rp/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-standby-candidate-rp--get">CANDIDATE-RP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-candidate-rp-traffic-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/candidate-rp/traffic/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-standby-candidate-rp-traffic--get">TRAFFIC</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-candidate-rp-rps-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/candidate-rp/rps/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-standby-candidate-rp-rps--get">RPS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-candidate-rp-rps-rp-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/candidate-rp/rps/rp/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-standby-candidate-rp-rps-rp--get">RP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-standby-mapping-agent--get">MAPPING-AGENT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-traffic-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/traffic/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-standby-mapping-agent-traffic--get">TRAFFIC</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-rp-addresses-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/rp-addresses/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses--get">RP-ADDRESSES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address--">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/rp-addresses/rp-address/{rp-address}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address---get">RP-ADDRESS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address--range-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/rp-addresses/rp-address/{rp-address}/range/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address--range--get">RANGE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-summary-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/summary/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-standby-mapping-agent-summary--get">SUMMARY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-active--get">ACTIVE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-candidate-rp-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/candidate-rp/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-active-candidate-rp--get">CANDIDATE-RP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-candidate-rp-traffic-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/candidate-rp/traffic/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-active-candidate-rp-traffic--get">TRAFFIC</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-candidate-rp-rps-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/candidate-rp/rps/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-active-candidate-rp-rps--get">RPS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-candidate-rp-rps-rp-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/candidate-rp/rps/rp/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-active-candidate-rp-rps-rp--get">RP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-active-mapping-agent--get">MAPPING-AGENT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-traffic-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/traffic/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-active-mapping-agent-traffic--get">TRAFFIC</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-rp-addresses-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/rp-addresses/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses--get">RP-ADDRESSES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address--">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/rp-addresses/rp-address/{rp-address}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address---get">RP-ADDRESS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address--range-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/rp-addresses/rp-address/{rp-address}/range/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address--range--get">RANGE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-summary-">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/summary/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-auto-rp-active-mapping-agent-summary--get">SUMMARY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-ipv4-autorp-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-ipv4-autorp-oper@2015-11-09.yang">Cisco-IOS-XR-ipv4-autorp-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-"></span>
+          <div id="operation-config-auto-rp--get" class="operation panel" data-traverse-target="operation-config-auto-rp--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">AUTO-RP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: auto-rp</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/auto-rp_schema">auto-rp_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp--get"><span class="hljs-attr">&quot;auto-rp&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP operational data</span></div>
+    <div class="tooltip"><a href="#operation-config-auto-rp-standby--get"><span class="hljs-attr">&quot;standby&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Standby Process</span></div>
+      <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp--get"><span class="hljs-attr">&quot;candidate-rp&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP</span></div>
+        <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-rps--get"><span class="hljs-attr">&quot;rps&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP Table</span></div>
+          <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-rps-rp--get"><span class="hljs-attr">&quot;rp&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface Name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;announce-period&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Announce Period</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TTL</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;access-list-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACL Name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;candidate-rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Candidate RP IP Address</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+        }
+      },
+      <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent--get"><span class="hljs-attr">&quot;mapping-agent&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table</span></div>
+        <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;standby-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in receive path in\nstandby role</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;active-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets received in active role</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+        },
+        <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses--get"><span class="hljs-attr">&quot;rp-addresses&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table Entries</span></div>
+          <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address---get"><span class="hljs-attr">&quot;rp-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">RP Address</span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;rp-address-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Candidate-RP address</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;expiry-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time for expiration in seconds</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">RP Address</span></div>
+              <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address--range--get"><span class="hljs-attr">&quot;range&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;uptime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Uptime in seconds</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Prefix length of the range</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;check-point-object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Checkpoint object id</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;is-advertised&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is this entry advertised ?</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;create-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Source of the entry</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix of the range</span></div>
+                }
+              ],
+              <div class="tooltip"><span class="hljs-leaf">&quot;pim-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">PIM version of the CRP</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-summary--get"><span class="hljs-attr">&quot;summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Summary Information</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;is-maximum-disabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is maximum enforcement disabled ?</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;cache-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of group to RP mapping entries in the\ncache</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;cache-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Maximum group to RP mapping entries allowed</span></div>
+        }
+      }
+    },
+    <div class="tooltip"><a href="#operation-config-auto-rp-active--get"><span class="hljs-attr">&quot;active&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Active Process</span></div>
+      <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp--get"><span class="hljs-attr">&quot;candidate-rp&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP</span></div>
+        <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-rps--get"><span class="hljs-attr">&quot;rps&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP Table</span></div>
+          <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-rps-rp--get"><span class="hljs-attr">&quot;rp&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface Name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;announce-period&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Announce Period</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TTL</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;access-list-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACL Name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;candidate-rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Candidate RP IP Address</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+        }
+      },
+      <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent--get"><span class="hljs-attr">&quot;mapping-agent&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table</span></div>
+        <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;standby-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in receive path in\nstandby role</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;active-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets received in active role</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+        },
+        <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses--get"><span class="hljs-attr">&quot;rp-addresses&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table Entries</span></div>
+          <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address---get"><span class="hljs-attr">&quot;rp-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">RP Address</span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;rp-address-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Candidate-RP address</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;expiry-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time for expiration in seconds</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">RP Address</span></div>
+              <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address--range--get"><span class="hljs-attr">&quot;range&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;uptime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Uptime in seconds</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Prefix length of the range</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;check-point-object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Checkpoint object id</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;is-advertised&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is this entry advertised ?</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;create-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Source of the entry</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix of the range</span></div>
+                }
+              ],
+              <div class="tooltip"><span class="hljs-leaf">&quot;pim-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">PIM version of the CRP</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-summary--get"><span class="hljs-attr">&quot;summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Summary Information</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;is-maximum-disabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is maximum enforcement disabled ?</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;cache-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of group to RP mapping entries in the\ncache</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;cache-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Maximum group to RP mapping entries allowed</span></div>
+        }
+      }
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-"></span>
+          <div id="operation-config-auto-rp-standby--get" class="operation panel" data-traverse-target="operation-config-auto-rp-standby--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">STANDBY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: standby</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/standby_schema">standby_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-standby--get"><span class="hljs-attr">&quot;standby&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Standby Process</span></div>
+    <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp--get"><span class="hljs-attr">&quot;candidate-rp&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP</span></div>
+      <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-rps--get"><span class="hljs-attr">&quot;rps&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP Table</span></div>
+        <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-rps-rp--get"><span class="hljs-attr">&quot;rp&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;announce-period&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Announce Period</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TTL</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;access-list-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACL Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;candidate-rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Candidate RP IP Address</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+      }
+    },
+    <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent--get"><span class="hljs-attr">&quot;mapping-agent&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table</span></div>
+      <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;standby-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in receive path in\nstandby role</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;active-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets received in active role</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+      },
+      <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses--get"><span class="hljs-attr">&quot;rp-addresses&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table Entries</span></div>
+        <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address---get"><span class="hljs-attr">&quot;rp-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">RP Address</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;rp-address-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Candidate-RP address</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;expiry-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time for expiration in seconds</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">RP Address</span></div>
+            <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address--range--get"><span class="hljs-attr">&quot;range&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;uptime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Uptime in seconds</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Prefix length of the range</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;check-point-object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Checkpoint object id</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;is-advertised&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is this entry advertised ?</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;create-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Source of the entry</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix of the range</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-leaf">&quot;pim-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">PIM version of the CRP</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-summary--get"><span class="hljs-attr">&quot;summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Summary Information</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;is-maximum-disabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is maximum enforcement disabled ?</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;cache-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of group to RP mapping entries in the\ncache</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;cache-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Maximum group to RP mapping entries allowed</span></div>
+      }
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-candidate-rp-"></span>
+          <div id="operation-config-auto-rp-standby-candidate-rp--get" class="operation panel" data-traverse-target="operation-config-auto-rp-standby-candidate-rp--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CANDIDATE-RP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/candidate-rp/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: candidate-rp</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/candidate-rp_schema">candidate-rp_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp--get"><span class="hljs-attr">&quot;candidate-rp&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP</span></div>
+    <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-rps--get"><span class="hljs-attr">&quot;rps&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP Table</span></div>
+      <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-rps-rp--get"><span class="hljs-attr">&quot;rp&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;announce-period&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Announce Period</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TTL</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;access-list-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACL Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;candidate-rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Candidate RP IP Address</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate Traffic Counters</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-candidate-rp-traffic-"></span>
+          <div id="operation-config-auto-rp-standby-candidate-rp-traffic--get" class="operation panel" data-traverse-target="operation-config-auto-rp-standby-candidate-rp-traffic--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRAFFIC - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/candidate-rp/traffic/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: traffic</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/traffic_schema">traffic_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate Traffic Counters</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-candidate-rp-rps-"></span>
+          <div id="operation-config-auto-rp-standby-candidate-rp-rps--get" class="operation panel" data-traverse-target="operation-config-auto-rp-standby-candidate-rp-rps--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RPS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/candidate-rp/rps/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rps</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rps_schema">rps_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-rps--get"><span class="hljs-attr">&quot;rps&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP Table</span></div>
+    <div class="tooltip"><a href="#operation-config-auto-rp-standby-candidate-rp-rps-rp--get"><span class="hljs-attr">&quot;rp&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;announce-period&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Announce Period</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TTL</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;access-list-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACL Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;candidate-rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Candidate RP IP Address</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-candidate-rp-rps-rp-"></span>
+          <div id="operation-config-auto-rp-standby-candidate-rp-rps-rp--get" class="operation panel" data-traverse-target="operation-config-auto-rp-standby-candidate-rp-rps-rp--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/candidate-rp/rps/rp/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rp</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rp_schema">rp_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-"></span>
+          <div id="operation-config-auto-rp-standby-mapping-agent--get" class="operation panel" data-traverse-target="operation-config-auto-rp-standby-mapping-agent--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MAPPING-AGENT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: mapping-agent</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/mapping-agent_schema">mapping-agent_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent--get"><span class="hljs-attr">&quot;mapping-agent&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table</span></div>
+    <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;standby-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in receive path in\nstandby role</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;active-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets received in active role</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses--get"><span class="hljs-attr">&quot;rp-addresses&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table Entries</span></div>
+      <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address---get"><span class="hljs-attr">&quot;rp-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">RP Address</span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;rp-address-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Candidate-RP address</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;expiry-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time for expiration in seconds</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">RP Address</span></div>
+          <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address--range--get"><span class="hljs-attr">&quot;range&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;uptime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Uptime in seconds</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Prefix length of the range</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;check-point-object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Checkpoint object id</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;is-advertised&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is this entry advertised ?</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;create-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Source of the entry</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix of the range</span></div>
+            }
+          ],
+          <div class="tooltip"><span class="hljs-leaf">&quot;pim-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">PIM version of the CRP</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-summary--get"><span class="hljs-attr">&quot;summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Summary Information</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;is-maximum-disabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is maximum enforcement disabled ?</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cache-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of group to RP mapping entries in the\ncache</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cache-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Maximum group to RP mapping entries allowed</span></div>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-traffic-"></span>
+          <div id="operation-config-auto-rp-standby-mapping-agent-traffic--get" class="operation panel" data-traverse-target="operation-config-auto-rp-standby-mapping-agent-traffic--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRAFFIC - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/traffic/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: traffic</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/traffic_schema">traffic_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;standby-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in receive path in\nstandby role</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;active-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets received in active role</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-rp-addresses-"></span>
+          <div id="operation-config-auto-rp-standby-mapping-agent-rp-addresses--get" class="operation panel" data-traverse-target="operation-config-auto-rp-standby-mapping-agent-rp-addresses--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RP-ADDRESSES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/rp-addresses/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rp-addresses</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rp-addresses_schema">rp-addresses_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses--get"><span class="hljs-attr">&quot;rp-addresses&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table Entries</span></div>
+    <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address---get"><span class="hljs-attr">&quot;rp-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">RP Address</span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;rp-address-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Candidate-RP address</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;expiry-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time for expiration in seconds</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">RP Address</span></div>
+        <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address--range--get"><span class="hljs-attr">&quot;range&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;uptime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Uptime in seconds</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Prefix length of the range</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;check-point-object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Checkpoint object id</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;is-advertised&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is this entry advertised ?</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;create-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Source of the entry</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix of the range</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;pim-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">PIM version of the CRP</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address--"></span>
+          <div id="operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address---get" class="operation panel" data-traverse-target="operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RP-ADDRESS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/rp-addresses/rp-address/{rp-address}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rp-address</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rp-address:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rp-address</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rp-address_schema">rp-address_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address--range-"></span>
+          <div id="operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address--range--get" class="operation panel" data-traverse-target="operation-config-auto-rp-standby-mapping-agent-rp-addresses-rp-address--rp-address--range--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RANGE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/rp-addresses/rp-address/{rp-address}/range/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: range</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rp-address:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rp-address</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/range_schema">range_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-standby-mapping-agent-summary-"></span>
+          <div id="operation-config-auto-rp-standby-mapping-agent-summary--get" class="operation panel" data-traverse-target="operation-config-auto-rp-standby-mapping-agent-summary--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/standby/mapping-agent/summary/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/summary_schema">summary_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-standby-mapping-agent-summary--get"><span class="hljs-attr">&quot;summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Summary Information</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;is-maximum-disabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is maximum enforcement disabled ?</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cache-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of group to RP mapping entries in the\ncache</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cache-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Maximum group to RP mapping entries allowed</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-"></span>
+          <div id="operation-config-auto-rp-active--get" class="operation panel" data-traverse-target="operation-config-auto-rp-active--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ACTIVE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: active</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/active_schema">active_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-active--get"><span class="hljs-attr">&quot;active&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Active Process</span></div>
+    <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp--get"><span class="hljs-attr">&quot;candidate-rp&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP</span></div>
+      <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-rps--get"><span class="hljs-attr">&quot;rps&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP Table</span></div>
+        <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-rps-rp--get"><span class="hljs-attr">&quot;rp&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;announce-period&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Announce Period</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TTL</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;access-list-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACL Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;candidate-rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Candidate RP IP Address</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+      }
+    },
+    <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent--get"><span class="hljs-attr">&quot;mapping-agent&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table</span></div>
+      <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;standby-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in receive path in\nstandby role</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;active-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets received in active role</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+      },
+      <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses--get"><span class="hljs-attr">&quot;rp-addresses&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table Entries</span></div>
+        <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address---get"><span class="hljs-attr">&quot;rp-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">RP Address</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;rp-address-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Candidate-RP address</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;expiry-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time for expiration in seconds</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">RP Address</span></div>
+            <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address--range--get"><span class="hljs-attr">&quot;range&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;uptime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Uptime in seconds</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Prefix length of the range</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;check-point-object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Checkpoint object id</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;is-advertised&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is this entry advertised ?</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;create-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Source of the entry</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix of the range</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-leaf">&quot;pim-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">PIM version of the CRP</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-summary--get"><span class="hljs-attr">&quot;summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Summary Information</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;is-maximum-disabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is maximum enforcement disabled ?</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;cache-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of group to RP mapping entries in the\ncache</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;cache-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Maximum group to RP mapping entries allowed</span></div>
+      }
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-candidate-rp-"></span>
+          <div id="operation-config-auto-rp-active-candidate-rp--get" class="operation panel" data-traverse-target="operation-config-auto-rp-active-candidate-rp--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CANDIDATE-RP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/candidate-rp/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: candidate-rp</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/candidate-rp_schema">candidate-rp_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp--get"><span class="hljs-attr">&quot;candidate-rp&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP</span></div>
+    <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-rps--get"><span class="hljs-attr">&quot;rps&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP Table</span></div>
+      <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-rps-rp--get"><span class="hljs-attr">&quot;rp&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;announce-period&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Announce Period</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TTL</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;access-list-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACL Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;candidate-rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Candidate RP IP Address</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate Traffic Counters</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-candidate-rp-traffic-"></span>
+          <div id="operation-config-auto-rp-active-candidate-rp-traffic--get" class="operation panel" data-traverse-target="operation-config-auto-rp-active-candidate-rp-traffic--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRAFFIC - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/candidate-rp/traffic/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: traffic</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/traffic_schema">traffic_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate Traffic Counters</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-candidate-rp-rps-"></span>
+          <div id="operation-config-auto-rp-active-candidate-rp-rps--get" class="operation panel" data-traverse-target="operation-config-auto-rp-active-candidate-rp-rps--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RPS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/candidate-rp/rps/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rps</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rps_schema">rps_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-rps--get"><span class="hljs-attr">&quot;rps&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Candidate RP Table</span></div>
+    <div class="tooltip"><a href="#operation-config-auto-rp-active-candidate-rp-rps-rp--get"><span class="hljs-attr">&quot;rp&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;announce-period&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Announce Period</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TTL</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;access-list-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACL Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;candidate-rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Candidate RP IP Address</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-candidate-rp-rps-rp-"></span>
+          <div id="operation-config-auto-rp-active-candidate-rp-rps-rp--get" class="operation panel" data-traverse-target="operation-config-auto-rp-active-candidate-rp-rps-rp--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/candidate-rp/rps/rp/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rp</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rp_schema">rp_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-"></span>
+          <div id="operation-config-auto-rp-active-mapping-agent--get" class="operation panel" data-traverse-target="operation-config-auto-rp-active-mapping-agent--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MAPPING-AGENT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: mapping-agent</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/mapping-agent_schema">mapping-agent_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent--get"><span class="hljs-attr">&quot;mapping-agent&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table</span></div>
+    <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;standby-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in receive path in\nstandby role</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;active-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets received in active role</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses--get"><span class="hljs-attr">&quot;rp-addresses&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table Entries</span></div>
+      <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address---get"><span class="hljs-attr">&quot;rp-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">RP Address</span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;rp-address-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Candidate-RP address</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;expiry-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time for expiration in seconds</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">RP Address</span></div>
+          <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address--range--get"><span class="hljs-attr">&quot;range&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;uptime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Uptime in seconds</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Prefix length of the range</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;check-point-object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Checkpoint object id</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;is-advertised&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is this entry advertised ?</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;create-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Source of the entry</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix of the range</span></div>
+            }
+          ],
+          <div class="tooltip"><span class="hljs-leaf">&quot;pim-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">PIM version of the CRP</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-summary--get"><span class="hljs-attr">&quot;summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Summary Information</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;is-maximum-disabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is maximum enforcement disabled ?</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cache-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of group to RP mapping entries in the\ncache</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cache-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Maximum group to RP mapping entries allowed</span></div>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-traffic-"></span>
+          <div id="operation-config-auto-rp-active-mapping-agent-traffic--get" class="operation panel" data-traverse-target="operation-config-auto-rp-active-mapping-agent-traffic--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRAFFIC - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/traffic/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: traffic</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/traffic_schema">traffic_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Traffic Counters</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;standby-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in receive path in\nstandby role</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;standby-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets dropped in send path in\nstandby role</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;active-received-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of packets received in active role</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;active-sent-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets sent in active role</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-rp-addresses-"></span>
+          <div id="operation-config-auto-rp-active-mapping-agent-rp-addresses--get" class="operation panel" data-traverse-target="operation-config-auto-rp-active-mapping-agent-rp-addresses--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RP-ADDRESSES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/rp-addresses/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rp-addresses</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rp-addresses_schema">rp-addresses_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses--get"><span class="hljs-attr">&quot;rp-addresses&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Table Entries</span></div>
+    <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address---get"><span class="hljs-attr">&quot;rp-address&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">RP Address</span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;rp-address-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Candidate-RP address</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;expiry-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time for expiration in seconds</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;rp-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">RP Address</span></div>
+        <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address--range--get"><span class="hljs-attr">&quot;range&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;protocol-mode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Mode</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;uptime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Uptime in seconds</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Prefix length of the range</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;check-point-object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Checkpoint object id</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;is-advertised&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is this entry advertised ?</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;create-type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Source of the entry</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix of the range</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;pim-version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">PIM version of the CRP</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address--"></span>
+          <div id="operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address---get" class="operation panel" data-traverse-target="operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RP-ADDRESS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/rp-addresses/rp-address/{rp-address}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rp-address</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rp-address:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rp-address</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rp-address_schema">rp-address_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address--range-"></span>
+          <div id="operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address--range--get" class="operation panel" data-traverse-target="operation-config-auto-rp-active-mapping-agent-rp-addresses-rp-address--rp-address--range--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RANGE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/rp-addresses/rp-address/{rp-address}/range/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: range</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rp-address:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rp-address</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/range_schema">range_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv4-autorp-oper:auto-rp-active-mapping-agent-summary-"></span>
+          <div id="operation-config-auto-rp-active-mapping-agent-summary--get" class="operation panel" data-traverse-target="operation-config-auto-rp-active-mapping-agent-summary--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv4-autorp-oper:auto-rp/active/mapping-agent/summary/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/summary_schema">summary_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-auto-rp-active-mapping-agent-summary--get"><span class="hljs-attr">&quot;summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">AutoRP Mapping Agent Summary Information</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;is-maximum-disabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is maximum enforcement disabled ?</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cache-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of group to RP mapping entries in the\ncache</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cache-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Maximum group to RP mapping entries allowed</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

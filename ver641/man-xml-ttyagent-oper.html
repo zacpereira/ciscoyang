@@ -1,0 +1,1956 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-man-xml-ttyagent-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:netconf-">Cisco-IOS-XR-man-xml-ttyagent-oper:netconf/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-netconf--get">NETCONF</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:netconf-agent-">Cisco-IOS-XR-man-xml-ttyagent-oper:netconf/agent/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-netconf-agent--get">AGENT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:netconf-agent-tty-">Cisco-IOS-XR-man-xml-ttyagent-oper:netconf/agent/tty/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-netconf-agent-tty--get">TTY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:netconf-agent-tty-sessions-">Cisco-IOS-XR-man-xml-ttyagent-oper:netconf/agent/tty/sessions/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-netconf-agent-tty-sessions--get">SESSIONS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:netconf-agent-tty-sessions-session--session-id--">Cisco-IOS-XR-man-xml-ttyagent-oper:netconf/agent/tty/sessions/session/{session-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-netconf-agent-tty-sessions-session--session-id---get">SESSION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-xr-xml--get">XR-XML</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-xr-xml-agent--get">AGENT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-tty-">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/tty/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-xr-xml-agent-tty--get">TTY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-tty-sessions-">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/tty/sessions/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-xr-xml-agent-tty-sessions--get">SESSIONS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-tty-sessions-session--session-id--">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/tty/sessions/session/{session-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-xr-xml-agent-tty-sessions-session--session-id---get">SESSION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-default-">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/default/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-xr-xml-agent-default--get">DEFAULT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-default-sessions-">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/default/sessions/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-xr-xml-agent-default-sessions--get">SESSIONS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-default-sessions-session--session-id--">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/default/sessions/session/{session-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-xr-xml-agent-default-sessions-session--session-id---get">SESSION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-ssl-">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/ssl/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-xr-xml-agent-ssl--get">SSL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-ssl-sessions-">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/ssl/sessions/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-xr-xml-agent-ssl-sessions--get">SESSIONS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-ssl-sessions-session--session-id--">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/ssl/sessions/session/{session-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-xr-xml-agent-ssl-sessions-session--session-id---get">SESSION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-man-xml-ttyagent-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-man-xml-ttyagent-oper@2017-09-07.yang">Cisco-IOS-XR-man-xml-ttyagent-oper@2017-09-07.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:netconf-"></span>
+          <div id="operation-config-netconf--get" class="operation panel" data-traverse-target="operation-config-netconf--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NETCONF - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:netconf/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: netconf</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/netconf_schema">netconf_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-netconf--get"><span class="hljs-attr">&quot;netconf&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">NETCONF operational information</span></div>
+    <div class="tooltip"><a href="#operation-config-netconf-agent--get"><span class="hljs-attr">&quot;agent&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">NETCONF agent operational information</span></div>
+      <div class="tooltip"><a href="#operation-config-netconf-agent-tty--get"><span class="hljs-attr">&quot;tty&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">NETCONF agent over TTY</span></div>
+        <div class="tooltip"><a href="#operation-config-netconf-agent-tty-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Session information</span></div>
+          <div class="tooltip"><a href="#operation-config-netconf-agent-tty-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Session ID</span></div>
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:netconf-agent-"></span>
+          <div id="operation-config-netconf-agent--get" class="operation panel" data-traverse-target="operation-config-netconf-agent--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">AGENT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:netconf/agent/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: agent</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/agent_schema">agent_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-netconf-agent--get"><span class="hljs-attr">&quot;agent&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">NETCONF agent operational information</span></div>
+    <div class="tooltip"><a href="#operation-config-netconf-agent-tty--get"><span class="hljs-attr">&quot;tty&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">NETCONF agent over TTY</span></div>
+      <div class="tooltip"><a href="#operation-config-netconf-agent-tty-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Session information</span></div>
+        <div class="tooltip"><a href="#operation-config-netconf-agent-tty-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Session ID</span></div>
+          }
+        ]
+      }
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:netconf-agent-tty-"></span>
+          <div id="operation-config-netconf-agent-tty--get" class="operation panel" data-traverse-target="operation-config-netconf-agent-tty--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TTY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:netconf/agent/tty/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: tty</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/tty_schema">tty_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-netconf-agent-tty--get"><span class="hljs-attr">&quot;tty&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">NETCONF agent over TTY</span></div>
+    <div class="tooltip"><a href="#operation-config-netconf-agent-tty-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Session information</span></div>
+      <div class="tooltip"><a href="#operation-config-netconf-agent-tty-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Session ID</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:netconf-agent-tty-sessions-"></span>
+          <div id="operation-config-netconf-agent-tty-sessions--get" class="operation panel" data-traverse-target="operation-config-netconf-agent-tty-sessions--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSIONS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:netconf/agent/tty/sessions/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sessions</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/sessions_schema">sessions_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-netconf-agent-tty-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Session information</span></div>
+    <div class="tooltip"><a href="#operation-config-netconf-agent-tty-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Session ID</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:netconf-agent-tty-sessions-session--session-id--"></span>
+          <div id="operation-config-netconf-agent-tty-sessions-session--session-id---get" class="operation panel" data-traverse-target="operation-config-netconf-agent-tty-sessions-session--session-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:netconf/agent/tty/sessions/session/{session-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: session</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">session-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of session-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/session_schema">session_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-"></span>
+          <div id="operation-config-xr-xml--get" class="operation panel" data-traverse-target="operation-config-xr-xml--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">XR-XML - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: xr-xml</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/xr-xml_schema">xr-xml_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-xr-xml--get"><span class="hljs-attr">&quot;xr-xml&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">xr xml</span></div>
+    <div class="tooltip"><a href="#operation-config-xr-xml-agent--get"><span class="hljs-attr">&quot;agent&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">XML agents</span></div>
+      <div class="tooltip"><a href="#operation-config-xr-xml-agent-default--get"><span class="hljs-attr">&quot;default&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Default sessions information</span></div>
+        <div class="tooltip"><a href="#operation-config-xr-xml-agent-default-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+          <div class="tooltip"><a href="#operation-config-xr-xml-agent-default-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">xml sessions information</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><span class="hljs-attr">&quot;ssl&quot;</span>: {<!--
+--> <span class="tooltiptext">SSL sessions information</span></div>
+          <div class="tooltip"><span class="hljs-attr">&quot;sessions&quot;</span>: {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+            <div class="tooltip"><span class="hljs-attr">&quot;session&quot;</span>: [<!--
+--> <span class="tooltiptext">No description</span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">xml sessions information</span></div>
+              }
+            ]
+          },
+          <div class="tooltip"><span class="hljs-attr">&quot;tty&quot;</span>: {<!--
+--> <span class="tooltiptext">TTY sessions information</span></div>
+            <div class="tooltip"><span class="hljs-attr">&quot;sessions&quot;</span>: {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+              <div class="tooltip"><span class="hljs-attr">&quot;session&quot;</span>: [<!--
+--> <span class="tooltiptext">No description</span></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">xml sessions information</span></div>
+                }
+              ]
+            }
+          }
+        }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-"></span>
+          <div id="operation-config-xr-xml-agent--get" class="operation panel" data-traverse-target="operation-config-xr-xml-agent--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">AGENT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: agent</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/agent_schema">agent_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-xr-xml-agent--get"><span class="hljs-attr">&quot;agent&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">XML agents</span></div>
+    <div class="tooltip"><a href="#operation-config-xr-xml-agent-default--get"><span class="hljs-attr">&quot;default&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Default sessions information</span></div>
+      <div class="tooltip"><a href="#operation-config-xr-xml-agent-default-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+        <div class="tooltip"><a href="#operation-config-xr-xml-agent-default-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">xml sessions information</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><span class="hljs-attr">&quot;ssl&quot;</span>: {<!--
+--> <span class="tooltiptext">SSL sessions information</span></div>
+        <div class="tooltip"><span class="hljs-attr">&quot;sessions&quot;</span>: {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+          <div class="tooltip"><span class="hljs-attr">&quot;session&quot;</span>: [<!--
+--> <span class="tooltiptext">No description</span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">xml sessions information</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><span class="hljs-attr">&quot;tty&quot;</span>: {<!--
+--> <span class="tooltiptext">TTY sessions information</span></div>
+          <div class="tooltip"><span class="hljs-attr">&quot;sessions&quot;</span>: {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+            <div class="tooltip"><span class="hljs-attr">&quot;session&quot;</span>: [<!--
+--> <span class="tooltiptext">No description</span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">xml sessions information</span></div>
+              }
+            ]
+          }
+        }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-tty-"></span>
+          <div id="operation-config-xr-xml-agent-tty--get" class="operation panel" data-traverse-target="operation-config-xr-xml-agent-tty--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TTY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/tty/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: tty</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/SESSION-TABLE">SESSION-TABLE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-xr-xml-agent-tty--get"><span class="hljs-attr">&quot;tty&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">TTY sessions information</span></div>
+    <div class="tooltip"><a href="#operation-config-xr-xml-agent-tty-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+      <div class="tooltip"><a href="#operation-config-xr-xml-agent-tty-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">xml sessions information</span></div>
+        }
+      ]
+    }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-tty-sessions-"></span>
+          <div id="operation-config-xr-xml-agent-tty-sessions--get" class="operation panel" data-traverse-target="operation-config-xr-xml-agent-tty-sessions--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSIONS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/tty/sessions/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sessions</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/sessions_schema">sessions_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-xr-xml-agent-tty-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+    <div class="tooltip"><a href="#operation-config-xr-xml-agent-tty-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"> </span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+    }
+  ]
+}
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-tty-sessions-session--session-id--"></span>
+          <div id="operation-config-xr-xml-agent-tty-sessions-session--session-id---get" class="operation panel" data-traverse-target="operation-config-xr-xml-agent-tty-sessions-session--session-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/tty/sessions/session/{session-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: session</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">session-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of session-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/XR-XML-SESSION-INFO">XR-XML-SESSION-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-xr-xml-agent-tty-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-default-"></span>
+          <div id="operation-config-xr-xml-agent-default--get" class="operation panel" data-traverse-target="operation-config-xr-xml-agent-default--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">DEFAULT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/default/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: default</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/SESSION-TABLE">SESSION-TABLE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-xr-xml-agent-default--get"><span class="hljs-attr">&quot;default&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Default sessions information</span></div>
+    <div class="tooltip"><a href="#operation-config-xr-xml-agent-default-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+      <div class="tooltip"><a href="#operation-config-xr-xml-agent-default-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">xml sessions information</span></div>
+        }
+      ]
+    }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-default-sessions-"></span>
+          <div id="operation-config-xr-xml-agent-default-sessions--get" class="operation panel" data-traverse-target="operation-config-xr-xml-agent-default-sessions--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSIONS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/default/sessions/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sessions</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/sessions_schema">sessions_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-xr-xml-agent-default-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+    <div class="tooltip"><a href="#operation-config-xr-xml-agent-default-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"> </span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+    }
+  ]
+}
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-default-sessions-session--session-id--"></span>
+          <div id="operation-config-xr-xml-agent-default-sessions-session--session-id---get" class="operation panel" data-traverse-target="operation-config-xr-xml-agent-default-sessions-session--session-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/default/sessions/session/{session-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: session</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">session-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of session-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/XR-XML-SESSION-INFO">XR-XML-SESSION-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-xr-xml-agent-default-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-ssl-"></span>
+          <div id="operation-config-xr-xml-agent-ssl--get" class="operation panel" data-traverse-target="operation-config-xr-xml-agent-ssl--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SSL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/ssl/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ssl</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/SESSION-TABLE">SESSION-TABLE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-xr-xml-agent-ssl--get"><span class="hljs-attr">&quot;ssl&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">SSL sessions information</span></div>
+    <div class="tooltip"><a href="#operation-config-xr-xml-agent-ssl-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+      <div class="tooltip"><a href="#operation-config-xr-xml-agent-ssl-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">xml sessions information</span></div>
+        }
+      ]
+    }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-ssl-sessions-"></span>
+          <div id="operation-config-xr-xml-agent-ssl-sessions--get" class="operation panel" data-traverse-target="operation-config-xr-xml-agent-ssl-sessions--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSIONS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/ssl/sessions/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sessions</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/sessions_schema">sessions_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-xr-xml-agent-ssl-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">sessions information</span></div>
+    <div class="tooltip"><a href="#operation-config-xr-xml-agent-ssl-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"> </span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+    }
+  ]
+}
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml-agent-ssl-sessions-session--session-id--"></span>
+          <div id="operation-config-xr-xml-agent-ssl-sessions-session--session-id---get" class="operation panel" data-traverse-target="operation-config-xr-xml-agent-ssl-sessions-session--session-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-xml-ttyagent-oper:xr-xml/agent/ssl/sessions/session/{session-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: session</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">session-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of session-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/XR-XML-SESSION-INFO">XR-XML-SESSION-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-xr-xml-agent-ssl-sessions-session--session-id---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;username&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Username</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config session ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;admin-config-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Admin config session ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;client-port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">client's port</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">state of the session idle/busy</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;client-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ip address of the client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Elapsed time(seconds) since a session is\ncreated</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;alarm-notification&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">is the session registered for alarm\nnotifications</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;last-state-change&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Time(seconds) since last session state change\nhappened </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;start-time&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">session start time in seconds since the Unix\nEpoch</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

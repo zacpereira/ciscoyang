@@ -1,0 +1,3022 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-cofo-csi-ma-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma--get">CROSS-SDR-INTF-MA</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes--get">NODES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name---get">NODE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--rack-ids-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/rack-ids/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids--get">RACK-IDS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/rack-ids/rack-id/{rack-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id---get">RACK-ID</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id--">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/rack-ids/rack-id/{rack-id}/slot-id/{slot-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id---get">SLOT-ID</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id--slice-arr-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/rack-ids/rack-id/{rack-id}/slot-id/{slot-id}/slice-arr/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id--slice-arr--get">SLICE-ARR</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--csi-indexes-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/csi-indexes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes--get">CSI-INDEXES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--csi-indexes-csi-index--csi-index--">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/csi-indexes/csi-index/{csi-index}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes-csi-index--csi-index---get">CSI-INDEX</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names--get">INTERFACE-NAMES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index---get">INTERFACE-NAME</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/pub-data/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data--get">PUB-DATA</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/pub-data/csi-info-arr/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr--get">CSI-INFO-ARR</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-ip-arr-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/pub-data/csi-info-arr/ip-arr/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-ip-arr--get">IP-ARR</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--local-ip-arr-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/local-ip-arr/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--local-ip-arr--get">LOCAL-IP-ARR</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--peer-ip-arr-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/peer-ip-arr/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--peer-ip-arr--get">PEER-IP-ARR</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--global-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/global/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--global--get">GLOBAL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/sdr-ids/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids--get">SDR-IDS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/sdr-ids/sdr-id/{sdr-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id---get">SDR-ID</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/sdr-ids/sdr-id/{sdr-id}/pub-data/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data--get">PUB-DATA</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/sdr-ids/sdr-id/{sdr-id}/pub-data/csi-info-arr/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr--get">CSI-INFO-ARR</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-ip-arr-">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/sdr-ids/sdr-id/{sdr-id}/pub-data/csi-info-arr/ip-arr/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-ip-arr--get">IP-ARR</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-cofo-csi-ma-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-cofo-csi-ma-oper@2015-11-09.yang">Cisco-IOS-XR-cofo-csi-ma-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-"></span>
+          <div id="operation-config-cross-sdr-intf-ma--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CROSS-SDR-INTF-MA - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: cross-sdr-intf-ma</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/cross-sdr-intf-ma_schema">cross-sdr-intf-ma_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma--get"><span class="hljs-attr">&quot;cross-sdr-intf-ma&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Csi-ma operational data</span></div>
+    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes--get"><span class="hljs-attr">&quot;nodes&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Node-specific operational data</span></div>
+      <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name---get"><span class="hljs-attr">&quot;node&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">The node</span></div>
+          <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--global--get"><span class="hljs-attr">&quot;global&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Global data associated with csi-ma</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;fail-over-timer-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Fail Over Timer state for remote data</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;gdp-im-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">GDP IM connection state</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;invmgr-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Inventory manager connection state</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;l3p-im-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">L3P IM connection state</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;own-im-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Owner channel IM connection state</span></div>
+          },
+          <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids--get"><span class="hljs-attr">&quot;rack-ids&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Connected node slices information</span></div>
+            <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id---get"><span class="hljs-attr">&quot;rack-id&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Rack Id</span></div>
+              {
+                <div class="tooltip"><span class="hljs-key">&quot;rack-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Rack Id</span></div>
+                <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id---get"><span class="hljs-attr">&quot;slot-id&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Slot Id</span></div>
+                  {
+                    <div class="tooltip"><span class="hljs-leaf">&quot;rack-slot-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Rack slot ID</span></div>
+                    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id--slice-arr--get"><span class="hljs-attr">&quot;slice-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                      {
+                        <div class="tooltip"><span class="hljs-leaf">&quot;admin-up&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Admin state UP flag</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;slice-node-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Slice Node ID</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;pic&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">PIC value</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;oper-up&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Oper state UP flag</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI PIC Array</span></div>
+                      }
+                    ],
+                    <div class="tooltip"><span class="hljs-leaf">&quot;node-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Node id</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;node-up&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Node up flag</span></div>
+                    <div class="tooltip"><span class="hljs-key">&quot;slot-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Slot Id</span></div>
+                  }
+                ]
+              }
+            ]
+          },
+          <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes--get"><span class="hljs-attr">&quot;csi-indexes&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Admin data for csi-index</span></div>
+            <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes-csi-index--csi-index---get"><span class="hljs-attr">&quot;csi-index&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;peer-sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer SDR ID</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;csi-index-xr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI Index</span></div>
+                <div class="tooltip"><span class="hljs-key">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Sdr Id</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remote data entry state</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;peer-sdr-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer SDR name</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;csi-helper-reg&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">CSI Helper reg flag</span></div>
+                <div class="tooltip"><span class="hljs-key">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+              }
+            ]
+          },
+          <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names--get"><span class="hljs-attr">&quot;interface-names&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Interface data for csi interfaces</span></div>
+            <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index---get"><span class="hljs-attr">&quot;interface-name&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+              {
+                <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data--get"><span class="hljs-attr">&quot;pub-data&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Published data</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI PIC Array</span></div>
+                  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr--get"><span class="hljs-attr">&quot;csi-info-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                    {
+                      <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                        {
+                          <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+                        }
+                      ],
+                      <div class="tooltip"><span class="hljs-key">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+                    }
+                  ]
+                },
+                <div class="tooltip"><span class="hljs-leaf">&quot;peer-sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer SDR ID</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface handle</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface name</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;csi-index-xr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI Index</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;repl-fail-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Replication fail count</span></div>
+                <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--local-ip-arr--get"><span class="hljs-attr">&quot;local-ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                  {
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+                  }
+                ],
+                <div class="tooltip"><span class="hljs-leaf">&quot;rem-ip-attr&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Rem IP attribute</span></div>
+                <div class="tooltip"><span class="hljs-key">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Sdr Id</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;repl-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Replication handle</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remote data entry state</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;rem-slice-attr&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Rem slice attribute</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;if-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface state</span></div>
+                <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--peer-ip-arr--get"><span class="hljs-attr">&quot;peer-ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                  {
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+                  }
+                ],
+                <div class="tooltip"><span class="hljs-key">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+              }
+            ]
+          },
+          <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids--get"><span class="hljs-attr">&quot;sdr-ids&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Remote data for SDR ID</span></div>
+            <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id---get"><span class="hljs-attr">&quot;sdr-id&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Sdr Id</span></div>
+              {
+                <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data--get"><span class="hljs-attr">&quot;pub-data&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Published data</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI PIC Array</span></div>
+                  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr--get"><span class="hljs-attr">&quot;csi-info-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                    {
+                      <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                        {
+                          <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+                        }
+                      ],
+                      <div class="tooltip"><span class="hljs-key">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+                    }
+                  ]
+                },
+                <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remote data entry state</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sdr-id-xr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">SDR ID</span></div>
+                <div class="tooltip"><span class="hljs-key">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Sdr Id</span></div>
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nodes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/nodes_schema">nodes_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes--get"><span class="hljs-attr">&quot;nodes&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Node-specific operational data</span></div>
+    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name---get"><span class="hljs-attr">&quot;node&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">The node</span></div>
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--global--get"><span class="hljs-attr">&quot;global&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Global data associated with csi-ma</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;fail-over-timer-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Fail Over Timer state for remote data</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;gdp-im-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">GDP IM connection state</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;invmgr-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Inventory manager connection state</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;l3p-im-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">L3P IM connection state</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;own-im-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Owner channel IM connection state</span></div>
+        },
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids--get"><span class="hljs-attr">&quot;rack-ids&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Connected node slices information</span></div>
+          <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id---get"><span class="hljs-attr">&quot;rack-id&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Rack Id</span></div>
+            {
+              <div class="tooltip"><span class="hljs-key">&quot;rack-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Rack Id</span></div>
+              <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id---get"><span class="hljs-attr">&quot;slot-id&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Slot Id</span></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;rack-slot-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Rack slot ID</span></div>
+                  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id--slice-arr--get"><span class="hljs-attr">&quot;slice-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                    {
+                      <div class="tooltip"><span class="hljs-leaf">&quot;admin-up&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Admin state UP flag</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;slice-node-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Slice Node ID</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;pic&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">PIC value</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;oper-up&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Oper state UP flag</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI PIC Array</span></div>
+                    }
+                  ],
+                  <div class="tooltip"><span class="hljs-leaf">&quot;node-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Node id</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;node-up&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Node up flag</span></div>
+                  <div class="tooltip"><span class="hljs-key">&quot;slot-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Slot Id</span></div>
+                }
+              ]
+            }
+          ]
+        },
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes--get"><span class="hljs-attr">&quot;csi-indexes&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Admin data for csi-index</span></div>
+          <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes-csi-index--csi-index---get"><span class="hljs-attr">&quot;csi-index&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;peer-sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer SDR ID</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;csi-index-xr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI Index</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Sdr Id</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remote data entry state</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;peer-sdr-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer SDR name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;csi-helper-reg&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">CSI Helper reg flag</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names--get"><span class="hljs-attr">&quot;interface-names&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Interface data for csi interfaces</span></div>
+          <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index---get"><span class="hljs-attr">&quot;interface-name&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+            {
+              <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data--get"><span class="hljs-attr">&quot;pub-data&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Published data</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI PIC Array</span></div>
+                <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr--get"><span class="hljs-attr">&quot;csi-info-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                  {
+                    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                      {
+                        <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+                      }
+                    ],
+                    <div class="tooltip"><span class="hljs-key">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+                  }
+                ]
+              },
+              <div class="tooltip"><span class="hljs-leaf">&quot;peer-sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer SDR ID</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface handle</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;csi-index-xr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI Index</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;repl-fail-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Replication fail count</span></div>
+              <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--local-ip-arr--get"><span class="hljs-attr">&quot;local-ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+                }
+              ],
+              <div class="tooltip"><span class="hljs-leaf">&quot;rem-ip-attr&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Rem IP attribute</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Sdr Id</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;repl-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Replication handle</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remote data entry state</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;rem-slice-attr&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Rem slice attribute</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;if-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface state</span></div>
+              <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--peer-ip-arr--get"><span class="hljs-attr">&quot;peer-ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+                }
+              ],
+              <div class="tooltip"><span class="hljs-key">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids--get"><span class="hljs-attr">&quot;sdr-ids&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Remote data for SDR ID</span></div>
+          <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id---get"><span class="hljs-attr">&quot;sdr-id&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Sdr Id</span></div>
+            {
+              <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data--get"><span class="hljs-attr">&quot;pub-data&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Published data</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI PIC Array</span></div>
+                <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr--get"><span class="hljs-attr">&quot;csi-info-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                  {
+                    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                      {
+                        <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+                      }
+                    ],
+                    <div class="tooltip"><span class="hljs-key">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+                  }
+                ]
+              },
+              <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remote data entry state</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sdr-id-xr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">SDR ID</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Sdr Id</span></div>
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name---get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: node</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/node_schema">node_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--rack-ids-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RACK-IDS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/rack-ids/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rack-ids</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rack-ids_schema">rack-ids_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids--get"><span class="hljs-attr">&quot;rack-ids&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Connected node slices information</span></div>
+    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id---get"><span class="hljs-attr">&quot;rack-id&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Rack Id</span></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;rack-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Rack Id</span></div>
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id---get"><span class="hljs-attr">&quot;slot-id&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Slot Id</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;rack-slot-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Rack slot ID</span></div>
+            <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id--slice-arr--get"><span class="hljs-attr">&quot;slice-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;admin-up&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Admin state UP flag</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;slice-node-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Slice Node ID</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;pic&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">PIC value</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;oper-up&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Oper state UP flag</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Slice array associated with node</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-leaf">&quot;node-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Node id</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;node-up&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Node up flag</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;slot-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Slot Id</span></div>
+          }
+        ]
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id---get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RACK-ID - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/rack-ids/rack-id/{rack-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rack-id</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rack-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rack-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rack-id_schema">rack-id_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id--"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id---get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SLOT-ID - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/rack-ids/rack-id/{rack-id}/slot-id/{slot-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: slot-id</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rack-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rack-id</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">slot-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of slot-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/slot-id_schema">slot-id_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id--slice-arr-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id--slice-arr--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id--slice-arr--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SLICE-ARR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/rack-ids/rack-id/{rack-id}/slot-id/{slot-id}/slice-arr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: slice-arr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">rack-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of rack-id</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">slot-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of slot-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CSI-MA-SLICE">CSI-MA-SLICE</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--rack-ids-rack-id--rack-id--slot-id--slot-id--slice-arr--get"><span class="hljs-attr">&quot;slice-arr&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;admin-up&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Admin state UP flag</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;slice-node-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Slice Node ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;pic&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">PIC value</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;oper-up&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Oper state UP flag</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI PIC array</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--csi-indexes-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CSI-INDEXES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/csi-indexes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: csi-indexes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/csi-indexes_schema">csi-indexes_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes--get"><span class="hljs-attr">&quot;csi-indexes&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Admin data for csi-index</span></div>
+    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes-csi-index--csi-index---get"><span class="hljs-attr">&quot;csi-index&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">CSI Index</span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;peer-sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer SDR ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;csi-index-xr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI Index</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Local SDR ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Item State</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;peer-sdr-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer SDR name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;csi-helper-reg&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">CSI Helper reg flag</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--csi-indexes-csi-index--csi-index--"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes-csi-index--csi-index---get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--csi-indexes-csi-index--csi-index---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CSI-INDEX - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/csi-indexes/csi-index/{csi-index}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: csi-index</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">csi-index:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of csi-index</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/csi-index_schema">csi-index_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE-NAMES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface-names</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interface-names_schema">interface-names_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names--get"><span class="hljs-attr">&quot;interface-names&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Interface data for csi interfaces</span></div>
+    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index---get"><span class="hljs-attr">&quot;interface-name&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data--get"><span class="hljs-attr">&quot;pub-data&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Remote published data</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI PIC Array</span></div>
+          <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr--get"><span class="hljs-attr">&quot;csi-info-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+            {
+              <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Peer IP addresses</span></div>
+                }
+              ],
+              <div class="tooltip"><span class="hljs-key">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;peer-sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer SDR ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface handle</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;csi-index-xr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI Index</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;repl-fail-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Replication fail count</span></div>
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--local-ip-arr--get"><span class="hljs-attr">&quot;local-ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Peer IP addresses</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;rem-ip-attr&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Rem IP attribute</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">SDR ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;repl-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Replication handle</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Item state</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;rem-slice-attr&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Rem slice attribute</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;if-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface state</span></div>
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--peer-ip-arr--get"><span class="hljs-attr">&quot;peer-ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Peer IP addresses</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-key">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index---get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE-NAME - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface-name</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">csi-index:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of csi-index</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interface-name_schema">interface-name_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PUB-DATA - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/pub-data/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: pub-data</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">csi-index:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of csi-index</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CSI-HELPER-PUB">CSI-HELPER-PUB</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data--get"><span class="hljs-attr">&quot;pub-data&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Remote published data</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI PIC Array</span></div>
+    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr--get"><span class="hljs-attr">&quot;csi-info-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CSI-INFO-ARR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/pub-data/csi-info-arr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: csi-info-arr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">csi-index:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of csi-index</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CSI-INDEX-INFO">CSI-INDEX-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr--get"><span class="hljs-attr">&quot;csi-info-arr&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-ip-arr-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-ip-arr--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-ip-arr--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">IP-ARR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/pub-data/csi-info-arr/ip-arr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ip-arr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">csi-index:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of csi-index</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CSI-IPADDR">CSI-IPADDR</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">AF</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--local-ip-arr-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--local-ip-arr--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--local-ip-arr--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCAL-IP-ARR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/local-ip-arr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: local-ip-arr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">csi-index:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of csi-index</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CSI-IPADDR">CSI-IPADDR</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--local-ip-arr--get"><span class="hljs-attr">&quot;local-ip-arr&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">AF</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--peer-ip-arr-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--peer-ip-arr--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--peer-ip-arr--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PEER-IP-ARR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/interface-names/interface-name/{csi-index}/peer-ip-arr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: peer-ip-arr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">csi-index:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of csi-index</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CSI-IPADDR">CSI-IPADDR</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--interface-names-interface-name--csi-index--peer-ip-arr--get"><span class="hljs-attr">&quot;peer-ip-arr&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">AF</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--global-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--global--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--global--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">GLOBAL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/global/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: global</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CSI-MA-GLOBAL-INFO">CSI-MA-GLOBAL-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--global--get"><span class="hljs-attr">&quot;global&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Global data associated with csi-ma</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;fail-over-timer-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Fail Over Timer state for remote data</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;gdp-im-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">GDP IM connection state</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;invmgr-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Inventory manager connection state</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;l3p-im-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">L3P IM connection state</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;own-im-conn-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Owner channel IM connection state</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SDR-IDS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/sdr-ids/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sdr-ids</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/sdr-ids_schema">sdr-ids_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids--get"><span class="hljs-attr">&quot;sdr-ids&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Remote data for SDR ID</span></div>
+    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id---get"><span class="hljs-attr">&quot;sdr-id&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Sdr Id</span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data--get"><span class="hljs-attr">&quot;pub-data&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Published data</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI PIC Array</span></div>
+          <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr--get"><span class="hljs-attr">&quot;csi-info-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+            {
+              <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+                }
+              ],
+              <div class="tooltip"><span class="hljs-leaf">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remote data entry state</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sdr-id-xr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">SDR ID</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Sdr Id</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id---get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SDR-ID - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/sdr-ids/sdr-id/{sdr-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sdr-id</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">sdr-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of sdr-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/sdr-id_schema">sdr-id_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PUB-DATA - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/sdr-ids/sdr-id/{sdr-id}/pub-data/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: pub-data</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">sdr-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of sdr-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CSI-HELPER-PUB">CSI-HELPER-PUB</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data--get"><span class="hljs-attr">&quot;pub-data&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Published data</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;csi-pic-arr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CSI PIC Array</span></div>
+    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr--get"><span class="hljs-attr">&quot;csi-info-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index - IP Array</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CSI-INFO-ARR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/sdr-ids/sdr-id/{sdr-id}/pub-data/csi-info-arr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: csi-info-arr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">sdr-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of sdr-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CSI-INDEX-INFO">CSI-INDEX-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr--get"><span class="hljs-attr">&quot;csi-info-arr&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">CSI IP Array</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;csi-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">CSI Index</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-ip-arr-"></span>
+          <div id="operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-ip-arr--get" class="operation panel" data-traverse-target="operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-ip-arr--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">IP-ARR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-csi-ma-oper:cross-sdr-intf-ma/nodes/node/{node-name}/sdr-ids/sdr-id/{sdr-id}/pub-data/csi-info-arr/ip-arr/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ip-arr</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">sdr-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of sdr-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/CSI-IPADDR">CSI-IPADDR</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-cross-sdr-intf-ma-nodes-node--node-name--sdr-ids-sdr-id--sdr-id--pub-data-csi-info-arr-ip-arr--get"><span class="hljs-attr">&quot;ip-arr&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">AF</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

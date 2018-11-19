@@ -1,0 +1,1813 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-show-fpd-loc-ng-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd--get">SHOW-FPD</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-locations-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/locations/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-locations--get">LOCATIONS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-locations-location--location-name--">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/locations/location/{location-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-locations-location--location-name---get">LOCATION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-locations-location--location-name--fpd--fpd-name--">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/locations/location/{location-name}/fpd/{fpd-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-locations-location--location-name--fpd--fpd-name---get">FPD</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-locations-location--location-name--fpd--fpd-name--fpd-info-detaile-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/locations/location/{location-name}/fpd/{fpd-name}/fpd-info-detaile/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-locations-location--location-name--fpd--fpd-name--fpd-info-detaile--get">FPD-INFO-DETAILE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-hw-module-fpd-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/hw-module-fpd/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-hw-module-fpd--get">HW-MODULE-FPD</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-hw-module-fpd-fpd-info-detaile-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/hw-module-fpd/fpd-info-detaile/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-hw-module-fpd-fpd-info-detaile--get">FPD-INFO-DETAILE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-help-locations-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/help-locations/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-help-locations--get">HELP-LOCATIONS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-help-locations-help-location--location-name--">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/help-locations/help-location/{location-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-help-locations-help-location--location-name---get">HELP-LOCATION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-help-locations-help-location--location-name--help-fpd-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/help-locations/help-location/{location-name}/help-fpd/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-help-locations-help-location--location-name--help-fpd--get">HELP-FPD</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-help-locations-help-location--location-name--help-fpd-fpd-name-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/help-locations/help-location/{location-name}/help-fpd/fpd-name/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-help-locations-help-location--location-name--help-fpd-fpd-name--get">FPD-NAME</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-hw-module-fpd-help-fpd-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/hw-module-fpd-help-fpd/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-hw-module-fpd-help-fpd--get">HW-MODULE-FPD-HELP-FPD</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-hw-module-fpd-help-fpd-fpd-name-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/hw-module-fpd-help-fpd/fpd-name/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-hw-module-fpd-help-fpd-fpd-name--get">FPD-NAME</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-package-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/package/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-package--get">PACKAGE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-package-fpd-pkg-data-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/package/fpd-pkg-data/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-package-fpd-pkg-data--get">FPD-PKG-DATA</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-location-help-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/location-help/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-location-help--get">LOCATION-HELP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-location-help-location-name-">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/location-help/location-name/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-show-fpd-location-help-location-name--get">LOCATION-NAME</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-show-fpd-loc-ng-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-show-fpd-loc-ng-oper@2017-05-01.yang">Cisco-IOS-XR-show-fpd-loc-ng-oper@2017-05-01.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-"></span>
+          <div id="operation-config-show-fpd--get" class="operation panel" data-traverse-target="operation-config-show-fpd--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SHOW-FPD - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: show-fpd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/show-fpd_schema">show-fpd_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd--get"><span class="hljs-attr">&quot;show-fpd&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Show hw-module fpd</span></div>
+    <div class="tooltip"><a href="#operation-config-show-fpd-location-help--get"><span class="hljs-attr">&quot;location-help&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">fpd upgradable locations</span></div>
+      <div class="tooltip"><a href="#operation-config-show-fpd-location-help-location-name--get"><span class="hljs-attr">&quot;location-name&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Fpd location</span></div>
+        {
+          <div class="tooltip"><span class="hljs-key">&quot;location-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Fpd location</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-show-fpd-package--get"><span class="hljs-attr">&quot;package&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">gets fpd package info</span></div>
+      <div class="tooltip"><a href="#operation-config-show-fpd-package-fpd-pkg-data--get"><span class="hljs-attr">&quot;fpd-pkg-data&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">card type</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;min-hw-ver&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">minimum hw version</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;min-sw-ver&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">minimum sw version</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;fpd-desc&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd desc</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;fpd-ver&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd version</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;upgrade-method&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext"> fpd pkg list </span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-show-fpd-locations--get"><span class="hljs-attr">&quot;locations&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">location table</span></div>
+      <div class="tooltip"><a href="#operation-config-show-fpd-locations-location--location-name---get"><span class="hljs-attr">&quot;location&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">fpd location</span></div>
+        {
+          <div class="tooltip"><a href="#operation-config-show-fpd-locations-location--location-name--fpd--fpd-name---get"><span class="hljs-attr">&quot;fpd&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+            {
+              <div class="tooltip"><a href="#operation-config-show-fpd-locations-location--location-name--fpd--fpd-name--fpd-info-detaile--get"><span class="hljs-attr">&quot;fpd-info-detaile&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">status of the fpd</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;running-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image running version </span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;programd-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image programd version</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;secure-boot-attr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">secure boot attribur</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+                  <div class="tooltip"><span class="hljs-key">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd name</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;hw-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">hadware version</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;card-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext"> fpd list with all detailes</span></div>
+                }
+              ],
+              <div class="tooltip"><span class="hljs-key">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">fpd name</span></div>
+            }
+          ],
+          <div class="tooltip"><span class="hljs-key">&quot;location-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Fpd location</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-show-fpd-hw-module-fpd-help-fpd--get"><span class="hljs-attr">&quot;hw-module-fpd-help-fpd&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Display help-fpd -show hw-module fpd help-fpd</span></div>
+      <div class="tooltip"><a href="#operation-config-show-fpd-hw-module-fpd-help-fpd-fpd-name--get"><span class="hljs-attr">&quot;fpd-name&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">fpd name</span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">fpd name</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-show-fpd-help-locations--get"><span class="hljs-attr">&quot;help-locations&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">help location table</span></div>
+      <div class="tooltip"><a href="#operation-config-show-fpd-help-locations-help-location--location-name---get"><span class="hljs-attr">&quot;help-location&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><a href="#operation-config-show-fpd-help-locations-help-location--location-name--help-fpd--get"><span class="hljs-attr">&quot;help-fpd&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Display fpds on given locations</span></div>
+            <div class="tooltip"><a href="#operation-config-show-fpd-help-locations-help-location--location-name--help-fpd-fpd-name--get"><span class="hljs-attr">&quot;fpd-name&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">fpd name</span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+                <div class="tooltip"><span class="hljs-key">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">fpd name</span></div>
+              }
+            ]
+          },
+          <div class="tooltip"><span class="hljs-key">&quot;location-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Fpd location</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-show-fpd-hw-module-fpd--get"><span class="hljs-attr">&quot;hw-module-fpd&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Display fpds on all locations -show hw-module\nfpd</span></div>
+      <div class="tooltip"><a href="#operation-config-show-fpd-hw-module-fpd-fpd-info-detaile--get"><span class="hljs-attr">&quot;fpd-info-detaile&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">status of the fpd</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;running-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image running version </span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;programd-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image programd version</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;secure-boot-attr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">secure boot attribur</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;hw-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">hadware version</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;card-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext"> fpd list with all detailes</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-locations-"></span>
+          <div id="operation-config-show-fpd-locations--get" class="operation panel" data-traverse-target="operation-config-show-fpd-locations--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATIONS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/locations/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: locations</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/locations_schema">locations_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-locations--get"><span class="hljs-attr">&quot;locations&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">location table</span></div>
+    <div class="tooltip"><a href="#operation-config-show-fpd-locations-location--location-name---get"><span class="hljs-attr">&quot;location&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">fpd location</span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-show-fpd-locations-location--location-name--fpd--fpd-name---get"><span class="hljs-attr">&quot;fpd&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><a href="#operation-config-show-fpd-locations-location--location-name--fpd--fpd-name--fpd-info-detaile--get"><span class="hljs-attr">&quot;fpd-info-detaile&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">status of the fpd</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;running-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image running version </span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;programd-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image programd version</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;secure-boot-attr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">secure boot attribur</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+                <div class="tooltip"><span class="hljs-key">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Fpd Name</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;hw-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">hadware version</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;card-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext"> fpd list with all detailes</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-key">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Fpd Name</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-key">&quot;location-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Fpd location</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-locations-location--location-name--"></span>
+          <div id="operation-config-show-fpd-locations-location--location-name---get" class="operation panel" data-traverse-target="operation-config-show-fpd-locations-location--location-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/locations/location/{location-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: location</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">location-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of location-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/location_schema">location_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-locations-location--location-name--fpd--fpd-name--"></span>
+          <div id="operation-config-show-fpd-locations-location--location-name--fpd--fpd-name---get" class="operation panel" data-traverse-target="operation-config-show-fpd-locations-location--location-name--fpd--fpd-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FPD - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/locations/location/{location-name}/fpd/{fpd-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: fpd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">location-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of location-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">fpd-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of fpd-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/fpd_schema">fpd_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-locations-location--location-name--fpd--fpd-name--fpd-info-detaile-"></span>
+          <div id="operation-config-show-fpd-locations-location--location-name--fpd--fpd-name--fpd-info-detaile--get" class="operation panel" data-traverse-target="operation-config-show-fpd-locations-location--location-name--fpd--fpd-name--fpd-info-detaile--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FPD-INFO-DETAILE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/locations/location/{location-name}/fpd/{fpd-name}/fpd-info-detaile/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: fpd-info-detaile</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">location-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of location-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">fpd-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of fpd-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FPD-INFO">FPD-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-locations-location--location-name--fpd--fpd-name--fpd-info-detaile--get"><span class="hljs-attr">&quot;fpd-info-detaile&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">status of the fpd</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;running-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image running version </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;programd-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image programd version</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;secure-boot-attr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">secure boot attribur</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;hw-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">hadware version</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;card-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of card on which fpd is located</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-hw-module-fpd-"></span>
+          <div id="operation-config-show-fpd-hw-module-fpd--get" class="operation panel" data-traverse-target="operation-config-show-fpd-hw-module-fpd--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HW-MODULE-FPD - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/hw-module-fpd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: hw-module-fpd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FPD-INFO-LIST">FPD-INFO-LIST</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-hw-module-fpd--get"><span class="hljs-attr">&quot;hw-module-fpd&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Display fpds on all locations -show hw-module\nfpd</span></div>
+    <div class="tooltip"><a href="#operation-config-show-fpd-hw-module-fpd-fpd-info-detaile--get"><span class="hljs-attr">&quot;fpd-info-detaile&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">status of the fpd</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;running-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image running version </span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;programd-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image programd version</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;secure-boot-attr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">secure boot attribur</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;hw-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">hadware version</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;card-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext"> fpd list with all detailes</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-hw-module-fpd-fpd-info-detaile-"></span>
+          <div id="operation-config-show-fpd-hw-module-fpd-fpd-info-detaile--get" class="operation panel" data-traverse-target="operation-config-show-fpd-hw-module-fpd-fpd-info-detaile--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FPD-INFO-DETAILE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/hw-module-fpd/fpd-info-detaile/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: fpd-info-detaile</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FPD-INFO">FPD-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-hw-module-fpd-fpd-info-detaile--get"><span class="hljs-attr">&quot;fpd-info-detaile&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">status of the fpd</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;running-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image running version </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;programd-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">image programd version</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;secure-boot-attr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">secure boot attribur</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;hw-version&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">hadware version</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;card-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of card on which fpd is located</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-help-locations-"></span>
+          <div id="operation-config-show-fpd-help-locations--get" class="operation panel" data-traverse-target="operation-config-show-fpd-help-locations--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HELP-LOCATIONS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/help-locations/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: help-locations</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/help-locations_schema">help-locations_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-help-locations--get"><span class="hljs-attr">&quot;help-locations&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">help location table</span></div>
+    <div class="tooltip"><a href="#operation-config-show-fpd-help-locations-help-location--location-name---get"><span class="hljs-attr">&quot;help-location&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><a href="#operation-config-show-fpd-help-locations-help-location--location-name--help-fpd--get"><span class="hljs-attr">&quot;help-fpd&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Display fpds on given locations</span></div>
+          <div class="tooltip"><a href="#operation-config-show-fpd-help-locations-help-location--location-name--help-fpd-fpd-name--get"><span class="hljs-attr">&quot;fpd-name&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Fpd name list</span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Fpd name list</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><span class="hljs-key">&quot;location-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Fpd location</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-help-locations-help-location--location-name--"></span>
+          <div id="operation-config-show-fpd-help-locations-help-location--location-name---get" class="operation panel" data-traverse-target="operation-config-show-fpd-help-locations-help-location--location-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HELP-LOCATION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/help-locations/help-location/{location-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: help-location</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">location-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of location-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/help-location_schema">help-location_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-help-locations-help-location--location-name--help-fpd-"></span>
+          <div id="operation-config-show-fpd-help-locations-help-location--location-name--help-fpd--get" class="operation panel" data-traverse-target="operation-config-show-fpd-help-locations-help-location--location-name--help-fpd--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HELP-FPD - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/help-locations/help-location/{location-name}/help-fpd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: help-fpd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">location-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of location-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FPD-LOC-INFO-LIST">FPD-LOC-INFO-LIST</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-help-locations-help-location--location-name--help-fpd--get"><span class="hljs-attr">&quot;help-fpd&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Display fpds on given locations</span></div>
+    <div class="tooltip"><a href="#operation-config-show-fpd-help-locations-help-location--location-name--help-fpd-fpd-name--get"><span class="hljs-attr">&quot;fpd-name&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Fpd name list</span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Fpd name list</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-help-locations-help-location--location-name--help-fpd-fpd-name-"></span>
+          <div id="operation-config-show-fpd-help-locations-help-location--location-name--help-fpd-fpd-name--get" class="operation panel" data-traverse-target="operation-config-show-fpd-help-locations-help-location--location-name--help-fpd-fpd-name--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FPD-NAME - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/help-locations/help-location/{location-name}/help-fpd/fpd-name/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: fpd-name</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">location-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of location-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FPD-LOC-INFO">FPD-LOC-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-help-locations-help-location--location-name--help-fpd-fpd-name--get"><span class="hljs-attr">&quot;fpd-name&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">fpd name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">fpd name</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-hw-module-fpd-help-fpd-"></span>
+          <div id="operation-config-show-fpd-hw-module-fpd-help-fpd--get" class="operation panel" data-traverse-target="operation-config-show-fpd-hw-module-fpd-help-fpd--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HW-MODULE-FPD-HELP-FPD - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/hw-module-fpd-help-fpd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: hw-module-fpd-help-fpd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FPD-LOC-INFO-LIST">FPD-LOC-INFO-LIST</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-hw-module-fpd-help-fpd--get"><span class="hljs-attr">&quot;hw-module-fpd-help-fpd&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Display help-fpd -show hw-module fpd help-fpd</span></div>
+    <div class="tooltip"><a href="#operation-config-show-fpd-hw-module-fpd-help-fpd-fpd-name--get"><span class="hljs-attr">&quot;fpd-name&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">Fpd name list</span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Fpd name list</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-hw-module-fpd-help-fpd-fpd-name-"></span>
+          <div id="operation-config-show-fpd-hw-module-fpd-help-fpd-fpd-name--get" class="operation panel" data-traverse-target="operation-config-show-fpd-hw-module-fpd-help-fpd-fpd-name--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FPD-NAME - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/hw-module-fpd-help-fpd/fpd-name/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: fpd-name</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FPD-LOC-INFO">FPD-LOC-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-hw-module-fpd-help-fpd-fpd-name--get"><span class="hljs-attr">&quot;fpd-name&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">fpd name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd location</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;fpd-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">fpd name</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-package-"></span>
+          <div id="operation-config-show-fpd-package--get" class="operation panel" data-traverse-target="operation-config-show-fpd-package--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PACKAGE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/package/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: package</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FPD-PKG-INFO-LIST">FPD-PKG-INFO-LIST</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-package--get"><span class="hljs-attr">&quot;package&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">gets fpd package info</span></div>
+    <div class="tooltip"><a href="#operation-config-show-fpd-package-fpd-pkg-data--get"><span class="hljs-attr">&quot;fpd-pkg-data&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">No description</span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">card type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;min-hw-ver&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">minimum hw version</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;min-sw-ver&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">minimum sw version</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fpd-desc&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd desc</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fpd-ver&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd version</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;upgrade-method&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext"> fpd pkg list </span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-package-fpd-pkg-data-"></span>
+          <div id="operation-config-show-fpd-package-fpd-pkg-data--get" class="operation panel" data-traverse-target="operation-config-show-fpd-package-fpd-pkg-data--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FPD-PKG-DATA - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/package/fpd-pkg-data/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: fpd-pkg-data</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FPD-PKG-INFO">FPD-PKG-INFO</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-package-fpd-pkg-data--get"><span class="hljs-attr">&quot;fpd-pkg-data&quot;</span>:</a> {<!--
+--> <span class="tooltiptext"> </span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;card-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">card type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;min-hw-ver&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">minimum hw version</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;min-sw-ver&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">minimum sw version</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;fpd-desc&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd desc</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;fpd-ver&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">fpd version</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;upgrade-method&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">reload or not</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-location-help-"></span>
+          <div id="operation-config-show-fpd-location-help--get" class="operation panel" data-traverse-target="operation-config-show-fpd-location-help--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATION-HELP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/location-help/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: location-help</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FPD-SHOW-LOCATION-NAME-LIST">FPD-SHOW-LOCATION-NAME-LIST</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-location-help--get"><span class="hljs-attr">&quot;location-help&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">fpd upgradable locations</span></div>
+    <div class="tooltip"><a href="#operation-config-show-fpd-location-help-location-name--get"><span class="hljs-attr">&quot;location-name&quot;</span>:</a> [<!--
+--> <span class="tooltiptext">card location list</span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;location-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">card location list</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd-location-help-location-name-"></span>
+          <div id="operation-config-show-fpd-location-help-location-name--get" class="operation panel" data-traverse-target="operation-config-show-fpd-location-help-location-name--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATION-NAME - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-show-fpd-loc-ng-oper:show-fpd/location-help/location-name/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: location-name</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/FPD-LOCATION-NAME">FPD-LOCATION-NAME</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-show-fpd-location-help-location-name--get"><span class="hljs-attr">&quot;location-name&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">card location</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;location-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">card location</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

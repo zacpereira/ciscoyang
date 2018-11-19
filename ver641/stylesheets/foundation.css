@@ -2338,7 +2338,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     position: absolute;
     background-color: #23241f;
     /*background-color: #0099cc;*/
-    max-width: 50px;
+    max-width: 80px;
     /*box-shadow: 10px 8px 16px 10px rgba(0,0,0,0.2);*/
     z-index: 5;
 }
@@ -2350,7 +2350,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     /*padding: 8px 8px;*/
     /*padding: none;*/
     text-decoration: none;
-    display: inline-block;
+    display: block;
 }
 
 /*.dropdown-content a:hover {background-color: black;}*/
@@ -2358,3 +2358,29 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 .dropdown2:hover .dropdown-content {display: inline-block;}
 
 /*.dropdown2:hover .dropbtn {background-color: #3e8e41;} - highlights the button*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    #border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    font-style: italic;
+    width: 170px;
+    display: inline;
+    #background-color: black;
+    color: #fff;
+    #text-align: center;
+    #border-radius: 6px;
+    #padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

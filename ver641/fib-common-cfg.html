@@ -1,0 +1,2047 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-fib-common-cfg API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-fib-common-cfg:fib-">Cisco-IOS-XR-fib-common-cfg:fib/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">FIB</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-fib--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-fib-common-cfg:fib-pbts-forward-class-fallbacks-">Cisco-IOS-XR-fib-common-cfg:fib/pbts-forward-class-fallbacks/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">PBTS-FORWARD-CLASS-FALLBACKS</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-fib-pbts-forward-class-fallbacks--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-pbts-forward-class-fallbacks--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-pbts-forward-class-fallbacks--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-pbts-forward-class-fallbacks--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-fib-common-cfg:fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number--">Cisco-IOS-XR-fib-common-cfg:fib/pbts-forward-class-fallbacks/pbts-forward-class-fallback/{forward-class-number}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">PBTS-FORWARD-CLASS-FALLBACK</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-fib-common-cfg:fib-platform-">Cisco-IOS-XR-fib-common-cfg:fib/platform/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">PLATFORM</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-fib-platform--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-platform--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-platform--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-platform--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-fib-common-cfg:fib-platform-label-switched-multicast-">Cisco-IOS-XR-fib-common-cfg:fib/platform/label-switched-multicast/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">LABEL-SWITCHED-MULTICAST</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-fib-platform-label-switched-multicast--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-platform-label-switched-multicast--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-platform-label-switched-multicast--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-fib-platform-label-switched-multicast--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-fib-common-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-fib-common-cfg@2017-05-01.yang">Cisco-IOS-XR-fib-common-cfg@2017-05-01.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                  <h5>Leaf Color Code:</h5>                    <span class="hljs-key">&emsp;&emsp;&emsp;Key&nbsp</span>                    <span class="hljs-mand">Mandatory&nbsp</span>                    <span class="hljs-leaf">Optional</span>                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-fib-common-cfg:fib-"></span>
+          <div id="operation-config-fib--put" class="operation panel" data-traverse-target="operation-config-fib--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">FIB - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: fib</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/fib_schema">fib_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>fibbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;fib&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>CEF configuration</i></span><!--
+--><a href="#operation-config-fib--put">PUT</a><!--
+--><a href="#operation-config-fib--post">POST</a><!--
+--><a href="#operation-config-fib--delete">DELETE</a><!--
+--><a href="#operation-config-fib--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;frr-follow-bgp-pic&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Set option for fast-reroute to follow BGP PIC\nupdate, not to wait for timeout</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;platform&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>FIB platform parameters</i></span><!--
+--><a href="#operation-config-fib-platform--put">PUT</a><!--
+--><a href="#operation-config-fib-platform--post">POST</a><!--
+--><a href="#operation-config-fib-platform--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;label-switched-multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Options for label-switched-multicast parameters</i></span><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--put">PUT</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--post">POST</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;frr-holdtime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Set time to keep FRR slots programmed post FRR<br>range: "3..180"<br>units: "second"</span></div>
+      }
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallbacks&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>PBTS class configuration</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallback&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get">GET</a><!--
+--></div></div><!--
+-->        {
+          <div class="tooltip"><span class="hljs-mand">&quot;fallback-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback type</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;fallback-class-number-array&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback class number array<br>range: "0..7"</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;forward-class-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PBTS forward class number</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;prefer-aib-routes&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">Set options for adjacency routes overriding RIB\nroutes</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib--post" class="operation panel" data-traverse-target="operation-config-fib--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">FIB - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: fib</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/fib_schema">fib_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>fibbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;fib&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>CEF configuration</i></span><!--
+--><a href="#operation-config-fib--put">PUT</a><!--
+--><a href="#operation-config-fib--post">POST</a><!--
+--><a href="#operation-config-fib--delete">DELETE</a><!--
+--><a href="#operation-config-fib--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;frr-follow-bgp-pic&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Set option for fast-reroute to follow BGP PIC\nupdate, not to wait for timeout</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;platform&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>FIB platform parameters</i></span><!--
+--><a href="#operation-config-fib-platform--put">PUT</a><!--
+--><a href="#operation-config-fib-platform--post">POST</a><!--
+--><a href="#operation-config-fib-platform--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;label-switched-multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Options for label-switched-multicast parameters</i></span><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--put">PUT</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--post">POST</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;frr-holdtime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Set time to keep FRR slots programmed post FRR<br>range: "3..180"<br>units: "second"</span></div>
+      }
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallbacks&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>PBTS class configuration</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallback&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get">GET</a><!--
+--></div></div><!--
+-->        {
+          <div class="tooltip"><span class="hljs-mand">&quot;fallback-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback type</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;fallback-class-number-array&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback class number array<br>range: "0..7"</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;forward-class-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PBTS forward class number</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;prefer-aib-routes&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">Set options for adjacency routes overriding RIB\nroutes</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib--delete" class="operation panel" data-traverse-target="operation-config-fib--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">FIB - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: fib</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib--get" class="operation panel" data-traverse-target="operation-config-fib--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FIB - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: fib</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/fib_schema">fib_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;fib&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>CEF configuration</i></span><!--
+--><a href="#operation-config-fib--put">PUT</a><!--
+--><a href="#operation-config-fib--post">POST</a><!--
+--><a href="#operation-config-fib--delete">DELETE</a><!--
+--><a href="#operation-config-fib--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;frr-follow-bgp-pic&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Set option for fast-reroute to follow BGP PIC\nupdate, not to wait for timeout</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;platform&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>FIB platform parameters</i></span><!--
+--><a href="#operation-config-fib-platform--put">PUT</a><!--
+--><a href="#operation-config-fib-platform--post">POST</a><!--
+--><a href="#operation-config-fib-platform--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;label-switched-multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Options for label-switched-multicast parameters</i></span><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--put">PUT</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--post">POST</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;frr-holdtime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Set time to keep FRR slots programmed post FRR<br>range: "3..180"<br>units: "second"</span></div>
+      }
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallbacks&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>PBTS class configuration</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallback&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get">GET</a><!--
+--></div></div><!--
+-->        {
+          <div class="tooltip"><span class="hljs-mand">&quot;fallback-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback type</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;fallback-class-number-array&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback class number array<br>range: "0..7"</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;forward-class-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PBTS forward class number</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;prefer-aib-routes&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">Set options for adjacency routes overriding RIB\nroutes</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-fib-common-cfg:fib-pbts-forward-class-fallbacks-"></span>
+          <div id="operation-config-fib-pbts-forward-class-fallbacks--put" class="operation panel" data-traverse-target="operation-config-fib-pbts-forward-class-fallbacks--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">PBTS-FORWARD-CLASS-FALLBACKS - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/pbts-forward-class-fallbacks/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: pbts-forward-class-fallbacks</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbts-forward-class-fallbacks_schema">pbts-forward-class-fallbacks_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>pbts-forward-class-fallbacksbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallbacks&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>PBTS class configuration</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallback&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get">GET</a><!--
+--></div></div><!--
+-->      {
+        <div class="tooltip"><span class="hljs-mand">&quot;fallback-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fallback-class-number-array&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback class number array<br>range: "0..7"</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;forward-class-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PBTS forward class number</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-pbts-forward-class-fallbacks--post" class="operation panel" data-traverse-target="operation-config-fib-pbts-forward-class-fallbacks--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">PBTS-FORWARD-CLASS-FALLBACKS - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/pbts-forward-class-fallbacks/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: pbts-forward-class-fallbacks</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbts-forward-class-fallbacks_schema">pbts-forward-class-fallbacks_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>pbts-forward-class-fallbacksbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallbacks&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>PBTS class configuration</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallback&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get">GET</a><!--
+--></div></div><!--
+-->      {
+        <div class="tooltip"><span class="hljs-mand">&quot;fallback-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fallback-class-number-array&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback class number array<br>range: "0..7"</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;forward-class-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PBTS forward class number</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-pbts-forward-class-fallbacks--delete" class="operation panel" data-traverse-target="operation-config-fib-pbts-forward-class-fallbacks--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">PBTS-FORWARD-CLASS-FALLBACKS - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/pbts-forward-class-fallbacks/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: pbts-forward-class-fallbacks</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-pbts-forward-class-fallbacks--get" class="operation panel" data-traverse-target="operation-config-fib-pbts-forward-class-fallbacks--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PBTS-FORWARD-CLASS-FALLBACKS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/pbts-forward-class-fallbacks/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: pbts-forward-class-fallbacks</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbts-forward-class-fallbacks_schema">pbts-forward-class-fallbacks_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallbacks&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>PBTS class configuration</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallback&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get">GET</a><!--
+--></div></div><!--
+-->      {
+        <div class="tooltip"><span class="hljs-mand">&quot;fallback-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fallback-class-number-array&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback class number array<br>range: "0..7"</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;forward-class-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PBTS forward class number</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-fib-common-cfg:fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number--"></span>
+          <div id="operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put" class="operation panel" data-traverse-target="operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put">
+            <h2 class="operation-title">
+              <span class="operation-summary">PBTS-FORWARD-CLASS-FALLBACK - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/pbts-forward-class-fallbacks/pbts-forward-class-fallback/{forward-class-number}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: pbts-forward-class-fallback</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbts-forward-class-fallback_schema">pbts-forward-class-fallback_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>pbts-forward-class-fallbackbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">forward-class-number:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of forward-class-number</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallback&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get">GET</a><!--
+--></div></div><!--
+-->    {
+      <div class="tooltip"><span class="hljs-mand">&quot;fallback-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback type</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;fallback-class-number-array&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback class number array<br>range: "0..7"</span></div>
+      <div class="tooltip"><span class="hljs-key">&quot;forward-class-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PBTS forward class number</span></div>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post" class="operation panel" data-traverse-target="operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post">
+            <h2 class="operation-title">
+              <span class="operation-summary">PBTS-FORWARD-CLASS-FALLBACK - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/pbts-forward-class-fallbacks/pbts-forward-class-fallback/{forward-class-number}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: pbts-forward-class-fallback</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbts-forward-class-fallback_schema">pbts-forward-class-fallback_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>pbts-forward-class-fallbackbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">forward-class-number:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of forward-class-number</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallback&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get">GET</a><!--
+--></div></div><!--
+-->    {
+      <div class="tooltip"><span class="hljs-mand">&quot;fallback-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback type</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;fallback-class-number-array&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback class number array<br>range: "0..7"</span></div>
+      <div class="tooltip"><span class="hljs-key">&quot;forward-class-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PBTS forward class number</span></div>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete" class="operation panel" data-traverse-target="operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">PBTS-FORWARD-CLASS-FALLBACK - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/pbts-forward-class-fallbacks/pbts-forward-class-fallback/{forward-class-number}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: pbts-forward-class-fallback</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">forward-class-number:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of forward-class-number</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get" class="operation panel" data-traverse-target="operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PBTS-FORWARD-CLASS-FALLBACK - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/pbts-forward-class-fallbacks/pbts-forward-class-fallback/{forward-class-number}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: pbts-forward-class-fallback</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">forward-class-number:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of forward-class-number</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbts-forward-class-fallback_schema">pbts-forward-class-fallback_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;pbts-forward-class-fallback&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---put">PUT</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---post">POST</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---delete">DELETE</a><!--
+--><a href="#operation-config-fib-pbts-forward-class-fallbacks-pbts-forward-class-fallback--forward-class-number---get">GET</a><!--
+--></div></div><!--
+-->    {
+      <div class="tooltip"><span class="hljs-mand">&quot;fallback-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback type</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;fallback-class-number-array&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Set PBTS fallback class number array<br>range: "0..7"</span></div>
+      <div class="tooltip"><span class="hljs-key">&quot;forward-class-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">PBTS forward class number</span></div>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-fib-common-cfg:fib-platform-"></span>
+          <div id="operation-config-fib-platform--put" class="operation panel" data-traverse-target="operation-config-fib-platform--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">PLATFORM - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/platform/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: platform</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/platform_schema">platform_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>platformbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;platform&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>FIB platform parameters</i></span><!--
+--><a href="#operation-config-fib-platform--put">PUT</a><!--
+--><a href="#operation-config-fib-platform--post">POST</a><!--
+--><a href="#operation-config-fib-platform--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;label-switched-multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Options for label-switched-multicast parameters</i></span><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--put">PUT</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--post">POST</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;frr-holdtime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Set time to keep FRR slots programmed post FRR<br>range: "3..180"<br>units: "second"</span></div>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-platform--post" class="operation panel" data-traverse-target="operation-config-fib-platform--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">PLATFORM - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/platform/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: platform</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/platform_schema">platform_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>platformbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;platform&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>FIB platform parameters</i></span><!--
+--><a href="#operation-config-fib-platform--put">PUT</a><!--
+--><a href="#operation-config-fib-platform--post">POST</a><!--
+--><a href="#operation-config-fib-platform--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;label-switched-multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Options for label-switched-multicast parameters</i></span><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--put">PUT</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--post">POST</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;frr-holdtime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Set time to keep FRR slots programmed post FRR<br>range: "3..180"<br>units: "second"</span></div>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-platform--delete" class="operation panel" data-traverse-target="operation-config-fib-platform--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">PLATFORM - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/platform/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: platform</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-platform--get" class="operation panel" data-traverse-target="operation-config-fib-platform--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PLATFORM - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/platform/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: platform</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/platform_schema">platform_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;platform&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>FIB platform parameters</i></span><!--
+--><a href="#operation-config-fib-platform--put">PUT</a><!--
+--><a href="#operation-config-fib-platform--post">POST</a><!--
+--><a href="#operation-config-fib-platform--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;label-switched-multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Options for label-switched-multicast parameters</i></span><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--put">PUT</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--post">POST</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;frr-holdtime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Set time to keep FRR slots programmed post FRR<br>range: "3..180"<br>units: "second"</span></div>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-fib-common-cfg:fib-platform-label-switched-multicast-"></span>
+          <div id="operation-config-fib-platform-label-switched-multicast--put" class="operation panel" data-traverse-target="operation-config-fib-platform-label-switched-multicast--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-SWITCHED-MULTICAST - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/platform/label-switched-multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: label-switched-multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-switched-multicast_schema">label-switched-multicast_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>label-switched-multicastbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-switched-multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Options for label-switched-multicast parameters</i></span><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--put">PUT</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--post">POST</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;frr-holdtime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Set time to keep FRR slots programmed post FRR<br>range: "3..180"<br>units: "second"</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-platform-label-switched-multicast--post" class="operation panel" data-traverse-target="operation-config-fib-platform-label-switched-multicast--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-SWITCHED-MULTICAST - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/platform/label-switched-multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: label-switched-multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-switched-multicast_schema">label-switched-multicast_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>label-switched-multicastbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-switched-multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Options for label-switched-multicast parameters</i></span><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--put">PUT</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--post">POST</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;frr-holdtime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Set time to keep FRR slots programmed post FRR<br>range: "3..180"<br>units: "second"</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-platform-label-switched-multicast--delete" class="operation panel" data-traverse-target="operation-config-fib-platform-label-switched-multicast--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-SWITCHED-MULTICAST - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/platform/label-switched-multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: label-switched-multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-fib-platform-label-switched-multicast--get" class="operation panel" data-traverse-target="operation-config-fib-platform-label-switched-multicast--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-SWITCHED-MULTICAST - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-fib-common-cfg:fib/platform/label-switched-multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: label-switched-multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-switched-multicast_schema">label-switched-multicast_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-switched-multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Options for label-switched-multicast parameters</i></span><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--put">PUT</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--post">POST</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--delete">DELETE</a><!--
+--><a href="#operation-config-fib-platform-label-switched-multicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;frr-holdtime&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Set time to keep FRR slots programmed post FRR<br>range: "3..180"<br>units: "second"</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

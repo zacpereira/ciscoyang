@@ -1,0 +1,1704 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-es-acl-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-">Cisco-IOS-XR-es-acl-oper:es-acl/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl--get">ES-ACL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-">Cisco-IOS-XR-es-acl-oper:es-acl/active/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active--get">ACTIVE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-oor-">Cisco-IOS-XR-es-acl-oper:es-acl/active/oor/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-oor--get">OOR</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-oor-acl-summary-">Cisco-IOS-XR-es-acl-oper:es-acl/active/oor/acl-summary/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-oor-acl-summary--get">ACL-SUMMARY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-oor-acl-summary-details-">Cisco-IOS-XR-es-acl-oper:es-acl/active/oor/acl-summary/details/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-oor-acl-summary-details--get">DETAILS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-list-">Cisco-IOS-XR-es-acl-oper:es-acl/active/list/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-list--get">LIST</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-list-acls-">Cisco-IOS-XR-es-acl-oper:es-acl/active/list/acls/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-list-acls--get">ACLS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-list-acls-acl--name--">Cisco-IOS-XR-es-acl-oper:es-acl/active/list/acls/acl/{name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-list-acls-acl--name---get">ACL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-list-acls-acl--name--acl-sequence-numbers-">Cisco-IOS-XR-es-acl-oper:es-acl/active/list/acls/acl/{name}/acl-sequence-numbers/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers--get">ACL-SEQUENCE-NUMBERS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-list-acls-acl--name--acl-sequence-numbers-acl-sequence-number--sequence-number--">Cisco-IOS-XR-es-acl-oper:es-acl/active/list/acls/acl/{name}/acl-sequence-numbers/acl-sequence-number/{sequence-number}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers-acl-sequence-number--sequence-number---get">ACL-SEQUENCE-NUMBER</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-oor-acls-">Cisco-IOS-XR-es-acl-oper:es-acl/active/oor-acls/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-oor-acls--get">OOR-ACLS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-oor-acls-oor-acl--name--">Cisco-IOS-XR-es-acl-oper:es-acl/active/oor-acls/oor-acl/{name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-oor-acls-oor-acl--name---get">OOR-ACL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-usages-">Cisco-IOS-XR-es-acl-oper:es-acl/active/usages/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-usages--get">USAGES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-es-acl-oper:es-acl-active-usages-usage-">Cisco-IOS-XR-es-acl-oper:es-acl/active/usages/usage/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-es-acl-active-usages-usage--get">USAGE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-es-acl-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-es-acl-oper@2017-05-01.yang">Cisco-IOS-XR-es-acl-oper@2017-05-01.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-"></span>
+          <div id="operation-config-es-acl--get" class="operation panel" data-traverse-target="operation-config-es-acl--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ES-ACL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: es-acl</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/es-acl_schema">es-acl_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-es-acl--get"><span class="hljs-attr">&quot;es-acl&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Root class of ES ACL Oper schema tree</span></div>
+    <div class="tooltip"><a href="#operation-config-es-acl-active--get"><span class="hljs-attr">&quot;active&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Out Of Resources, Limits to the resources\nallocatable</span></div>
+      <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acls--get"><span class="hljs-attr">&quot;oor-acls&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Resource occupation details for ACLs</span></div>
+        <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acls-oor-acl--name---get"><span class="hljs-attr">&quot;oor-acl&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current configured acls</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable acls</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable aces</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current configured aces</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of the ACL</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><a href="#operation-config-es-acl-active-list--get"><span class="hljs-attr">&quot;list&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">List containing ACLs</span></div>
+        <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls--get"><span class="hljs-attr">&quot;acls&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">ACL class displaying Usage and Entries</span></div>
+          <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name---get"><span class="hljs-attr">&quot;acl&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+            {
+              <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Name of the ACL</span></div>
+              <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers--get"><span class="hljs-attr">&quot;acl-sequence-numbers&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table of all the SequenceNumbers per ACL</span></div>
+                <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers-acl-sequence-number--sequence-number---get"><span class="hljs-attr">&quot;acl-sequence-number&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+                  {
+                    <div class="tooltip"><span class="hljs-leaf">&quot;source-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source wild card bits</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source MAC address</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;acl-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Acl Name</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;sequence-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Sequence Sring</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-cos&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header COS value</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;vlan1&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">VLAN ID/range lower limit</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;vlan2&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">VLAN ID range higher limit</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-dei&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header DEI bit</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;capture&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Capture option, TRUE if enabled</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;grant&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Grant value permit/deny </span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ether-type-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ethernet type Number</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;cos&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COS value</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ace-sequence-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ACE sequence number</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-vlan1&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header VLAN ID/range lower limit</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;log-option&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Log option</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-vlan2&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header VLAN ID range higher limit</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;remark&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remark string</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;destination-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination MAC address</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ace-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACE type (acl, remark)</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;hits&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ACE hit number</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;dei&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">DEI bit</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;destination-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination wild card bits</span></div>
+                    <div class="tooltip"><span class="hljs-key">&quot;sequence-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">ACLEntry Sequence Number</span></div>
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      <div class="tooltip"><a href="#operation-config-es-acl-active-usages--get"><span class="hljs-attr">&quot;usages&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table of Usage statistics of ACLs at different\nnodes</span></div>
+        <div class="tooltip"><a href="#operation-config-es-acl-active-usages-usage--get"><span class="hljs-attr">&quot;usage&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;usage-details&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Usage Statistics Details</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;application-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Application ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Node where ACL is applied</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of the ACL</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><a href="#operation-config-es-acl-active-oor--get"><span class="hljs-attr">&quot;oor&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Out Of Resources, Limits to the resources\nallocatable</span></div>
+        <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acl-summary--get"><span class="hljs-attr">&quot;acl-summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Resource Limits pertaining to ACLs only</span></div>
+          <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acl-summary-details--get"><span class="hljs-attr">&quot;details&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Details containing the resource limits of the\nACLs</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current configured acls</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable acls</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable aces</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Current configured aces</span></div>
+          }
+        }
+      }
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-"></span>
+          <div id="operation-config-es-acl-active--get" class="operation panel" data-traverse-target="operation-config-es-acl-active--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ACTIVE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: active</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/active_schema">active_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-es-acl-active--get"><span class="hljs-attr">&quot;active&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Out Of Resources, Limits to the resources\nallocatable</span></div>
+    <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acls--get"><span class="hljs-attr">&quot;oor-acls&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Resource occupation details for ACLs</span></div>
+      <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acls-oor-acl--name---get"><span class="hljs-attr">&quot;oor-acl&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current configured acls</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable acls</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable aces</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current configured aces</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of the ACL</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-es-acl-active-list--get"><span class="hljs-attr">&quot;list&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">List containing ACLs</span></div>
+      <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls--get"><span class="hljs-attr">&quot;acls&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">ACL class displaying Usage and Entries</span></div>
+        <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name---get"><span class="hljs-attr">&quot;acl&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+          {
+            <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Name of the ACL</span></div>
+            <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers--get"><span class="hljs-attr">&quot;acl-sequence-numbers&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table of all the SequenceNumbers per ACL</span></div>
+              <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers-acl-sequence-number--sequence-number---get"><span class="hljs-attr">&quot;acl-sequence-number&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;source-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source wild card bits</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source MAC address</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;acl-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Acl Name</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;sequence-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Sequence Sring</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-cos&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header COS value</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;vlan1&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">VLAN ID/range lower limit</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;vlan2&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">VLAN ID range higher limit</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-dei&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header DEI bit</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;capture&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Capture option, TRUE if enabled</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;grant&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Grant value permit/deny </span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ether-type-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ethernet type Number</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;cos&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COS value</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ace-sequence-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ACE sequence number</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-vlan1&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header VLAN ID/range lower limit</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;log-option&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Log option</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-vlan2&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header VLAN ID range higher limit</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;remark&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remark string</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;destination-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination MAC address</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ace-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACE type (acl, remark)</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;hits&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ACE hit number</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;dei&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">DEI bit</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;destination-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination wild card bits</span></div>
+                  <div class="tooltip"><span class="hljs-key">&quot;sequence-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">ACLEntry Sequence Number</span></div>
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    <div class="tooltip"><a href="#operation-config-es-acl-active-usages--get"><span class="hljs-attr">&quot;usages&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table of Usage statistics of ACLs at different\nnodes</span></div>
+      <div class="tooltip"><a href="#operation-config-es-acl-active-usages-usage--get"><span class="hljs-attr">&quot;usage&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;usage-details&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Usage Statistics Details</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;application-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Application ID</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Node where ACL is applied</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of the ACL</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-es-acl-active-oor--get"><span class="hljs-attr">&quot;oor&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Out Of Resources, Limits to the resources\nallocatable</span></div>
+      <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acl-summary--get"><span class="hljs-attr">&quot;acl-summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Resource Limits pertaining to ACLs only</span></div>
+        <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acl-summary-details--get"><span class="hljs-attr">&quot;details&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Details containing the resource limits of the\nACLs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current configured acls</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable acls</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable aces</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Current configured aces</span></div>
+        }
+      }
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-oor-"></span>
+          <div id="operation-config-es-acl-active-oor--get" class="operation panel" data-traverse-target="operation-config-es-acl-active-oor--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">OOR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/oor/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: oor</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/oor_schema">oor_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-es-acl-active-oor--get"><span class="hljs-attr">&quot;oor&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Out Of Resources, Limits to the resources\nallocatable</span></div>
+    <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acl-summary--get"><span class="hljs-attr">&quot;acl-summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Resource Limits pertaining to ACLs only</span></div>
+      <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acl-summary-details--get"><span class="hljs-attr">&quot;details&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Details containing the resource limits of the\nACLs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current configured acls</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable acls</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable aces</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Current configured aces</span></div>
+      }
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-oor-acl-summary-"></span>
+          <div id="operation-config-es-acl-active-oor-acl-summary--get" class="operation panel" data-traverse-target="operation-config-es-acl-active-oor-acl-summary--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ACL-SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/oor/acl-summary/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: acl-summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/acl-summary_schema">acl-summary_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acl-summary--get"><span class="hljs-attr">&quot;acl-summary&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Resource Limits pertaining to ACLs only</span></div>
+    <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acl-summary-details--get"><span class="hljs-attr">&quot;details&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Details containing the resource limits of the\nACLs</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current configured acls</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable acls</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable aces</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Current configured aces</span></div>
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-oor-acl-summary-details-"></span>
+          <div id="operation-config-es-acl-active-oor-acl-summary-details--get" class="operation panel" data-traverse-target="operation-config-es-acl-active-oor-acl-summary-details--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">DETAILS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/oor/acl-summary/details/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: details</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ES-ACL-EDM-OOR-DETAIL">ES-ACL-EDM-OOR-DETAIL</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acl-summary-details--get"><span class="hljs-attr">&quot;details&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Details containing the resource limits of the\nACLs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current configured acls</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable acls</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable aces</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Current configured aces</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-list-"></span>
+          <div id="operation-config-es-acl-active-list--get" class="operation panel" data-traverse-target="operation-config-es-acl-active-list--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LIST - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/list/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: list</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/list_schema">list_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-es-acl-active-list--get"><span class="hljs-attr">&quot;list&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">List containing ACLs</span></div>
+    <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls--get"><span class="hljs-attr">&quot;acls&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">ACL class displaying Usage and Entries</span></div>
+      <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name---get"><span class="hljs-attr">&quot;acl&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+        {
+          <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Name of the Access List</span></div>
+          <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers--get"><span class="hljs-attr">&quot;acl-sequence-numbers&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table of all the SequenceNumbers per ACL</span></div>
+            <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers-acl-sequence-number--sequence-number---get"><span class="hljs-attr">&quot;acl-sequence-number&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;source-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source wild card bits</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source MAC address</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;acl-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Acl Name</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sequence-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Sequence Sring</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-cos&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header COS value</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;vlan1&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">VLAN ID/range lower limit</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;vlan2&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">VLAN ID range higher limit</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-dei&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header DEI bit</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;capture&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Capture option, TRUE if enabled</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;grant&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Grant value permit/deny </span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;ether-type-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ethernet type Number</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;cos&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COS value</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;ace-sequence-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ACE sequence number</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-vlan1&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header VLAN ID/range lower limit</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;log-option&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Log option</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-vlan2&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header VLAN ID range higher limit</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;remark&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remark string</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;destination-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination MAC address</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;ace-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACE type (acl, remark)</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;hits&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ACE hit number</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;dei&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">DEI bit</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;destination-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination wild card bits</span></div>
+                <div class="tooltip"><span class="hljs-key">&quot;sequence-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">ACLEntry Sequence Number</span></div>
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-list-acls-"></span>
+          <div id="operation-config-es-acl-active-list-acls--get" class="operation panel" data-traverse-target="operation-config-es-acl-active-list-acls--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ACLS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/list/acls/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: acls</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/acls_schema">acls_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls--get"><span class="hljs-attr">&quot;acls&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">ACL class displaying Usage and Entries</span></div>
+    <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name---get"><span class="hljs-attr">&quot;acl&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Name of the Access List</span></div>
+        <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers--get"><span class="hljs-attr">&quot;acl-sequence-numbers&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table of all the SequenceNumbers per ACL</span></div>
+          <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers-acl-sequence-number--sequence-number---get"><span class="hljs-attr">&quot;acl-sequence-number&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;source-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source wild card bits</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source MAC address</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;acl-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Acl Name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sequence-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Sequence Sring</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-cos&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header COS value</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;vlan1&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">VLAN ID/range lower limit</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;vlan2&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">VLAN ID range higher limit</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-dei&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header DEI bit</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;capture&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Capture option, TRUE if enabled</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;grant&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Grant value permit/deny </span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;ether-type-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ethernet type Number</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;cos&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COS value</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;ace-sequence-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ACE sequence number</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-vlan1&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header VLAN ID/range lower limit</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;log-option&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Log option</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-vlan2&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header VLAN ID range higher limit</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;remark&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remark string</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;destination-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination MAC address</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;ace-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACE type (acl, remark)</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;hits&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ACE hit number</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;dei&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">DEI bit</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;destination-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination wild card bits</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;sequence-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">ACLEntry Sequence Number</span></div>
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-list-acls-acl--name--"></span>
+          <div id="operation-config-es-acl-active-list-acls-acl--name---get" class="operation panel" data-traverse-target="operation-config-es-acl-active-list-acls-acl--name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ACL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/list/acls/acl/{name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: acl</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/acl_schema">acl_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-list-acls-acl--name--acl-sequence-numbers-"></span>
+          <div id="operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers--get" class="operation panel" data-traverse-target="operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ACL-SEQUENCE-NUMBERS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/list/acls/acl/{name}/acl-sequence-numbers/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: acl-sequence-numbers</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/acl-sequence-numbers_schema">acl-sequence-numbers_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers--get"><span class="hljs-attr">&quot;acl-sequence-numbers&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table of all the SequenceNumbers per ACL</span></div>
+    <div class="tooltip"><a href="#operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers-acl-sequence-number--sequence-number---get"><span class="hljs-attr">&quot;acl-sequence-number&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;source-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source wild card bits</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source MAC address</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;acl-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Acl Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sequence-string&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Sequence Sring</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-cos&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header COS value</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;vlan1&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">VLAN ID/range lower limit</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;vlan2&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">VLAN ID range higher limit</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-dei&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header DEI bit</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;capture&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Capture option, TRUE if enabled</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;grant&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Grant value permit/deny </span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ether-type-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ethernet type Number</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;cos&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COS value</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ace-sequence-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ACE sequence number</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-vlan1&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header VLAN ID/range lower limit</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;log-option&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Log option</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;inner-header-vlan2&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Inner header VLAN ID range higher limit</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;remark&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Remark string</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;destination-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination MAC address</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ace-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACE type (acl, remark)</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;hits&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ACE hit number</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;dei&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">DEI bit</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;destination-wild-card-bits&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination wild card bits</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;sequence-number&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">ACLEntry Sequence Number</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-list-acls-acl--name--acl-sequence-numbers-acl-sequence-number--sequence-number--"></span>
+          <div id="operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers-acl-sequence-number--sequence-number---get" class="operation panel" data-traverse-target="operation-config-es-acl-active-list-acls-acl--name--acl-sequence-numbers-acl-sequence-number--sequence-number---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ACL-SEQUENCE-NUMBER - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/list/acls/acl/{name}/acl-sequence-numbers/acl-sequence-number/{sequence-number}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: acl-sequence-number</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">sequence-number:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of sequence-number</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/acl-sequence-number_schema">acl-sequence-number_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-oor-acls-"></span>
+          <div id="operation-config-es-acl-active-oor-acls--get" class="operation panel" data-traverse-target="operation-config-es-acl-active-oor-acls--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">OOR-ACLS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/oor-acls/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: oor-acls</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/oor-acls_schema">oor-acls_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acls--get"><span class="hljs-attr">&quot;oor-acls&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Resource occupation details for ACLs</span></div>
+    <div class="tooltip"><a href="#operation-config-es-acl-active-oor-acls-oor-acl--name---get"><span class="hljs-attr">&quot;oor-acl&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current configured acls</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-ls&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable acls</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;maximum-configurable-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">max configurable aces</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;current-configured-ac-es&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current configured aces</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of the Access List</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-oor-acls-oor-acl--name--"></span>
+          <div id="operation-config-es-acl-active-oor-acls-oor-acl--name---get" class="operation panel" data-traverse-target="operation-config-es-acl-active-oor-acls-oor-acl--name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">OOR-ACL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/oor-acls/oor-acl/{name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: oor-acl</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/oor-acl_schema">oor-acl_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-usages-"></span>
+          <div id="operation-config-es-acl-active-usages--get" class="operation panel" data-traverse-target="operation-config-es-acl-active-usages--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">USAGES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/usages/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: usages</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/usages_schema">usages_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+  <div class="tooltip"><a href="#operation-config-es-acl-active-usages--get"><span class="hljs-attr">&quot;usages&quot;</span>:</a> {<!--
+--> <span class="tooltiptext">Table of Usage statistics of ACLs at different\nnodes</span></div>
+    <div class="tooltip"><a href="#operation-config-es-acl-active-usages-usage--get"><span class="hljs-attr">&quot;usage&quot;</span>:</a> [<!--
+--> <span class="tooltiptext"></span></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;usage-details&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Usage Statistics Details</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;application-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Application ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;location&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Node where ACL is applied</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Name of the ACL</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-es-acl-oper:es-acl-active-usages-usage-"></span>
+          <div id="operation-config-es-acl-active-usages-usage--get" class="operation panel" data-traverse-target="operation-config-es-acl-active-usages-usage--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">USAGE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-es-acl-oper:es-acl/active/usages/usage/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: usage</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/usage_schema">usage_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2522 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-mpls-lsd-cfg API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">MPLS-LSD</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-mpls-lsd--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-ipv6-">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/ipv6/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">IPV6</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-mpls-lsd-ipv6--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-ipv6--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-ipv6--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-ipv6--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-ipv4-">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/ipv4/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">IPV4</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-mpls-lsd-ipv4--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-ipv4--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-ipv4--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-ipv4--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-label-databases-">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">LABEL-DATABASES</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-mpls-lsd-label-databases--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-label-databases--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-label-databases--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-label-databases--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-label-databases-label-database--label-database-id--">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/label-database/{label-database-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">LABEL-DATABASE</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-label-databases-label-database--label-database-id--label-range-">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/label-database/{label-database-id}/label-range/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">LABEL-RANGE</button>
+          <div class="dropdown-container">
+          <a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-mpls-lsd-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-mpls-lsd-cfg@2015-11-09.yang">Cisco-IOS-XR-mpls-lsd-cfg@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                  <h5>Leaf Color Code:</h5>                    <span class="hljs-key">&emsp;&emsp;&emsp;Key&nbsp</span>                    <span class="hljs-mand">Mandatory&nbsp</span>                    <span class="hljs-leaf">Optional</span>                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-"></span>
+          <div id="operation-config-mpls-lsd--put" class="operation panel" data-traverse-target="operation-config-mpls-lsd--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">MPLS-LSD - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: mpls-lsd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/mpls-lsd_schema">mpls-lsd_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>mpls-lsdbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;mpls-lsd&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>MPLS LSD configuration data</i></span><!--
+--><a href="#operation-config-mpls-lsd--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;mpls-ip-ttl-propagate-disable&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Disable Propagation of IP TTL onto the label\nstack</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;label-databases&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Table of label databases</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;label-database&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---get">GET</a><!--
+--></div></div><!--
+-->        {<!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->            <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+          },
+          <div class="tooltip"><span class="hljs-key">&quot;label-database-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Label database identifier</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;ltrace-multiplier&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multiply the MPLS LSD Ltrace buffer length<br>range: "2..5"</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv4&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv4 parameters</i></span><!--
+--><a href="#operation-config-mpls-lsd-ipv4--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-ipv4--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-ipv4--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-ipv4--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 parameters</i></span><!--
+--><a href="#operation-config-mpls-lsd-ipv6--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-ipv6--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-ipv6--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-ipv6--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;app-reg-delay-disable&quot;</span>: <span class="hljs-string">&quot;null&quot;</span>,<!--
+--> <span class="tooltiptext">Disable LSD application reg delay</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;mpls-entropy-label&quot;</span>: <span class="hljs-string">&quot;null&quot;</span><!--
+--> <span class="tooltiptext">Enable MPLS Entropy Label</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd--post" class="operation panel" data-traverse-target="operation-config-mpls-lsd--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">MPLS-LSD - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: mpls-lsd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/mpls-lsd_schema">mpls-lsd_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>mpls-lsdbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;mpls-lsd&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>MPLS LSD configuration data</i></span><!--
+--><a href="#operation-config-mpls-lsd--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;mpls-ip-ttl-propagate-disable&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Disable Propagation of IP TTL onto the label\nstack</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;label-databases&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Table of label databases</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;label-database&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---get">GET</a><!--
+--></div></div><!--
+-->        {<!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->            <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+          },
+          <div class="tooltip"><span class="hljs-key">&quot;label-database-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Label database identifier</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;ltrace-multiplier&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multiply the MPLS LSD Ltrace buffer length<br>range: "2..5"</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv4&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv4 parameters</i></span><!--
+--><a href="#operation-config-mpls-lsd-ipv4--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-ipv4--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-ipv4--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-ipv4--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 parameters</i></span><!--
+--><a href="#operation-config-mpls-lsd-ipv6--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-ipv6--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-ipv6--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-ipv6--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;app-reg-delay-disable&quot;</span>: <span class="hljs-string">&quot;null&quot;</span>,<!--
+--> <span class="tooltiptext">Disable LSD application reg delay</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;mpls-entropy-label&quot;</span>: <span class="hljs-string">&quot;null&quot;</span><!--
+--> <span class="tooltiptext">Enable MPLS Entropy Label</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd--delete" class="operation panel" data-traverse-target="operation-config-mpls-lsd--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">MPLS-LSD - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: mpls-lsd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd--get" class="operation panel" data-traverse-target="operation-config-mpls-lsd--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MPLS-LSD - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: mpls-lsd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/mpls-lsd_schema">mpls-lsd_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;mpls-lsd&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>MPLS LSD configuration data</i></span><!--
+--><a href="#operation-config-mpls-lsd--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;mpls-ip-ttl-propagate-disable&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Disable Propagation of IP TTL onto the label\nstack</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;label-databases&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Table of label databases</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;label-database&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---get">GET</a><!--
+--></div></div><!--
+-->        {<!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->            <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+          },
+          <div class="tooltip"><span class="hljs-key">&quot;label-database-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Label database identifier</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;ltrace-multiplier&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multiply the MPLS LSD Ltrace buffer length<br>range: "2..5"</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv4&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv4 parameters</i></span><!--
+--><a href="#operation-config-mpls-lsd-ipv4--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-ipv4--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-ipv4--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-ipv4--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 parameters</i></span><!--
+--><a href="#operation-config-mpls-lsd-ipv6--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-ipv6--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-ipv6--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-ipv6--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;app-reg-delay-disable&quot;</span>: <span class="hljs-string">&quot;null&quot;</span>,<!--
+--> <span class="tooltiptext">Disable LSD application reg delay</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;mpls-entropy-label&quot;</span>: <span class="hljs-string">&quot;null&quot;</span><!--
+--> <span class="tooltiptext">Enable MPLS Entropy Label</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-ipv6-"></span>
+          <div id="operation-config-mpls-lsd-ipv6--put" class="operation panel" data-traverse-target="operation-config-mpls-lsd-ipv6--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV6 - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/ipv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: ipv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/TTL-EXPIRATION-POP">TTL-EXPIRATION-POP</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>ipv6body object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+-->  <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-ipv6--post" class="operation panel" data-traverse-target="operation-config-mpls-lsd-ipv6--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV6 - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/ipv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: ipv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/TTL-EXPIRATION-POP">TTL-EXPIRATION-POP</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>ipv6body object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+-->  <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-ipv6--delete" class="operation panel" data-traverse-target="operation-config-mpls-lsd-ipv6--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV6 - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/ipv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: ipv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-ipv6--get" class="operation panel" data-traverse-target="operation-config-mpls-lsd-ipv6--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV6 - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/ipv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ipv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/TTL-EXPIRATION-POP">TTL-EXPIRATION-POP</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+-->  <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-ipv4-"></span>
+          <div id="operation-config-mpls-lsd-ipv4--put" class="operation panel" data-traverse-target="operation-config-mpls-lsd-ipv4--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV4 - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/ipv4/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: ipv4</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/TTL-EXPIRATION-POP">TTL-EXPIRATION-POP</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>ipv4body object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+-->  <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-ipv4--post" class="operation panel" data-traverse-target="operation-config-mpls-lsd-ipv4--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV4 - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/ipv4/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: ipv4</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/TTL-EXPIRATION-POP">TTL-EXPIRATION-POP</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>ipv4body object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+-->  <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-ipv4--delete" class="operation panel" data-traverse-target="operation-config-mpls-lsd-ipv4--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV4 - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/ipv4/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: ipv4</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-ipv4--get" class="operation panel" data-traverse-target="operation-config-mpls-lsd-ipv4--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV4 - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/ipv4/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ipv4</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/TTL-EXPIRATION-POP">TTL-EXPIRATION-POP</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+-->  <div class="tooltip"><span class="hljs-leaf">&quot;ttl-expiration-pop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of labels to pop upon MPLS IP TTL expiry<br>range: "1..10"</span></div>
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-label-databases-"></span>
+          <div id="operation-config-mpls-lsd-label-databases--put" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-DATABASES - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: label-databases</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-databases_schema">label-databases_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>label-databasesbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-databases&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Table of label databases</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;label-database&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---get">GET</a><!--
+--></div></div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+        },
+        <div class="tooltip"><span class="hljs-key">&quot;label-database-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Label database identifier</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-label-databases--post" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-DATABASES - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: label-databases</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-databases_schema">label-databases_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>label-databasesbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-databases&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Table of label databases</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;label-database&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---get">GET</a><!--
+--></div></div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+        },
+        <div class="tooltip"><span class="hljs-key">&quot;label-database-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Label database identifier</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-label-databases--delete" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-DATABASES - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: label-databases</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-label-databases--get" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-DATABASES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: label-databases</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-databases_schema">label-databases_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-databases&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Table of label databases</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;label-database&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---get">GET</a><!--
+--></div></div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+        },
+        <div class="tooltip"><span class="hljs-key">&quot;label-database-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Label database identifier</span></div>
+      }
+    ]
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-label-databases-label-database--label-database-id--"></span>
+          <div id="operation-config-mpls-lsd-label-databases-label-database--label-database-id---put" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases-label-database--label-database-id---put">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-DATABASE - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/label-database/{label-database-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: label-database</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-database_schema">label-database_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>label-databasebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">label-database-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of label-database-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-database&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---get">GET</a><!--
+--></div></div><!--
+-->    {<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+      },
+      <div class="tooltip"><span class="hljs-key">&quot;label-database-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Label database identifier</span></div>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-label-databases-label-database--label-database-id---post" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases-label-database--label-database-id---post">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-DATABASE - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/label-database/{label-database-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: label-database</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-database_schema">label-database_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>label-databasebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">label-database-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of label-database-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-database&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---get">GET</a><!--
+--></div></div><!--
+-->    {<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+      },
+      <div class="tooltip"><span class="hljs-key">&quot;label-database-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Label database identifier</span></div>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-DATABASE - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/label-database/{label-database-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: label-database</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">label-database-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of label-database-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-label-databases-label-database--label-database-id---get" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases-label-database--label-database-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-DATABASE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/label-database/{label-database-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: label-database</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">label-database-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of label-database-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-database_schema">label-database_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-database&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id---get">GET</a><!--
+--></div></div><!--
+-->    {<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+      },
+      <div class="tooltip"><span class="hljs-key">&quot;label-database-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Label database identifier</span></div>
+    }
+  ]
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd-label-databases-label-database--label-database-id--label-range-"></span>
+          <div id="operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-RANGE - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/label-database/{label-database-id}/label-range/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: label-range</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-range_schema">label-range_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>label-rangebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">label-database-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of label-database-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-RANGE - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/label-database/{label-database-id}/label-range/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: label-range</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-range_schema">label-range_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>label-rangebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">label-database-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of label-database-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-RANGE - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/label-database/{label-database-id}/label-range/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: label-range</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">label-database-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of label-database-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get" class="operation panel" data-traverse-target="operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LABEL-RANGE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-lsd-cfg:mpls-lsd/label-databases/label-database/{label-database-id}/label-range/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: label-range</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">label-database-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of label-database-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/label-range_schema">label-range_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;label-range&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Label range</i></span><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--put">PUT</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--post">POST</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--delete">DELETE</a><!--
+--><a href="#operation-config-mpls-lsd-label-databases-label-database--label-database-id--label-range--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;min-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Minimum static label value<br>range: "0..1048575"</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;max-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum label value<br>range: "16000..1048575"</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;max-static-value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Maximum static label value<br>range: "0..1048575"</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;minvalue&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Minimum label value<br>range: "16000..1048575"</span></div>
+  }
+}
+</code></pre>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
