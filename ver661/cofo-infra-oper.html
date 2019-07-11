@@ -1,0 +1,2299 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-cofo-infra-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-">Cisco-IOS-XR-cofo-infra-oper:cofo/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo--get">COFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes--get">NODES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name---get">NODE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--client-ids-">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/client-ids/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name--client-ids--get">CLIENT-IDS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--client-ids-client-id--id--">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/client-ids/client-id/{id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name--client-ids-client-id--id---get">CLIENT-ID</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name--topic-ids--get">TOPIC-IDS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id---get">TOPIC-ID</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct--get">DATABASE-INFO-STRUCT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct--get">CLIENT-DB-INFO-STRUCT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/cofo-object-published-array/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array--get">COFO-OBJECT-PUBLISHED-ARRAY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time-">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/cofo-object-published-array/object-add-time/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get">OBJECT-ADD-TIME</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time-">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/cofo-object-published-array/object-delete-time/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get">OBJECT-DELETE-TIME</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time-">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/cofo-object-published-array/object-txl-add-time/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get">OBJECT-TXL-ADD-TIME</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time-">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/cofo-object-published-array/object-txl-encode-time/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get">OBJECT-TXL-ENCODE-TIME</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-cofo-infra-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-cofo-infra-oper@2015-11-09.yang">Cisco-IOS-XR-cofo-infra-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-"></span>
+          <div id="operation-config-cofo--get" class="operation panel" data-traverse-target="operation-config-cofo--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">COFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: cofo</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/cofo_schema">cofo_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo--get"><span class="hljs-attr">&quot;cofo&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>COFO operational data</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-cofo-nodes--get"><span class="hljs-attr">&quot;nodes&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Node-specific COFO operational data</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name---get"><span class="hljs-attr">&quot;node&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids--get"><span class="hljs-attr">&quot;topic-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>COFO SDR database</i></span><!--
+--></div>
+            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id---get"><span class="hljs-attr">&quot;topic-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Topic ID</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;topic-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Topic ID</span></div>
+                <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct--get"><span class="hljs-attr">&quot;database-info-struct&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                  {
+                    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct--get"><span class="hljs-attr">&quot;client-db-info-struct&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                      {
+                        <div class="tooltip"><span class="hljs-leaf">&quot;total-valid-items-in-db&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total valid items in db</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;total-objects&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total objects</span></div>
+                        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array--get"><span class="hljs-attr">&quot;cofo-object-published-array&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                          {
+                            <div class="tooltip"><span class="hljs-leaf">&quot;insert-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Insert Count</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Item State</span></div>
+                            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get"><span class="hljs-attr">&quot;object-txl-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl add time</i></span><!--
+--></div>
+                              <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                              <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                            },
+                            <div class="tooltip"><span class="hljs-leaf">&quot;object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Object ID</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-key&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object key</span></div>
+                            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get"><span class="hljs-attr">&quot;object-txl-encode-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl encode time</i></span><!--
+--></div>
+                              <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                              <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                            },
+                            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get"><span class="hljs-attr">&quot;object-delete-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object delete time</i></span><!--
+--></div>
+                              <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                              <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                            },
+                            <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object value</span></div>
+                            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get"><span class="hljs-attr">&quot;object-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object add time</i></span><!--
+--></div>
+                              <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                              <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    <div class="tooltip"><span class="hljs-leaf">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">SDR ID</span></div>
+                  }
+                ],
+                <div class="tooltip"><span class="hljs-key">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Specific Client identifier</span></div>
+              }
+            ]
+          },
+          <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--client-ids--get"><span class="hljs-attr">&quot;client-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>COFO Client data</i></span><!--
+--></div>
+            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--client-ids-client-id--id---get"><span class="hljs-attr">&quot;client-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Client ID</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;purge-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Purge timeout</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;host-client&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">host client</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;connection-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection state</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;peer-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Handle</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;connection-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection Handle</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;topic-published&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Topic Published</span></div>
+                <div class="tooltip"><span class="hljs-key">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Specific Client identifier</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;topic-subscribed&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Topic Subscribed</span></div>
+              }
+            ]
+          },
+          <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The node</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-"></span>
+          <div id="operation-config-cofo-nodes--get" class="operation panel" data-traverse-target="operation-config-cofo-nodes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nodes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/nodes_schema">nodes_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes--get"><span class="hljs-attr">&quot;nodes&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Node-specific COFO operational data</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name---get"><span class="hljs-attr">&quot;node&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids--get"><span class="hljs-attr">&quot;topic-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>COFO SDR database</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id---get"><span class="hljs-attr">&quot;topic-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Topic ID</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;topic-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Topic ID</span></div>
+              <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct--get"><span class="hljs-attr">&quot;database-info-struct&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                {
+                  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct--get"><span class="hljs-attr">&quot;client-db-info-struct&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                    {
+                      <div class="tooltip"><span class="hljs-leaf">&quot;total-valid-items-in-db&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total valid items in db</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;total-objects&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total objects</span></div>
+                      <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array--get"><span class="hljs-attr">&quot;cofo-object-published-array&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                        {
+                          <div class="tooltip"><span class="hljs-leaf">&quot;insert-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Insert Count</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Item State</span></div>
+                          <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get"><span class="hljs-attr">&quot;object-txl-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl add time</i></span><!--
+--></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                          },
+                          <div class="tooltip"><span class="hljs-leaf">&quot;object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Object ID</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-key&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object key</span></div>
+                          <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get"><span class="hljs-attr">&quot;object-txl-encode-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl encode time</i></span><!--
+--></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                          },
+                          <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get"><span class="hljs-attr">&quot;object-delete-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object delete time</i></span><!--
+--></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                          },
+                          <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object value</span></div>
+                          <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get"><span class="hljs-attr">&quot;object-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object add time</i></span><!--
+--></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                            <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  <div class="tooltip"><span class="hljs-leaf">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">SDR ID</span></div>
+                }
+              ],
+              <div class="tooltip"><span class="hljs-key">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Specific Client identifier</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--client-ids--get"><span class="hljs-attr">&quot;client-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>COFO Client data</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--client-ids-client-id--id---get"><span class="hljs-attr">&quot;client-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Client ID</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;purge-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Purge timeout</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;host-client&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">host client</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;connection-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection state</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;peer-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Handle</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;connection-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection Handle</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;topic-published&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Topic Published</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Specific Client identifier</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;topic-subscribed&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Topic Subscribed</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The node</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--"></span>
+          <div id="operation-config-cofo-nodes-node--node-name---get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: node</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/node_schema">node_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name---get"><span class="hljs-attr">&quot;node&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids--get"><span class="hljs-attr">&quot;topic-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>COFO SDR database</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id---get"><span class="hljs-attr">&quot;topic-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Topic ID</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;topic-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Topic ID</span></div>
+            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct--get"><span class="hljs-attr">&quot;database-info-struct&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct--get"><span class="hljs-attr">&quot;client-db-info-struct&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                  {
+                    <div class="tooltip"><span class="hljs-leaf">&quot;total-valid-items-in-db&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total valid items in db</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;total-objects&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total objects</span></div>
+                    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array--get"><span class="hljs-attr">&quot;cofo-object-published-array&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                      {
+                        <div class="tooltip"><span class="hljs-leaf">&quot;insert-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Insert Count</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Item State</span></div>
+                        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get"><span class="hljs-attr">&quot;object-txl-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl add time</i></span><!--
+--></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                        },
+                        <div class="tooltip"><span class="hljs-leaf">&quot;object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Object ID</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-key&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object key</span></div>
+                        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get"><span class="hljs-attr">&quot;object-txl-encode-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl encode time</i></span><!--
+--></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                        },
+                        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get"><span class="hljs-attr">&quot;object-delete-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object delete time</i></span><!--
+--></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                        },
+                        <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object value</span></div>
+                        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get"><span class="hljs-attr">&quot;object-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object add time</i></span><!--
+--></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                        }
+                      }
+                    ]
+                  }
+                ],
+                <div class="tooltip"><span class="hljs-leaf">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">SDR ID</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-key">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Specific Client identifier</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--client-ids--get"><span class="hljs-attr">&quot;client-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>COFO Client data</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--client-ids-client-id--id---get"><span class="hljs-attr">&quot;client-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Client ID</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;purge-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Purge timeout</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;host-client&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">host client</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;connection-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection state</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;peer-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Handle</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;connection-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection Handle</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;topic-published&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Topic Published</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Specific Client identifier</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;topic-subscribed&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Topic Subscribed</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The node</span></div>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--client-ids-"></span>
+          <div id="operation-config-cofo-nodes-node--node-name--client-ids--get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name--client-ids--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CLIENT-IDS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/client-ids/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: client-ids</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/client-ids_schema">client-ids_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--client-ids--get"><span class="hljs-attr">&quot;client-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>COFO Client data</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--client-ids-client-id--id---get"><span class="hljs-attr">&quot;client-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Client ID</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;purge-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Purge timeout</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-client&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">host client</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;connection-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection state</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;peer-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Handle</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;connection-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection Handle</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;topic-published&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Topic Published</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Specific Client identifier</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;topic-subscribed&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Topic Subscribed</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--client-ids-client-id--id--"></span>
+          <div id="operation-config-cofo-nodes-node--node-name--client-ids-client-id--id---get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name--client-ids-client-id--id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CLIENT-ID - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/client-ids/client-id/{id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: client-id</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/client-id_schema">client-id_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--client-ids-client-id--id---get"><span class="hljs-attr">&quot;client-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Client ID</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;purge-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Purge timeout</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;host-client&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">host client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;connection-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection state</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;peer-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Handle</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;connection-handle&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection Handle</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;topic-published&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Topic Published</span></div>
+      <div class="tooltip"><span class="hljs-key">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Specific Client identifier</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;topic-subscribed&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Topic Subscribed</span></div>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-"></span>
+          <div id="operation-config-cofo-nodes-node--node-name--topic-ids--get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name--topic-ids--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TOPIC-IDS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: topic-ids</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/topic-ids_schema">topic-ids_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids--get"><span class="hljs-attr">&quot;topic-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>COFO SDR database</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id---get"><span class="hljs-attr">&quot;topic-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Topic ID</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;topic-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Topic ID</span></div>
+        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct--get"><span class="hljs-attr">&quot;database-info-struct&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct--get"><span class="hljs-attr">&quot;client-db-info-struct&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;total-valid-items-in-db&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total valid items in db</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;total-objects&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total objects</span></div>
+                <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array--get"><span class="hljs-attr">&quot;cofo-object-published-array&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                  {
+                    <div class="tooltip"><span class="hljs-leaf">&quot;insert-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Insert Count</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Item State</span></div>
+                    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get"><span class="hljs-attr">&quot;object-txl-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl add time</i></span><!--
+--></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                    },
+                    <div class="tooltip"><span class="hljs-leaf">&quot;object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Object ID</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-key&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object key</span></div>
+                    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get"><span class="hljs-attr">&quot;object-txl-encode-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl encode time</i></span><!--
+--></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                    },
+                    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get"><span class="hljs-attr">&quot;object-delete-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object delete time</i></span><!--
+--></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                    },
+                    <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object value</span></div>
+                    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get"><span class="hljs-attr">&quot;object-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object add time</i></span><!--
+--></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                    }
+                  }
+                ]
+              }
+            ],
+            <div class="tooltip"><span class="hljs-leaf">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">SDR ID</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-key">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Specific Topic identifier</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--"></span>
+          <div id="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id---get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TOPIC-ID - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: topic-id</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/topic-id_schema">topic-id_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id---get"><span class="hljs-attr">&quot;topic-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Topic ID</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-leaf">&quot;topic-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Topic ID</span></div>
+      <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct--get"><span class="hljs-attr">&quot;database-info-struct&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct--get"><span class="hljs-attr">&quot;client-db-info-struct&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;total-valid-items-in-db&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total valid items in db</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;total-objects&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total objects</span></div>
+              <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array--get"><span class="hljs-attr">&quot;cofo-object-published-array&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;insert-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Insert Count</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Item State</span></div>
+                  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get"><span class="hljs-attr">&quot;object-txl-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl add time</i></span><!--
+--></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                  },
+                  <div class="tooltip"><span class="hljs-leaf">&quot;object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Object ID</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-key&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object key</span></div>
+                  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get"><span class="hljs-attr">&quot;object-txl-encode-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl encode time</i></span><!--
+--></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                  },
+                  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get"><span class="hljs-attr">&quot;object-delete-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object delete time</i></span><!--
+--></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                  },
+                  <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object value</span></div>
+                  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get"><span class="hljs-attr">&quot;object-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object add time</i></span><!--
+--></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+                  }
+                }
+              ]
+            }
+          ],
+          <div class="tooltip"><span class="hljs-leaf">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">SDR ID</span></div>
+        }
+      ],
+      <div class="tooltip"><span class="hljs-key">&quot;id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Specific Topic identifier</span></div>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-"></span>
+          <div id="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct--get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">DATABASE-INFO-STRUCT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: database-info-struct</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/database-info-struct_schema">database-info-struct_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct--get"><span class="hljs-attr">&quot;database-info-struct&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct--get"><span class="hljs-attr">&quot;client-db-info-struct&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;total-valid-items-in-db&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total valid items in db</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;total-objects&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total objects</span></div>
+        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array--get"><span class="hljs-attr">&quot;cofo-object-published-array&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;insert-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Insert Count</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Item State</span></div>
+            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get"><span class="hljs-attr">&quot;object-txl-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl add time</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+            },
+            <div class="tooltip"><span class="hljs-leaf">&quot;object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Object ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-key&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object key</span></div>
+            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get"><span class="hljs-attr">&quot;object-txl-encode-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl encode time</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+            },
+            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get"><span class="hljs-attr">&quot;object-delete-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object delete time</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+            },
+            <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object value</span></div>
+            <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get"><span class="hljs-attr">&quot;object-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object add time</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+            }
+          }
+        ]
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;sdr-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">SDR ID</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-"></span>
+          <div id="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct--get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CLIENT-DB-INFO-STRUCT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: client-db-info-struct</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/client-db-info-struct_schema">client-db-info-struct_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct--get"><span class="hljs-attr">&quot;client-db-info-struct&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;total-valid-items-in-db&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total valid items in db</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;total-objects&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total objects</span></div>
+    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array--get"><span class="hljs-attr">&quot;cofo-object-published-array&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;insert-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Insert Count</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Item State</span></div>
+        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get"><span class="hljs-attr">&quot;object-txl-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl add time</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Object ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-key&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object key</span></div>
+        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get"><span class="hljs-attr">&quot;object-txl-encode-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl encode time</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+        },
+        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get"><span class="hljs-attr">&quot;object-delete-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object delete time</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object value</span></div>
+        <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get"><span class="hljs-attr">&quot;object-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object add time</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+        }
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-"></span>
+          <div id="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array--get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">COFO-OBJECT-PUBLISHED-ARRAY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/cofo-object-published-array/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: cofo-object-published-array</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/cofo-object-published-array_schema">cofo-object-published-array_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array--get"><span class="hljs-attr">&quot;cofo-object-published-array&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;insert-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Insert Count</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;item-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Item State</span></div>
+    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get"><span class="hljs-attr">&quot;object-txl-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl add time</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;object-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Object ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-key&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object key</span></div>
+    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get"><span class="hljs-attr">&quot;object-txl-encode-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl encode time</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get"><span class="hljs-attr">&quot;object-delete-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object delete time</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Client ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cofo-infra-object-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Cofo infra object value</span></div>
+    <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get"><span class="hljs-attr">&quot;object-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object add time</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time-"></span>
+          <div id="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">OBJECT-ADD-TIME - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/cofo-object-published-array/object-add-time/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: object-add-time</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/object-add-time_schema">object-add-time_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-add-time--get"><span class="hljs-attr">&quot;object-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object add time</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time-"></span>
+          <div id="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">OBJECT-DELETE-TIME - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/cofo-object-published-array/object-delete-time/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: object-delete-time</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/object-delete-time_schema">object-delete-time_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-delete-time--get"><span class="hljs-attr">&quot;object-delete-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object delete time</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time-"></span>
+          <div id="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">OBJECT-TXL-ADD-TIME - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/cofo-object-published-array/object-txl-add-time/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: object-txl-add-time</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/object-txl-add-time_schema">object-txl-add-time_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-add-time--get"><span class="hljs-attr">&quot;object-txl-add-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl add time</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-cofo-infra-oper-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time-"></span>
+          <div id="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get" class="operation panel" data-traverse-target="operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">OBJECT-TXL-ENCODE-TIME - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-cofo-infra-oper:cofo/nodes/node/{node-name}/topic-ids/topic-id/{id}/database-info-struct/client-db-info-struct/cofo-object-published-array/object-txl-encode-time/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: object-txl-encode-time</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/object-txl-encode-time_schema">object-txl-encode-time_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-cofo-nodes-node--node-name--topic-ids-topic-id--id--database-info-struct-client-db-info-struct-cofo-object-published-array-object-txl-encode-time--get"><span class="hljs-attr">&quot;object-txl-encode-time&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Cofo object txl encode time</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;tv-nsec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">tv nsec</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;tv-sec&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">tv sec</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

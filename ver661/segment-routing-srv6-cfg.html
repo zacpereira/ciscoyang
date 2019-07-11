@@ -1,0 +1,3524 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-segment-routing-srv6-cfg API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">SRV6</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging-">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/logging/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">LOGGING</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">LOCATORS</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">LOCATORS</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/locator/{name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">LOCATOR</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix-">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/locator/{name}/prefix/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">PREFIX</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/encapsulation/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">ENCAPSULATION</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit-">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/encapsulation/hop-limit/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">HOP-LIMIT</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-segment-routing-srv6-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-segment-routing-srv6-cfg@2015-11-09.yang">Cisco-IOS-XR-segment-routing-srv6-cfg@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                  <h5>Leaf Color Code:</h5>                    <span class="hljs-key">&emsp;&emsp;&emsp;Key&nbsp</span>                    <span class="hljs-mand">Mandatory&nbsp</span>                    <span class="hljs-leaf">Optional</span>                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-"></span>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">SRV6 - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: srv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_srv6_schema">a1_srv6_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>srv6body object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;srv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Segment Routing with IPv6 dataplane</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable SRv6</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;logging&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enable logging</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;locator-status&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable logging for locator status changes</span></div>
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;encapsulation&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure encapsulation related parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;hop-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 Hop-Limit options</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;option&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Hop-Limit config option</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Count for Hop-limit</span></div>
+      },
+      <div class="tooltip"><span class="hljs-leaf">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Configure a source address</span></div>
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 locators parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 table of locators</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+-->          {<!--
+--><div class="dropdown2"><!--
+-->            <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->              <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+            },
+            <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+          }
+        ]
+      }
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">SRV6 - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: srv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_srv6_schema">a1_srv6_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>srv6body object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;srv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Segment Routing with IPv6 dataplane</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable SRv6</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;logging&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enable logging</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;locator-status&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable logging for locator status changes</span></div>
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;encapsulation&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure encapsulation related parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;hop-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 Hop-Limit options</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;option&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Hop-Limit config option</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Count for Hop-limit</span></div>
+      },
+      <div class="tooltip"><span class="hljs-leaf">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Configure a source address</span></div>
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 locators parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 table of locators</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+-->          {<!--
+--><div class="dropdown2"><!--
+-->            <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->              <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+            },
+            <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+          }
+        ]
+      }
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">SRV6 - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: srv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SRV6 - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: srv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_srv6_schema">a1_srv6_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;srv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Segment Routing with IPv6 dataplane</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable SRv6</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;logging&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enable logging</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;locator-status&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable logging for locator status changes</span></div>
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;encapsulation&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure encapsulation related parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;hop-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 Hop-Limit options</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;option&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Hop-Limit config option</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Count for Hop-limit</span></div>
+      },
+      <div class="tooltip"><span class="hljs-leaf">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Configure a source address</span></div>
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 locators parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 table of locators</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+-->          {<!--
+--><div class="dropdown2"><!--
+-->            <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->              <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+            },
+            <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+          }
+        ]
+      }
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging-"></span>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOGGING - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/logging/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: logging</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_logging_schema">a1_logging_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>loggingbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;logging&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enable logging</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;locator-status&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable logging for locator status changes</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOGGING - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/logging/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: logging</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_logging_schema">a1_logging_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>loggingbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;logging&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enable logging</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;locator-status&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable logging for locator status changes</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOGGING - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/logging/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: logging</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOGGING - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/logging/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: logging</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_logging_schema">a1_logging_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;logging&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enable logging</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-logging--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;locator-status&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable logging for locator status changes</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-"></span>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATORS - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: locators</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_locators_schema">a1_locators_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>locatorsbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 locators parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 table of locators</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+-->        {<!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->            <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+          },
+          <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATORS - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: locators</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_locators_schema">a1_locators_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>locatorsbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 locators parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 table of locators</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+-->        {<!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->            <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+          },
+          <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATORS - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: locators</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATORS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: locators</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_locators_schema">a1_locators_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 locators parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 table of locators</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+-->        {<!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->            <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+          },
+          <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-"></span>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATORS - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: locators</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_locators_schema">a1_locators_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>locatorsbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 table of locators</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATORS - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: locators</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_locators_schema">a1_locators_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>locatorsbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 table of locators</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATORS - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: locators</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATORS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: locators</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_locators_schema">a1_locators_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;locators&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure SRv6 table of locators</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--"></span>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATOR - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/locator/{name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: locator</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_locator_schema">a1_locator_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>locatorbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+    <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATOR - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/locator/{name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: locator</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_locator_schema">a1_locator_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>locatorbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+    <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATOR - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/locator/{name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: locator</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LOCATOR - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/locator/{name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: locator</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_locator_schema">a1_locator_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;locator&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name---get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;locator-enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable a SRv6 locator</span></div>
+    <div class="tooltip"><span class="hljs-key">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Locator name</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix-"></span>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">PREFIX - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/locator/{name}/prefix/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: prefix</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_prefix_schema">a1_prefix_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>prefixbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">PREFIX - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/locator/{name}/prefix/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: prefix</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_prefix_schema">a1_prefix_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>prefixbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">PREFIX - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/locator/{name}/prefix/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: prefix</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PREFIX - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/locators/locators/locator/{name}/prefix/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: prefix</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_prefix_schema">a1_prefix_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;prefix&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Specify locator prefix value</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-locators-locators-locator--name--prefix--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;prefix&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 Prefix</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;prefix-length&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Prefix length</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-"></span>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">ENCAPSULATION - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/encapsulation/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: encapsulation</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_encapsulation_schema">a1_encapsulation_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>encapsulationbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;encapsulation&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure encapsulation related parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;hop-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 Hop-Limit options</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;option&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Hop-Limit config option</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Count for Hop-limit</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Configure a source address</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">ENCAPSULATION - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/encapsulation/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: encapsulation</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_encapsulation_schema">a1_encapsulation_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>encapsulationbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;encapsulation&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure encapsulation related parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;hop-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 Hop-Limit options</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;option&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Hop-Limit config option</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Count for Hop-limit</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Configure a source address</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">ENCAPSULATION - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/encapsulation/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: encapsulation</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ENCAPSULATION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/encapsulation/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: encapsulation</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_encapsulation_schema">a1_encapsulation_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;encapsulation&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure encapsulation related parameters</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;hop-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 Hop-Limit options</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;option&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Hop-Limit config option</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Count for Hop-limit</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;source-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Configure a source address</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit-"></span>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">HOP-LIMIT - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/encapsulation/hop-limit/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: hop-limit</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_hop-limit_schema">a1_hop-limit_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>hop-limitbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;hop-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 Hop-Limit options</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;option&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Hop-Limit config option</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Count for Hop-limit</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">HOP-LIMIT - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/encapsulation/hop-limit/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: hop-limit</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_hop-limit_schema">a1_hop-limit_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>hop-limitbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;hop-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 Hop-Limit options</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;option&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Hop-Limit config option</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Count for Hop-limit</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">HOP-LIMIT - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/encapsulation/hop-limit/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: hop-limit</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HOP-LIMIT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-segment-routing-ms-cfg:sr/srv6/encapsulation/hop-limit/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: hop-limit</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_hop-limit_schema">a1_hop-limit_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;hop-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Configure IPv6 Hop-Limit options</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-segment-routing-ms-cfg-sr-srv6-encapsulation-hop-limit--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;option&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Hop-Limit config option</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Count for Hop-limit</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

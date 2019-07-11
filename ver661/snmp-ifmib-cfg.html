@@ -1,0 +1,3129 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-snmp-ifmib-cfg API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">INTERFACE-MIB</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/interfaces/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">INTERFACES</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name--">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/interfaces/interface/{interface-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">INTERFACE</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification-">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/notification/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">NOTIFICATION</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">SUBSETS</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/subset/{subset-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">SUBSET</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down-">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/subset/{subset-id}/link-up-down/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">LINK-UP-DOWN</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-snmp-ifmib-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-snmp-ifmib-cfg@2017-05-01.yang">Cisco-IOS-XR-snmp-ifmib-cfg@2017-05-01.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                  <h5>Leaf Color Code:</h5>                    <span class="hljs-key">&emsp;&emsp;&emsp;Key&nbsp</span>                    <span class="hljs-mand">Mandatory&nbsp</span>                    <span class="hljs-leaf">Optional</span>                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-"></span>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE-MIB - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: interface-mib</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_interface-mib_schema">a1_interface-mib_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>interface-mibbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;interface-mib&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Interface MIB configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;statistics-cache&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable cached interface statistics</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;internal-cache&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Get cached interface statistics<br>range: "0..60"<br>default: "15"</span></div><!-- 
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;interfaces&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enter the SNMP interface configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;interface&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get">GET</a><!--
+--></div></div><!--
+-->        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;link-up-down&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable LinkUpDown notification</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;index-persistence&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable index persistence</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The name of the interface</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-alias-long&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable support for ifAlias values longer than\n64 characters</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-index-persistence&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable ifindex persistence</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;notification&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>MIB notification configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;link-ietf&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Set the varbind of linkupdown trap to the RFC\nspecified varbinds (default cisco)</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;ip-subscriber&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable IP subscriber interfaces in IFMIB</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;subsets&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Add configuration for an interface subset</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;subset&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get">GET</a><!--
+--></div></div><!--
+-->        {<!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->            <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+          },
+          <div class="tooltip"><span class="hljs-key">&quot;subset-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">The interface subset PriorityID<br>range: "1..255"</span></div> 
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE-MIB - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: interface-mib</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_interface-mib_schema">a1_interface-mib_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>interface-mibbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;interface-mib&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Interface MIB configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;statistics-cache&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable cached interface statistics</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;internal-cache&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Get cached interface statistics<br>range: "0..60"<br>default: "15"</span></div><!-- 
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;interfaces&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enter the SNMP interface configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;interface&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get">GET</a><!--
+--></div></div><!--
+-->        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;link-up-down&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable LinkUpDown notification</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;index-persistence&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable index persistence</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The name of the interface</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-alias-long&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable support for ifAlias values longer than\n64 characters</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-index-persistence&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable ifindex persistence</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;notification&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>MIB notification configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;link-ietf&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Set the varbind of linkupdown trap to the RFC\nspecified varbinds (default cisco)</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;ip-subscriber&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable IP subscriber interfaces in IFMIB</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;subsets&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Add configuration for an interface subset</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;subset&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get">GET</a><!--
+--></div></div><!--
+-->        {<!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->            <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+          },
+          <div class="tooltip"><span class="hljs-key">&quot;subset-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">The interface subset PriorityID<br>range: "1..255"</span></div> 
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE-MIB - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: interface-mib</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE-MIB - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface-mib</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_interface-mib_schema">a1_interface-mib_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;interface-mib&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Interface MIB configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;statistics-cache&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable cached interface statistics</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;internal-cache&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Get cached interface statistics<br>range: "0..60"<br>default: "15"</span></div><!-- 
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;interfaces&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enter the SNMP interface configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;interface&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get">GET</a><!--
+--></div></div><!--
+-->        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;link-up-down&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable LinkUpDown notification</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;index-persistence&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable index persistence</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The name of the interface</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-alias-long&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable support for ifAlias values longer than\n64 characters</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-index-persistence&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable ifindex persistence</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;notification&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>MIB notification configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;link-ietf&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Set the varbind of linkupdown trap to the RFC\nspecified varbinds (default cisco)</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;ip-subscriber&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable IP subscriber interfaces in IFMIB</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;subsets&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Add configuration for an interface subset</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;subset&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get">GET</a><!--
+--></div></div><!--
+-->        {<!--
+--><div class="dropdown2"><!--
+-->          <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->            <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+          },
+          <div class="tooltip"><span class="hljs-key">&quot;subset-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">The interface subset PriorityID<br>range: "1..255"</span></div> 
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-"></span>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACES - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/interfaces/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: interfaces</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_interfaces_schema">a1_interfaces_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>interfacesbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;interfaces&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enter the SNMP interface configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;interface&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get">GET</a><!--
+--></div></div><!--
+-->      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;link-up-down&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable LinkUpDown notification</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;index-persistence&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable index persistence</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The name of the interface</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACES - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/interfaces/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: interfaces</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_interfaces_schema">a1_interfaces_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>interfacesbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;interfaces&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enter the SNMP interface configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;interface&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get">GET</a><!--
+--></div></div><!--
+-->      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;link-up-down&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable LinkUpDown notification</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;index-persistence&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable index persistence</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The name of the interface</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACES - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/interfaces/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: interfaces</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/interfaces/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interfaces</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_interfaces_schema">a1_interfaces_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;interfaces&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Enter the SNMP interface configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;interface&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get">GET</a><!--
+--></div></div><!--
+-->      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;link-up-down&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable LinkUpDown notification</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;index-persistence&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable index persistence</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The name of the interface</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name--"></span>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/interfaces/interface/{interface-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_interface_schema">a1_interface_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>interfacebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;interface&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;link-up-down&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable LinkUpDown notification</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;index-persistence&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable index persistence</span></div>
+    <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The name of the interface</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/interfaces/interface/{interface-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_interface_schema">a1_interface_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>interfacebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;interface&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;link-up-down&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable LinkUpDown notification</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;index-persistence&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable index persistence</span></div>
+    <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The name of the interface</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/interfaces/interface/{interface-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/interfaces/interface/{interface-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_interface_schema">a1_interface_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;interface&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-interfaces-interface--interface-name---get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;link-up-down&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable LinkUpDown notification</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;index-persistence&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable index persistence</span></div>
+    <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The name of the interface</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification-"></span>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">NOTIFICATION - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/notification/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: notification</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_notification_schema">a1_notification_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>notificationbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;notification&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>MIB notification configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;link-ietf&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Set the varbind of linkupdown trap to the RFC\nspecified varbinds (default cisco)</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">NOTIFICATION - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/notification/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: notification</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_notification_schema">a1_notification_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>notificationbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;notification&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>MIB notification configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;link-ietf&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Set the varbind of linkupdown trap to the RFC\nspecified varbinds (default cisco)</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">NOTIFICATION - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/notification/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: notification</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NOTIFICATION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/notification/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: notification</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_notification_schema">a1_notification_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;notification&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>MIB notification configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-notification--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;link-ietf&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Set the varbind of linkupdown trap to the RFC\nspecified varbinds (default cisco)</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-"></span>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUBSETS - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: subsets</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_subsets_schema">a1_subsets_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>subsetsbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;subsets&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Add configuration for an interface subset</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;subset&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get">GET</a><!--
+--></div></div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+        },
+        <div class="tooltip"><span class="hljs-key">&quot;subset-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">The interface subset PriorityID<br>range: "1..255"</span></div> 
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUBSETS - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: subsets</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_subsets_schema">a1_subsets_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>subsetsbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;subsets&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Add configuration for an interface subset</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;subset&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get">GET</a><!--
+--></div></div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+        },
+        <div class="tooltip"><span class="hljs-key">&quot;subset-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">The interface subset PriorityID<br>range: "1..255"</span></div> 
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUBSETS - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: subsets</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUBSETS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: subsets</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_subsets_schema">a1_subsets_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;subsets&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Add configuration for an interface subset</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;subset&quot;</span></button>: [<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get">GET</a><!--
+--></div></div><!--
+-->      {<!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+        },
+        <div class="tooltip"><span class="hljs-key">&quot;subset-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">The interface subset PriorityID<br>range: "1..255"</span></div> 
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--"></span>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUBSET - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/subset/{subset-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: subset</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_subset_schema">a1_subset_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>subsetbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">subset-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of subset-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;subset&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+    },
+    <div class="tooltip"><span class="hljs-key">&quot;subset-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">The interface subset PriorityID<br>range: "1..255"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUBSET - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/subset/{subset-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: subset</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_subset_schema">a1_subset_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>subsetbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">subset-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of subset-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;subset&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+    },
+    <div class="tooltip"><span class="hljs-key">&quot;subset-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">The interface subset PriorityID<br>range: "1..255"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUBSET - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/subset/{subset-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: subset</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">subset-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of subset-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUBSET - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/subset/{subset-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: subset</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">subset-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of subset-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_subset_schema">a1_subset_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;subset&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>No description</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id---get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+    },
+    <div class="tooltip"><span class="hljs-key">&quot;subset-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">The interface subset PriorityID<br>range: "1..255"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down-"></span>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">LINK-UP-DOWN - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/subset/{subset-id}/link-up-down/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: link-up-down</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_link-up-down_schema">a1_link-up-down_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>link-up-downbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">subset-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of subset-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">LINK-UP-DOWN - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/subset/{subset-id}/link-up-down/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: link-up-down</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_link-up-down_schema">a1_link-up-down_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>link-up-downbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">subset-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of subset-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">LINK-UP-DOWN - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/subset/{subset-id}/link-up-down/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: link-up-down</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">subset-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of subset-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LINK-UP-DOWN - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-snmp-agent-cfg:mib/interface-mib/subsets/subset/{subset-id}/link-up-down/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: link-up-down</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">subset-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of subset-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_link-up-down_schema">a1_link-up-down_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;link-up-down&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>SNMP linkUp and linkDown notifications</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-snmp-agent-cfg-mib-interface-mib-subsets-subset--subset-id--link-up-down--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Enable or disable linkupdown notification</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;regular-expression&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Regular expression to match ifName</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

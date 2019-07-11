@@ -1,0 +1,2363 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-tty-management-cfg API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">CONNECTION</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input-">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/transport-input/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">TRANSPORT-INPUT</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output-">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/transport-output/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">TRANSPORT-OUTPUT</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout-">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/session-timeout/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">SESSION-TIMEOUT</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode-">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/exec-mode/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">EXEC-MODE</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-tty-management-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-tty-management-cfg@2017-09-07.yang">Cisco-IOS-XR-tty-management-cfg@2017-09-07.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                  <h5>Leaf Color Code:</h5>                    <span class="hljs-key">&emsp;&emsp;&emsp;Key&nbsp</span>                    <span class="hljs-mand">Mandatory&nbsp</span>                    <span class="hljs-leaf">Optional</span>                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-"></span>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">CONNECTION - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: connection</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_connection_schema">a1_connection_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>connectionbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;connection&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Management connection configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;transport-input&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use when connecting to the\nterminal server</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+      <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;transport-preferred&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">The preferred protocol to use<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;acl-out&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACL to filter outgoing connections</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cli-white-space-completion&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Command completion on whitespace</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;session-timeout&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Interval for closing connection when there is\nno input traffic</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-mand">&quot;direction&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Include output traffic as well as input\ntraffic<br>Options:<br> in<br> in-out</span></div> 
+      <div class="tooltip"><span class="hljs-mand">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Session timeout interval in minutes<br>range: "0..35791"</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;escape-character&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Escape character or ASCII decimal equivalent\nvalue orspecial strings NONE,DEFAULT,BREAK</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-character&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect character's decimal equivalent value\nor Character </span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;session-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">The number of outgoing connections<br>range: "0..20"<br>default: "6"</span></div><!-- 
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;transport-output&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use for outgoing connections</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+      <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;acl-in&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">ACL to filter ingoing connections</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">CONNECTION - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: connection</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_connection_schema">a1_connection_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>connectionbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;connection&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Management connection configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;transport-input&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use when connecting to the\nterminal server</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+      <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;transport-preferred&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">The preferred protocol to use<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;acl-out&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACL to filter outgoing connections</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cli-white-space-completion&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Command completion on whitespace</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;session-timeout&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Interval for closing connection when there is\nno input traffic</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-mand">&quot;direction&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Include output traffic as well as input\ntraffic<br>Options:<br> in<br> in-out</span></div> 
+      <div class="tooltip"><span class="hljs-mand">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Session timeout interval in minutes<br>range: "0..35791"</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;escape-character&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Escape character or ASCII decimal equivalent\nvalue orspecial strings NONE,DEFAULT,BREAK</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-character&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect character's decimal equivalent value\nor Character </span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;session-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">The number of outgoing connections<br>range: "0..20"<br>default: "6"</span></div><!-- 
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;transport-output&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use for outgoing connections</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+      <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;acl-in&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">ACL to filter ingoing connections</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">CONNECTION - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: connection</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CONNECTION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: connection</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_connection_schema">a1_connection_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;connection&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Management connection configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;transport-input&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use when connecting to the\nterminal server</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+      <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;transport-preferred&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">The preferred protocol to use<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;acl-out&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">ACL to filter outgoing connections</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cli-white-space-completion&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Command completion on whitespace</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;session-timeout&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Interval for closing connection when there is\nno input traffic</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-mand">&quot;direction&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Include output traffic as well as input\ntraffic<br>Options:<br> in<br> in-out</span></div> 
+      <div class="tooltip"><span class="hljs-mand">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Session timeout interval in minutes<br>range: "0..35791"</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;escape-character&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Escape character or ASCII decimal equivalent\nvalue orspecial strings NONE,DEFAULT,BREAK</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-character&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect character's decimal equivalent value\nor Character </span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;session-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">The number of outgoing connections<br>range: "0..20"<br>default: "6"</span></div><!-- 
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;transport-output&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use for outgoing connections</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+      <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;acl-in&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">ACL to filter ingoing connections</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input-"></span>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRANSPORT-INPUT - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/transport-input/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: transport-input</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_transport-input_schema">a1_transport-input_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>transport-inputbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;transport-input&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use when connecting to the\nterminal server</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRANSPORT-INPUT - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/transport-input/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: transport-input</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_transport-input_schema">a1_transport-input_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>transport-inputbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;transport-input&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use when connecting to the\nterminal server</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRANSPORT-INPUT - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/transport-input/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: transport-input</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRANSPORT-INPUT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/transport-input/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: transport-input</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_transport-input_schema">a1_transport-input_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;transport-input&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use when connecting to the\nterminal server</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-input--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output-"></span>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRANSPORT-OUTPUT - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/transport-output/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: transport-output</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_transport-output_schema">a1_transport-output_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>transport-outputbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;transport-output&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use for outgoing connections</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRANSPORT-OUTPUT - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/transport-output/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: transport-output</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_transport-output_schema">a1_transport-output_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>transport-outputbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;transport-output&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use for outgoing connections</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRANSPORT-OUTPUT - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/transport-output/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: transport-output</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRANSPORT-OUTPUT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/transport-output/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: transport-output</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_transport-output_schema">a1_transport-output_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;transport-output&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Protocols to use for outgoing connections</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-transport-output--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;none&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Not used</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol1&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Transport protocol1<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+    <div class="tooltip"><span class="hljs-mand">&quot;select&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Choose transport protocols<br>Options:<br> none<br> all<br> some</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol2&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Transport protocol2<br>Options:<br> none<br> telnet<br> ssh</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout-"></span>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION-TIMEOUT - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/session-timeout/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: session-timeout</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_session-timeout_schema">a1_session-timeout_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>session-timeoutbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;session-timeout&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Interval for closing connection when there is\nno input traffic</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-mand">&quot;direction&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Include output traffic as well as input\ntraffic<br>Options:<br> in<br> in-out</span></div> 
+    <div class="tooltip"><span class="hljs-mand">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Session timeout interval in minutes<br>range: "0..35791"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION-TIMEOUT - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/session-timeout/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: session-timeout</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_session-timeout_schema">a1_session-timeout_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>session-timeoutbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;session-timeout&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Interval for closing connection when there is\nno input traffic</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-mand">&quot;direction&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Include output traffic as well as input\ntraffic<br>Options:<br> in<br> in-out</span></div> 
+    <div class="tooltip"><span class="hljs-mand">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Session timeout interval in minutes<br>range: "0..35791"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION-TIMEOUT - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/session-timeout/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: session-timeout</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION-TIMEOUT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/connection/session-timeout/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: session-timeout</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_session-timeout_schema">a1_session-timeout_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;session-timeout&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Interval for closing connection when there is\nno input traffic</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--connection-session-timeout--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-mand">&quot;direction&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span>,<!--
+--> <span class="tooltiptext">Include output traffic as well as input\ntraffic<br>Options:<br> in<br> in-out</span></div> 
+    <div class="tooltip"><span class="hljs-mand">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Session timeout interval in minutes<br>range: "0..35791"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode-"></span>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">EXEC-MODE - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/exec-mode/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: exec-mode</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_exec-mode_schema">a1_exec-mode_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>exec-modebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;exec-mode&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Exec Mode Pager  configurtion</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;pager&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Preferred Paging Utility<br>Options:<br> more<br> less<br> none</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">EXEC-MODE - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/exec-mode/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: exec-mode</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_exec-mode_schema">a1_exec-mode_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>exec-modebody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;exec-mode&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Exec Mode Pager  configurtion</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;pager&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Preferred Paging Utility<br>Options:<br> more<br> less<br> none</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">EXEC-MODE - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/exec-mode/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: exec-mode</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">EXEC-MODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-tty-server-cfg:tty/tty-lines/tty-line/{name}/exec-mode/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: exec-mode</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_exec-mode_schema">a1_exec-mode_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;exec-mode&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Exec Mode Pager  configurtion</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-tty-server-cfg-tty-tty-lines-tty-line--name--exec-mode--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;pager&quot;</span>: <span class="hljs-string">&quot;enumeration&quot;</span><!--
+--> <span class="tooltiptext">Preferred Paging Utility<br>Options:<br> more<br> less<br> none</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

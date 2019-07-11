@@ -1,0 +1,1892 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-ipv6-io-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ipv6-io--get">IPV6-IO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ipv6-io-nodes--get">NODES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ipv6-io-nodes-node--node-name---get">NODE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--statistics-">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/statistics/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ipv6-io-nodes-node--node-name--statistics--get">STATISTICS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--statistics-traffic-">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/statistics/traffic/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic--get">TRAFFIC</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/statistics/traffic/ipv6/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6--get">IPV6</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--statistics-traffic-icmp-">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/statistics/traffic/icmp/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-icmp--get">ICMP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-node-discovery-">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/statistics/traffic/ipv6-node-discovery/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-node-discovery--get">IPV6-NODE-DISCOVERY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-ipv6-io-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-ipv6-io-oper@2015-11-09.yang">Cisco-IOS-XR-ipv6-io-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-"></span>
+          <div id="operation-config-ipv6-io--get" class="operation panel" data-traverse-target="operation-config-ipv6-io--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV6-IO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ipv6-io</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ipv6-io_schema">ipv6-io_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-ipv6-io--get"><span class="hljs-attr">&quot;ipv6-io&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 IO Operational Data</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-ipv6-io-nodes--get"><span class="hljs-attr">&quot;nodes&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Node-specific IPv6 IO operational data</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name---get"><span class="hljs-attr">&quot;node&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Node name</span></div>
+          <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics--get"><span class="hljs-attr">&quot;statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Statistical IPv6 network operational data for\na node</i></span><!--
+--></div>
+            <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Traffic statistics for a node</i></span><!--
+--></div>
+              <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-icmp--get"><span class="hljs-attr">&quot;icmp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>ICMP Statistics</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;too-short-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Short Errors</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;total-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Host Unreachable Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Problem Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-rate-limited-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Sent Packets Ratelimited</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;output-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Transmitted</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;unknown-error-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Error</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Messages Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;checksum-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Checksum Errors</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Host Unreachable Sent</span></div>
+              },
+              <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-node-discovery--get"><span class="hljs-attr">&quot;ipv6-node-discovery&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Node Discovery Statistics</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Sent</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Received</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Sent</span></div>
+              },
+              <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6--get"><span class="hljs-attr">&quot;ipv6&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Statistics</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;bad-header-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Header Packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;lisp-decap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Decap errors</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;generated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Output</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;source-routed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Source Routed</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;sent-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast Out</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;unknown-protocol-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Protocol Packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;no-route-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">No Route Packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Encapped packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;received-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast In</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-maximum-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Reach Maximum Drop</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;total-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;fragment-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragmented Packet Count</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;forwarded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Forwarded</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;bad-source-address-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Source Address Packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;fragments&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragments</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;fragmented-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Fragmented</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;too-big-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packet Too Big</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;local-destination-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Local Destination Packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Failures</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;format-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Format Errors</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;truncated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Truncated Packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Decapped packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;hop-count-exceeded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Hop Count Exceeded Packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;unknown-option-type-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Option Type Packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Encapped packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;reassembled-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembled Packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;lisp-encap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Encap errors</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Decapped packets</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;fragment-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragment Failures</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;miscellaneous-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Misc. drops</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Reassembly Timeouts</span></div>
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-"></span>
+          <div id="operation-config-ipv6-io-nodes--get" class="operation panel" data-traverse-target="operation-config-ipv6-io-nodes--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nodes</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/nodes_schema">nodes_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-ipv6-io-nodes--get"><span class="hljs-attr">&quot;nodes&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Node-specific IPv6 IO operational data</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name---get"><span class="hljs-attr">&quot;node&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Node name</span></div>
+        <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics--get"><span class="hljs-attr">&quot;statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Statistical IPv6 network operational data for\na node</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Traffic statistics for a node</i></span><!--
+--></div>
+            <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-icmp--get"><span class="hljs-attr">&quot;icmp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>ICMP Statistics</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;too-short-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Short Errors</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;total-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Host Unreachable Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Problem Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-rate-limited-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Sent Packets Ratelimited</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;output-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Transmitted</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;unknown-error-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Error</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Messages Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;checksum-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Checksum Errors</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Host Unreachable Sent</span></div>
+            },
+            <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-node-discovery--get"><span class="hljs-attr">&quot;ipv6-node-discovery&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Node Discovery Statistics</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Sent</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Received</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Sent</span></div>
+            },
+            <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6--get"><span class="hljs-attr">&quot;ipv6&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Statistics</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;bad-header-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Header Packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;lisp-decap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Decap errors</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;generated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Output</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;source-routed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Source Routed</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;sent-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast Out</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;unknown-protocol-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Protocol Packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;no-route-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">No Route Packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Encapped packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;received-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast In</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-maximum-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Reach Maximum Drop</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;total-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;fragment-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragmented Packet Count</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;forwarded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Forwarded</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;bad-source-address-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Source Address Packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;fragments&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragments</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;fragmented-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Fragmented</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;too-big-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packet Too Big</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;local-destination-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Local Destination Packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Failures</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;format-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Format Errors</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;truncated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Truncated Packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Decapped packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;hop-count-exceeded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Hop Count Exceeded Packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;unknown-option-type-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Option Type Packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Encapped packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;reassembled-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembled Packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;lisp-encap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Encap errors</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Decapped packets</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;fragment-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragment Failures</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;miscellaneous-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Misc. drops</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Reassembly Timeouts</span></div>
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--"></span>
+          <div id="operation-config-ipv6-io-nodes-node--node-name---get" class="operation panel" data-traverse-target="operation-config-ipv6-io-nodes-node--node-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NODE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: node</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/node_schema">node_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name---get"><span class="hljs-attr">&quot;node&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-key">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Node name</span></div>
+      <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics--get"><span class="hljs-attr">&quot;statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Statistical IPv6 network operational data for\na node</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Traffic statistics for a node</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-icmp--get"><span class="hljs-attr">&quot;icmp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>ICMP Statistics</i></span><!--
+--></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;too-short-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Short Errors</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;total-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Host Unreachable Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Problem Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-rate-limited-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Sent Packets Ratelimited</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;output-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Transmitted</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;unknown-error-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Error</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Messages Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;checksum-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Checksum Errors</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Host Unreachable Sent</span></div>
+          },
+          <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-node-discovery--get"><span class="hljs-attr">&quot;ipv6-node-discovery&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Node Discovery Statistics</i></span><!--
+--></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Sent</span></div>
+          },
+          <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6--get"><span class="hljs-attr">&quot;ipv6&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Statistics</i></span><!--
+--></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;bad-header-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Header Packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;lisp-decap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Decap errors</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;generated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Output</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;source-routed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Source Routed</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;sent-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast Out</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;unknown-protocol-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Protocol Packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;no-route-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">No Route Packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Encapped packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast In</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-maximum-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Reach Maximum Drop</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;total-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;fragment-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragmented Packet Count</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;forwarded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Forwarded</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;bad-source-address-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Source Address Packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;fragments&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragments</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;fragmented-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Fragmented</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;too-big-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packet Too Big</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;local-destination-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Local Destination Packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Failures</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;format-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Format Errors</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;truncated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Truncated Packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Decapped packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;hop-count-exceeded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Hop Count Exceeded Packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;unknown-option-type-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Option Type Packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Encapped packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;reassembled-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembled Packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;lisp-encap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Encap errors</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Decapped packets</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;fragment-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragment Failures</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;miscellaneous-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Misc. drops</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Reassembly Timeouts</span></div>
+          }
+        }
+      }
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--statistics-"></span>
+          <div id="operation-config-ipv6-io-nodes-node--node-name--statistics--get" class="operation panel" data-traverse-target="operation-config-ipv6-io-nodes-node--node-name--statistics--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">STATISTICS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/statistics/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: statistics</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/statistics_schema">statistics_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics--get"><span class="hljs-attr">&quot;statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Statistical IPv6 network operational data for\na node</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Traffic statistics for a node</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-icmp--get"><span class="hljs-attr">&quot;icmp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>ICMP Statistics</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;too-short-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Short Errors</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;total-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Host Unreachable Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Problem Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-rate-limited-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Sent Packets Ratelimited</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;output-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Transmitted</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;unknown-error-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Error</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Messages Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;checksum-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Checksum Errors</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Host Unreachable Sent</span></div>
+      },
+      <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-node-discovery--get"><span class="hljs-attr">&quot;ipv6-node-discovery&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Node Discovery Statistics</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Sent</span></div>
+      },
+      <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6--get"><span class="hljs-attr">&quot;ipv6&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Statistics</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;bad-header-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Header Packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;lisp-decap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Decap errors</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;generated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Output</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;source-routed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Source Routed</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast Out</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;unknown-protocol-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Protocol Packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;no-route-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">No Route Packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Encapped packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast In</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-maximum-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Reach Maximum Drop</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;total-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fragment-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragmented Packet Count</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;forwarded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Forwarded</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;bad-source-address-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Source Address Packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fragments&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragments</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fragmented-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Fragmented</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;too-big-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packet Too Big</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;local-destination-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Local Destination Packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Failures</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;format-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Format Errors</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;truncated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Truncated Packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Decapped packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;hop-count-exceeded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Hop Count Exceeded Packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;unknown-option-type-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Option Type Packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Encapped packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;reassembled-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembled Packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;lisp-encap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Encap errors</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Decapped packets</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;fragment-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragment Failures</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;miscellaneous-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Misc. drops</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Reassembly Timeouts</span></div>
+      }
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--statistics-traffic-"></span>
+          <div id="operation-config-ipv6-io-nodes-node--node-name--statistics-traffic--get" class="operation panel" data-traverse-target="operation-config-ipv6-io-nodes-node--node-name--statistics-traffic--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRAFFIC - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/statistics/traffic/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: traffic</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/traffic_schema">traffic_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic--get"><span class="hljs-attr">&quot;traffic&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Traffic statistics for a node</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-icmp--get"><span class="hljs-attr">&quot;icmp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>ICMP Statistics</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;too-short-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Short Errors</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;total-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Host Unreachable Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Problem Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-rate-limited-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Sent Packets Ratelimited</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;output-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Transmitted</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;unknown-error-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Messages Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;checksum-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Checksum Errors</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Host Unreachable Sent</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-node-discovery--get"><span class="hljs-attr">&quot;ipv6-node-discovery&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Node Discovery Statistics</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Sent</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Received</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Sent</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6--get"><span class="hljs-attr">&quot;ipv6&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Statistics</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;bad-header-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Header Packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;lisp-decap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Decap errors</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;generated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Output</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;source-routed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Source Routed</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;sent-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast Out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;unknown-protocol-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Protocol Packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;no-route-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">No Route Packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Encapped packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;received-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast In</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-maximum-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Reach Maximum Drop</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;total-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;fragment-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragmented Packet Count</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;forwarded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Forwarded</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;bad-source-address-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Source Address Packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;fragments&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragments</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;fragmented-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Fragmented</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;too-big-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packet Too Big</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;local-destination-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Local Destination Packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Failures</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;format-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Format Errors</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;truncated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Truncated Packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Decapped packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;hop-count-exceeded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Hop Count Exceeded Packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;unknown-option-type-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Option Type Packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Encapped packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;reassembled-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembled Packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;lisp-encap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Encap errors</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Decapped packets</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;fragment-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragment Failures</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;miscellaneous-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Misc. drops</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Reassembly Timeouts</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-"></span>
+          <div id="operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6--get" class="operation panel" data-traverse-target="operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV6 - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/statistics/traffic/ipv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ipv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ipv6_schema">ipv6_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6--get"><span class="hljs-attr">&quot;ipv6&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Statistics</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;bad-header-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Header Packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;lisp-decap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Decap errors</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;generated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Output</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;source-routed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Source Routed</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast Out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;unknown-protocol-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Protocol Packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;no-route-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">No Route Packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Encapped packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-multicast-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Multicast In</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-maximum-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Reach Maximum Drop</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;total-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;fragment-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragmented Packet Count</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;forwarded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Forwarded</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;bad-source-address-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Bad Source Address Packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;fragments&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragments</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;fragmented-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packets Fragmented</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;too-big-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Packet Too Big</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;local-destination-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Local Destination Packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembly Failures</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;format-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Format Errors</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;truncated-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Truncated Packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Decapped packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;hop-count-exceeded-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Hop Count Exceeded Packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;unknown-option-type-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Option Type Packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v4-encap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv4 Encapped packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;reassembled-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reassembled Packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;lisp-encap-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp Encap errors</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;lisp-v6-decap-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Lisp IPv6 Decapped packets</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;fragment-failures&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Fragment Failures</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;miscellaneous-drops&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Misc. drops</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Reassembly Timeouts</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--statistics-traffic-icmp-"></span>
+          <div id="operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-icmp--get" class="operation panel" data-traverse-target="operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-icmp--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ICMP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/statistics/traffic/icmp/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: icmp</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/icmp_schema">icmp_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-icmp--get"><span class="hljs-attr">&quot;icmp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>ICMP Statistics</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;too-short-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Short Errors</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;total-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Host Unreachable Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Problem Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-routing-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Route Unreachable Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-rate-limited-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Sent Packets Ratelimited</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;output-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Transmitted</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-too-big-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Too Big Messages Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;unknown-error-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Unknown Type Messages Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-hop-count-expired-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Hop Count Expired Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-reply-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Reply Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-parameter-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Error Messages Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-admin-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Admin Unreachable Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-unreachable-port-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Port Unreachable Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-option-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Option Messages Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-echo-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Echo Request Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-unknown-timeout-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unknown Timeout Messages Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;checksum-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Checksum Errors</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-parameter-header-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Parameter Next Header Messages Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-reassembly-timeouts&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Reassembly Timeouts</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-unknown-type-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Unreachable Unknown Messages Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-address-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Addr Unreachable Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-unreachable-neighbor-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Host Unreachable Sent</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-ipv6-io-oper-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-node-discovery-"></span>
+          <div id="operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-node-discovery--get" class="operation panel" data-traverse-target="operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-node-discovery--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV6-NODE-DISCOVERY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/{node-name}/statistics/traffic/ipv6-node-discovery/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ipv6-node-discovery</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">node-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of node-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ipv6-node-discovery_schema">ipv6-node-discovery_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-ipv6-io-nodes-node--node-name--statistics-traffic-ipv6-node-discovery--get"><span class="hljs-attr">&quot;ipv6-node-discovery&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>IPv6 Node Discovery Statistics</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Advertisements Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Solicitations Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-router-solicitation-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Router Solicitations Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-redirect-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Redirect Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-neighbor-advertisement-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">ICMP Neighbor Advertisements Sent</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

@@ -1,0 +1,2814 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-config-cfgmgr-exec-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager--get">CONFIG-MANAGER</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global--get">GLOBAL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-commit-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-commit/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-config-commit--get">CONFIG-COMMIT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-commit-commits-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-commit/commits/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-config-commit-commits--get">COMMITS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-commit-commits-commit--commit--">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-commit/commits/commit/{commit}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-config-commit-commits-commit--commit---get">COMMIT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-history-tables--get">HISTORY-TABLES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-history-tables-history-table--history-type---get">HISTORY-TABLE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history---get">HISTORY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info--get">INFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/alarm-info/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info--get">ALARM-INFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/cfscheck-info/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info--get">CFSCHECK-INFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/commit-info/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info--get">COMMIT-INFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/oir-info/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info--get">OIR-INFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/shutdown-info/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info--get">SHUTDOWN-INFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/startup-info/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info--get">STARTUP-INFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/backup-info/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info--get">BACKUP-INFO</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-session-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-session/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-config-session--get">CONFIG-SESSION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-session-sessions-">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-session/sessions/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-config-session-sessions--get">SESSIONS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-session-sessions-session--session--">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-session/sessions/session/{session}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-config-manager-global-config-session-sessions-session--session---get">SESSION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-config-cfgmgr-exec-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-config-cfgmgr-exec-oper@2017-09-07.yang">Cisco-IOS-XR-config-cfgmgr-exec-oper@2017-09-07.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-"></span>
+          <div id="operation-config-config-manager--get" class="operation panel" data-traverse-target="operation-config-config-manager--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CONFIG-MANAGER - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: config-manager</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/config-manager_schema">config-manager_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager--get"><span class="hljs-attr">&quot;config-manager&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration <*> Global path information</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-config-manager-global--get"><span class="hljs-attr">&quot;global&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration <*> Global path information</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables--get"><span class="hljs-attr">&quot;history-tables&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration History <*> Global path\ninformation</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type---get"><span class="hljs-attr">&quot;history-table&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-key">&quot;history-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Type of History</span></div>
+            <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history---get"><span class="hljs-attr">&quot;history&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>History Record</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info--get"><span class="hljs-attr">&quot;info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Content of the history</i></span><!--
+--></div>
+                  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info--get"><span class="hljs-attr">&quot;backup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>backup info</i></span><!--
+--></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+                  },
+                  <div class="tooltip"><span class="hljs-leaf">&quot;a&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">B</span></div>
+                  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info--get"><span class="hljs-attr">&quot;cfscheck-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>cfscheck info</i></span><!--
+--></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+                  },
+                  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info--get"><span class="hljs-attr">&quot;alarm-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>alarm info</i></span><!--
+--></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;where&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Where</span></div>
+                  },
+                  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info--get"><span class="hljs-attr">&quot;oir-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>oir info</i></span><!--
+--></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;config-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config Type</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;operation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Operation</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;config-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Config Name</span></div>
+                  },
+                  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info--get"><span class="hljs-attr">&quot;startup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>startup info</i></span><!--
+--></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;boot-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Boot Path</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;how-booted&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">How Booted</span></div>
+                  },
+                  <div class="tooltip"><span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">type</span></div>
+                  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info--get"><span class="hljs-attr">&quot;shutdown-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>shutdown info</i></span><!--
+--></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+                  },
+                  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info--get"><span class="hljs-attr">&quot;commit-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>commit info</i></span><!--
+--></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client Name</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+                  }
+                },
+                <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+                <div class="tooltip"><span class="hljs-key">&quot;history&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">History Record</span></div>
+              }
+            ]
+          }
+        ]
+      },
+      <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit--get"><span class="hljs-attr">&quot;config-commit&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Commit <*> Global path\ninformation</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit-commits--get"><span class="hljs-attr">&quot;commits&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Commit List Detail</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit-commits-commit--commit---get"><span class="hljs-attr">&quot;commit&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Each Session Details</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client Name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;commit&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Each Session Details</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+            }
+          ]
+        }
+      },
+      <div class="tooltip"><a href="#operation-config-config-manager-global-config-session--get"><span class="hljs-attr">&quot;config-session&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Session <*> Global path\ninformation</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-config-manager-global-config-session-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Session Detail</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-config-manager-global-config-session-sessions-session--session---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Each Session Details</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Session Id</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;trial-flag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Trial Flag</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;session&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Each Session Details</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;pid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">PID</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Process Name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Node Name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;tty-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TtyName</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Elapsed Time</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;lock-flag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Lock Flag</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client Name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">UserId</span></div>
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-"></span>
+          <div id="operation-config-config-manager-global--get" class="operation panel" data-traverse-target="operation-config-config-manager-global--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">GLOBAL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: global</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/global_schema">global_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global--get"><span class="hljs-attr">&quot;global&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration <*> Global path information</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables--get"><span class="hljs-attr">&quot;history-tables&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration History <*> Global path\ninformation</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type---get"><span class="hljs-attr">&quot;history-table&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-key">&quot;history-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Type of History</span></div>
+          <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history---get"><span class="hljs-attr">&quot;history&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>History Record</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info--get"><span class="hljs-attr">&quot;info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Content of the history</i></span><!--
+--></div>
+                <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info--get"><span class="hljs-attr">&quot;backup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>backup info</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+                },
+                <div class="tooltip"><span class="hljs-leaf">&quot;a&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">B</span></div>
+                <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info--get"><span class="hljs-attr">&quot;cfscheck-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>cfscheck info</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+                },
+                <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info--get"><span class="hljs-attr">&quot;alarm-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>alarm info</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;where&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Where</span></div>
+                },
+                <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info--get"><span class="hljs-attr">&quot;oir-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>oir info</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;config-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config Type</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;operation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Operation</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;config-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Config Name</span></div>
+                },
+                <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info--get"><span class="hljs-attr">&quot;startup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>startup info</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;boot-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Boot Path</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;how-booted&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">How Booted</span></div>
+                },
+                <div class="tooltip"><span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">type</span></div>
+                <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info--get"><span class="hljs-attr">&quot;shutdown-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>shutdown info</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+                },
+                <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info--get"><span class="hljs-attr">&quot;commit-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>commit info</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client Name</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+                }
+              },
+              <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+              <div class="tooltip"><span class="hljs-key">&quot;history&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">History Record</span></div>
+            }
+          ]
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit--get"><span class="hljs-attr">&quot;config-commit&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Commit <*> Global path\ninformation</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit-commits--get"><span class="hljs-attr">&quot;commits&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Commit List Detail</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit-commits-commit--commit---get"><span class="hljs-attr">&quot;commit&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Each Session Details</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;commit&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Each Session Details</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+          }
+        ]
+      }
+    },
+    <div class="tooltip"><a href="#operation-config-config-manager-global-config-session--get"><span class="hljs-attr">&quot;config-session&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Session <*> Global path\ninformation</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-config-manager-global-config-session-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Session Detail</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-config-manager-global-config-session-sessions-session--session---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Each Session Details</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Session Id</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;trial-flag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Trial Flag</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;session&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Each Session Details</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;pid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">PID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Process Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Node Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;tty-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TtyName</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Elapsed Time</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;lock-flag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Lock Flag</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client Name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">UserId</span></div>
+          }
+        ]
+      }
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-commit-"></span>
+          <div id="operation-config-config-manager-global-config-commit--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-config-commit--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CONFIG-COMMIT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-commit/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: config-commit</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/config-commit_schema">config-commit_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit--get"><span class="hljs-attr">&quot;config-commit&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Commit <*> Global path\ninformation</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit-commits--get"><span class="hljs-attr">&quot;commits&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Commit List Detail</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit-commits-commit--commit---get"><span class="hljs-attr">&quot;commit&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Each Session Details</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;commit&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Each Session Details</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-commit-commits-"></span>
+          <div id="operation-config-config-manager-global-config-commit-commits--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-config-commit-commits--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">COMMITS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-commit/commits/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: commits</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/commits_schema">commits_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit-commits--get"><span class="hljs-attr">&quot;commits&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Commit List Detail</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit-commits-commit--commit---get"><span class="hljs-attr">&quot;commit&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Each Session Details</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;commit&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Each Session Details</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-commit-commits-commit--commit--"></span>
+          <div id="operation-config-config-manager-global-config-commit-commits-commit--commit---get" class="operation panel" data-traverse-target="operation-config-config-manager-global-config-commit-commits-commit--commit---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">COMMIT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-commit/commits/commit/{commit}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: commit</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">commit:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of commit</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/commit_schema">commit_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-config-commit-commits-commit--commit---get"><span class="hljs-attr">&quot;commit&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Each Session Details</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client name</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+      <div class="tooltip"><span class="hljs-key">&quot;commit&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Each Session Details</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-"></span>
+          <div id="operation-config-config-manager-global-history-tables--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-history-tables--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HISTORY-TABLES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: history-tables</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/history-tables_schema">history-tables_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables--get"><span class="hljs-attr">&quot;history-tables&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration History <*> Global path\ninformation</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type---get"><span class="hljs-attr">&quot;history-table&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;history-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Type of History</span></div>
+        <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history---get"><span class="hljs-attr">&quot;history&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>History Record</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info--get"><span class="hljs-attr">&quot;info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Content of the history</i></span><!--
+--></div>
+              <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info--get"><span class="hljs-attr">&quot;backup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>backup info</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+              },
+              <div class="tooltip"><span class="hljs-leaf">&quot;a&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">B</span></div>
+              <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info--get"><span class="hljs-attr">&quot;cfscheck-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>cfscheck info</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+              },
+              <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info--get"><span class="hljs-attr">&quot;alarm-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>alarm info</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;where&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Where</span></div>
+              },
+              <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info--get"><span class="hljs-attr">&quot;oir-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>oir info</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;config-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config Type</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;operation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Operation</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;config-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Config Name</span></div>
+              },
+              <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info--get"><span class="hljs-attr">&quot;startup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>startup info</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;boot-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Boot Path</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;how-booted&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">How Booted</span></div>
+              },
+              <div class="tooltip"><span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">type</span></div>
+              <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info--get"><span class="hljs-attr">&quot;shutdown-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>shutdown info</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+              },
+              <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info--get"><span class="hljs-attr">&quot;commit-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>commit info</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client name</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+              }
+            },
+            <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;history&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">History Record</span></div>
+          }
+        ]
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--"></span>
+          <div id="operation-config-config-manager-global-history-tables-history-table--history-type---get" class="operation panel" data-traverse-target="operation-config-config-manager-global-history-tables-history-table--history-type---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HISTORY-TABLE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: history-table</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history-type</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/history-table_schema">history-table_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type---get"><span class="hljs-attr">&quot;history-table&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-key">&quot;history-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Type of History</span></div>
+      <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history---get"><span class="hljs-attr">&quot;history&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>History Record</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info--get"><span class="hljs-attr">&quot;info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Content of the history</i></span><!--
+--></div>
+            <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info--get"><span class="hljs-attr">&quot;backup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>backup info</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+            },
+            <div class="tooltip"><span class="hljs-leaf">&quot;a&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">B</span></div>
+            <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info--get"><span class="hljs-attr">&quot;cfscheck-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>cfscheck info</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+            },
+            <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info--get"><span class="hljs-attr">&quot;alarm-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>alarm info</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;where&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Where</span></div>
+            },
+            <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info--get"><span class="hljs-attr">&quot;oir-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>oir info</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;config-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config Type</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;operation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Operation</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;config-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Config Name</span></div>
+            },
+            <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info--get"><span class="hljs-attr">&quot;startup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>startup info</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;boot-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Boot Path</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;how-booted&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">How Booted</span></div>
+            },
+            <div class="tooltip"><span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">type</span></div>
+            <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info--get"><span class="hljs-attr">&quot;shutdown-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>shutdown info</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+            },
+            <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info--get"><span class="hljs-attr">&quot;commit-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>commit info</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+            }
+          },
+          <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;history&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">History Record</span></div>
+        }
+      ]
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--"></span>
+          <div id="operation-config-config-manager-global-history-tables-history-table--history-type--history--history---get" class="operation panel" data-traverse-target="operation-config-config-manager-global-history-tables-history-table--history-type--history--history---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">HISTORY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: history</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history-type</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/history_schema">history_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history---get"><span class="hljs-attr">&quot;history&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>History Record</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info--get"><span class="hljs-attr">&quot;info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Content of the history</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info--get"><span class="hljs-attr">&quot;backup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>backup info</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+      },
+      <div class="tooltip"><span class="hljs-leaf">&quot;a&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">B</span></div>
+      <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info--get"><span class="hljs-attr">&quot;cfscheck-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>cfscheck info</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+      },
+      <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info--get"><span class="hljs-attr">&quot;alarm-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>alarm info</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;where&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Where</span></div>
+      },
+      <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info--get"><span class="hljs-attr">&quot;oir-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>oir info</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;config-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config Type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;operation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Operation</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;config-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Config Name</span></div>
+      },
+      <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info--get"><span class="hljs-attr">&quot;startup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>startup info</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;boot-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Boot Path</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;how-booted&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">How Booted</span></div>
+      },
+      <div class="tooltip"><span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">type</span></div>
+      <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info--get"><span class="hljs-attr">&quot;shutdown-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>shutdown info</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+      },
+      <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info--get"><span class="hljs-attr">&quot;commit-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>commit info</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+      }
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;history&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">History Record</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-"></span>
+          <div id="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: info</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history-type</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/info_schema">info_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info--get"><span class="hljs-attr">&quot;info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Content of the history</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info--get"><span class="hljs-attr">&quot;backup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>backup info</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;a&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">B</span></div>
+    <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info--get"><span class="hljs-attr">&quot;cfscheck-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>cfscheck info</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info--get"><span class="hljs-attr">&quot;alarm-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>alarm info</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;where&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Where</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info--get"><span class="hljs-attr">&quot;oir-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>oir info</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;config-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config Type</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;operation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Operation</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;config-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Config Name</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info--get"><span class="hljs-attr">&quot;startup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>startup info</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;boot-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Boot Path</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;how-booted&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">How Booted</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">type</span></div>
+    <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info--get"><span class="hljs-attr">&quot;shutdown-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>shutdown info</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info--get"><span class="hljs-attr">&quot;commit-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>commit info</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client name</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info-"></span>
+          <div id="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ALARM-INFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/alarm-info/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: alarm-info</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history-type</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/alarm-info_schema">alarm-info_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-alarm-info--get"><span class="hljs-attr">&quot;alarm-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>alarm info</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;where&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Where</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info-"></span>
+          <div id="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CFSCHECK-INFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/cfscheck-info/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: cfscheck-info</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history-type</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/cfscheck-info_schema">cfscheck-info_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-cfscheck-info--get"><span class="hljs-attr">&quot;cfscheck-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>cfscheck info</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info-"></span>
+          <div id="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">COMMIT-INFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/commit-info/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: commit-info</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history-type</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/commit-info_schema">commit-info_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-commit-info--get"><span class="hljs-attr">&quot;commit-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>commit info</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Comment</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;commit-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">CommitId</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Label</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">UserId</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;line&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Line</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info-"></span>
+          <div id="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">OIR-INFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/oir-info/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: oir-info</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history-type</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/oir-info_schema">oir-info_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-oir-info--get"><span class="hljs-attr">&quot;oir-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>oir info</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;config-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Config Type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;operation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Operation</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;config-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Config Name</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info-"></span>
+          <div id="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SHUTDOWN-INFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/shutdown-info/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: shutdown-info</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history-type</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/shutdown-info_schema">shutdown-info_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-shutdown-info--get"><span class="hljs-attr">&quot;shutdown-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>shutdown info</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info-"></span>
+          <div id="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">STARTUP-INFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/startup-info/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: startup-info</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history-type</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/startup-info_schema">startup-info_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-startup-info--get"><span class="hljs-attr">&quot;startup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>startup info</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;boot-path&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Boot Path</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;how-booted&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">How Booted</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info-"></span>
+          <div id="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">BACKUP-INFO - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/history-tables/history-table/{history-type}/history/{history}/info/backup-info/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: backup-info</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history-type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history-type</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">history:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of history</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/backup-info_schema">backup-info_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-history-tables-history-table--history-type--history--history--info-backup-info--get"><span class="hljs-attr">&quot;backup-info&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>backup info</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;comment&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Comment</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-session-"></span>
+          <div id="operation-config-config-manager-global-config-session--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-config-session--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CONFIG-SESSION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-session/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: config-session</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/config-session_schema">config-session_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-config-session--get"><span class="hljs-attr">&quot;config-session&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Session <*> Global path\ninformation</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-config-manager-global-config-session-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Session Detail</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-config-manager-global-config-session-sessions-session--session---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Each Session Details</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Session Id</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;trial-flag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Trial Flag</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;session&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Each Session Details</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;pid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">PID</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Process Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Node Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;tty-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TtyName</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Elapsed Time</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;lock-flag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Lock Flag</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">UserId</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-session-sessions-"></span>
+          <div id="operation-config-config-manager-global-config-session-sessions--get" class="operation panel" data-traverse-target="operation-config-config-manager-global-config-session-sessions--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSIONS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-session/sessions/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sessions</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/sessions_schema">sessions_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-config-session-sessions--get"><span class="hljs-attr">&quot;sessions&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Show Configuration Session Detail</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-config-manager-global-config-session-sessions-session--session---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Each Session Details</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Session Id</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;trial-flag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Trial Flag</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;session&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Each Session Details</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;pid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">PID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Process Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Node Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;tty-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TtyName</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Elapsed Time</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;lock-flag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Lock Flag</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">UserId</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-config-cfgmgr-exec-oper-config-manager-global-config-session-sessions-session--session--"></span>
+          <div id="operation-config-config-manager-global-config-session-sessions-session--session---get" class="operation panel" data-traverse-target="operation-config-config-manager-global-config-session-sessions-session--session---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-config-cfgmgr-exec-oper:config-manager/global/config-session/sessions/session/{session}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: session</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">session:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of session</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/session_schema">session_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-config-manager-global-config-session-sessions-session--session---get"><span class="hljs-attr">&quot;session&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Each Session Details</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Session Id</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;trial-flag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Trial Flag</span></div>
+      <div class="tooltip"><span class="hljs-key">&quot;session&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Each Session Details</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Timestamp</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;pid&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">PID</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;process-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Process Name</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;node-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Node Name</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tty-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TtyName</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;elapsed-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Elapsed Time</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;lock-flag&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Lock Flag</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Client Name</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;user-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">UserId</span></div>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

@@ -1,0 +1,2843 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-flowspec-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-">Cisco-IOS-XR-flowspec-oper:flow-spec/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec--get">FLOW-SPEC</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-clients-">Cisco-IOS-XR-flowspec-oper:flow-spec/clients/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-clients--get">CLIENTS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-clients-client-">Cisco-IOS-XR-flowspec-oper:flow-spec/clients/client/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-clients-client--get">CLIENT</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-summary-">Cisco-IOS-XR-flowspec-oper:flow-spec/summary/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-summary--get">SUMMARY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs--get">VRFS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name---get">VRF</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs--get">AFS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name---get">AF</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--table-summary-">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/table-summary/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--table-summary--get">TABLE-SUMMARY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/nlris/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris--get">NLRIS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/nlris/nlri/{nlri-bytes}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes---get">NLRI</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/nlris/nlri/{nlri-bytes}/flow-statistics/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics--get">FLOW-STATISTICS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified-">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/nlris/nlri/{nlri-bytes}/flow-statistics/classified/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get">CLASSIFIED</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped-">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/nlris/nlri/{nlri-bytes}/flow-statistics/dropped/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get">DROPPED</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/flows/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows--get">FLOWS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/flows/flow/{flow-notation}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation---get">FLOW</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/flows/flow/{flow-notation}/flow-statistics/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics--get">FLOW-STATISTICS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified-">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/flows/flow/{flow-notation}/flow-statistics/classified/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get">CLASSIFIED</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped-">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/flows/flow/{flow-notation}/flow-statistics/dropped/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get">DROPPED</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-flowspec-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-flowspec-oper@2015-11-09.yang">Cisco-IOS-XR-flowspec-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-"></span>
+          <div id="operation-config-flow-spec--get" class="operation panel" data-traverse-target="operation-config-flow-spec--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FLOW-SPEC - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: flow-spec</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/flow-spec_schema">flow-spec_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec--get"><span class="hljs-attr">&quot;flow-spec&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>FlowSpec information</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-flow-spec-clients--get"><span class="hljs-attr">&quot;clients&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of Client</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-flow-spec-clients-client--get"><span class="hljs-attr">&quot;client&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">FlowSpec client ID</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">FlowSpec Client Type</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State of FS client</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;client-flows&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of client flows</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs--get"><span class="hljs-attr">&quot;vrfs&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of VRF</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name---get"><span class="hljs-attr">&quot;vrf&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-key">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Name</span></div>
+          <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs--get"><span class="hljs-attr">&quot;afs&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of AF</i></span><!--
+--></div>
+            <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name---get"><span class="hljs-attr">&quot;af&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-key">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set string</span></div>
+                <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--table-summary--get"><span class="hljs-attr">&quot;table-summary&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>FlowSpec summary for VRF+AFI tables</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;service-policies&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total number of attached service policies</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;local-install-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Local installation of flowspec rules</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;total-flows&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Total number of flows</span></div>
+                },
+                <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris--get"><span class="hljs-attr">&quot;nlris&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of NLRI</i></span><!--
+--></div>
+                  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes---get"><span class="hljs-attr">&quot;nlri&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                    {
+                      <div class="tooltip"><span class="hljs-key">&quot;nlri-bytes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter NLRI hex string</span></div>
+                      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+                        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                        },
+                        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                        }
+                      }
+                    }
+                  ]
+                },
+                <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows--get"><span class="hljs-attr">&quot;flows&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Total flows</i></span><!--
+--></div>
+                  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation---get"><span class="hljs-attr">&quot;flow&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                    {
+                      <div class="tooltip"><span class="hljs-key">&quot;flow-notation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter the Flow notation string</span></div>
+                      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+                        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                        },
+                        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                          <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-flow-spec-summary--get"><span class="hljs-attr">&quot;summary&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>FlowSpec summary</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;vrfafi-tables&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total VRF+AFI tables</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;flows&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Total flows</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-clients-"></span>
+          <div id="operation-config-flow-spec-clients--get" class="operation panel" data-traverse-target="operation-config-flow-spec-clients--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CLIENTS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/clients/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: clients</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/clients_schema">clients_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-clients--get"><span class="hljs-attr">&quot;clients&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of Client</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-flow-spec-clients-client--get"><span class="hljs-attr">&quot;client&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">FlowSpec client ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;client-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">FlowSpec Client Type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;client-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State of FS client</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;client-flows&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of client flows</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-clients-client-"></span>
+          <div id="operation-config-flow-spec-clients-client--get" class="operation panel" data-traverse-target="operation-config-flow-spec-clients-client--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CLIENT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/clients/client/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: client</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/client_schema">client_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-clients-client--get"><span class="hljs-attr">&quot;client&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">FlowSpec client ID</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">FlowSpec Client Type</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">State of FS client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;client-flows&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of client flows</span></div>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-summary-"></span>
+          <div id="operation-config-flow-spec-summary--get" class="operation panel" data-traverse-target="operation-config-flow-spec-summary--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/summary/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/summary_schema">summary_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-summary--get"><span class="hljs-attr">&quot;summary&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>FlowSpec summary</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;vrfafi-tables&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total VRF+AFI tables</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;flows&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Total flows</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-"></span>
+          <div id="operation-config-flow-spec-vrfs--get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">VRFS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: vrfs</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/vrfs_schema">vrfs_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs--get"><span class="hljs-attr">&quot;vrfs&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of VRF</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name---get"><span class="hljs-attr">&quot;vrf&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Name</span></div>
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs--get"><span class="hljs-attr">&quot;afs&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of AF</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name---get"><span class="hljs-attr">&quot;af&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-key">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set string</span></div>
+              <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--table-summary--get"><span class="hljs-attr">&quot;table-summary&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>FlowSpec summary for VRF+AFI tables</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;service-policies&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total number of attached service policies</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;local-install-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Local installation of flowspec rules</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;total-flows&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Total number of flows</span></div>
+              },
+              <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris--get"><span class="hljs-attr">&quot;nlris&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of NLRI</i></span><!--
+--></div>
+                <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes---get"><span class="hljs-attr">&quot;nlri&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                  {
+                    <div class="tooltip"><span class="hljs-key">&quot;nlri-bytes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter NLRI hex string</span></div>
+                    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+                      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                      },
+                      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                      }
+                    }
+                  }
+                ]
+              },
+              <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows--get"><span class="hljs-attr">&quot;flows&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of Flow</i></span><!--
+--></div>
+                <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation---get"><span class="hljs-attr">&quot;flow&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                  {
+                    <div class="tooltip"><span class="hljs-key">&quot;flow-notation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter the Flow notation string</span></div>
+                    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+                      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                      },
+                      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                        <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name---get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">VRF - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: vrf</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/vrf_schema">vrf_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name---get"><span class="hljs-attr">&quot;vrf&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-key">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Name</span></div>
+      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs--get"><span class="hljs-attr">&quot;afs&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of AF</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name---get"><span class="hljs-attr">&quot;af&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-key">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set string</span></div>
+            <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--table-summary--get"><span class="hljs-attr">&quot;table-summary&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>FlowSpec summary for VRF+AFI tables</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;service-policies&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total number of attached service policies</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;local-install-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Local installation of flowspec rules</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;total-flows&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Total number of flows</span></div>
+            },
+            <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris--get"><span class="hljs-attr">&quot;nlris&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of NLRI</i></span><!--
+--></div>
+              <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes---get"><span class="hljs-attr">&quot;nlri&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                {
+                  <div class="tooltip"><span class="hljs-key">&quot;nlri-bytes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter NLRI hex string</span></div>
+                  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+                    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                    },
+                    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                    }
+                  }
+                }
+              ]
+            },
+            <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows--get"><span class="hljs-attr">&quot;flows&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of Flow</i></span><!--
+--></div>
+              <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation---get"><span class="hljs-attr">&quot;flow&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                {
+                  <div class="tooltip"><span class="hljs-key">&quot;flow-notation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter the Flow notation string</span></div>
+                  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+                    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                    },
+                    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                      <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs--get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">AFS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: afs</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/afs_schema">afs_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs--get"><span class="hljs-attr">&quot;afs&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of AF</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name---get"><span class="hljs-attr">&quot;af&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set string</span></div>
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--table-summary--get"><span class="hljs-attr">&quot;table-summary&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>FlowSpec summary for VRF+AFI tables</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;service-policies&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total number of attached service policies</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;local-install-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Local installation of flowspec rules</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;total-flows&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Total number of flows</span></div>
+        },
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris--get"><span class="hljs-attr">&quot;nlris&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of NLRI</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes---get"><span class="hljs-attr">&quot;nlri&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-key">&quot;nlri-bytes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter NLRI hex string</span></div>
+              <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+                <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                },
+                <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                }
+              }
+            }
+          ]
+        },
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows--get"><span class="hljs-attr">&quot;flows&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of Flow</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation---get"><span class="hljs-attr">&quot;flow&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-key">&quot;flow-notation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter the Flow notation string</span></div>
+              <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+                <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                },
+                <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name---get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">AF - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: af</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/af_schema">af_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name---get"><span class="hljs-attr">&quot;af&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-key">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Set string</span></div>
+      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--table-summary--get"><span class="hljs-attr">&quot;table-summary&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>FlowSpec summary for VRF+AFI tables</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;service-policies&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total number of attached service policies</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;local-install-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Local installation of flowspec rules</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;total-flows&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Total number of flows</span></div>
+      },
+      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris--get"><span class="hljs-attr">&quot;nlris&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of NLRI</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes---get"><span class="hljs-attr">&quot;nlri&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-key">&quot;nlri-bytes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter NLRI hex string</span></div>
+            <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+              <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+              },
+              <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+              }
+            }
+          }
+        ]
+      },
+      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows--get"><span class="hljs-attr">&quot;flows&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of Flow</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation---get"><span class="hljs-attr">&quot;flow&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-key">&quot;flow-notation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter the Flow notation string</span></div>
+            <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+              <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+              },
+              <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--table-summary-"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--table-summary--get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--table-summary--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TABLE-SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/table-summary/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: table-summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/table-summary_schema">table-summary_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--table-summary--get"><span class="hljs-attr">&quot;table-summary&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>FlowSpec summary for VRF+AFI tables</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;service-policies&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total number of attached service policies</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;local-install-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Local installation of flowspec rules</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;total-flows&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Total number of flows</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris--get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NLRIS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/nlris/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nlris</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/nlris_schema">nlris_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris--get"><span class="hljs-attr">&quot;nlris&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of NLRI</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes---get"><span class="hljs-attr">&quot;nlri&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;nlri-bytes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter NLRI hex string</span></div>
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+          },
+          <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+          }
+        }
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes---get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NLRI - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/nlris/nlri/{nlri-bytes}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nlri</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">nlri-bytes:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of nlri-bytes</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/nlri_schema">nlri_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes---get"><span class="hljs-attr">&quot;nlri&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-key">&quot;nlri-bytes&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter NLRI hex string</span></div>
+      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+        },
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+        }
+      }
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics--get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FLOW-STATISTICS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/nlris/nlri/{nlri-bytes}/flow-statistics/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: flow-statistics</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">nlri-bytes:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of nlri-bytes</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/flow-statistics_schema">flow-statistics_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified-"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CLASSIFIED - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/nlris/nlri/{nlri-bytes}/flow-statistics/classified/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: classified</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">nlri-bytes:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of nlri-bytes</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/classified_schema">classified_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped-"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">DROPPED - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/nlris/nlri/{nlri-bytes}/flow-statistics/dropped/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: dropped</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">nlri-bytes:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of nlri-bytes</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/dropped_schema">dropped_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--nlris-nlri--nlri-bytes--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows--get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FLOWS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/flows/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: flows</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/flows_schema">flows_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows--get"><span class="hljs-attr">&quot;flows&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Table of Flow</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation---get"><span class="hljs-attr">&quot;flow&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;flow-notation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter the Flow notation string</span></div>
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+          },
+          <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+          }
+        }
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation---get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FLOW - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/flows/flow/{flow-notation}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: flow</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">flow-notation:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of flow-notation</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/flow_schema">flow_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation---get"><span class="hljs-attr">&quot;flow&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-key">&quot;flow-notation&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Enter the Flow notation string</span></div>
+      <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+        },
+        <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+        }
+      }
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics--get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">FLOW-STATISTICS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/flows/flow/{flow-notation}/flow-statistics/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: flow-statistics</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">flow-notation:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of flow-notation</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/flow-statistics_schema">flow-statistics_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics--get"><span class="hljs-attr">&quot;flow-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Flow statistics</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified-"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CLASSIFIED - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/flows/flow/{flow-notation}/flow-statistics/classified/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: classified</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">flow-notation:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of flow-notation</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/classified_schema">classified_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-classified--get"><span class="hljs-attr">&quot;classified&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Classified statistics</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-flowspec-oper-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped-"></span>
+          <div id="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get" class="operation panel" data-traverse-target="operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">DROPPED - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-flowspec-oper:flow-spec/vrfs/vrf/{vrf-name}/afs/af/{af-name}/flows/flow/{flow-notation}/flow-statistics/dropped/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: dropped</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">af-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of af-name</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">flow-notation:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of flow-notation</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/dropped_schema">dropped_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-flow-spec-vrfs-vrf--vrf-name--afs-af--af-name--flows-flow--flow-notation--flow-statistics-dropped--get"><span class="hljs-attr">&quot;dropped&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Drop statistics</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;bytes&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Number of bytes</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of packets</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

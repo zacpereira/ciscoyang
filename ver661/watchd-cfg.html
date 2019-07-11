@@ -1,0 +1,1578 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-watchd-cfg API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-watchd-cfg-watchdog-">Cisco-IOS-XR-watchd-cfg:watchdog/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">WATCHDOG</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory-">Cisco-IOS-XR-watchd-cfg:watchdog/threshold-memory/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">THRESHOLD-MEMORY</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit-">Cisco-IOS-XR-watchd-cfg:watchdog/disk-limit/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">DISK-LIMIT</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-watchd-cfg-watchd-">Cisco-IOS-XR-watchd-cfg:watchd/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">WATCHD</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-watchd-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-watchd-cfg@2015-11-09.yang">Cisco-IOS-XR-watchd-cfg@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                  <h5>Leaf Color Code:</h5>                    <span class="hljs-key">&emsp;&emsp;&emsp;Key&nbsp</span>                    <span class="hljs-mand">Mandatory&nbsp</span>                    <span class="hljs-leaf">Optional</span>                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-watchd-cfg-watchdog-"></span>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">WATCHDOG - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: watchdog</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/watchdog_schema">watchdog_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>watchdogbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;watchdog&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Watchdog configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;overload-throttle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Watchdog overload throttle timeout configuration<br>range: "5..120"<br>units: "second"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;restart-memoryhog-disable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Disable watchdog restart memory-hog</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;disk-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Disk thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;restart-deadlock-disable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Disable watchdog restart deadlock</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;threshold-memory&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Memory thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;overload-notification&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable critical event notification</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">WATCHDOG - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: watchdog</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/watchdog_schema">watchdog_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>watchdogbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;watchdog&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Watchdog configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;overload-throttle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Watchdog overload throttle timeout configuration<br>range: "5..120"<br>units: "second"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;restart-memoryhog-disable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Disable watchdog restart memory-hog</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;disk-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Disk thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;restart-deadlock-disable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Disable watchdog restart deadlock</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;threshold-memory&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Memory thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;overload-notification&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable critical event notification</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">WATCHDOG - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: watchdog</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">WATCHDOG - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: watchdog</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/watchdog_schema">watchdog_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;watchdog&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Watchdog configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;overload-throttle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Watchdog overload throttle timeout configuration<br>range: "5..120"<br>units: "second"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;restart-memoryhog-disable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Disable watchdog restart memory-hog</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;disk-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Disk thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;restart-deadlock-disable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Disable watchdog restart deadlock</span></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;threshold-memory&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Memory thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;overload-notification&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable critical event notification</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory-"></span>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">THRESHOLD-MEMORY - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/threshold-memory/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: threshold-memory</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/threshold-memory_schema">threshold-memory_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>threshold-memorybody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;threshold-memory&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Memory thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">THRESHOLD-MEMORY - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/threshold-memory/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: threshold-memory</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/threshold-memory_schema">threshold-memory_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>threshold-memorybody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;threshold-memory&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Memory thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">THRESHOLD-MEMORY - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/threshold-memory/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: threshold-memory</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">THRESHOLD-MEMORY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/threshold-memory/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: threshold-memory</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/threshold-memory_schema">threshold-memory_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;threshold-memory&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Memory thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-threshold-memory--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit-"></span>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">DISK-LIMIT - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/disk-limit/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: disk-limit</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/disk-limit_schema">disk-limit_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>disk-limitbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;disk-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Disk thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">DISK-LIMIT - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/disk-limit/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: disk-limit</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/disk-limit_schema">disk-limit_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>disk-limitbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;disk-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Disk thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">DISK-LIMIT - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/disk-limit/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: disk-limit</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">DISK-LIMIT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchdog/disk-limit/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: disk-limit</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/disk-limit_schema">disk-limit_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;disk-limit&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Disk thresholds</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchdog-disk-limit--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;severe&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (4, minor)<br>range: "4..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;critical&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Threshold, Range (3, severe)<br>range: "3..40"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;minor&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Threshold, Range (5, 40)<br>range: "5..40"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-watchd-cfg-watchd-"></span>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchd--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchd--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">WATCHD - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: watchd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/watchd_schema">watchd_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>watchdbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;watchd&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>watchd</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Length of timeout in seconds<br>range: "1..10"<br>units: "second"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchd--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchd--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">WATCHD - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: watchd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/watchd_schema">watchd_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>watchdbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;watchd&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>watchd</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Length of timeout in seconds<br>range: "1..10"<br>units: "second"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchd--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchd--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">WATCHD - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: watchd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-watchd-cfg-watchd--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-watchd-cfg-watchd--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">WATCHD - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-watchd-cfg:watchd/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: watchd</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/watchd_schema">watchd_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;watchd&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>watchd</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-watchd-cfg-watchd--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Length of timeout in seconds<br>range: "1..10"<br>units: "second"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

@@ -1,0 +1,2652 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-aaa-diameter-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter--get">DIAMETER</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gy-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gy/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-gy--get">GY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gx-statistics-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gx-statistics/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-gx-statistics--get">GX-STATISTICS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gx-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gx/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-gx--get">GX</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-peers-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/peers/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-peers--get">PEERS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-peers-peer-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/peers/peer/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-peers-peer--get">PEER</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-nas-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/nas/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-nas--get">NAS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-nas-list-of-nas-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/nas/list-of-nas/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-nas-list-of-nas--get">LIST-OF-NAS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-nas-summary-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/nas-summary/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-nas-summary--get">NAS-SUMMARY</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gy-session-ids-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gy-session-ids/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-gy-session-ids--get">GY-SESSION-IDS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gy-session-ids-gy-session-id--session-id--">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gy-session-ids/gy-session-id/{session-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-gy-session-ids-gy-session-id--session-id---get">GY-SESSION-ID</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gy-statistics-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gy-statistics/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-gy-statistics--get">GY-STATISTICS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gx-session-ids-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gx-session-ids/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-gx-session-ids--get">GX-SESSION-IDS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gx-session-ids-gx-session-id--session-id--">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gx-session-ids/gx-session-id/{session-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-gx-session-ids-gx-session-id--session-id---get">GX-SESSION-ID</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-nas-session-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/nas-session/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-nas-session--get">NAS-SESSION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-nas-session-list-of-nas-">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/nas-session/list-of-nas/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-aaa-diameter-nas-session-list-of-nas--get">LIST-OF-NAS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-aaa-diameter-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-aaa-diameter-oper@2017-09-07.yang">Cisco-IOS-XR-aaa-diameter-oper@2017-09-07.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-"></span>
+          <div id="operation-config-aaa-diameter--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">DIAMETER - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: diameter</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_diameter_schema">a1_diameter_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter--get"><span class="hljs-attr">&quot;diameter&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter operational data</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-gx-statistics--get"><span class="hljs-attr">&quot;gx-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter Gx Statistics data</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;rar-received-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAR Received Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-update-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Update Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;asr-received-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASR Received Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;active-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Active Sessions</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages Failed</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;asr-received-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASR Received Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-update-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Update Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;rar-received-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAR Received Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-init-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Initial Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;raa-sent-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAA Sent Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;open-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Opened Sessions</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;unknown-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Request Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages Timed Out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages Timed Out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages Failed</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages Timed Out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;asa-sent-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASA Sent Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;close-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Closed Sessions</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;restore-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Restore Sessions</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-final-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Final Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-init-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Initial Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages Failed</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;asa-sent-messsages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASA Sent Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages retry</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;session-termination-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Session Termination from server</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-final-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Final Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages retry</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages retry</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;raa-sent-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">RAA Sent Messages</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-nas-session--get"><span class="hljs-attr">&quot;nas-session&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter Nas Session data</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-aaa-diameter-nas-session-list-of-nas--get"><span class="hljs-attr">&quot;list-of-nas&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status start</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;authorization-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim packet response in</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status-stop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status stop</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;method-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Method list used for authentication</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;server-used-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Server used for authentication</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim requests packets out</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter STR status</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;authentication-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+        }
+      ],
+      <div class="tooltip"><span class="hljs-leaf">&quot;aaanas-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">AAA NAS id</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-nas--get"><span class="hljs-attr">&quot;nas&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter NAS data</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-aaa-diameter-nas-list-of-nas--get"><span class="hljs-attr">&quot;list-of-nas&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status start</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;authorization-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim packet response in</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status-stop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status stop</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;method-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Method list used for authentication</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;server-used-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Server used for authentication</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim requests packets out</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter STR status</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;authentication-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+        }
+      ],
+      <div class="tooltip"><span class="hljs-leaf">&quot;aaanas-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">AAA NAS id</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-gy-session-ids--get"><span class="hljs-attr">&quot;gy-session-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter Gy Session data list</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-aaa-diameter-gy-session-ids-gy-session-id--session-id---get"><span class="hljs-attr">&quot;gy-session-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-key">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Session Id</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;session-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Session State</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;request-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Request Type</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;parent-aaa-session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">AAA Parent session id</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gx Retry count</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;request-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Request Number</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-gx--get"><span class="hljs-attr">&quot;gx&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter global gx data</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tx-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gy transaction timer in seconds</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;retransmits&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gy retransmit count</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;is-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">Gy state</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-peers--get"><span class="hljs-attr">&quot;peers&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter peer global data</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;conn-retry-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection retry timer in seconds</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;trans-total&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total number of transactions</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tls-trustpoint&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TLS Trustpoint</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;watchdog-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Watch dog timer in seconds</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;peer-num&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total no.of peers</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;transaction-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transaction timer in seconds</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;origin-realm&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Origin Realm</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;origin-host&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Origin Host</span></div>
+      <div class="tooltip"><a href="#operation-config-aaa-diameter-peers-peer--get"><span class="hljs-attr">&quot;peer&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;conn-retry-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection retry timer in seconds</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-st-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing STAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;transaction-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transaction timer in seconds</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-ac-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ACRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-ac-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ACAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-st-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing STRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-dw-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DWRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-dp-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DPAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;peer-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;firmware-revision&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Firmware revision</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;port-connect&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Local Connection port</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Port number on which the peeris running</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-as-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ASRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-as-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ASAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-cc-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CCRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-dw-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DWAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-ra-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing RARs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;received-transient-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transient failures Received</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-cc-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CCAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-as-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ASRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-as-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ASAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-dw-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DWRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;protocol-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Type</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Connection Status</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-dp-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DPRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-aa-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming AAAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;malformed-requests&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Malformed Requests</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;who-init-disconnect&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Who Initiated Disconnect</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Vrf Name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;destination-host&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination host name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;last-disconnect-cause&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Last Disconnect Reason</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;destination-realm&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination realm</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-ra-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing RAAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;watchdog-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Watch dog timer in seconds</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-cc-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CCRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-st-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming STRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-ac-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ACAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-ce-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CERs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-dp-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DPRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4 or IPv6 address of DIAMETER peer</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;source-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source Interface</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;sent-permanent-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Permanent Failures Sent</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;security-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Security type used to transport</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-ra-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming RARs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;peer-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Index</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-ce-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CEAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-st-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming STAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;state-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">State Duration in seconds</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-ra-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming RAAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;received-permanent-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Permanent Failures Received</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;sent-proto-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Error Sent</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-ce-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CERs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;received-proto-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Error Received</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-dp-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DPAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;transport-down&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transport Down</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-ac-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ACRs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-ce-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CEAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;peer-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Type</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;in-dw-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DWAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-cc-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CCAs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;out-aa-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing AARs</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;sent-transient-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Transient failures Sent</span></div>
+        }
+      ],
+      <div class="tooltip"><span class="hljs-leaf">&quot;source-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source Interface</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;trans-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Maximum number of transactions</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-gx-session-ids--get"><span class="hljs-attr">&quot;gx-session-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter Gx Session data list</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-aaa-diameter-gx-session-ids-gx-session-id--session-id---get"><span class="hljs-attr">&quot;gx-session-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-key">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Session Id</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;session-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Session State</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;reavalidation-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Revalidation Time</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;service-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Gx Plus Service Count</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;request-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Request Type</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gx Retry count</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;request-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Request Number</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;gx-plus-services&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Gx Plus Services</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-nas-summary--get"><span class="hljs-attr">&quot;nas-summary&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter NAS summary</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authen-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication request from client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;coa-request-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA request from client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;pod-failed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">POD response with failure</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;pod-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">POD response forward to client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;pod-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">POD response with success</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authorization-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authourization request from cleint</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;coa-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA/RAR Response packet out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-interim-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting interim response with success</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authen-response-fail-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication response with failure</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect request from cleint</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-start-response-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting start response forward to client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;coa-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA response with success</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-response-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting stop packet response in</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-request-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting stop requests packets out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authorization-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authorization response packet in</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-failed-response-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect response with failure</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-response-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect response packets in</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-response-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting interim packet response in</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-interim-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting Interim request from cleint</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-response-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting packet response in</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-success-response-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting stop response with success</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Acct stop response forward to client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;coa-response-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA response forward to client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-start-failed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting start response with failure</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authen-request-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication request pkt out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;pod-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">POD request from cleint</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-start-request-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting start request from cleint</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-request-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect request pkt out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;pod-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">POD/RAR Request packets in</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-request-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting requests packets out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;pod-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">PAD/RAR Response packets out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authen-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication response frwd to client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;coa-failed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA response with failure</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect response forward to client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-failed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting stop response with failure</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-start-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting start response with success</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;coa-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA/RAR Request packet in</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authen-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication response with success</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authorization-response-fail-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication response with failure</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-interim-request-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting interim requests packets out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authorization-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authourization response frwd to client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-success-response-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect response with success</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authorization-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authorization request packet out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Acct stop request from cleint</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-interim-failed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting interim response with failure</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;accounting-interim-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting interim response frwd to client</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authen-response-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication response pkt in</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;authorization-response-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Authentication response with success</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-gy--get"><span class="hljs-attr">&quot;gy&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter global gy data</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;tx-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gy transaction timer in seconds</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;retransmits&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gy retransmit count</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;is-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">Gy state</span></div>
+    },
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-gy-statistics--get"><span class="hljs-attr">&quot;gy-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter Gy Statistics data</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;rar-received-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAR Received Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-update-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Update Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;asr-received-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASR Received Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;active-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Active Sessions</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages Failed</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;asr-received-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASR Received Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-update-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Update Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;rar-received-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAR Received Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-init-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Initial Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;raa-sent-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAA Sent Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;open-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Opened Sessions</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;unknown-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Request Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages Timed Out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages Timed Out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages Failed</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages Timed Out</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;asa-sent-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASA Sent Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;close-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Closed Sessions</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;restore-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Restore Sessions</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-final-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Final Messages Error</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-init-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Initial Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages Failed</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages retry</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;asa-sent-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASA Sent Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;cca-final-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Final Messages</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages retry</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages retry</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;raa-sent-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">RAA Sent Messages</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gy-"></span>
+          <div id="operation-config-aaa-diameter-gy--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-gy--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">GY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gy/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: gy</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_gy_schema">a1_gy_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-gy--get"><span class="hljs-attr">&quot;gy&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter global gy data</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;tx-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gy transaction timer in seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;retransmits&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gy retransmit count</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;is-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">Gy state</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gx-statistics-"></span>
+          <div id="operation-config-aaa-diameter-gx-statistics--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-gx-statistics--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">GX-STATISTICS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gx-statistics/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: gx-statistics</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_gx-statistics_schema">a1_gx-statistics_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-gx-statistics--get"><span class="hljs-attr">&quot;gx-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter Gx Statistics data</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rar-received-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAR Received Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-update-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Update Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;asr-received-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASR Received Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;active-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Active Sessions</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages Failed</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;asr-received-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASR Received Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-update-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Update Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rar-received-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAR Received Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-init-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Initial Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;raa-sent-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAA Sent Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;open-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Opened Sessions</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;unknown-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Request Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages Timed Out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages Timed Out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages Failed</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages Timed Out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;asa-sent-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASA Sent Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;close-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Closed Sessions</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;restore-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Restore Sessions</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-final-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Final Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-init-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Initial Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages Failed</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;asa-sent-messsages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASA Sent Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages retry</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;session-termination-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Session Termination from server</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-final-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Final Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages retry</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages retry</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;raa-sent-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">RAA Sent Messages</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gx-"></span>
+          <div id="operation-config-aaa-diameter-gx--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-gx--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">GX - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gx/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: gx</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_gx_schema">a1_gx_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-gx--get"><span class="hljs-attr">&quot;gx&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter global gx data</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;tx-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gx transaction timer in seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;retransmits&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gx retransmit count</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;is-enabled&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">Gx state</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-peers-"></span>
+          <div id="operation-config-aaa-diameter-peers--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-peers--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PEERS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/peers/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: peers</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_peers_schema">a1_peers_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-peers--get"><span class="hljs-attr">&quot;peers&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter peer global data</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;conn-retry-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection retry timer in seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;trans-total&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total number of transactions</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;tls-trustpoint&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">TLS Trustpoint</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;watchdog-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Watch dog timer in seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;peer-num&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total no.of peers</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;transaction-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transaction timer in seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;origin-realm&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Origin Realm</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;origin-host&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Origin Host</span></div>
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-peers-peer--get"><span class="hljs-attr">&quot;peer&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;conn-retry-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection retry timer in seconds</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-st-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing STAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;transaction-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transaction timer in seconds</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-ac-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ACRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-ac-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ACAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-st-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing STRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-dw-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DWRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-dp-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DPAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;peer-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;firmware-revision&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Firmware revision</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;port-connect&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Local Connection port</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Port number on which the peeris running</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-as-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ASRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-as-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ASAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-cc-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CCRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-dw-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DWAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-ra-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing RARs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-transient-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transient failures Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-cc-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CCAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-as-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ASRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-as-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ASAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-dw-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DWRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;protocol-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Connection Status</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-dp-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DPRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-aa-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming AAAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;malformed-requests&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Malformed Requests</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;who-init-disconnect&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Who Initiated Disconnect</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Vrf Name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;destination-host&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination host name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;last-disconnect-cause&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Last Disconnect Reason</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;destination-realm&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination realm</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-ra-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing RAAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;watchdog-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Watch dog timer in seconds</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-cc-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CCRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-st-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming STRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-ac-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ACAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-ce-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CERs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-dp-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DPRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4 or IPv6 address of DIAMETER peer</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;source-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source Interface</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-permanent-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Permanent Failures Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;security-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Security type used to transport</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-ra-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming RARs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;peer-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Index</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-ce-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CEAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-st-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming STAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;state-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">State Duration in seconds</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-ra-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming RAAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-permanent-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Permanent Failures Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-proto-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Error Sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-ce-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CERs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-proto-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Error Received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-dp-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DPAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;transport-down&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transport Down</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-ac-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ACRs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-ce-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CEAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;peer-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;in-dw-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DWAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-cc-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CCAs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;out-aa-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing AARs</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;sent-transient-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Transient failures Sent</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;source-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source Interface</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;trans-max&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Maximum number of transactions</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-peers-peer-"></span>
+          <div id="operation-config-aaa-diameter-peers-peer--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-peers-peer--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PEER - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/peers/peer/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: peer</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_peer_schema">a1_peer_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-peers-peer--get"><span class="hljs-attr">&quot;peer&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;conn-retry-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Connection retry timer in seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-st-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing STAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;transaction-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transaction timer in seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-ac-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ACRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-ac-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ACAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-st-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing STRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-dw-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DWRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-dp-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DPAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;peer-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;firmware-revision&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Firmware revision</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;port-connect&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Local Connection port</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;port&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Port number on which the peeris running</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-as-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ASRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-as-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ASAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-cc-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CCRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-dw-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DWAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-ra-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing RARs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-transient-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transient failures Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-cc-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CCAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-as-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ASRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-as-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ASAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-dw-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DWRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;protocol-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Connection Status</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-dp-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing DPRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-aa-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming AAAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;malformed-requests&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Malformed Requests</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;who-init-disconnect&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Who Initiated Disconnect</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Vrf Name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;destination-host&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination host name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;last-disconnect-cause&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Last Disconnect Reason</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;destination-realm&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Destination realm</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-ra-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing RAAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;watchdog-timer&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Watch dog timer in seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-cc-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CCRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-st-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming STRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-ac-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing ACAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-ce-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CERs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-dp-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DPRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv4 or IPv6 address of DIAMETER peer</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;source-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Source Interface</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-permanent-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Permanent Failures Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;security-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Security type used to transport</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-ra-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming RARs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;peer-index&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Index</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-ce-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CEAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-st-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming STAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;state-duration&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">State Duration in seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-ra-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming RAAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-permanent-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Permanent Failures Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-proto-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Error Sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-ce-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming CERs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-proto-errors&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Protocol Error Received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-dp-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DPAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;transport-down&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transport Down</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-ac-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming ACRs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-ce-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CEAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;peer-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Peer Type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;in-dw-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Incoming DWAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-cc-as&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing CCAs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;out-aa-rs&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Outgoing AARs</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;sent-transient-fails&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Transient failures Sent</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-nas-"></span>
+          <div id="operation-config-aaa-diameter-nas--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-nas--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NAS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/nas/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nas</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_nas_schema">a1_nas_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-nas--get"><span class="hljs-attr">&quot;nas&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter NAS data</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-nas-list-of-nas--get"><span class="hljs-attr">&quot;list-of-nas&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status start</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;authorization-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim packet response in</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status-stop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status stop</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;method-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Method list used for authentication</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;server-used-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Server used for authentication</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim requests packets out</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter STR status</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;authentication-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;aaanas-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">AAA NAS id</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-nas-list-of-nas-"></span>
+          <div id="operation-config-aaa-diameter-nas-list-of-nas--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-nas-list-of-nas--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LIST-OF-NAS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/nas/list-of-nas/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: list-of-nas</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_list-of-nas_schema">a1_list-of-nas_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-nas-list-of-nas--get"><span class="hljs-attr">&quot;list-of-nas&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status start</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authorization-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim packet response in</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status-stop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status stop</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;method-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Method list used for authentication</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;server-used-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Server used for authentication</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim requests packets out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter STR status</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authentication-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-nas-summary-"></span>
+          <div id="operation-config-aaa-diameter-nas-summary--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-nas-summary--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NAS-SUMMARY - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/nas-summary/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nas-summary</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_nas-summary_schema">a1_nas-summary_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-nas-summary--get"><span class="hljs-attr">&quot;nas-summary&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter NAS summary</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authen-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication request from client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;coa-request-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA request from client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;pod-failed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">POD response with failure</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;pod-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">POD response forward to client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;pod-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">POD response with success</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authorization-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authourization request from cleint</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;coa-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA/RAR Response packet out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-interim-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting interim response with success</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authen-response-fail-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication response with failure</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect request from cleint</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-start-response-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting start response forward to client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;coa-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA response with success</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-response-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting stop packet response in</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-request-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting stop requests packets out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authorization-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authorization response packet in</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-failed-response-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect response with failure</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-response-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect response packets in</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-response-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting interim packet response in</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-interim-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting Interim request from cleint</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-response-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting packet response in</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-success-response-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting stop response with success</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Acct stop response forward to client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;coa-response-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA response forward to client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-start-failed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting start response with failure</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authen-request-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication request pkt out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;pod-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">POD request from cleint</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-start-request-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting start request from cleint</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-request-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect request pkt out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;pod-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">POD/RAR Request packets in</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-request-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting requests packets out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;pod-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">PAD/RAR Response packets out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authen-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication response frwd to client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;coa-failed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA response with failure</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect response forward to client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-failed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting stop response with failure</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-start-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting start response with success</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;coa-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">COA/RAR Request packet in</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authen-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication response with success</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authorization-response-fail-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication response with failure</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-interim-request-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting interim requests packets out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authorization-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authourization response frwd to client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-success-response-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Disconnect response with success</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authorization-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authorization request packet out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-stop-request-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Acct stop request from cleint</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-interim-failed-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting interim response with failure</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-interim-response-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting interim response frwd to client</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authen-response-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Authentication response pkt in</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authorization-response-success-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Authentication response with success</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gy-session-ids-"></span>
+          <div id="operation-config-aaa-diameter-gy-session-ids--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-gy-session-ids--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">GY-SESSION-IDS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gy-session-ids/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: gy-session-ids</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_gy-session-ids_schema">a1_gy-session-ids_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-gy-session-ids--get"><span class="hljs-attr">&quot;gy-session-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter Gy Session data list</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-gy-session-ids-gy-session-id--session-id---get"><span class="hljs-attr">&quot;gy-session-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Session Id</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;session-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Session State</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;request-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Request Type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;parent-aaa-session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">AAA Parent session id</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gy Retry count</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;request-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Request Number</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gy-session-ids-gy-session-id--session-id--"></span>
+          <div id="operation-config-aaa-diameter-gy-session-ids-gy-session-id--session-id---get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-gy-session-ids-gy-session-id--session-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">GY-SESSION-ID - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gy-session-ids/gy-session-id/{session-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: gy-session-id</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">session-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of session-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_gy-session-id_schema">a1_gy-session-id_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-gy-session-ids-gy-session-id--session-id---get"><span class="hljs-attr">&quot;gy-session-id&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Session Id</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;session-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Session State</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;request-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Request Type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;parent-aaa-session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">AAA Parent session id</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gy Retry count</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;request-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Request Number</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gy-statistics-"></span>
+          <div id="operation-config-aaa-diameter-gy-statistics--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-gy-statistics--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">GY-STATISTICS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gy-statistics/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: gy-statistics</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_gy-statistics_schema">a1_gy-statistics_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-gy-statistics--get"><span class="hljs-attr">&quot;gy-statistics&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter Gy Statistics data</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rar-received-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAR Received Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-update-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Update Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;asr-received-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASR Received Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;active-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Active Sessions</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages Failed</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;asr-received-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASR Received Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-update-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Update Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;rar-received-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAR Received Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-init-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Initial Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;raa-sent-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">RAA Sent Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;open-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Opened Sessions</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;unknown-request-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Unknown Request Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages Timed Out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages Timed Out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages Failed</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-timed-out-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages Timed Out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;asa-sent-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASA Sent Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;close-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Total Closed Sessions</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;restore-sessions&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Restore Sessions</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-final-error-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Final Messages Error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-init-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Initial Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-failed-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages Failed</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages retry</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;asa-sent-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">ASA Sent Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-init-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Initial Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;cca-final-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCA Final Messages</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-update-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Update Messages retry</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ccr-final-retry-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">CCR Final Messages retry</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;raa-sent-messages&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">RAA Sent Messages</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gx-session-ids-"></span>
+          <div id="operation-config-aaa-diameter-gx-session-ids--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-gx-session-ids--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">GX-SESSION-IDS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gx-session-ids/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: gx-session-ids</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_gx-session-ids_schema">a1_gx-session-ids_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-gx-session-ids--get"><span class="hljs-attr">&quot;gx-session-ids&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter Gx Session data list</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-gx-session-ids-gx-session-id--session-id---get"><span class="hljs-attr">&quot;gx-session-id&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-key">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Session Id</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;session-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Session State</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;reavalidation-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Revalidation Time</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;service-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Gx Plus Service Count</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;request-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Request Type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gx Retry count</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;request-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Request Number</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;gx-plus-services&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Gx Plus Services</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-gx-session-ids-gx-session-id--session-id--"></span>
+          <div id="operation-config-aaa-diameter-gx-session-ids-gx-session-id--session-id---get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-gx-session-ids-gx-session-id--session-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">GX-SESSION-ID - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/gx-session-ids/gx-session-id/{session-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: gx-session-id</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">session-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of session-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_gx-session-id_schema">a1_gx-session-id_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-gx-session-ids-gx-session-id--session-id---get"><span class="hljs-attr">&quot;gx-session-id&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Session Id</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;session-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Session State</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;reavalidation-time&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Revalidation Time</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;service-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext"> Gx Plus Service Count</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;request-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Request Type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;retry-count&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Gx Retry count</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;request-number&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Request Number</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;gx-plus-services&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Gx Plus Services</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-nas-session-"></span>
+          <div id="operation-config-aaa-diameter-nas-session--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-nas-session--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NAS-SESSION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/nas-session/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: nas-session</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_nas-session_schema">a1_nas-session_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-nas-session--get"><span class="hljs-attr">&quot;nas-session&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Diameter Nas Session data</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-aaa-diameter-nas-session-list-of-nas--get"><span class="hljs-attr">&quot;list-of-nas&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status start</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;authorization-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim packet response in</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status-stop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status stop</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;method-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Method list used for authentication</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;server-used-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Server used for authentication</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim requests packets out</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter STR status</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;authentication-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;aaanas-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">AAA NAS id</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-aaa-locald-oper-aaa-diameter-nas-session-list-of-nas-"></span>
+          <div id="operation-config-aaa-diameter-nas-session-list-of-nas--get" class="operation panel" data-traverse-target="operation-config-aaa-diameter-nas-session-list-of-nas--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LIST-OF-NAS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-aaa-locald-oper:aaa/diameter/nas-session/list-of-nas/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: list-of-nas</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_list-of-nas_schema">a1_list-of-nas_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-aaa-diameter-nas-session-list-of-nas--get"><span class="hljs-attr">&quot;list-of-nas&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status start</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authorization-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-in-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim packet response in</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-status-stop&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter ACR status stop</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;method-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Method list used for authentication</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;server-used-list&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Server used for authentication</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;accounting-intrim-out-packets&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Accounting intrim requests packets out</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;disconnect-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter STR status</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;authentication-status&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Diameter AAR status</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;aaa-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AAA session id</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;diameter-session-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Diameter session id</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

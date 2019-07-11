@@ -1,0 +1,1493 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-mpls-vpn-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-l3vpn--get">L3VPN</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-invalid-vrfs-">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/invalid-vrfs/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-l3vpn-invalid-vrfs--get">INVALID-VRFS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/invalid-vrfs/invalid-vrf/{vrf-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name---get">INVALID-VRF</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--interface-">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/invalid-vrfs/invalid-vrf/{vrf-name}/interface/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--interface--get">INTERFACE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/invalid-vrfs/invalid-vrf/{vrf-name}/af/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af--get">AF</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-route-target-">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/invalid-vrfs/invalid-vrf/{vrf-name}/af/route-target/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-route-target--get">ROUTE-TARGET</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-vrfs-">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/vrfs/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-l3vpn-vrfs--get">VRFS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-vrfs-vrf--vrf-name--">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/vrfs/vrf/{vrf-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-l3vpn-vrfs-vrf--vrf-name---get">VRF</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-vrfs-vrf--vrf-name--interface-">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/vrfs/vrf/{vrf-name}/interface/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--interface--get">INTERFACE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-vrfs-vrf--vrf-name--af-">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/vrfs/vrf/{vrf-name}/af/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--af--get">AF</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-vrfs-vrf--vrf-name--af-route-target-">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/vrfs/vrf/{vrf-name}/af/route-target/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--af-route-target--get">ROUTE-TARGET</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-mpls-vpn-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-mpls-vpn-oper@2015-11-09.yang">Cisco-IOS-XR-mpls-vpn-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-"></span>
+          <div id="operation-config-l3vpn--get" class="operation panel" data-traverse-target="operation-config-l3vpn--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">L3VPN - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: l3vpn</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/l3vpn_schema">l3vpn_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-l3vpn--get"><span class="hljs-attr">&quot;l3vpn&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>L3VPN operational data</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs--get"><span class="hljs-attr">&quot;invalid-vrfs&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Invalid VRF Table (VRFs that are forward\nreferenced)</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name---get"><span class="hljs-attr">&quot;invalid-vrf&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;is-big-vrf&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">VRF mode information</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;vrf-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Description</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;route-distinguisher&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Distinguisher</span></div>
+          <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af--get"><span class="hljs-attr">&quot;af&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;import-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Import Route Policy</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;export-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Export Route Policy</span></div>
+              <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-route-target--get"><span class="hljs-attr">&quot;route-target&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;route-target-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Target Type</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;route-target-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Route Target Value</span></div>
+                }
+              ]
+            }
+          ],
+          <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i> </i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface Name</span></div>
+            }
+          ],
+          <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Name</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The Name for a VRF</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-l3vpn-vrfs--get"><span class="hljs-attr">&quot;vrfs&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>VRF Table</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name---get"><span class="hljs-attr">&quot;vrf&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;is-big-vrf&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">VRF mode information</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;vrf-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Description</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;route-distinguisher&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Distinguisher</span></div>
+          <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--af--get"><span class="hljs-attr">&quot;af&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;import-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Import Route Policy</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;export-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Export Route Policy</span></div>
+              <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--af-route-target--get"><span class="hljs-attr">&quot;route-target&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;route-target-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Target Type</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;route-target-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Route Target Value</span></div>
+                }
+              ]
+            }
+          ],
+          <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i> </i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface Name</span></div>
+            }
+          ],
+          <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Name</span></div>
+          <div class="tooltip"><span class="hljs-key">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The Name for a VRF</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-invalid-vrfs-"></span>
+          <div id="operation-config-l3vpn-invalid-vrfs--get" class="operation panel" data-traverse-target="operation-config-l3vpn-invalid-vrfs--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INVALID-VRFS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/invalid-vrfs/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: invalid-vrfs</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/invalid-vrfs_schema">invalid-vrfs_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs--get"><span class="hljs-attr">&quot;invalid-vrfs&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Invalid VRF Table (VRFs that are forward\nreferenced)</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name---get"><span class="hljs-attr">&quot;invalid-vrf&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;is-big-vrf&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">VRF mode information</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;vrf-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Description</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;route-distinguisher&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Distinguisher</span></div>
+        <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af--get"><span class="hljs-attr">&quot;af&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;import-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Import Route Policy</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;export-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Export Route Policy</span></div>
+            <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-route-target--get"><span class="hljs-attr">&quot;route-target&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;route-target-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Target Type</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;route-target-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Route Target Value</span></div>
+              }
+            ]
+          }
+        ],
+        <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i> </i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface Name</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Name</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The Name for an invalid VRF</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--"></span>
+          <div id="operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name---get" class="operation panel" data-traverse-target="operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INVALID-VRF - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/invalid-vrfs/invalid-vrf/{vrf-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: invalid-vrf</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/invalid-vrf_schema">invalid-vrf_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name---get"><span class="hljs-attr">&quot;invalid-vrf&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-leaf">&quot;is-big-vrf&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">VRF mode information</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;vrf-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Description</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;route-distinguisher&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Distinguisher</span></div>
+      <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af--get"><span class="hljs-attr">&quot;af&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;import-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Import Route Policy</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;export-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Export Route Policy</span></div>
+          <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-route-target--get"><span class="hljs-attr">&quot;route-target&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;route-target-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Target Type</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;route-target-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Route Target Value</span></div>
+            }
+          ]
+        }
+      ],
+      <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i> </i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface Name</span></div>
+        }
+      ],
+      <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Name</span></div>
+      <div class="tooltip"><span class="hljs-key">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The Name for an invalid VRF</span></div>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--interface-"></span>
+          <div id="operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--interface--get" class="operation panel" data-traverse-target="operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--interface--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/invalid-vrfs/invalid-vrf/{vrf-name}/interface/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interface_schema">interface_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface Name</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-"></span>
+          <div id="operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af--get" class="operation panel" data-traverse-target="operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">AF - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/invalid-vrfs/invalid-vrf/{vrf-name}/af/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: af</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/af_schema">af_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af--get"><span class="hljs-attr">&quot;af&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;import-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Import Route Policy</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;export-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Export Route Policy</span></div>
+    <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-route-target--get"><span class="hljs-attr">&quot;route-target&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;route-target-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Target Type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;route-target-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Route Target Value</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-route-target-"></span>
+          <div id="operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-route-target--get" class="operation panel" data-traverse-target="operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-route-target--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ROUTE-TARGET - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/invalid-vrfs/invalid-vrf/{vrf-name}/af/route-target/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: route-target</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/route-target_schema">route-target_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-l3vpn-invalid-vrfs-invalid-vrf--vrf-name--af-route-target--get"><span class="hljs-attr">&quot;route-target&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;route-target-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Target Type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;route-target-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Route Target Value</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-vrfs-"></span>
+          <div id="operation-config-l3vpn-vrfs--get" class="operation panel" data-traverse-target="operation-config-l3vpn-vrfs--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">VRFS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/vrfs/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: vrfs</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/vrfs_schema">vrfs_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-l3vpn-vrfs--get"><span class="hljs-attr">&quot;vrfs&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>VRF Table</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name---get"><span class="hljs-attr">&quot;vrf&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;is-big-vrf&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">VRF mode information</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;vrf-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Description</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;route-distinguisher&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Distinguisher</span></div>
+        <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--af--get"><span class="hljs-attr">&quot;af&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;import-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Import Route Policy</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;export-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Export Route Policy</span></div>
+            <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--af-route-target--get"><span class="hljs-attr">&quot;route-target&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;route-target-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Target Type</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;route-target-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Route Target Value</span></div>
+              }
+            ]
+          }
+        ],
+        <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i> </i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface Name</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Name</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The Name for a VRF</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-vrfs-vrf--vrf-name--"></span>
+          <div id="operation-config-l3vpn-vrfs-vrf--vrf-name---get" class="operation panel" data-traverse-target="operation-config-l3vpn-vrfs-vrf--vrf-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">VRF - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/vrfs/vrf/{vrf-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: vrf</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/vrf_schema">vrf_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name---get"><span class="hljs-attr">&quot;vrf&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><span class="hljs-leaf">&quot;is-big-vrf&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">VRF mode information</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;vrf-description&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Description</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;route-distinguisher&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Distinguisher</span></div>
+      <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--af--get"><span class="hljs-attr">&quot;af&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;import-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Import Route Policy</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;export-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Export Route Policy</span></div>
+          <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--af-route-target--get"><span class="hljs-attr">&quot;route-target&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;route-target-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Target Type</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;route-target-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Route Target Value</span></div>
+            }
+          ]
+        }
+      ],
+      <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i> </i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface Name</span></div>
+        }
+      ],
+      <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF Name</span></div>
+      <div class="tooltip"><span class="hljs-key">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">The Name for a VRF</span></div>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-vrfs-vrf--vrf-name--interface-"></span>
+          <div id="operation-config-l3vpn-vrfs-vrf--vrf-name--interface--get" class="operation panel" data-traverse-target="operation-config-l3vpn-vrfs-vrf--vrf-name--interface--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/vrfs/vrf/{vrf-name}/interface/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interface_schema">interface_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface Name</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-vrfs-vrf--vrf-name--af-"></span>
+          <div id="operation-config-l3vpn-vrfs-vrf--vrf-name--af--get" class="operation panel" data-traverse-target="operation-config-l3vpn-vrfs-vrf--vrf-name--af--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">AF - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/vrfs/vrf/{vrf-name}/af/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: af</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/af_schema">af_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--af--get"><span class="hljs-attr">&quot;af&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;import-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Import Route Policy</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;export-route-policy&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Export Route Policy</span></div>
+    <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--af-route-target--get"><span class="hljs-attr">&quot;route-target&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;route-target-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Target Type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;route-target-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Route Target Value</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-mpls-vpn-oper-l3vpn-vrfs-vrf--vrf-name--af-route-target-"></span>
+          <div id="operation-config-l3vpn-vrfs-vrf--vrf-name--af-route-target--get" class="operation panel" data-traverse-target="operation-config-l3vpn-vrfs-vrf--vrf-name--af-route-target--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ROUTE-TARGET - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-mpls-vpn-oper:l3vpn/vrfs/vrf/{vrf-name}/af/route-target/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: route-target</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">vrf-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of vrf-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/route-target_schema">route-target_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-l3vpn-vrfs-vrf--vrf-name--af-route-target--get"><span class="hljs-attr">&quot;route-target&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AF name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;saf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">SAF name</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;route-target-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Route Target Type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;route-target-value&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Route Target Value</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

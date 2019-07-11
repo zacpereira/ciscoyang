@@ -1,0 +1,2502 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-man-netconf-cfg API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">NETCONF-YANG</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">AGENT</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/models/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">MODELS</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig-">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/models/openconfig/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">OPENCONFIG</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh-">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/ssh/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">SSH</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session-">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/session/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">SESSION</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-man-netconf-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-man-netconf-cfg@2018-05-04.yang">Cisco-IOS-XR-man-netconf-cfg@2018-05-04.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                  <h5>Leaf Color Code:</h5>                    <span class="hljs-key">&emsp;&emsp;&emsp;Key&nbsp</span>                    <span class="hljs-mand">Mandatory&nbsp</span>                    <span class="hljs-leaf">Optional</span>                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-"></span>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">NETCONF-YANG - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: netconf-yang</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/netconf-yang_schema">netconf-yang_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>netconf-yangbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;netconf-yang&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;agent&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;models&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Models to be disabled</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+        }
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;session&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Session settings</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;absolute-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Absolute timeout in minutes<br>range: "1..1440"<br>units: "minute"</span></div> 
+        <div class="tooltip"><span class="hljs-leaf">&quot;idle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Non-active session lifetime<br>range: "1..1440"<br>units: "minute"</span></div> 
+        <div class="tooltip"><span class="hljs-leaf">&quot;limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Count of allowable concurrent netconf-yang\nsessions<br>range: "1..50"<br>default: "50"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;ssh&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent over SSH connection</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable NETCONF YANG agent over SSH connection</span></div>
+      },
+      <div class="tooltip"><span class="hljs-leaf">&quot;rate-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of bytes to process per sec<br>range: "4096..4294967295"<br>units: "byte"</span></div> 
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">NETCONF-YANG - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: netconf-yang</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/netconf-yang_schema">netconf-yang_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>netconf-yangbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;netconf-yang&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;agent&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;models&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Models to be disabled</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+        }
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;session&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Session settings</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;absolute-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Absolute timeout in minutes<br>range: "1..1440"<br>units: "minute"</span></div> 
+        <div class="tooltip"><span class="hljs-leaf">&quot;idle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Non-active session lifetime<br>range: "1..1440"<br>units: "minute"</span></div> 
+        <div class="tooltip"><span class="hljs-leaf">&quot;limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Count of allowable concurrent netconf-yang\nsessions<br>range: "1..50"<br>default: "50"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;ssh&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent over SSH connection</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable NETCONF YANG agent over SSH connection</span></div>
+      },
+      <div class="tooltip"><span class="hljs-leaf">&quot;rate-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of bytes to process per sec<br>range: "4096..4294967295"<br>units: "byte"</span></div> 
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">NETCONF-YANG - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: netconf-yang</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">NETCONF-YANG - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: netconf-yang</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/netconf-yang_schema">netconf-yang_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;netconf-yang&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;agent&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;models&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Models to be disabled</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->        <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->          <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+        }
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;session&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Session settings</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;absolute-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Absolute timeout in minutes<br>range: "1..1440"<br>units: "minute"</span></div> 
+        <div class="tooltip"><span class="hljs-leaf">&quot;idle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Non-active session lifetime<br>range: "1..1440"<br>units: "minute"</span></div> 
+        <div class="tooltip"><span class="hljs-leaf">&quot;limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Count of allowable concurrent netconf-yang\nsessions<br>range: "1..50"<br>default: "50"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;ssh&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent over SSH connection</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable NETCONF YANG agent over SSH connection</span></div>
+      },
+      <div class="tooltip"><span class="hljs-leaf">&quot;rate-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of bytes to process per sec<br>range: "4096..4294967295"<br>units: "byte"</span></div> 
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-"></span>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">AGENT - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: agent</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/agent_schema">agent_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>agentbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;agent&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;models&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Models to be disabled</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+      }
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;session&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Session settings</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;absolute-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Absolute timeout in minutes<br>range: "1..1440"<br>units: "minute"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;idle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Non-active session lifetime<br>range: "1..1440"<br>units: "minute"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Count of allowable concurrent netconf-yang\nsessions<br>range: "1..50"<br>default: "50"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ssh&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent over SSH connection</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable NETCONF YANG agent over SSH connection</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;rate-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of bytes to process per sec<br>range: "4096..4294967295"<br>units: "byte"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">AGENT - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: agent</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/agent_schema">agent_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>agentbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;agent&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;models&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Models to be disabled</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+      }
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;session&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Session settings</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;absolute-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Absolute timeout in minutes<br>range: "1..1440"<br>units: "minute"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;idle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Non-active session lifetime<br>range: "1..1440"<br>units: "minute"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Count of allowable concurrent netconf-yang\nsessions<br>range: "1..50"<br>default: "50"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ssh&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent over SSH connection</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable NETCONF YANG agent over SSH connection</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;rate-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of bytes to process per sec<br>range: "4096..4294967295"<br>units: "byte"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">AGENT - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: agent</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">AGENT - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: agent</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/agent_schema">agent_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;agent&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent configuration commands</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;models&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Models to be disabled</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+      }
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;session&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Session settings</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;absolute-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Absolute timeout in minutes<br>range: "1..1440"<br>units: "minute"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;idle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Non-active session lifetime<br>range: "1..1440"<br>units: "minute"</span></div> 
+      <div class="tooltip"><span class="hljs-leaf">&quot;limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Count of allowable concurrent netconf-yang\nsessions<br>range: "1..50"<br>default: "50"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ssh&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent over SSH connection</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable NETCONF YANG agent over SSH connection</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;rate-limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Number of bytes to process per sec<br>range: "4096..4294967295"<br>units: "byte"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-"></span>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">MODELS - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/models/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: models</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/models_schema">models_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>modelsbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;models&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Models to be disabled</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">MODELS - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/models/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: models</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/models_schema">models_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>modelsbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;models&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Models to be disabled</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">MODELS - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/models/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: models</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MODELS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/models/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: models</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/models_schema">models_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;models&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Models to be disabled</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig-"></span>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">OPENCONFIG - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/models/openconfig/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: openconfig</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/openconfig_schema">openconfig_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>openconfigbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">OPENCONFIG - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/models/openconfig/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: openconfig</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/openconfig_schema">openconfig_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>openconfigbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">OPENCONFIG - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/models/openconfig/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: openconfig</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">OPENCONFIG - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/models/openconfig/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: openconfig</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/openconfig_schema">openconfig_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;openconfig&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Type of models: openconfig</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-models-openconfig--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;disabled&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Disable the specified model type</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh-"></span>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">SSH - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/ssh/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: ssh</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ssh_schema">ssh_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>sshbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;ssh&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent over SSH connection</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable NETCONF YANG agent over SSH connection</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">SSH - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/ssh/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: ssh</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ssh_schema">ssh_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>sshbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;ssh&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent over SSH connection</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable NETCONF YANG agent over SSH connection</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">SSH - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/ssh/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: ssh</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SSH - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/ssh/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ssh</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ssh_schema">ssh_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;ssh&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>NETCONF YANG agent over SSH connection</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-ssh--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span><!--
+--> <span class="tooltiptext">Enable NETCONF YANG agent over SSH connection</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session-"></span>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/session/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: session</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/session_schema">session_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>sessionbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;session&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Session settings</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;absolute-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Absolute timeout in minutes<br>range: "1..1440"<br>units: "minute"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;idle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Non-active session lifetime<br>range: "1..1440"<br>units: "minute"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Count of allowable concurrent netconf-yang\nsessions<br>range: "1..50"<br>default: "50"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/session/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: session</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/session_schema">session_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>sessionbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;session&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Session settings</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;absolute-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Absolute timeout in minutes<br>range: "1..1440"<br>units: "minute"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;idle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Non-active session lifetime<br>range: "1..1440"<br>units: "minute"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Count of allowable concurrent netconf-yang\nsessions<br>range: "1..50"<br>default: "50"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/session/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: session</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SESSION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-man-netconf-cfg:netconf-yang/agent/session/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: session</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/session_schema">session_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;session&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>Session settings</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-man-netconf-cfg-netconf-yang-agent-session--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;absolute-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Absolute timeout in minutes<br>range: "1..1440"<br>units: "minute"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;idle-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Non-active session lifetime<br>range: "1..1440"<br>units: "minute"</span></div> 
+    <div class="tooltip"><span class="hljs-leaf">&quot;limit&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Count of allowable concurrent netconf-yang\nsessions<br>range: "1..50"<br>default: "50"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

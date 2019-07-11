@@ -1,0 +1,2610 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-icpe-sdacp-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-discovery2s-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-discovery2s/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-discovery2s--get">SDACP-DISCOVERY2S</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-discovery2s/sdacp-discovery2/{interface-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name---get">SDACP-DISCOVERY2</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--interface-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-discovery2s/sdacp-discovery2/{interface-name}/interface/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--interface--get">INTERFACE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-discovery2s/sdacp-discovery2/{interface-name}/satellite/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite--get">SATELLITE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite-interface-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-discovery2s/sdacp-discovery2/{interface-name}/satellite/interface/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite-interface--get">INTERFACE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-icpe-dpms-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/icpe-dpms/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-icpe-dpms--get">ICPE-DPMS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/icpe-dpms/icpe-dpm/{discovery-interface}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface---get">ICPE-DPM</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--satellite-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/icpe-dpms/icpe-dpm/{discovery-interface}/satellite/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--satellite--get">SATELLITE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--remote-host-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/icpe-dpms/icpe-dpm/{discovery-interface}/remote-host/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--remote-host--get">REMOTE-HOST</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-controls--get">SDACP-CONTROLS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id---get">SDACP-CONTROL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--protocol-state-timestamp-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/protocol-state-timestamp/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--protocol-state-timestamp--get">PROTOCOL-STATE-TIMESTAMP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--transport-error-timestamp-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/transport-error-timestamp/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--transport-error-timestamp--get">TRANSPORT-ERROR-TIMESTAMP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/channel/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel--get">CHANNEL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/channel/capabilities/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities--get">CAPABILITIES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-tl-vs-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/channel/capabilities/tl-vs/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-tl-vs--get">TL-VS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-resync-state-timestamp-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/channel/resync-state-timestamp/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-resync-state-timestamp--get">RESYNC-STATE-TIMESTAMP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-channel-state-timestamp-">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/channel/channel-state-timestamp/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-channel-state-timestamp--get">CHANNEL-STATE-TIMESTAMP</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-icpe-sdacp-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-icpe-sdacp-oper@2015-11-09.yang">Cisco-IOS-XR-icpe-sdacp-oper@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-discovery2s-"></span>
+          <div id="operation-config-nv-satellite-sdacp-discovery2s--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-discovery2s--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SDACP-DISCOVERY2S - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-discovery2s/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sdacp-discovery2s</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_sdacp-discovery2s_schema">a1_sdacp-discovery2s_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s--get"><span class="hljs-attr">&quot;sdacp-discovery2s&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>ICPE Configured interface state information\ntable</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name---get"><span class="hljs-attr">&quot;sdacp-discovery2&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite--get"><span class="hljs-attr">&quot;satellite&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;conflict-reason&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Conflict reason</span></div>
+            <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite-interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;conflict-reason&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Conflict reason</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;satellite-serial-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite serial id</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface MAC</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface handle</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis MAC</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface ID</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;satellite-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite status</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module vendor</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Satellite chassis vendor</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite IP address</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite status</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;host-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host IP address</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Satellite ID</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;interface-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface name</span></div>
+        <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;interface-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface status</span></div>
+            <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--"></span>
+          <div id="operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name---get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SDACP-DISCOVERY2 - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-discovery2s/sdacp-discovery2/{interface-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sdacp-discovery2</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_sdacp-discovery2_schema">a1_sdacp-discovery2_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name---get"><span class="hljs-attr">&quot;sdacp-discovery2&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite--get"><span class="hljs-attr">&quot;satellite&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;conflict-reason&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Conflict reason</span></div>
+        <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite-interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;conflict-reason&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Conflict reason</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-serial-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite serial id</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface MAC</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface handle</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis MAC</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite status</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module vendor</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Satellite chassis vendor</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite IP address</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite status</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host IP address</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Satellite ID</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-name-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface name</span></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;interface-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface status</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--interface-"></span>
+          <div id="operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--interface--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--interface--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-discovery2s/sdacp-discovery2/{interface-name}/interface/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_interface_schema">a1_interface_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface status</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite-"></span>
+          <div id="operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SATELLITE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-discovery2s/sdacp-discovery2/{interface-name}/satellite/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: satellite</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_satellite_schema">a1_satellite_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite--get"><span class="hljs-attr">&quot;satellite&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;conflict-reason&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Conflict reason</span></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite-interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;conflict-reason&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Conflict reason</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-serial-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite serial id</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface MAC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface handle</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis MAC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite status</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module vendor</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Satellite chassis vendor</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite IP address</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite status</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host IP address</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Satellite ID</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite-interface-"></span>
+          <div id="operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite-interface--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite-interface--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-discovery2s/sdacp-discovery2/{interface-name}/satellite/interface/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_interface_schema">a1_interface_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-discovery2s-sdacp-discovery2--interface-name--satellite-interface--get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;conflict-reason&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Conflict reason</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-serial-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite serial id</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface MAC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Interface handle</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis MAC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite status</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module vendor</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Satellite chassis vendor</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-icpe-dpms-"></span>
+          <div id="operation-config-nv-satellite-icpe-dpms--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-icpe-dpms--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ICPE-DPMS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/icpe-dpms/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: icpe-dpms</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_icpe-dpms_schema">a1_icpe-dpms_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-icpe-dpms--get"><span class="hljs-attr">&quot;icpe-dpms&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>ICPE DPM operational information table</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface---get"><span class="hljs-attr">&quot;icpe-dpm&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;ready-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ready packets received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;configuration-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Configuration packets sent</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;discovery-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery interface</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ident-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ident packets received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;discovery-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery interface handle</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;secs-since-pkts-cleaned&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Secs since pkts cleaned</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;discovery-interface-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery interface status</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;invalid-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Invalid packets received</span></div>
+        <div class="tooltip"><a href="#operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--satellite--get"><span class="hljs-attr">&quot;satellite&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;is-queued-for-efd&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is queued for EFD</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module MAC</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ready-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ready packets received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;is-queued-for-oc&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is queued for OC</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;legacy&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Legacy</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;reject-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reject packets sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module vendor</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;received-sys-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Received sys MAC</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-serial-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite serial id</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ack-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ack packets sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module type</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;los-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Los packets received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis MAC</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis MAC</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;invalid-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Invalid packets received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;configuration-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Configuration packets sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;host-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host IP address</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;last-imdr-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Last IMDR state</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ident-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ident packets received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;discovery-protocol-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery protocol state</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis type</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;current-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current timeout</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis type</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface MAC</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis vendor</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;conflict-reason&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Conflict reason</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis vendor</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;satellite-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite IP address</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;ifmgr-state&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Ifmgr state</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;secs-since-pkts-cleaned&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Secs since pkts cleaned</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;deleting&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">Deleting</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;discovery-interface-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery interface</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;reject-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reject packets sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-ack-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Host ack packets sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ack-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ack packets sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;los-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Los packets received</span></div>
+        <div class="tooltip"><a href="#operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--remote-host--get"><span class="hljs-attr">&quot;remote-host&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis MAC</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;host-interface-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host interface MAC</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;discovery-protocol-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery protocol state</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;secs-since-pkts-cleaned&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Secs since pkts cleaned</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;current-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current timeout</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;route-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Route length</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;host-ack-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Host ack packets sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;host-ack-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Host ack packets received</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;probe-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Probe packets sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-ack-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Host ack packets received</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--"></span>
+          <div id="operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface---get" class="operation panel" data-traverse-target="operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">ICPE-DPM - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/icpe-dpms/icpe-dpm/{discovery-interface}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: icpe-dpm</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">discovery-interface:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of discovery-interface</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_icpe-dpm_schema">a1_icpe-dpm_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface---get"><span class="hljs-attr">&quot;icpe-dpm&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ready-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ready packets received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;configuration-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Configuration packets sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;discovery-interface&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery interface</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ident-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ident packets received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;discovery-interface-handle&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery interface handle</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;secs-since-pkts-cleaned&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Secs since pkts cleaned</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;discovery-interface-status&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery interface status</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;invalid-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Invalid packets received</span></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--satellite--get"><span class="hljs-attr">&quot;satellite&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;is-queued-for-efd&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is queued for EFD</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module MAC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ready-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ready packets received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;is-queued-for-oc&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is queued for OC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;legacy&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Legacy</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;reject-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reject packets sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module vendor</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;received-sys-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Received sys MAC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-serial-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite serial id</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ack-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ack packets sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;los-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Los packets received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis MAC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis MAC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;invalid-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Invalid packets received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;configuration-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Configuration packets sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host IP address</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;last-imdr-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Last IMDR state</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ident-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ident packets received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;discovery-protocol-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery protocol state</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;current-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current timeout</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface MAC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis vendor</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;conflict-reason&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Conflict reason</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis vendor</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite IP address</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ifmgr-state&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Ifmgr state</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;secs-since-pkts-cleaned&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Secs since pkts cleaned</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;deleting&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">Deleting</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;discovery-interface-xr&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery interface</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;reject-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reject packets sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-ack-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Host ack packets sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ack-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ack packets sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;los-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Los packets received</span></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--remote-host--get"><span class="hljs-attr">&quot;remote-host&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis MAC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-interface-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host interface MAC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;discovery-protocol-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery protocol state</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;secs-since-pkts-cleaned&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Secs since pkts cleaned</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;current-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current timeout</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;route-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Route length</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-ack-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Host ack packets sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;host-ack-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Host ack packets received</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;probe-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Probe packets sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-ack-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Host ack packets received</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--satellite-"></span>
+          <div id="operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--satellite--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--satellite--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SATELLITE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/icpe-dpms/icpe-dpm/{discovery-interface}/satellite/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: satellite</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">discovery-interface:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of discovery-interface</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_satellite_schema">a1_satellite_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--satellite--get"><span class="hljs-attr">&quot;satellite&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;is-queued-for-efd&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is queued for EFD</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module MAC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ready-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ready packets received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;is-queued-for-oc&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Is queued for OC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;legacy&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Legacy</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;reject-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Reject packets sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module vendor</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;received-sys-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Received sys MAC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-serial-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite serial id</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ack-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ack packets sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-module-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite module type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;los-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Los packets received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis MAC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis MAC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;invalid-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Invalid packets received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;configuration-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Configuration packets sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host IP address</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;last-imdr-state&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Last IMDR state</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ident-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Ident packets received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;discovery-protocol-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery protocol state</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;current-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current timeout</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-interface-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite interface MAC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-chassis-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite chassis vendor</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;conflict-reason&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Conflict reason</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-vendor&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis vendor</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite IP address</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ifmgr-state&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">Ifmgr state</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;secs-since-pkts-cleaned&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Secs since pkts cleaned</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;deleting&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">Deleting</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--remote-host-"></span>
+          <div id="operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--remote-host--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--remote-host--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">REMOTE-HOST - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/icpe-dpms/icpe-dpm/{discovery-interface}/remote-host/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: remote-host</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">discovery-interface:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of discovery-interface</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_remote-host_schema">a1_remote-host_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-icpe-dpms-icpe-dpm--discovery-interface--remote-host--get"><span class="hljs-attr">&quot;remote-host&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-chassis-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host chassis MAC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-interface-mac&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Host interface MAC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;discovery-protocol-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Discovery protocol state</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;secs-since-pkts-cleaned&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Secs since pkts cleaned</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;current-timeout&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Current timeout</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;route-length&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Route length</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-ack-packets-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Host ack packets sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;host-ack-packets-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Host ack packets received</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-"></span>
+          <div id="operation-config-nv-satellite-sdacp-controls--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-controls--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SDACP-CONTROLS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sdacp-controls</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_sdacp-controls_schema">a1_sdacp-controls_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls--get"><span class="hljs-attr">&quot;sdacp-controls&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>SDAC Protocol Discovery information table</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id---get"><span class="hljs-attr">&quot;sdacp-control&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-id-xr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite ID</span></div>
+        <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--protocol-state-timestamp--get"><span class="hljs-attr">&quot;protocol-state-timestamp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;control-protocol-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Control protocol state</span></div>
+        <div class="tooltip"><span class="hljs-key">&quot;satellite-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name</span></div>
+        <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--transport-error-timestamp--get"><span class="hljs-attr">&quot;transport-error-timestamp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+        },
+        <div class="tooltip"><span class="hljs-leaf">&quot;transport-error&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transport error</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;satellite-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite IP address</span></div>
+        <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel--get"><span class="hljs-attr">&quot;channel&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;channel-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Channel state</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;control-messages-dropped&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Control messages dropped</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;control-messages-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Control messages sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;secs-since-last-cleared&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Secs since last cleared</span></div>
+            <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities--get"><span class="hljs-attr">&quot;capabilities&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Capabilities</i></span><!--
+--></div>
+              <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-tl-vs--get"><span class="hljs-attr">&quot;tl-vs&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;debug&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Debug</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Type</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Value</span></div>
+                }
+              ]
+            },
+            <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-resync-state-timestamp--get"><span class="hljs-attr">&quot;resync-state-timestamp&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+              }
+            ],
+            <div class="tooltip"><span class="hljs-leaf">&quot;normal-messages-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Normal messages sent</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Version</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;normal-messages-dropped&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Normal messages dropped</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;control-messages-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Control messages received</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;resync-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Resync state</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;channel-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Channel ID</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;normal-messages-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Normal messages received</span></div>
+            <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-channel-state-timestamp--get"><span class="hljs-attr">&quot;channel-state-timestamp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+            }
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;ip-address-auto&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">IP address auto</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--"></span>
+          <div id="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id---get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">SDACP-CONTROL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: sdacp-control</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">satellite-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of satellite-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_sdacp-control_schema">a1_sdacp-control_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id---get"><span class="hljs-attr">&quot;sdacp-control&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-id-xr&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite ID</span></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--protocol-state-timestamp--get"><span class="hljs-attr">&quot;protocol-state-timestamp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;control-protocol-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Control protocol state</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">VRF name</span></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--transport-error-timestamp--get"><span class="hljs-attr">&quot;transport-error-timestamp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+    },
+    <div class="tooltip"><span class="hljs-leaf">&quot;transport-error&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Transport error</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;satellite-ip-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Satellite IP address</span></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel--get"><span class="hljs-attr">&quot;channel&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;channel-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Channel state</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;control-messages-dropped&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Control messages dropped</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;control-messages-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Control messages sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;secs-since-last-cleared&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Secs since last cleared</span></div>
+        <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities--get"><span class="hljs-attr">&quot;capabilities&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Capabilities</i></span><!--
+--></div>
+          <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-tl-vs--get"><span class="hljs-attr">&quot;tl-vs&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;debug&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Debug</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Type</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Value</span></div>
+            }
+          ]
+        },
+        <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-resync-state-timestamp--get"><span class="hljs-attr">&quot;resync-state-timestamp&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+          }
+        ],
+        <div class="tooltip"><span class="hljs-leaf">&quot;normal-messages-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Normal messages sent</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Version</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;normal-messages-dropped&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Normal messages dropped</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;control-messages-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Control messages received</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;resync-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Resync state</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;channel-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Channel ID</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;normal-messages-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Normal messages received</span></div>
+        <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-channel-state-timestamp--get"><span class="hljs-attr">&quot;channel-state-timestamp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+        }
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;ip-address-auto&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span><!--
+--> <span class="tooltiptext">IP address auto</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--protocol-state-timestamp-"></span>
+          <div id="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--protocol-state-timestamp--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--protocol-state-timestamp--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PROTOCOL-STATE-TIMESTAMP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/protocol-state-timestamp/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: protocol-state-timestamp</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">satellite-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of satellite-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_protocol-state-timestamp_schema">a1_protocol-state-timestamp_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--protocol-state-timestamp--get"><span class="hljs-attr">&quot;protocol-state-timestamp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--transport-error-timestamp-"></span>
+          <div id="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--transport-error-timestamp--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--transport-error-timestamp--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TRANSPORT-ERROR-TIMESTAMP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/transport-error-timestamp/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: transport-error-timestamp</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">satellite-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of satellite-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_transport-error-timestamp_schema">a1_transport-error-timestamp_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--transport-error-timestamp--get"><span class="hljs-attr">&quot;transport-error-timestamp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-"></span>
+          <div id="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CHANNEL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/channel/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: channel</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">satellite-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of satellite-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_channel_schema">a1_channel_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel--get"><span class="hljs-attr">&quot;channel&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;channel-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Channel state</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;control-messages-dropped&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Control messages dropped</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;control-messages-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Control messages sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;secs-since-last-cleared&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Secs since last cleared</span></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities--get"><span class="hljs-attr">&quot;capabilities&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Capabilities</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-tl-vs--get"><span class="hljs-attr">&quot;tl-vs&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;debug&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Debug</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Type</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Value</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-resync-state-timestamp--get"><span class="hljs-attr">&quot;resync-state-timestamp&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+      }
+    ],
+    <div class="tooltip"><span class="hljs-leaf">&quot;normal-messages-sent&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Normal messages sent</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;version&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Version</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;normal-messages-dropped&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Normal messages dropped</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;control-messages-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Control messages received</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;resync-state&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Resync state</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;channel-id&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Channel ID</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;normal-messages-received&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Normal messages received</span></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-channel-state-timestamp--get"><span class="hljs-attr">&quot;channel-state-timestamp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-"></span>
+          <div id="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CAPABILITIES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/channel/capabilities/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: capabilities</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">satellite-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of satellite-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_capabilities_schema">a1_capabilities_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities--get"><span class="hljs-attr">&quot;capabilities&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Capabilities</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-tl-vs--get"><span class="hljs-attr">&quot;tl-vs&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;debug&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Debug</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Type</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Value</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-tl-vs-"></span>
+          <div id="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-tl-vs--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-tl-vs--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">TL-VS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/channel/capabilities/tl-vs/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: tl-vs</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">satellite-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of satellite-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_tl-vs_schema">a1_tl-vs_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-capabilities-tl-vs--get"><span class="hljs-attr">&quot;tl-vs&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;debug&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">Debug</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;type&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Type</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;value&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Value</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-resync-state-timestamp-"></span>
+          <div id="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-resync-state-timestamp--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-resync-state-timestamp--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RESYNC-STATE-TIMESTAMP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/channel/resync-state-timestamp/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: resync-state-timestamp</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">satellite-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of satellite-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_resync-state-timestamp_schema">a1_resync-state-timestamp_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-resync-state-timestamp--get"><span class="hljs-attr">&quot;resync-state-timestamp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-icpe-infra-oper-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-channel-state-timestamp-"></span>
+          <div id="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-channel-state-timestamp--get" class="operation panel" data-traverse-target="operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-channel-state-timestamp--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">CHANNEL-STATE-TIMESTAMP - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-icpe-infra-oper:nv-satellite/sdacp-controls/sdacp-control/{satellite-id}/channel/channel-state-timestamp/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: channel-state-timestamp</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">satellite-id:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of satellite-id</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/a1_channel-state-timestamp_schema">a1_channel-state-timestamp_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-nv-satellite-sdacp-controls-sdacp-control--satellite-id--channel-channel-state-timestamp--get"><span class="hljs-attr">&quot;channel-state-timestamp&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Timestamp</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;seconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span>,<!--
+--> <span class="tooltiptext">Seconds</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;nanoseconds&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Nanoseconds</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

@@ -1,0 +1,3747 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-infra-rt-check-cfg API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-">Cisco-IOS-XR-infra-rt-check-cfg:rcc/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">RCC</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">IPV6</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc-">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/lcc/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">LCC</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast-">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/unicast/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">UNICAST</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast-">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/multicast/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">MULTICAST</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">IPV4</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc-">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/lcc/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">LCC</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast-">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/unicast/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">UNICAST</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast-">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/multicast/</a>
+                <ul> -->
+          <!-- <li> -->
+          <div class="dropdown">
+          <button class="dropdown-btn">MULTICAST</button>
+          <div class="dropdown-container">
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put">Update</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post">Create</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete">Delete</a>
+          <!-- </li> -->
+          <!-- <li> -->
+          <a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get">Retrieve</a>
+          </div>
+          </div>          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-infra-rt-check-cfg API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-infra-rt-check-cfg@2015-11-09.yang">Cisco-IOS-XR-infra-rt-check-cfg@2015-11-09.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/config/network-topology:network-topology/topology/topology-netconf/node/inetri/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                  <h5>Leaf Color Code:</h5>                    <span class="hljs-key">&emsp;&emsp;&emsp;Key&nbsp</span>                    <span class="hljs-mand">Mandatory&nbsp</span>                    <span class="hljs-leaf">Optional</span>                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-"></span>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">RCC - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: rcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rcc_schema">rcc_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>rccbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;rcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC (Route Consistency Checker) configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv4&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv4</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      }
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv6</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      }
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">RCC - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: rcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rcc_schema">rcc_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>rccbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;rcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC (Route Consistency Checker) configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv4&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv4</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      }
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv6</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      }
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">RCC - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: rcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">RCC - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: rcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/rcc_schema">rcc_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;rcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC (Route Consistency Checker) configuration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv4&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv4</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      }
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;ipv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv6</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      },<!--
+--><div class="dropdown2"><!--
+-->      <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get">GET</a><!--
+--></div></div><!--
+-->        <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+      }
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-"></span>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV6 - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: ipv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ipv6_schema">ipv6_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>ipv6body object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;ipv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv6</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV6 - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: ipv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ipv6_schema">ipv6_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>ipv6body object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;ipv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv6</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV6 - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: ipv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV6 - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ipv6</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ipv6_schema">ipv6_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;ipv6&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv6</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc-"></span>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">LCC - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/lcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: lcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/lcc_schema">lcc_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>lccbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">LCC - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/lcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: lcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/lcc_schema">lcc_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>lccbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">LCC - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/lcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: lcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LCC - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/lcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: lcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/lcc_schema">lcc_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-lcc--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast-"></span>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">UNICAST - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/unicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: unicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/unicast_schema">unicast_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>unicastbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">UNICAST - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/unicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: unicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/unicast_schema">unicast_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>unicastbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">UNICAST - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/unicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: unicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">UNICAST - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/unicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: unicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/unicast_schema">unicast_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-unicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast-"></span>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">MULTICAST - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/multicast_schema">multicast_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>multicastbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">MULTICAST - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/multicast_schema">multicast_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>multicastbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">MULTICAST - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MULTICAST - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv6/multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/multicast_schema">multicast_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv6-multicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-"></span>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV4 - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: ipv4</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ipv4_schema">ipv4_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>ipv4body object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;ipv4&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv4</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV4 - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: ipv4</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ipv4_schema">ipv4_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>ipv4body object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;ipv4&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv4</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV4 - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: ipv4</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">IPV4 - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: ipv4</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/ipv4_schema">ipv4_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;ipv4&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC/LCC configuration for IPv4</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4--get">GET</a><!--
+--></div></div><!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    },<!--
+--><div class="dropdown2"><!--
+-->    <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get">GET</a><!--
+--></div></div><!--
+-->      <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc-"></span>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">LCC - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/lcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: lcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/lcc_schema">lcc_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>lccbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">LCC - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/lcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: lcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/lcc_schema">lcc_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>lccbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">LCC - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/lcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: lcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">LCC - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/lcc/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: lcc</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/lcc_schema">lcc_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;lcc&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>IPv4/IPv6 LCC (Label Consistency Checker)\nconfiguration</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-lcc--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast-"></span>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">UNICAST - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/unicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: unicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/unicast_schema">unicast_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>unicastbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">UNICAST - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/unicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: unicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/unicast_schema">unicast_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>unicastbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">UNICAST - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/unicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: unicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">UNICAST - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/unicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: unicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/unicast_schema">unicast_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;unicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for unicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-unicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast-"></span>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put">
+            <h2 class="operation-title">
+              <span class="operation-summary">MULTICAST - Update</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">PUT</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Update operation of resource: multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/multicast_schema">multicast_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>multicastbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post">
+            <h2 class="operation-title">
+              <span class="operation-summary">MULTICAST - Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create operation of resource: multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/multicast_schema">multicast_schema</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->
+                      <p>multicastbody object</p>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Content-Types:
+                    <span>application/json</span>
+                  </h5>
+                  <h5>Request Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete">
+            <h2 class="operation-title">
+              <span class="operation-summary">MULTICAST - Delete</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">DELETE</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Delete operation of resource: multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div id="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get" class="operation panel" data-traverse-target="operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MULTICAST - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-infra-rt-check-cfg:rcc/ipv4/multicast/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: multicast</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/multicast_schema">multicast_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{<!--
+--><div class="dropdown2"><!--
+-->  <button class="dropbtn"><span class="hljs-attr">&quot;multicast&quot;</span></button>: {<!--
+--><div class="dropdown-content"><!--
+--><span><i>RCC configuration for multicast</i></span><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--put">PUT</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--post">POST</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--delete">DELETE</a><!--
+--><a href="#operation-Cisco-IOS-XR-infra-rt-check-cfg-rcc-ipv4-multicast--get">GET</a><!--
+--></div></div><!--
+-->    <div class="tooltip"><span class="hljs-leaf">&quot;enable&quot;</span>: <span class="hljs-string">[ null ]</span>,<!--
+--> <span class="tooltiptext">Enable RCC/LCC</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;period&quot;</span>: <span class="hljs-string">&quot;integer&quot;</span><!--
+--> <span class="tooltiptext">Period of check in milliseconds<br>range: "100..600000"<br>units: "millisecond"</span></div> 
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>

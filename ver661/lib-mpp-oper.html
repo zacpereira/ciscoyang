@@ -1,0 +1,1478 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cisco-IOS-XR-lib-mpp-oper API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection--get">MANAGEMENT-PLANE-PROTECTION</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection-outband--get">OUTBAND</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-vrf-">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/vrf/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection-outband-vrf--get">VRF</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-interfaces-">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/interfaces/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection-outband-interfaces--get">INTERFACES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-interfaces-interface--interface-name--">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/interfaces/interface/{interface-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name---get">INTERFACE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-interfaces-interface--interface-name--protocol-">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/interfaces/interface/{interface-name}/protocol/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol--get">PROTOCOL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-interfaces-interface--interface-name--protocol-peer-address-">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/interfaces/interface/{interface-name}/protocol/peer-address/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol-peer-address--get">PEER-ADDRESS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-inband-">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/inband/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection-inband--get">INBAND</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-inband-interfaces-">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/inband/interfaces/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection-inband-interfaces--get">INTERFACES</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-inband-interfaces-interface--interface-name--">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/inband/interfaces/interface/{interface-name}/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name---get">INTERFACE</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-inband-interfaces-interface--interface-name--protocol-">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/inband/interfaces/interface/{interface-name}/protocol/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol--get">PROTOCOL</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-inband-interfaces-interface--interface-name--protocol-peer-address-">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/inband/interfaces/interface/{interface-name}/protocol/peer-address/</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol-peer-address--get">PEER-ADDRESS</a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">Cisco-IOS-XR-lib-mpp-oper API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>API generated from
+                  <a href="mailto:Cisco-IOS-XR-lib-mpp-oper@2017-05-01.yang">Cisco-IOS-XR-lib-mpp-oper@2017-05-01.yang</a>
+                </p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>http://{Controller-IP}:{Controller-Port}/restconf/operational/network-topology:network-topology/topology/topology-netconf/node/{{router}}/yang-ext:mount/</code></pre>
+                  <!-- </div> -->
+                  <h5>URL '/' code: <span>%2F</span></h5><h5>Schemes:
+                    <span>http</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-"></span>
+          <div id="operation-config-management-plane-protection--get" class="operation panel" data-traverse-target="operation-config-management-plane-protection--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">MANAGEMENT-PLANE-PROTECTION - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: management-plane-protection</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/management-plane-protection_schema">management-plane-protection_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection--get"><span class="hljs-attr">&quot;management-plane-protection&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Management Plane Protection (MPP) operational\ndata</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-management-plane-protection-inband--get"><span class="hljs-attr">&quot;inband&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Management Plane Protection (MPP) inband\ninterface data</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces--get"><span class="hljs-attr">&quot;interfaces&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>List of inband/outband interfaces</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol--get"><span class="hljs-attr">&quot;protocol&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;is-all-peers-allowed&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">If TRUE, all peers are allowed</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;allow&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">MPP allow</span></div>
+                <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                  {
+                    <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+                  }
+                ]
+              }
+            ],
+            <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name, specify 'all' for all\ninterfaces</span></div>
+          }
+        ]
+      }
+    },
+    <div class="tooltip"><a href="#operation-config-management-plane-protection-outband--get"><span class="hljs-attr">&quot;outband&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Management Plane Protection (MPP) outband\ninterface data</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces--get"><span class="hljs-attr">&quot;interfaces&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>List of inband/outband interfaces</i></span><!--
+--></div>
+        <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol--get"><span class="hljs-attr">&quot;protocol&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;is-all-peers-allowed&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">If TRUE, all peers are allowed</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;allow&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">MPP allow</span></div>
+                <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                  {
+                    <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+                    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+                  }
+                ]
+              }
+            ],
+            <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name, specify 'all' for all\ninterfaces</span></div>
+          }
+        ]
+      },
+      <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-vrf--get"><span class="hljs-attr">&quot;vrf&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Outband VRF information</i></span><!--
+--></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Outband VRF name</span></div>
+      }
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-"></span>
+          <div id="operation-config-management-plane-protection-outband--get" class="operation panel" data-traverse-target="operation-config-management-plane-protection-outband--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">OUTBAND - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: outband</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/outband_schema">outband_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection-outband--get"><span class="hljs-attr">&quot;outband&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Management Plane Protection (MPP) outband\ninterface data</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces--get"><span class="hljs-attr">&quot;interfaces&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>List of inband/outband interfaces</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol--get"><span class="hljs-attr">&quot;protocol&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;is-all-peers-allowed&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">If TRUE, all peers are allowed</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;allow&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">MPP allow</span></div>
+              <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+                }
+              ]
+            }
+          ],
+          <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name, specify 'all' for all\ninterfaces</span></div>
+        }
+      ]
+    },
+    <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-vrf--get"><span class="hljs-attr">&quot;vrf&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Outband VRF information</i></span><!--
+--></div>
+      <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Outband VRF name</span></div>
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-vrf-"></span>
+          <div id="operation-config-management-plane-protection-outband-vrf--get" class="operation panel" data-traverse-target="operation-config-management-plane-protection-outband-vrf--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">VRF - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/vrf/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: vrf</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/vrf_schema">vrf_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-vrf--get"><span class="hljs-attr">&quot;vrf&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Outband VRF information</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;vrf-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Outband VRF name</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-interfaces-"></span>
+          <div id="operation-config-management-plane-protection-outband-interfaces--get" class="operation panel" data-traverse-target="operation-config-management-plane-protection-outband-interfaces--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/interfaces/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interfaces</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interfaces_schema">interfaces_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces--get"><span class="hljs-attr">&quot;interfaces&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>List of inband/outband interfaces</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol--get"><span class="hljs-attr">&quot;protocol&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;is-all-peers-allowed&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">If TRUE, all peers are allowed</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;allow&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">MPP allow</span></div>
+            <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+              }
+            ]
+          }
+        ],
+        <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name, specify 'all' for all\ninterfaces</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-interfaces-interface--interface-name--"></span>
+          <div id="operation-config-management-plane-protection-outband-interfaces-interface--interface-name---get" class="operation panel" data-traverse-target="operation-config-management-plane-protection-outband-interfaces-interface--interface-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/interfaces/interface/{interface-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interface_schema">interface_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol--get"><span class="hljs-attr">&quot;protocol&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;is-all-peers-allowed&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">If TRUE, all peers are allowed</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;allow&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">MPP allow</span></div>
+          <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+            }
+          ]
+        }
+      ],
+      <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name, specify 'all' for all\ninterfaces</span></div>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-interfaces-interface--interface-name--protocol-"></span>
+          <div id="operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol--get" class="operation panel" data-traverse-target="operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PROTOCOL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/interfaces/interface/{interface-name}/protocol/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: protocol</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/protocol_schema">protocol_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol--get"><span class="hljs-attr">&quot;protocol&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;is-all-peers-allowed&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">If TRUE, all peers are allowed</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;allow&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">MPP allow</span></div>
+    <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-outband-interfaces-interface--interface-name--protocol-peer-address-"></span>
+          <div id="operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol-peer-address--get" class="operation panel" data-traverse-target="operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol-peer-address--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PEER-ADDRESS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/outband/interfaces/interface/{interface-name}/protocol/peer-address/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: peer-address</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/peer-address_schema">peer-address_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection-outband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-inband-"></span>
+          <div id="operation-config-management-plane-protection-inband--get" class="operation panel" data-traverse-target="operation-config-management-plane-protection-inband--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INBAND - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/inband/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: inband</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/inband_schema">inband_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection-inband--get"><span class="hljs-attr">&quot;inband&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>Management Plane Protection (MPP) inband\ninterface data</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces--get"><span class="hljs-attr">&quot;interfaces&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>List of inband/outband interfaces</i></span><!--
+--></div>
+      <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol--get"><span class="hljs-attr">&quot;protocol&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;is-all-peers-allowed&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">If TRUE, all peers are allowed</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;allow&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">MPP allow</span></div>
+              <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+                {
+                  <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+                  <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+                }
+              ]
+            }
+          ],
+          <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name, specify 'all' for all\ninterfaces</span></div>
+        }
+      ]
+    }
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-inband-interfaces-"></span>
+          <div id="operation-config-management-plane-protection-inband-interfaces--get" class="operation panel" data-traverse-target="operation-config-management-plane-protection-inband-interfaces--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACES - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/inband/interfaces/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interfaces</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interfaces_schema">interfaces_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces--get"><span class="hljs-attr">&quot;interfaces&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>List of inband/outband interfaces</i></span><!--
+--></div>
+    <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol--get"><span class="hljs-attr">&quot;protocol&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+          {
+            <div class="tooltip"><span class="hljs-leaf">&quot;is-all-peers-allowed&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">If TRUE, all peers are allowed</span></div>
+            <div class="tooltip"><span class="hljs-leaf">&quot;allow&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">MPP allow</span></div>
+            <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+              {
+                <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+                <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+              }
+            ]
+          }
+        ],
+        <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name, specify 'all' for all\ninterfaces</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-inband-interfaces-interface--interface-name--"></span>
+          <div id="operation-config-management-plane-protection-inband-interfaces-interface--interface-name---get" class="operation panel" data-traverse-target="operation-config-management-plane-protection-inband-interfaces-interface--interface-name---get">
+            <h2 class="operation-title">
+              <span class="operation-summary">INTERFACE - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/inband/interfaces/interface/{interface-name}/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: interface</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/interface_schema">interface_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name---get"><span class="hljs-attr">&quot;interface&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    {
+      <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol--get"><span class="hljs-attr">&quot;protocol&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+        {
+          <div class="tooltip"><span class="hljs-leaf">&quot;is-all-peers-allowed&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">If TRUE, all peers are allowed</span></div>
+          <div class="tooltip"><span class="hljs-leaf">&quot;allow&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">MPP allow</span></div>
+          <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+            {
+              <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+              <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+            }
+          ]
+        }
+      ],
+      <div class="tooltip"><span class="hljs-key">&quot;interface-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">Interface name, specify 'all' for all\ninterfaces</span></div>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-inband-interfaces-interface--interface-name--protocol-"></span>
+          <div id="operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol--get" class="operation panel" data-traverse-target="operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PROTOCOL - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/inband/interfaces/interface/{interface-name}/protocol/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: protocol</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/protocol_schema">protocol_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol--get"><span class="hljs-attr">&quot;protocol&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;is-all-peers-allowed&quot;</span>: <span class="hljs-string">&quot;boolean&quot;</span>,<!--
+--> <span class="tooltiptext">If TRUE, all peers are allowed</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;allow&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">MPP allow</span></div>
+    <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> [<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+      {
+        <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+        <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+      }
+    ]
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path-Cisco-IOS-XR-lib-mpp-oper-management-plane-protection-inband-interfaces-interface--interface-name--protocol-peer-address-"></span>
+          <div id="operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol-peer-address--get" class="operation panel" data-traverse-target="operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol-peer-address--get">
+            <h2 class="operation-title">
+              <span class="operation-summary">PEER-ADDRESS - Retrieve</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">Cisco-IOS-XR-lib-mpp-oper:management-plane-protection/inband/interfaces/interface/{interface-name}/protocol/peer-address/</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Retrieve operation of resource: peer-address</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">interface-name:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in path </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>ID of interface-name</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/peer-address_schema">peer-address_schema</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">400 Bad Request</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Internal Error</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <div class="tooltip"><a href="#operation-config-management-plane-protection-inband-interfaces-interface--interface-name--protocol-peer-address--get"><span class="hljs-attr">&quot;peer-address&quot;</span>:</a> {<!--
+--><span class="tooltiptext"><i>No description</i></span><!--
+--></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;af-name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">AFName</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv6-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,<!--
+--> <span class="tooltiptext">IPv6 address</span></div>
+    <div class="tooltip"><span class="hljs-leaf">&quot;ipv4-address&quot;</span>: <span class="hljs-string">&quot;string&quot;</span><!--
+--> <span class="tooltiptext">IPv4 address</span></div>
+  }
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
